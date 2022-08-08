@@ -13,15 +13,15 @@ export interface ClassesProps {
 
 function formatComponent(props: ClassesProps, title: string) {
   if (title === props.teacher) {
-    return <><a href={`../sala/${props.classroom.toLowerCase().replace(' ', '_')}`}>{`${props.classroom}`}</a><a href={`../turma/${props.students.toLowerCase().replace(' ', '_')}`}>{`${props.students}`}</a></>
+    return <><a href={`../sala/${props.classroom.toLowerCase().replaceAll(' ', '_')}`}>{`${props.classroom}`}</a><a href={`../turma/${props.students.toLowerCase().replaceAll(' ', '_')}`}>{`${props.students}`}</a></>
   }
 
   else if (title === props.students) {
-    return <><a href={`../sala/${props.classroom.toLowerCase().replace(' ', '_')}`}>{`${props.classroom}`}</a><a href={`../professores/${props.teacher.toLowerCase().replace(' ', '_')}`}>{`${props.teacher}`}</a></>
+    return <><a href={`../sala/${props.classroom.toLowerCase().replaceAll(' ', '_')}`}>{`${props.classroom}`}</a><a href={`../professor/${props.teacher.toLowerCase().replaceAll(' ', '_')}`}>{`${props.teacher}`}</a></>
   }
 
   else {
-    return <><a href={`../students/${props.classroom.toLowerCase().replace(' ', '_')}`}>{`${props.students}`}</a><a href={`../professores/${props.teacher.toLowerCase().replace(' ', '_')}`}>{`${props.teacher}`}</a></>
+    return <><a href={`../turma/${props.classroom.toLowerCase().replaceAll(' ', '_')}`}>{`${props.students}`}</a><a href={`../professor/${props.teacher.toLowerCase().replaceAll(' ', '_')}`}>{`${props.teacher}`}</a></>
   }
 }
 
