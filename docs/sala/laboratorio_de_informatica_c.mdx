@@ -1,0 +1,199 @@
+import Grid from "../../src/components/Grid";
+const data = {
+  title: "Laboratório de Informatica C",
+  week: [
+    "Segunda-Feira",
+    "Terça-Feira",
+    "Quarta-Feira",
+    "Quinta-Feira",
+    "Sexta-Feira"
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ],
+  listTimetable: [
+    {
+      subject: "Projeto Integrador II - 1239",
+      size: 2,
+      teacher: "Alexandre Rodrigues Monge",
+      classroom: "Laboratório de Informatica C",
+      students: "IIW2021",
+      x: 8,
+      y: 2
+    },
+    {
+      subject: "Projeto e Análise de Sistemas - 182",
+      size: 2,
+      teacher: "Caroline Domingues Porto do Nascimento Barbieri",
+      classroom: "Laboratório de Informatica C",
+      students: "IIN2019",
+      x: 4,
+      y: 5
+    },
+    {
+      subject: "Informática instrumental e aplicada - 468",
+      size: 2,
+      teacher: "Douglas Barbosa Sousa",
+      classroom: "Laboratório de Informatica C",
+      students: "AGO2022 - Grupo A",
+      x: 11,
+      y: 1
+    },
+    {
+      subject: "Laboratório de Banco de Dados - 1238",
+      size: 2,
+      teacher: "Douglas Barbosa Sousa",
+      classroom: "Laboratório de Informatica C",
+      students: "IIW2021",
+      x: 1,
+      y: 4
+    },
+    {
+      subject: "Projeto Final de Curso - 181",
+      size: 2,
+      teacher: "Douglas Barbosa Sousa",
+      classroom: "Laboratório de Informatica C",
+      students: "IIN2019",
+      x: 1,
+      y: 3
+    },
+    {
+      subject: "Informática Instrumental - 1532",
+      size: 2,
+      teacher: "Humberto Fioravante Ferro",
+      classroom: "Laboratório de Informatica C",
+      students: "EIN2022",
+      x: 4,
+      y: 2
+    },
+    {
+      subject: "Serviços em nuvem - 1250",
+      size: 2,
+      teacher: "Joaquim José Honório de Lima",
+      classroom: "Laboratório de Informatica C",
+      students: "IIW2020",
+      x: 4,
+      y: 4
+    },
+    {
+      subject: "Estágio curricular supervisionado em biologia II - 1421",
+      size: 2,
+      teacher: "Marcia Aparecida Barbosa",
+      classroom: "Laboratório de Informatica C",
+      students: "BIO2019",
+      x: 17,
+      y: 5
+    },
+    {
+      subject: "Estágio curricular supervisionado em ciências II - 2039",
+      size: 2,
+      teacher: "Marcia Aparecida Barbosa",
+      classroom: "Laboratório de Informatica C",
+      students: "BIO2020",
+      x: 14,
+      y: 5
+    },
+    {
+      subject: "Orientação de estágio supervisionado - 1097",
+      size: 1,
+      teacher: "Octavio Henrique Viana",
+      classroom: "Laboratório de Informatica C",
+      students: "AGO2020",
+      x: 4,
+      y: 1
+    },
+    {
+      subject: "Sistemas Digitais - 1553",
+      size: 2,
+      teacher: "Vander Fabio Silveira",
+      classroom: "Laboratório de Informatica C",
+      students: "EIN2021",
+      x: 1,
+      y: 5
+    }
+  ]
+}
+
+# Laboratório de Informatica C
+
+<div>
+    {
+        <Grid
+            title={data.title}
+            weekDays={data.week}
+            time={data.time}
+            listClasses={data.listTimetable}
+        />
+    }
+</div>
