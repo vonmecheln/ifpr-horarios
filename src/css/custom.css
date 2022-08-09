@@ -3,6 +3,14 @@
 :root {
   --text-link: #2ca202;
   --text-link-hover: #134700;
+  --text-interval: #666666;
+
+  --border-cell: #ffffff;
+  --border-box: #b8b8b8;
+  --border-grid: #D9D9D9;
+
+  --background-cell: #D9D9D9;
+  --shadow: #00000065;
 }
 
 body {
@@ -14,6 +22,7 @@ body {
 main {
   overflow: scroll;
   height: 100vh;
+  padding: 1rem;
 }
 
 aside {
