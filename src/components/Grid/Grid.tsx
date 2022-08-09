@@ -16,7 +16,7 @@ export interface ClassesProps {
 
 interface TimeProps {
   time: string;
-  size: number;
+  size?: number;
 }
 
 interface GridProps {
@@ -24,7 +24,6 @@ interface GridProps {
   weekDays: Array<string>;
   time: Array<TimeProps>;
   listClasses: Array<ClassesProps>;
-  size: number;
 }
 
   

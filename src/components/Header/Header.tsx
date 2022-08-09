@@ -11,14 +11,14 @@ export default function Header(props: HeaderProps) {
   return (
     <>
       <Cell gridArea= {`1 / 2 / 2 / ${props.weekDays.length + 2}`}>
-        <span>{props.title}</span>
+        <strong>{props.title}</strong>
       </Cell>
       {
         props.weekDays.map(day =>
           <Cell 
           gridArea = {`2 / ${dayOffSet} / 3 / ${dayOffSet++}`} 
           key={day}>
-            <span>{day}</span>
+            <span className='text-day'>{day}</span>
           </Cell>
         )
       }

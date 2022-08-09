@@ -15,7 +15,7 @@ export default function Sidebar(props: {timeClasses: Array<TimeClassesProps>}) {
         props.timeClasses.map(timeEl => 
           <Cell 
           gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={timeEl.time}>
-            <span>{timeEl.time}</span>
+            <span className="text-time">{timeEl.time}</span>
           </Cell>  
         )
       } 

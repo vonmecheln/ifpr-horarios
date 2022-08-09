@@ -11,17 +11,21 @@ export interface ClassesProps {
   y: number;
 }
 
+function createURL(obj: string) {
+  return obj.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replaceAll(' ', '_')
+}
+
 function formatComponent(props: ClassesProps, title: string) {
   if (title === props.teacher) {
-    return <><a href={`../sala/${props.classroom.toLowerCase().replaceAll(' ', '_')}`}>{`${props.classroom}`}</a><a href={`../turma/${props.students.toLowerCase().replaceAll(' ', '_')}`}>{`${props.students}`}</a></>
+    return <><a href={`../Sala/${createURL(props.classroom)}`}>{`${props.classroom}`}</a><a href={`../Turma/${createURL(props.students)}`}>{`${props.students}`}</a></>
   }
 
   else if (title === props.students) {
-    return <><a href={`../sala/${props.classroom.toLowerCase().replaceAll(' ', '_')}`}>{`${props.classroom}`}</a><a href={`../professor/${props.teacher.toLowerCase().replaceAll(' ', '_')}`}>{`${props.teacher}`}</a></>
+    return <><a href={`../Sala/${createURL(props.classroom)}`}>{`${props.classroom}`}</a><a href={`../Professor/${createURL(props.teacher)}`}>{`${props.teacher}`}</a></>
   }
 
   else {
-    return <><a href={`../turma/${props.classroom.toLowerCase().replaceAll(' ', '_')}`}>{`${props.students}`}</a><a href={`../professor/${props.teacher.toLowerCase().replaceAll(' ', '_')}`}>{`${props.teacher}`}</a></>
+    return <><a href={`../Turma/${createURL(props.classroom)}`}>{`${props.students}`}</a><a href={`../Professor/${createURL(props.teacher)}`}>{`${props.teacher}`}</a></>
   }
 }
 
@@ -45,7 +49,7 @@ export default function TableTime(props: {listClasses: Array<ClassesProps>, rows
           }
 
           let ga = `${or+el.x} / ${oc+el.y} / ${or + el.size + el.x} / ${oc + 1 + el.y}`
-          return <Cell key={el.subject} gridArea={ga}>
+          return <Cell key={count++} gridArea={ga}>
             <span>{`${el.subject}`}</span>
             {formatComponent(el, props.title)}
           </Cell>
