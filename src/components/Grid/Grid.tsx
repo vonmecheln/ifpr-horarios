@@ -1,23 +1,8 @@
 import React from 'react'
 import { Container } from './styles'
 import Header from '../Header'
-import Sidebar from '../Sidebar'
-import TableTime from '../Timetable'
-
-export interface ClassesProps {
-  subject: string;
-  size: number;
-  teacher?: string;
-  classroom?: string;
-  students?: string;
-  x: number;
-  y: number;
-}
-
-interface TimeProps {
-  time: string;
-  size?: number;
-}
+import Sidebar, { TimeProps } from '../Sidebar'
+import TableTime, {  ClassesProps} from '../Timetable'
 
 interface GridProps {
   title: string;

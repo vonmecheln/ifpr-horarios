@@ -1,1 +1,1 @@
-export { default } from './Timetable'
+export { default, ClassesProps } from './Timetable'

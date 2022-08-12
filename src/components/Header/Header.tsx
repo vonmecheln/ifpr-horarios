@@ -1,12 +1,12 @@
 import React from 'react'
 import { Cell } from '../../css/Cell'
 
-export interface HeaderProps{
+export interface WeekProps{
   weekDays: Array<string>;
   title: string;
 }
 
-export default function Header(props: HeaderProps) {
+export default function Header(props: WeekProps) {
   let dayOffSet = 2;
   return (
     <>

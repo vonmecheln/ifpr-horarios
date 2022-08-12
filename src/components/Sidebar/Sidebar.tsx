@@ -1,12 +1,12 @@
 import React from 'react'
 import { Cell } from '../../css/Cell'
 
-export interface TimeClassesProps {
+export interface TimeProps {
   time: string;
   size?: number;
 }
 
-export default function Sidebar(props: {timeClasses: Array<TimeClassesProps>}) {
+export default function Sidebar(props: {timeClasses: Array<TimeProps>}) {
   let timeOffSet = 3
   return(
     <>
