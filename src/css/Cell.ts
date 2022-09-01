@@ -2,16 +2,18 @@ import styled from "styled-components"
 
 export const Cell = styled.div<{ gridArea: string }>`
   grid-area: ${props => props.gridArea};
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-direction: column;
   
-  padding: 0.4rem 0.8rem;
+  text-align: center;
+  
+  padding: 0.4rem;
   
   border: 1px solid var(--border-cell);
   border-radius: 5px;
+
   color: #000;  
   background-color: var(--background-cell);
 
@@ -20,6 +22,16 @@ export const Cell = styled.div<{ gridArea: string }>`
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
+
+  div {
+    width: 100%;
+    max-width: 10rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   span.text-time, span.text-day {
     font-weight: 400;
@@ -33,11 +45,22 @@ export const Cell = styled.div<{ gridArea: string }>`
 
   a {
     cursor: pointer;
-    color: #666;
+
     transition: all 0.4s;
+
     font-weight: 400;
+    
+    color: var(--text-link);
     text-decoration: none;
-    color: var(--text-link)
+
+    
+  }
+
+  div span, div a {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   a:hover {
@@ -46,6 +69,24 @@ export const Cell = styled.div<{ gridArea: string }>`
 
   &:hover {
     filter: brightness(0.9);
+  }
+
+  &.sidebar ~ &.sidebar:not(&.sidebar:nth-of-type(25)) {
+    border-radius: 0px;
+  }
+
+  &:nth-of-type(7) {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  &.sidebar:nth-of-type(25) {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  &.sidebar {
+    font-size: 0.8rem;
   }
 `
 
@@ -68,6 +109,7 @@ export const Box = styled.div<{ gridArea: string }>`
   color: var(--text-interval);
 
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='8' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5z' fill='%239C92AC' fill-opacity='.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: transparent;
 
   span {
     z-index: 2;

@@ -5,8 +5,8 @@ export const Container = styled.div<{columns: string, rows: string, size: number
   grid-template-columns: ${props => props.columns};
   grid-template-rows: ${props => props.rows};
 
-  width: 1400px;
-  height: ${props => props.size * 1.6}px;
+  width: 100%;
+  height: ${props => props.size * 2.6}px;
   gap: 2px;
 
   border: 1px solid var(--border-grid);

@@ -20,15 +20,23 @@ body {
 }
 
 main {
-  overflow: scroll;
-  height: 100vh;
   padding: 1rem;
-}
-
-aside {
-  width: 200px;
 }
 
 footer {
   display: none;
+}
+
+@media print {
+  ul {
+    display: none;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  .breaktime span{
+    display: none;
+  }
 }
