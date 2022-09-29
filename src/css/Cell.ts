@@ -115,5 +115,7 @@ export const Box = styled.div<{ gridArea: string }>`
     z-index: 2;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    font-size: .7rem;
+    white-space: nowrap;
   }
 `

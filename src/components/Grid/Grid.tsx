@@ -13,7 +13,7 @@ interface GridProps {
 
   
 const Grid = ({ title, weekDays, time, listClasses}: GridProps) => {
-    let columns = `10fr repeat(${weekDays.length}, ${90/weekDays.length}fr)`
+    let columns = `10fr repeat(${weekDays.length}, minmax(35px, ${90/weekDays.length}fr))`
     let rows = "50px 50px"  
     time.forEach(el => {
       rows += ` ${el.size}fr`

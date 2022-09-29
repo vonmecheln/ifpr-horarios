@@ -13,5 +13,41 @@ export const Container = styled.div<{columns: string, rows: string, size: number
   border-radius: 5px;
 
   margin: 1rem 0;
+
+  .nickname {
+    display: none;
+  }
+
+  @media print {
+    width: 100vw;
+    height: ${props => props.size * 2.2}px;
+    margin: 0px;
+
+    border: 1px solid black;
+
+    div span, div a {
+      display: block;
+      text-overflow: inherit;
+      overflow: auto;
+      white-space: normal;
+    }
+
+    .subject {
+      display: none;
+    }
+
+    .nickname {
+      display: block;
+    }
+
+    .empty {
+      border: none;
+    }
+
+    /* .break-here {
+      break-before: always;
+    } */
+
+  }
 `
 

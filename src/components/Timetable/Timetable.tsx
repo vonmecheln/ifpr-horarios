@@ -9,6 +9,7 @@ export interface ClassesProps {
   students?: string;
   x: number;
   y: number;
+  nickname?: string;
 }
 
 const or = 2 //OFFSET ROW
@@ -54,7 +55,7 @@ function generateEmptyCells(cols: number, rows: number) {
              (row + or) === 18
              ? 'Intervalo' : '',
       ga: `${or + row} / ${oc + col} / ${or + row + 1} / ${oc + col + 1}`,
-      className: 'breaktime'
+      className: `empty ${((col + oc) === 2 && (row + or) === 9) ? 'break-here' : ''}`
     })
   }
 }
@@ -74,7 +75,8 @@ export default function TableTime(props: {listClasses: Array<ClassesProps>, rows
           let ga = `${or+el.x} / ${oc+el.y} / ${or + el.size + el.x} / ${oc + 1 + el.y}`
           return <Cell key={count++} gridArea={ga}>
             <div>
-              <span title={el.subject}>{`${el.subject}`}</span>
+              <span className='subject' title={el.subject}>{`${el.subject}`}</span>
+              <span className='nickname' title={el.subject}>{`${el.nickname}`}</span>
               {formatComponent(el, props.title)}
             </div>
           </Cell>
