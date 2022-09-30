@@ -1,24 +1,29 @@
 import React from 'react'
 import { Cell } from '../../css/Cell'
+import { Container } from './styles';
 
 export interface TimeProps {
   time: string;
   size?: number;
 }
 
-export default function Sidebar(props: {timeClasses: Array<TimeProps>}) {
-  let timeOffSet = 3
+export default function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
+  let timeOffSet = 2
   return(
-    <>
-      <Cell gridArea="1 / 1 / 3 / 2" className="sidebar"></Cell>
+    <Container rows={`${props.rows}`}>
+      <Cell gridArea="1 / 1 / 2 / 2" className="sidebar"></Cell>
       {
-        props.timeClasses.map(timeEl => 
-          <Cell className="sidebar"
-          gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={timeEl.time}>
-            <span className="text-time">{timeEl.time}</span>
-          </Cell>  
-        )
+          props.timeClasses.map(timeEl => 
+            <Cell className="sidebar"
+            gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={timeEl.time}>
+              {/* <span className="text-time">{timeEl.time}</span> */}
+            </Cell>
+          )
+        // <Cell className="sidebar"
+        //   gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={props.timeClasses[0].time}>
+        //     {/* <span className="text-time">{timeEl.time}</span> */}
+        // </Cell>
       } 
-    </>
+    </Container>
   )
 }
