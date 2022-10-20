@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
-  grid-area: 1 / 2 / 2 / 3;
-  width: 100%;
+export const SlideItemModel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
   
   text-align: center;
   
@@ -24,6 +26,8 @@ export const Container = styled.header`
   font-weight: 300;
 
   transition: filter .4s;
+
+  gap: 2px;
 
   &:hover {
     filter: brightness(0.9);

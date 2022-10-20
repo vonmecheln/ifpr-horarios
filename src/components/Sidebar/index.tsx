@@ -7,7 +7,7 @@ export interface TimeProps {
   size?: number;
 }
 
-export default function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
+export function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
   let timeOffSet = 2
   return(
     <Container rows={`${props.rows}`}>
@@ -16,13 +16,9 @@ export default function Sidebar(props: {timeClasses: Array<TimeProps>, rows: str
           props.timeClasses.map(timeEl => 
             <Cell className="sidebar"
             gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={timeEl.time}>
-              {/* <span className="text-time">{timeEl.time}</span> */}
+              <span className="text-time">{timeEl.time}</span>
             </Cell>
           )
-        // <Cell className="sidebar"
-        //   gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={props.timeClasses[0].time}>
-        //     {/* <span className="text-time">{timeEl.time}</span> */}
-        // </Cell>
       } 
     </Container>
   )

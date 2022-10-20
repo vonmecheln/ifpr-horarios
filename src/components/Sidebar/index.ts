@@ -1,1 +1,0 @@
-export {default, TimeProps} from './Sidebar'

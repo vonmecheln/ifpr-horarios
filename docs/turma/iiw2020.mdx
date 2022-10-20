@@ -1,12 +1,184 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "IIW2020",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Geografia II - 1247",
+          size: 1,
+          teacher: "Renato Lada Guerreiro",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Geografia II - 1247",
+          size: 1,
+          teacher: "Renato Lada Guerreiro",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Matemática III - 1244",
+          size: 2,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Filosofia III - 1245",
+          size: 1,
+          teacher: "Fabio Antônio da Silva",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Informatica A",
+          students: "IIW2020",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura III - 1240",
+          size: 2,
+          teacher: "Michelli Cristina Galli",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Física III - 1242",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Biologia III - 1241",
+          size: 1,
+          teacher: "Eliana Peliçon Pereira Figueira",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Biologia III - 1241",
+          size: 1,
+          teacher: "Eliana Peliçon Pereira Figueira",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Sociologia II - 1246",
+          size: 1,
+          teacher: "Everaldo Lorensetti",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "História III - 2236",
+          size: 1,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Sociologia II - 1246",
+          size: 1,
+          teacher: "Everaldo Lorensetti",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia III - 1245",
+          size: 1,
+          teacher: "Fabio Antônio da Silva",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Serviços em nuvem - 1250",
+          size: 2,
+          teacher: "Joaquim José Honório de Lima",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "História III - 2236",
+          size: 1,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 13-2",
+          students: "IIW2020",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Química III - 1243",
+          size: 2,
+          teacher: "Kathia Regina Kunzler Bechlin",
+          classroom: "Laboratório de Química",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Projeto Integrador III - 1253",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,170 +253,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "História III - 2236",
-      size: 1,
-      teacher: "Amilcar Machado Profeta Filho",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 6,
-      y: 5
-    },
-    {
-      subject: "História III - 2236",
-      size: 1,
-      teacher: "Amilcar Machado Profeta Filho",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 2,
-      y: 2
-    },
-    {
-      subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2020",
-      x: 4,
-      y: 5
-    },
-    {
-      subject: "Biologia III - 1241",
-      size: 2,
-      teacher: "Eliana Peliçon Pereira Figueira",
-      classroom: "Laboratório de Biologia",
-      students: "IIW2020",
-      x: 4,
-      y: 1
-    },
-    {
-      subject: "Sociologia II - 1246",
-      size: 1,
-      teacher: "Everaldo Lorensetti",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 6,
-      y: 4
-    },
-    {
-      subject: "Sociologia II - 1246",
-      size: 1,
-      teacher: "Everaldo Lorensetti",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 1,
-      y: 3
-    },
-    {
-      subject: "Filosofia III - 1245",
-      size: 1,
-      teacher: "Fabio Antônio da Silva",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 2,
-      y: 3
-    },
-    {
-      subject: "Filosofia III - 1245",
-      size: 1,
-      teacher: "Fabio Antônio da Silva",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 1,
-      y: 2
-    },
-    {
-      subject: "Serviços em nuvem - 1250",
-      size: 2,
-      teacher: "Joaquim José Honório de Lima",
-      classroom: "Laboratório de Informatica C",
-      students: "IIW2020",
-      x: 4,
-      y: 4
-    },
-    {
-      subject: "Química III - 1243",
-      size: 2,
-      teacher: "Kathia Regina Kunzler Bechlin",
-      classroom: "Laboratório de Química",
-      students: "IIW2020",
-      x: 1,
-      y: 4
-    },
-    {
-      subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
-      size: 2,
-      teacher: "Luis Henrique Manosso Von Mecheln",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2020",
-      x: 11,
-      y: 2
-    },
-    {
-      subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
-      size: 2,
-      teacher: "Luis Henrique Manosso Von Mecheln",
-      classroom: "Laboratório de Informatica A",
-      students: "IIW2020",
-      x: 8,
-      y: 2
-    },
-    {
-      subject: "Língua Portuguesa e Literatura III - 1240",
-      size: 2,
-      teacher: "Michelli Cristina Galli",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 4,
-      y: 2
-    },
-    {
-      subject: "Projeto Integrador III - 1253",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "Laboratório de Informatica A",
-      students: "IIW2020",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Física III - 1242",
-      size: 2,
-      teacher: "Polyanna Guimarães e Miranda",
-      classroom: "Laboratório de Física",
-      students: "IIW2020",
-      x: 4,
-      y: 3
-    },
-    {
-      subject: "Geografia II - 1247",
-      size: 1,
-      teacher: "Renato Lada Guerreiro",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 6,
-      y: 1
-    },
-    {
-      subject: "Geografia II - 1247",
-      size: 1,
-      teacher: "Renato Lada Guerreiro",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 6,
-      y: 2
-    },
-    {
-      subject: "Matemática III - 1244",
-      size: 2,
-      teacher: "Sérgio Augusto Dias Castro",
-      classroom: "Sala 13-2",
-      students: "IIW2020",
-      x: 1,
-      y: 1
-    }
   ]
 }
 
@@ -253,10 +261,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

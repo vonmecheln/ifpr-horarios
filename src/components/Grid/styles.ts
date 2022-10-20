@@ -3,11 +3,12 @@ import styled from "styled-components"
 export const Container = styled.div<{columns: string, rows: string, size: number}>`
   display: grid;
   grid-template-columns: ${props => props.columns};
-  grid-template-rows: 50px 50px 800px;
+  grid-template-rows: 50px 50px 1fr;
   overflow: hidden;
+  column-gap: .1rem;
 
   width: 100%;
-  /* height: ${props => props.size * 2.6}px; */
+  height: ${props => props.size * 2.6}px;
 
   border: 1px solid var(--border-grid);
   border-radius: 5px;
