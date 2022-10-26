@@ -1,12 +1,120 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "BIO2019",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Biogeografia - 492",
+          size: 2,
+          teacher: "Renato Lada Guerreiro",
+          classroom: "",
+          students: "BIO2019+BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Aula Livre",
+          size: 2,
+          teacher: "",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
+          size: 1,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Genética de populações e evolução - 505",
+          size: 2,
+          teacher: "Gabriele Antico Freiria",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Trabalho de conclusão de curso II - 1420",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:50 - 20:40"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
+          size: 2,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "PCCC 8 - Origem e evolução da vida - 2037",
+          size: 2,
+          teacher: "Eliana Peliçon Pereira Figueira",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Genética de populações e evolução - 505",
+          size: 2,
+          teacher: "Gabriele Antico Freiria",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Estágio curricular supervisionado em biologia II - 1421",
+          size: 2,
+          teacher: "Marcia Aparecida Barbosa",
+          classroom: "Laboratório de Informatica C",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,98 +189,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Ética profissional, cidadania e direitos humanos - 87",
-      size: 2,
-      teacher: "Amilcar Machado Profeta Filho",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Ética profissional, cidadania e direitos humanos - 87",
-      size: 1,
-      teacher: "Amilcar Machado Profeta Filho",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 15,
-      y: 3
-    },
-    {
-      subject: "PCCC 8 - Origem e evolução da vida - 2037",
-      size: 2,
-      teacher: "Eliana Peliçon Pereira Figueira+Gabriele Antico Freiria",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Genética de populações e evolução - 505",
-      size: 2,
-      teacher: "Gabriele Antico Freiria",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Genética de populações e evolução - 505",
-      size: 2,
-      teacher: "Gabriele Antico Freiria",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Trabalho de conclusão de curso II - 1420",
-      size: 1,
-      teacher: "Jhones Donizetti Mendes",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Estágio curricular supervisionado em biologia II - 1421",
-      size: 2,
-      teacher: "Marcia Aparecida Barbosa",
-      classroom: "Laboratório de Informatica C",
-      students: "BIO2019",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Fisiologia animal comparada - 506",
-      size: 2,
-      teacher: "Paula Magalhães Souza Deccache",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Fisiologia animal comparada - 506",
-      size: 2,
-      teacher: "Paula Magalhães Souza Deccache",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Aula Livre",
-      size: 2,
-      teacher: "",
-      classroom: "Sala 12-2",
-      students: "BIO2019",
-      x: 17,
-      y: 1
-    }
   ]
 }
 
@@ -181,10 +197,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

@@ -1,12 +1,78 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Laboratório de Computação Aplicada",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Desenvolvimento para Dispositivos Móveis - 19",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2021",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2021",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,98 +147,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2021",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2020",
-      x: 4,
-      y: 5
-    },
-    {
-      subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
-      size: 2,
-      teacher: "Luis Henrique Manosso Von Mecheln",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2020",
-      x: 11,
-      y: 2
-    },
-    {
-      subject: "Desenvolvimento para Dispositivos Móveis - 19",
-      size: 2,
-      teacher: "Luis Henrique Manosso Von Mecheln",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "TADS2020",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Desenho técnico e topografia - 469",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "AGO2022 - Grupo A",
-      x: 8,
-      y: 1
-    },
-    {
-      subject: "Desenho técnico e topografia - 469",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "AGO2022 - Grupo B",
-      x: 11,
-      y: 1
-    },
-    {
-      subject: "Desenho Técnico - 1529",
-      size: 2,
-      teacher: "Sérgio Takahashi",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "EIN2022 - Grupo A",
-      x: 5,
-      y: 4
-    },
-    {
-      subject: "Desenho Técnico - 1529",
-      size: 2,
-      teacher: "Sérgio Takahashi",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "EIN2022 - Grupo B",
-      x: 5,
-      y: 3
-    },
-    {
-      subject: "Desenho Técnico - 1529",
-      size: 1,
-      teacher: "Sérgio Takahashi",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "EIN2022 - Grupo A",
-      x: 4,
-      y: 4
-    },
-    {
-      subject: "Desenho Técnico - 1529",
-      size: 1,
-      teacher: "Sérgio Takahashi",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "EIN2022 - Grupo B",
-      x: 4,
-      y: 3
-    }
   ]
 }
 
@@ -181,10 +155,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

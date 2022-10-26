@@ -1,12 +1,160 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Laboratório de Informatica B",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "AGO2022 - Grupo B",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Laboratório de Banco de Dados - 1238",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Programação para Sistemas Embarcados - 22",
+          size: 2,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Segurança em Sistemas e Redes - 23",
+          size: 1,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Laboratório de Informatica B",
+          students: "EIN2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Projeto Integrador II - 1239",
+          size: 2,
+          teacher: "Alexandre Rodrigues Monge",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 2,
+          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 1,
+          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Projeto e Análise de Sistemas - 182",
+          size: 2,
+          teacher: "Novo(a) professor(a) Informática+Rafael Gil Ferques",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Programação Orientada a Objetos - 21",
+          size: 2,
+          teacher: "Humberto Fioravante Ferro",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Programação Orientada a Objetos - 21",
+          size: 2,
+          teacher: "Humberto Fioravante Ferro",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Serviços em nuvem - 1250",
+          size: 2,
+          teacher: "Joaquim José Honório de Lima",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Tópicos Especiais em Tecnologia - 35",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln+Novo(a) professor(a) Informática",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Tópicos Especiais em Tecnologia da Informação - 25",
+          size: 2,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Estatística aplicada a estratégias empresariais - 1514",
+          size: 2,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "Laboratório de Informatica B",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Projeto Integrador III - 1253",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,80 +229,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Informática instrumental e aplicada - 468",
-      size: 2,
-      teacher: "Douglas Barbosa Sousa",
-      classroom: "Laboratório de Informatica B",
-      students: "AGO2022 - Grupo B",
-      x: 8,
-      y: 1
-    },
-    {
-      subject: "Programação Orientada a Objetos - 21",
-      size: 2,
-      teacher: "Humberto Fioravante Ferro",
-      classroom: "Laboratório de Informatica B",
-      students: "TADS2020",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Programação Orientada a Objetos - 21",
-      size: 2,
-      teacher: "Humberto Fioravante Ferro",
-      classroom: "Laboratório de Informatica B",
-      students: "TADS2020",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Segurança em Sistemas e Redes - 23",
-      size: 2,
-      teacher: "Marcos Antonio Guido",
-      classroom: "Laboratório de Informatica B",
-      students: "TADS2020",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Segurança em Sistemas e Redes - 23",
-      size: 1,
-      teacher: "Marcos Antonio Guido",
-      classroom: "Laboratório de Informatica B",
-      students: "TADS2020",
-      x: 18,
-      y: 1
-    },
-    {
-      subject: "Trabalho de Conclusão de Curso - 26",
-      size: 1,
-      teacher: "Marcos Antonio Guido",
-      classroom: "Laboratório de Informatica B",
-      students: "TADS2020",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Estatística aplicada a estratégias empresariais - 1514",
-      size: 2,
-      teacher: "Mauro César de Souza Siena",
-      classroom: "Laboratório de Informatica B",
-      students: "TGC2022",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Administração de Sistemas Operacionais e Redes - 1236",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "Laboratório de Informatica B",
-      students: "IIW2021",
-      x: 5,
-      y: 5
-    }
   ]
 }
 
@@ -163,10 +237,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

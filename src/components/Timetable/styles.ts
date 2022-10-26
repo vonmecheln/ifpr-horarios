@@ -12,6 +12,7 @@ export const Slide = styled.div<{rowsSize: string}>`
   width: 100%;
   grid-template-rows: 50px${props => props.rowsSize};
   grid-template-columns: 100%;
+  position: relative;
   /* gap: .1rem; */
 `
 

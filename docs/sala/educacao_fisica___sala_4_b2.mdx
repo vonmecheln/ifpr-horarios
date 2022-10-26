@@ -1,12 +1,86 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Educação Física / Sala 4 B2",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Educação Física II - 615",
+          size: 2,
+          teacher: "Tiago Amaral Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "AGO2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Educação Física II - 1227",
+          size: 2,
+          teacher: "Karina Alves da Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "IIW2021",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Educação Física III - 1082",
+          size: 2,
+          teacher: "Tiago Amaral Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "AGO2020",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Educação Física 1 - 123",
+          size: 1,
+          teacher: "Karina Alves da Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "EIN2022",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Educação Física 2 - 170",
+          size: 1,
+          teacher: "Karina Alves da Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "EIN2021",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Educação Física I - 1072",
+          size: 2,
+          teacher: "Karina Alves da Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "IIW2022A",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Educação Física I - 457",
+          size: 2,
+          teacher: "Karina Alves da Silva",
+          classroom: "Educação Física / Sala 4 B2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,80 +155,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Educação Física 1 - 123",
-      size: 1,
-      teacher: "Karina Alves da Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "EIN2022",
-      x: 1,
-      y: 4
-    },
-    {
-      subject: "Educação Física 2 - 170",
-      size: 1,
-      teacher: "Karina Alves da Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "EIN2021",
-      x: 6,
-      y: 1
-    },
-    {
-      subject: "Educação Física 3 - 203",
-      size: 1,
-      teacher: "Karina Alves da Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "EIN2020",
-      x: 4,
-      y: 2
-    },
-    {
-      subject: "Educação Física I - 1072",
-      size: 2,
-      teacher: "Karina Alves da Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "IIW2022A",
-      x: 1,
-      y: 2
-    },
-    {
-      subject: "Educação Física I - 457",
-      size: 2,
-      teacher: "Karina Alves da Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "AGO2022",
-      x: 8,
-      y: 4
-    },
-    {
-      subject: "Educação Física II - 1227",
-      size: 2,
-      teacher: "Karina Alves da Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "IIW2021",
-      x: 1,
-      y: 1
-    },
-    {
-      subject: "Educação Física II - 615",
-      size: 2,
-      teacher: "Tiago Amaral Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "AGO2021",
-      x: 1,
-      y: 3
-    },
-    {
-      subject: "Educação Física III - 1082",
-      size: 2,
-      teacher: "Tiago Amaral Silva",
-      classroom: "Educação Física / Sala 4 B2",
-      students: "AGO2020",
-      x: 4,
-      y: 3
-    }
   ]
 }
 
@@ -163,10 +163,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

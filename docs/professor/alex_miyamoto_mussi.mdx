@@ -1,12 +1,62 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Alex Miyamoto Mussi",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Projetos Elétricos Industriais - 346",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Análise de Circuitos - 341",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Laboratório de Física",
+          students: "ELM2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Análise de Circuitos - 341",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Laboratório de Física",
+          students: "ELM2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Projetos Elétricos Industriais - 346",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,44 +131,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Análise de Circuitos - 341",
-      size: 2,
-      teacher: "Alex Miyamoto Mussi",
-      classroom: "Laboratório de Física",
-      students: "ELM2022",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Análise de Circuitos - 341",
-      size: 2,
-      teacher: "Alex Miyamoto Mussi",
-      classroom: "Laboratório de Física",
-      students: "ELM2022",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Projetos Elétricos Industriais - 346",
-      size: 2,
-      teacher: "Alex Miyamoto Mussi",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Projetos Elétricos Industriais - 346",
-      size: 2,
-      teacher: "Alex Miyamoto Mussi",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 14,
-      y: 4
-    }
   ]
 }
 
@@ -127,10 +139,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

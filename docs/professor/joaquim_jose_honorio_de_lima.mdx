@@ -1,12 +1,36 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Joaquim José Honório de Lima",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Serviços em nuvem - 1250",
+          size: 2,
+          teacher: "Joaquim José Honório de Lima",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,17 +105,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Serviços em nuvem - 1250",
-      size: 2,
-      teacher: "Joaquim José Honório de Lima",
-      classroom: "Laboratório de Informatica C",
-      students: "IIW2020",
-      x: 4,
-      y: 4
-    }
   ]
 }
 
@@ -100,10 +113,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

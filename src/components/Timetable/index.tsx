@@ -79,7 +79,7 @@ export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] 
           let index = props.timetable.weekClasses.findIndex(value => value.title === dayClass.title)
           return (
             <Slide rowsSize={props.timetable.rowsSize} className={`keen-slider__slide number-slide${index + 1}`} key={index}>
-              <SlideItemContainer gridArea=''>
+              <SlideItemContainer gridArea='1 / 1 / 2 / 2'>
                 <SlideItemModel>
                   <span>{dayClass.title}</span>
                 </SlideItemModel>

@@ -1,12 +1,112 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "ELM2021",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Projetos Elétricos Industriais - 346",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Segurança do Trabalho - 693",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "",
+          students: "ELE2022+ELM2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Programação de Equipamentos Industriais - 348",
+          size: 2,
+          teacher: "Luiz Inácio Chaves",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Programação de Equipamentos Industriais - 348",
+          size: 2,
+          teacher: "Luiz Inácio Chaves",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Elementos de Máquinas - 349",
+          size: 2,
+          teacher: "Luiz Inácio Chaves",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Circuitos Hidráulicos e Pneumáticos - 347",
+          size: 2,
+          teacher: "Vânio Berlin de Souza",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Projetos Elétricos Industriais - 346",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Manutenção Industrial - 351",
+          size: 2,
+          teacher: "Vânio Berlin de Souza",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Circuitos Hidráulicos e Pneumáticos - 347",
+          size: 2,
+          teacher: "Vânio Berlin de Souza",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Robótica Aplicada - 350",
+          size: 2,
+          teacher: "Wylliam Salviano Gongora",
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,89 +181,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Projetos Elétricos Industriais - 346",
-      size: 2,
-      teacher: "Alex Miyamoto Mussi",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Projetos Elétricos Industriais - 346",
-      size: 2,
-      teacher: "Alex Miyamoto Mussi",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Programação de Equipamentos Industriais - 348",
-      size: 2,
-      teacher: "Luiz Inácio Chaves",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Programação de Equipamentos Industriais - 348",
-      size: 2,
-      teacher: "Luiz Inácio Chaves",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Circuitos Hidráulicos e Pneumáticos - 347",
-      size: 2,
-      teacher: "Vânio Berlin de Souza",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Circuitos Hidráulicos e Pneumáticos - 347",
-      size: 2,
-      teacher: "Vânio Berlin de Souza",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Elementos de Máquinas - 349",
-      size: 2,
-      teacher: "Vânio Berlin de Souza",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Manutenção Industrial - 351",
-      size: 2,
-      teacher: "Vânio Berlin de Souza",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Robótica Aplicada - 350",
-      size: 2,
-      teacher: "Wylliam Salviano Gongora",
-      classroom: "Sala 8-2",
-      students: "ELM2021",
-      x: 17,
-      y: 4
-    }
   ]
 }
 
@@ -172,10 +189,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

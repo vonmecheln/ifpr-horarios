@@ -1,12 +1,112 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "ELE2022",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Segurança do Trabalho - 693",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "",
+          students: "ELE2022+ELM2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Sistemas Digitais - 342",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "",
+          students: "ELM2022+ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Projetos Elétricos Residenciais e Prediais - 2074",
+          size: 2,
+          teacher: "Wylliam Salviano Gongora",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Projetos Elétricos Residenciais e Prediais - 2074",
+          size: 2,
+          teacher: "Wylliam Salviano Gongora",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Análise de Circuitos - 2072",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Análise de Circuitos - 2072",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Eletrônica Analógica (PPC 2020) - 2073",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletrônica Analógica (PPC 2020) - 2073",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Português Instrumental - 2076",
+          size: 2,
+          teacher: "Kátia Cristiane Kobus Novaes",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Sistemas Digitais - 342",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "",
+          students: "ELM2022+ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,71 +181,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Português Instrumental - 2076",
-      size: 2,
-      teacher: "Kátia Cristiane Kobus Novaes",
-      classroom: "Sala 6-2",
-      students: "ELE2022",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Análise de Circuitos - 2072",
-      size: 2,
-      teacher: "Tiago Henrique dos Santos",
-      classroom: "Laboratório de Física",
-      students: "ELE2022",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Análise de Circuitos - 2072",
-      size: 2,
-      teacher: "Tiago Henrique dos Santos",
-      classroom: "Laboratório de Física",
-      students: "ELE2022",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Eletrônica Analógica (PPC 2020) - 2073",
-      size: 2,
-      teacher: "Tiago Henrique dos Santos",
-      classroom: "Laboratório de Física",
-      students: "ELE2022",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Eletrônica Analógica (PPC 2020) - 2073",
-      size: 2,
-      teacher: "Tiago Henrique dos Santos",
-      classroom: "Laboratório de Física",
-      students: "ELE2022",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Projetos Elétricos Residenciais e Prediais - 2074",
-      size: 2,
-      teacher: "Wylliam Salviano Gongora",
-      classroom: "Sala 6-2",
-      students: "ELE2022",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Projetos Elétricos Residenciais e Prediais - 2074",
-      size: 2,
-      teacher: "Wylliam Salviano Gongora",
-      classroom: "Sala 6-2",
-      students: "ELE2022",
-      x: 17,
-      y: 1
-    }
   ]
 }
 
@@ -154,10 +189,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

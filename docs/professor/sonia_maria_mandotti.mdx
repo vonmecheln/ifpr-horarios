@@ -1,12 +1,94 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Sônia Maria Mandotti",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Culturas I - 627",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 15-2",
+          students: "AGO2021",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Culturas III - 2222",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Culturas I - 1472",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Culturas I - 627",
+          size: 1,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 15-2",
+          students: "AGO2021",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Culturas I - 1472",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Culturas II - 1091",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Culturas II - 1091",
+          size: 1,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Extensão e Comunicação Rural - 2213",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,80 +163,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Culturas I - 1472",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Culturas I - 1472",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Culturas I - 627",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 15-2",
-      students: "AGO2021",
-      x: 1,
-      y: 1
-    },
-    {
-      subject: "Culturas I - 627",
-      size: 1,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 15-2",
-      students: "AGO2021",
-      x: 6,
-      y: 2
-    },
-    {
-      subject: "Culturas II - 1091",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 16-2",
-      students: "AGO2020",
-      x: 4,
-      y: 4
-    },
-    {
-      subject: "Culturas II - 1091",
-      size: 1,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 16-2",
-      students: "AGO2020",
-      x: 6,
-      y: 4
-    },
-    {
-      subject: "Culturas III - 2222",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Extensão e Comunicação Rural - 2213",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 14,
-      y: 4
-    }
   ]
 }
 
@@ -163,10 +171,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

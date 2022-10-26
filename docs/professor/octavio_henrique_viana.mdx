@@ -1,12 +1,77 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Octavio Henrique Viana",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Desenho técnico e topografia - 469",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2022 - Grupo A",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Desenho técnico e topografia - 469",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2022 - Grupo B",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Orientação de estágio supervisionado - 1097",
+          size: 1,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Irrigação e Drenagem - 2216",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Topografia e Geoprocessamento - 1467",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,62 +146,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Desenho técnico e topografia - 469",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "AGO2022 - Grupo A",
-      x: 8,
-      y: 1
-    },
-    {
-      subject: "Desenho técnico e topografia - 469",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "AGO2022 - Grupo B",
-      x: 11,
-      y: 1
-    },
-    {
-      subject: "Irrigação e Drenagem - 2216",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Sala 16-2",
-      students: "AGO2020",
-      x: 1,
-      y: 4
-    },
-    {
-      subject: "Orientação de estágio supervisionado - 1097",
-      size: 1,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Laboratório de Informatica C",
-      students: "AGO2020",
-      x: 4,
-      y: 1
-    },
-    {
-      subject: "Topografia e Geoprocessamento - 1467",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 2
-    }
   ]
 }
 
@@ -145,10 +154,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

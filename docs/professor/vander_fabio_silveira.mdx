@@ -1,12 +1,94 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Vander Fabio Silveira",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Elementos de Automação - 198",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
+          students: "EIN2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Elementos de automação (PPC2020) - 2315",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Laboratório de Informatica B",
+          students: "EIN2021",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sistemas Digitais - 342",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "",
+          students: "ELM2022+ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Acionamentos Elétricos (PPC2020) - 2309",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Acionamentos Elétricos (PPC2020) - 2309",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Elementos de automação (PPC2020) - 2315",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Sistemas Digitais - 342",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "",
+          students: "ELM2022+ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,98 +163,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Acionamentos Elétricos (PPC2020) - 2309",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Acionamentos Elétricos (PPC2020) - 2309",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Elementos de Automação - 198",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
-      students: "EIN2020",
-      x: 4,
-      y: 5
-    },
-    {
-      subject: "Elementos de automação (PPC2020) - 2315",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Elementos de automação (PPC2020) - 2315",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Sistemas Digitais - 1553",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Laboratório de Informatica C",
-      students: "EIN2021",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Sistemas Digitais - 342",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "",
-      students: "ELM2022+ELE2022",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Sistemas Digitais - 342",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "",
-      students: "ELM2022+ELE2022",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Aula Livre",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "",
-      students: "",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Aula Livre",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "",
-      students: "",
-      x: 14,
-      y: 1
-    }
   ]
 }
 
@@ -181,10 +171,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

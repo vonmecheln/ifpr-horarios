@@ -1,12 +1,112 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "BIO2020",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Sociologia da educação - 1303",
+          size: 2,
+          teacher: "Milton Aparecido Azevedo",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Biogeografia - 492",
+          size: 2,
+          teacher: "Renato Lada Guerreiro",
+          classroom: "",
+          students: "BIO2019+BIO2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Genética básica e humana - 1304",
+          size: 2,
+          teacher: "Leandro Luiz Borges",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Genética básica e humana - 1304",
+          size: 2,
+          teacher: "Leandro Luiz Borges",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Fisiologia vegetal - 504",
+          size: 2,
+          teacher: "Leandro Luiz Borges",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fisiologia vegetal - 504",
+          size: 2,
+          teacher: "Leandro Luiz Borges",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "PCCC 6 - Feira de ciências - 1301",
+          size: 2,
+          teacher: "Karina Dias Espartosa",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Zoologia dos cordados I - 92",
+          size: 2,
+          teacher: "Karina Dias Espartosa",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Zoologia dos cordados I - 92",
+          size: 2,
+          teacher: "Karina Dias Espartosa",
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Estágio curricular supervisionado em ciências II - 2039",
+          size: 2,
+          teacher: "Marcia Aparecida Barbosa",
+          classroom: "Laboratório de Informatica C",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,89 +181,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "PCCC 6 - Feira de ciências - 1301",
-      size: 2,
-      teacher: "Karina Dias Espartosa",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Zoologia dos cordados I - 92",
-      size: 2,
-      teacher: "Karina Dias Espartosa",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Zoologia dos cordados I - 92",
-      size: 2,
-      teacher: "Karina Dias Espartosa",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Fisiologia vegetal - 504",
-      size: 2,
-      teacher: "Leandro Luiz Borges",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Fisiologia vegetal - 504",
-      size: 2,
-      teacher: "Leandro Luiz Borges",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Genética básica e humana - 1304",
-      size: 2,
-      teacher: "Leandro Luiz Borges",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Genética básica e humana - 1304",
-      size: 2,
-      teacher: "Leandro Luiz Borges",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Estágio curricular supervisionado em ciências II - 2039",
-      size: 2,
-      teacher: "Marcia Aparecida Barbosa",
-      classroom: "Laboratório de Informatica C",
-      students: "BIO2020",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Sociologia da educação - 1303",
-      size: 2,
-      teacher: "Milton Aparecido Azevedo",
-      classroom: "Sala 11-2",
-      students: "BIO2020",
-      x: 17,
-      y: 1
-    }
   ]
 }
 
@@ -172,10 +189,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

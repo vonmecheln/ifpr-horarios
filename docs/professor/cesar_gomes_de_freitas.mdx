@@ -1,12 +1,95 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Cesar Gomes de Freitas",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Análise Econômica e Mercado - 1517",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Introdução a Contabilidade - 1158",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Contabilidade de Custos e Formação de Preços - 1492",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Gestão de Compras e Estoques - 1491",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Análise Econômica e Mercado - 1517",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Introdução a Contabilidade - 1158",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Contabilidade de Custos e Formação de Preços - 1492",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Gestão e Empreendedorismo Rural - 1095",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "10:15 - 11:05"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,80 +164,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Análise Econômica e Mercado - 1517",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Análise Econômica e Mercado - 1517",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Contabilidade de Custos e Formação de Preços - 1492",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Contabilidade de Custos e Formação de Preços - 1492",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Gestão de Compras e Estoques - 1491",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Gestão e Empreendedorismo Rural - 1095",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 16-2",
-      students: "AGO2020",
-      x: 5,
-      y: 5
-    },
-    {
-      subject: "Introdução a Contabilidade - 1158",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Introdução a Contabilidade - 1158",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 4
-    }
   ]
 }
 
@@ -163,10 +172,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

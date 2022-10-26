@@ -1,12 +1,87 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Rafael Luis Bartz",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Lógica de programação - 1075",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Engenharia de Interfaces e Usabilidade - 716",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-02",
+          students: "TDS2021-2B",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Linguagem de Programação - 718",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-02",
+          students: "TDS2021-2B",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Linguagem de Programação - 718",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-02",
+          students: "TDS2021-2B",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Linguagem de Programação - 718",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-02",
+          students: "TDS2021-2B",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Programação Orientada a Objetos - 719",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-02",
+          students: "TDS2021-2B",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Programação Orientada a Objetos - 719",
+          size: 2,
+          teacher: "Rafael Luis Bartz",
+          classroom: "BioPark-02",
+          students: "TDS2021-2B",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,89 +156,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Desenvolvimento para Dispositivos Móveis - 722",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-01",
-      students: "TDS2021-2A",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Desenvolvimento para Dispositivos Móveis - 722",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-01",
-      students: "TDS2021-2A",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Engenharia de Interfaces e Usabilidade - 716",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Linguagem de Programação - 718",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Linguagem de Programação - 718",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Linguagem de Programação - 718",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Lógica de programação - 1075",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-01",
-      students: "IIW2022B",
-      x: 5,
-      y: 2
-    },
-    {
-      subject: "Programação Orientada a Objetos - 719",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Programação Orientada a Objetos - 719",
-      size: 2,
-      teacher: "Rafael Luis Bartz",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 17,
-      y: 5
-    }
   ]
 }
 
@@ -172,10 +164,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

@@ -1,12 +1,61 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "FPE2022-1",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Língua Portuguesa para Estrangeiros - 2252",
+          size: 2,
+          teacher: "Pedro Leites Junior",
+          classroom: "",
+          students: "FPE2022-1",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Língua Portuguesa para Estrangeiros - 2252",
+          size: 1,
+          teacher: "Pedro Leites Junior",
+          classroom: "",
+          students: "FPE2022-1",
+          time: "19:50 - 20:40"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Cultura e Identidade Brasileira - 2253",
+          size: 2,
+          teacher: "Celina de Oliveira Barbosa Gomes",
+          classroom: "",
+          students: "FPE2022-1",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Cultura e Identidade Brasileira - 2253",
+          size: 1,
+          teacher: "Celina de Oliveira Barbosa Gomes",
+          classroom: "",
+          students: "FPE2022-1",
+          time: "19:50 - 20:40"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,44 +130,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Cultura e Identidade Brasileira - 2253",
-      size: 2,
-      teacher: "Celina de Oliveira Barbosa Gomes",
-      classroom: "",
-      students: "FPE2022-1",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Cultura e Identidade Brasileira - 2253",
-      size: 2,
-      teacher: "Celina de Oliveira Barbosa Gomes",
-      classroom: "",
-      students: "FPE2022-1",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Língua Portuguesa para Estrangeiros - 2252",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "",
-      students: "FPE2022-1",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Língua Portuguesa para Estrangeiros - 2252",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "",
-      students: "FPE2022-1",
-      x: 17,
-      y: 3
-    }
   ]
 }
 
@@ -127,10 +138,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

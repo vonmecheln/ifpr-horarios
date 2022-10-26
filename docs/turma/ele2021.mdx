@@ -1,12 +1,112 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "ELE2021",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Conservação de Recursos Naturais (PPC2020) - 2310",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Elementos de automação (PPC2020) - 2315",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Energias alternativas (PPC2020) - 2313",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Energias alternativas (PPC2020) - 2313",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Acionamentos Elétricos (PPC2020) - 2309",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Acionamentos Elétricos (PPC2020) - 2309",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Empreendedorismo (PPC2020) - 2312",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Manutenção Elétrica Industrial\n (PPC2020) - 2311",
+          size: 2,
+          teacher: "Vânio Berlin de Souza",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Elementos de automação (PPC2020) - 2315",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Gestão da Produção\n (PPC2020) - 2314",
+          size: 2,
+          teacher: "Vânio Berlin de Souza",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,98 +181,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Empreendedorismo (PPC2020) - 2312",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Conservação de Recursos Naturais (PPC2020) - 2310",
-      size: 2,
-      teacher: "Grazielli Bueno",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Energias alternativas (PPC2020) - 2313",
-      size: 2,
-      teacher: "Grazielli Bueno",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Energias alternativas (PPC2020) - 2313",
-      size: 2,
-      teacher: "Grazielli Bueno",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Acionamentos Elétricos (PPC2020) - 2309",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Acionamentos Elétricos (PPC2020) - 2309",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Elementos de automação (PPC2020) - 2315",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Elementos de automação (PPC2020) - 2315",
-      size: 2,
-      teacher: "Vander Fabio Silveira",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Gestão da Produção\n (PPC2020) - 2314",
-      size: 2,
-      teacher: "Vânio Berlin de Souza",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Manutenção Elétrica Industrial\n (PPC2020) - 2311",
-      size: 2,
-      teacher: "Vânio Berlin de Souza",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 14,
-      y: 4
-    }
   ]
 }
 
@@ -181,10 +189,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

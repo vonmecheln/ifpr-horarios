@@ -1,12 +1,112 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "TGC2022",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Direito do Trabalho - 1520",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Comunicação empresarial - 1157",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Análise Econômica e Mercado - 1517",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Introdução a Contabilidade - 1158",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Empreendedorismo e Novos Negócios - 1518",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Marketing de Relacionamento - 1519",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Análise Econômica e Mercado - 1517",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Introdução a Contabilidade - 1158",
+          size: 2,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Estatística aplicada a estratégias empresariais - 1514",
+          size: 2,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "Laboratório de Informatica A",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Estatística aplicada a estratégias empresariais - 1514",
+          size: 2,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "Laboratório de Informatica B",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,98 +181,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Direito do Trabalho - 1520",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Empreendedorismo e Novos Negócios - 1518",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Análise Econômica e Mercado - 1517",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Análise Econômica e Mercado - 1517",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Introdução a Contabilidade - 1158",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Introdução a Contabilidade - 1158",
-      size: 2,
-      teacher: "Cesar Gomes de Freitas",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Comunicação empresarial - 1157",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Marketing de Relacionamento - 1519",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Estatística aplicada a estratégias empresariais - 1514",
-      size: 2,
-      teacher: "Mauro César de Souza Siena",
-      classroom: "Laboratório de Informatica B",
-      students: "TGC2022",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Estatística aplicada a estratégias empresariais - 1514",
-      size: 2,
-      teacher: "Mauro César de Souza Siena",
-      classroom: "Laboratório de Informatica A",
-      students: "TGC2022",
-      x: 17,
-      y: 5
-    }
   ]
 }
 
@@ -181,10 +189,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

@@ -1,12 +1,69 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Bruno Garcia Bonfim",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Física 1 - 125",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Física 4 - 224",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2019",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Física I - 460",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "AGO2022",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Física 2 - 175",
+          size: 1,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Física 3 - 205",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,53 +138,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Física 1 - 125",
-      size: 2,
-      teacher: "Bruno Garcia Bonfim",
-      classroom: "Laboratório de Física",
-      students: "EIN2022",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Física 2 - 175",
-      size: 1,
-      teacher: "Bruno Garcia Bonfim",
-      classroom: "Laboratório de Física",
-      students: "EIN2021",
-      x: 4,
-      y: 2
-    },
-    {
-      subject: "Física 3 - 205",
-      size: 2,
-      teacher: "Bruno Garcia Bonfim",
-      classroom: "Laboratório de Física",
-      students: "EIN2020",
-      x: 1,
-      y: 4
-    },
-    {
-      subject: "Física 4 - 224",
-      size: 2,
-      teacher: "Bruno Garcia Bonfim",
-      classroom: "Laboratório de Física",
-      students: "EIN2019",
-      x: 5,
-      y: 4
-    },
-    {
-      subject: "Física I - 460",
-      size: 2,
-      teacher: "Bruno Garcia Bonfim",
-      classroom: "Laboratório de Física",
-      students: "AGO2022",
-      x: 4,
-      y: 5
-    }
   ]
 }
 
@@ -136,10 +146,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

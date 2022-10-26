@@ -1,12 +1,224 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Sala 14-2",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Piscicultura e Apicultura - 1471",
+          size: 2,
+          teacher: "Roberto Haruyoshi Ito",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Agricultura geral - 466",
+          size: 2,
+          teacher: "Tatiane Martinazzo Portz",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Agroecologia e DRS - 470",
+          size: 2,
+          teacher: "Tatiane Martinazzo Portz",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Educação postural e Segurança no trabalho - 471",
+          size: 1,
+          teacher: "Tatiane Martinazzo Portz",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
+          size: 2,
+          teacher: "Tatiane Martinazzo Portz",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Geografia I - 463",
+          size: 2,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Artes I - 458",
+          size: 2,
+          teacher: "Josiane Paula Maltauro",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura I - 455",
+          size: 2,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura I - 455",
+          size: 1,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Piscicultura e Apicultura - 1471",
+          size: 2,
+          teacher: "Roberto Haruyoshi Ito",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Culturas I - 1472",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Língua estrangeira - Inglês - 456",
+          size: 2,
+          teacher: "Celina de Oliveira Barbosa Gomes",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia I - 464",
+          size: 1,
+          teacher: "Fabio Antônio da Silva",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Cultura e Cinema Nacional I - 831",
+          size: 1,
+          teacher: "Josiane Paula Maltauro",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Forragicultura e pastagens - 1470",
+          size: 2,
+          teacher: "Leiliane Cristine de Souza+Elias Franco",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Topografia e Geoprocessamento - 1467",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Filosofia I - 464",
+          size: 1,
+          teacher: "Fabio Antônio da Silva",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Zootecnia Geral - 467",
+          size: 2,
+          teacher: "Roberto Haruyoshi Ito",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Culturas I - 1472",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
+          size: 2,
+          teacher: "Tatiane Martinazzo Portz",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Matemática I - 462",
+          size: 2,
+          teacher: "Carla Melli Tambarussi",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Sociologia I - 465",
+          size: 2,
+          teacher: "Everaldo Lorensetti",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Metodologia Científica e Técnicas de Apresentação de Trabalhos - 1466",
+          size: 2,
+          teacher: "Leandro Luiz Borges",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Forragicultura e pastagens - 1470",
+          size: 2,
+          teacher: "Leiliane Cristine de Souza+Elias Franco",
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,224 +293,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Matemática I - 462",
-      size: 2,
-      teacher: "Carla Melli Tambarussi",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 4,
-      y: 4
-    },
-    {
-      subject: "Língua estrangeira - Inglês - 456",
-      size: 2,
-      teacher: "Celina de Oliveira Barbosa Gomes",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 1,
-      y: 4
-    },
-    {
-      subject: "Sociologia I - 465",
-      size: 2,
-      teacher: "Everaldo Lorensetti",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Filosofia I - 464",
-      size: 1,
-      teacher: "Fabio Antônio da Silva",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 6,
-      y: 2
-    },
-    {
-      subject: "Filosofia I - 464",
-      size: 1,
-      teacher: "Fabio Antônio da Silva",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 4,
-      y: 3
-    },
-    {
-      subject: "Geografia I - 463",
-      size: 2,
-      teacher: "Jhones Donizetti Mendes",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 1,
-      y: 1
-    },
-    {
-      subject: "Artes I - 458",
-      size: 2,
-      teacher: "Josiane Paula Maltauro",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 8,
-      y: 2
-    },
-    {
-      subject: "Cultura e Cinema Nacional I - 831",
-      size: 1,
-      teacher: "Josiane Paula Maltauro",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 5,
-      y: 3
-    },
-    {
-      subject: "Metodologia Científica e Técnicas de Apresentação de Trabalhos - 1466",
-      size: 2,
-      teacher: "Leandro Luiz Borges",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Forragicultura e pastagens - 1470",
-      size: 2,
-      teacher: "Leiliane Cristine de Souza+Elias Franco",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Forragicultura e pastagens - 1470",
-      size: 2,
-      teacher: "Leiliane Cristine de Souza+Elias Franco",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 5
-    },
-    {
-      subject: "Topografia e Geoprocessamento - 1467",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Língua Portuguesa e Literatura I - 455",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 4,
-      y: 1
-    },
-    {
-      subject: "Língua Portuguesa e Literatura I - 455",
-      size: 1,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 6,
-      y: 1
-    },
-    {
-      subject: "Piscicultura e Apicultura - 1471",
-      size: 2,
-      teacher: "Roberto Haruyoshi Ito",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Piscicultura e Apicultura - 1471",
-      size: 2,
-      teacher: "Roberto Haruyoshi Ito",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Zootecnia Geral - 467",
-      size: 2,
-      teacher: "Roberto Haruyoshi Ito",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 1,
-      y: 3
-    },
-    {
-      subject: "Culturas I - 1472",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Culturas I - 1472",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Agricultura geral - 466",
-      size: 2,
-      teacher: "Tatiane Martinazzo Portz",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 1,
-      y: 2
-    },
-    {
-      subject: "Agroecologia e DRS - 470",
-      size: 2,
-      teacher: "Tatiane Martinazzo Portz",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 4,
-      y: 2
-    },
-    {
-      subject: "Educação postural e Segurança no trabalho - 471",
-      size: 1,
-      teacher: "Tatiane Martinazzo Portz",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 6,
-      y: 4
-    },
-    {
-      subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
-      size: 2,
-      teacher: "Tatiane Martinazzo Portz",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
-      size: 2,
-      teacher: "Tatiane Martinazzo Portz",
-      classroom: "Sala 14-2",
-      students: "AGR2022",
-      x: 17,
-      y: 2
-    }
   ]
 }
 
@@ -307,10 +301,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

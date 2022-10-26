@@ -1,12 +1,102 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Eduardo Alberto Felippsen",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen",
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen",
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Linguagem de Programação - 1484",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Linguagem de Programação - 1484",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,44 +171,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2021",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "BioPark-01",
-      students: "IIW2022B",
-      x: 1,
-      y: 2
-    },
-    {
-      subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "BioPark-01",
-      students: "IIW2022B",
-      x: 5,
-      y: 4
-    },
-    {
-      subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
-      size: 2,
-      teacher: "Eduardo Alberto Felippsen",
-      classroom: "Laboratório de Computação Aplicada",
-      students: "IIW2020",
-      x: 4,
-      y: 5
-    }
   ]
 }
 
@@ -127,10 +179,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

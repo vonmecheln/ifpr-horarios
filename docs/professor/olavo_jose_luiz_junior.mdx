@@ -1,12 +1,111 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Olavo José Luiz Junior",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Projeto integrador I - 1078",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Linguagem de Programação - 1484",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Linguagem de Programação - 1484",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2021",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Projeto Integrador III - 1253",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,53 +180,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Administração de Sistemas Operacionais e Redes - 1236",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "Laboratório de Informatica B",
-      students: "IIW2021",
-      x: 5,
-      y: 5
-    },
-    {
-      subject: "Administração de Sistemas Operacionais e Redes - 1236",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "Laboratório de Informatica A",
-      students: "IIW2021",
-      x: 8,
-      y: 5
-    },
-    {
-      subject: "Projeto Integrador - 720",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "BioPark-02",
-      students: "TDS2021-2B",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Projeto Integrador III - 1253",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "Laboratório de Informatica A",
-      students: "IIW2020",
-      x: 1,
-      y: 5
-    },
-    {
-      subject: "Projeto integrador I - 1078",
-      size: 2,
-      teacher: "Olavo José Luiz Junior",
-      classroom: "BioPark-01",
-      students: "IIW2022B",
-      x: 5,
-      y: 3
-    }
   ]
 }
 
@@ -136,10 +188,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

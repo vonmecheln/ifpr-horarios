@@ -1,12 +1,94 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Pedro Leites Junior",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Língua Portuguesa IV - 186",
+          size: 2,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 3-1",
+          students: "IIN2019",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Língua Portuguesa IV - 186",
+          size: 1,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 3-1",
+          students: "IIN2019",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Língua Portuguesa e Literatura I - 455",
+          size: 2,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura I - 455",
+          size: 1,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Língua Portuguesa e Literatura III - 1081",
+          size: 2,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura III - 1081",
+          size: 1,
+          teacher: "Pedro Leites Junior",
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Língua Portuguesa para Estrangeiros - 2252",
+          size: 2,
+          teacher: "Pedro Leites Junior",
+          classroom: "",
+          students: "FPE2022-1",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Língua Portuguesa para Estrangeiros - 2252",
+          size: 1,
+          teacher: "Pedro Leites Junior",
+          classroom: "",
+          students: "FPE2022-1",
+          time: "19:50 - 20:40"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,80 +163,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Língua Portuguesa IV - 186",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 3-1",
-      students: "IIN2019",
-      x: 1,
-      y: 1
-    },
-    {
-      subject: "Língua Portuguesa IV - 186",
-      size: 1,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 3-1",
-      students: "IIN2019",
-      x: 6,
-      y: 3
-    },
-    {
-      subject: "Língua Portuguesa e Literatura I - 455",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 4,
-      y: 1
-    },
-    {
-      subject: "Língua Portuguesa e Literatura I - 455",
-      size: 1,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 14-2",
-      students: "AGO2022",
-      x: 6,
-      y: 1
-    },
-    {
-      subject: "Língua Portuguesa e Literatura III - 1081",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 16-2",
-      students: "AGO2020",
-      x: 1,
-      y: 2
-    },
-    {
-      subject: "Língua Portuguesa e Literatura III - 1081",
-      size: 1,
-      teacher: "Pedro Leites Junior",
-      classroom: "Sala 16-2",
-      students: "AGO2020",
-      x: 4,
-      y: 2
-    },
-    {
-      subject: "Língua Portuguesa para Estrangeiros - 2252",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "",
-      students: "FPE2022-1",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Língua Portuguesa para Estrangeiros - 2252",
-      size: 2,
-      teacher: "Pedro Leites Junior",
-      classroom: "",
-      students: "FPE2022-1",
-      x: 17,
-      y: 3
-    }
   ]
 }
 
@@ -163,10 +171,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

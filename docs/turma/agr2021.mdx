@@ -1,12 +1,104 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "AGR2021",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Ovinocaprinocultura - 2218",
+          size: 2,
+          teacher: "Roberto Haruyoshi Ito",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Culturas III - 2222",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Bovinocultura de Leite - 2209",
+          size: 2,
+          teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Projeto Integrador - 2211",
+          size: 2,
+          teacher: "Tiago Amaral Silva",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Tecnologia de Produtos de Origem Vegetal - 2220",
+          size: 2,
+          teacher: "Elias Franco",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Irrigação e Drenagem - 2216",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Bovinocultura de Leite - 2209",
+          size: 2,
+          teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Extensão e Comunicação Rural - 2213",
+          size: 2,
+          teacher: "Sônia Maria Mandotti",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Tecnologias de Produtos de Origem Animal - 2219",
+          size: 2,
+          teacher: "Elias Franco",
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
   ],
   time: [
     {
@@ -81,89 +173,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Tecnologia de Produtos de Origem Vegetal - 2220",
-      size: 2,
-      teacher: "Elias Franco",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 14,
-      y: 3
-    },
-    {
-      subject: "Tecnologias de Produtos de Origem Animal - 2219",
-      size: 2,
-      teacher: "Elias Franco",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 5
-    },
-    {
-      subject: "Projeto Integrador - 2211",
-      size: 2,
-      teacher: "Josiane Paula Maltauro",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Bovinocultura de Leite - 2209",
-      size: 2,
-      teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Bovinocultura de Leite - 2209",
-      size: 2,
-      teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Irrigação e Drenagem - 2216",
-      size: 2,
-      teacher: "Octavio Henrique Viana",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Ovinocaprinocultura - 2218",
-      size: 2,
-      teacher: "Roberto Haruyoshi Ito",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Culturas III - 2222",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Extensão e Comunicação Rural - 2213",
-      size: 2,
-      teacher: "Sônia Maria Mandotti",
-      classroom: "Sala 13-2",
-      students: "AGR2021",
-      x: 14,
-      y: 4
-    }
   ]
 }
 
@@ -172,10 +181,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

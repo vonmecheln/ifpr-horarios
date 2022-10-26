@@ -1,12 +1,87 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Keyla Christina Almeida Portela",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Comunicação empresarial - 1157",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Plano de Marketing - 1498",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Direito Empresarial e Tributário - 1494",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Direito Empresarial e Tributário - 1494",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Marketing de Relacionamento - 1519",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Lingua estrangeira - Inglês - 1225",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Promoção e organização de eventos empresariais - 1495",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,53 +156,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Comunicação empresarial - 1157",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Lingua estrangeira - Inglês - 1225",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 11-2",
-      students: "IIW2022A",
-      x: 11,
-      y: 4
-    },
-    {
-      subject: "Marketing de Relacionamento - 1519",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Plano de Marketing - 1498",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Promoção e organização de eventos empresariais - 1495",
-      size: 2,
-      teacher: "Keyla Christina Almeida Portela",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 14,
-      y: 4
-    }
   ]
 }
 
@@ -136,10 +164,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>

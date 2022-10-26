@@ -1,12 +1,78 @@
-import Grid from "../../src/components/Grid";
+import { Grid } from "../../src/components/Grid";
 const data = {
   title: "Alexandre José Schumacher",
-  week: [
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira"
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Direito do Trabalho - 1520",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Técnicas de Vendas e Negociação - 1493",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Empreendedorismo e Novos Negócios - 1518",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Gestão de Projetos - 18",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Laboratório de Informatica A",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Empreendedorismo (PPC2020) - 2312",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Gestão Estratégica de Pessoas - 1496",
+          size: 2,
+          teacher: "Alexandre José Schumacher",
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
   ],
   time: [
     {
@@ -81,80 +147,6 @@ const data = {
       time: "21:50 - 22:40",
       size: 50
     }
-  ],
-  listTimetable: [
-    {
-      subject: "Direito Empresarial e Tributário - 1494",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 14,
-      y: 2
-    },
-    {
-      subject: "Direito Empresarial e Tributário - 1494",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 17,
-      y: 2
-    },
-    {
-      subject: "Direito do Trabalho - 1520",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 3
-    },
-    {
-      subject: "Empreendedorismo (PPC2020) - 2312",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 1-4",
-      students: "ELE2021",
-      x: 17,
-      y: 4
-    },
-    {
-      subject: "Empreendedorismo e Novos Negócios - 1518",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 3-1",
-      students: "TGC2022",
-      x: 17,
-      y: 1
-    },
-    {
-      subject: "Gestão Estratégica de Pessoas - 1496",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 14,
-      y: 1
-    },
-    {
-      subject: "Gestão de Projetos - 18",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Laboratório de Informatica A",
-      students: "TADS2020",
-      x: 14,
-      y: 4
-    },
-    {
-      subject: "Técnicas de Vendas e Negociação - 1493",
-      size: 2,
-      teacher: "Alexandre José Schumacher",
-      classroom: "Sala 15-2",
-      students: "TGC2021",
-      x: 14,
-      y: 3
-    }
   ]
 }
 
@@ -163,10 +155,9 @@ const data = {
 <div>
     {
         <Grid
-            title={data.title}
-            weekDays={data.week}
+            title={data.title} 
+            weekClasses={data.weekClasses} 
             time={data.time}
-            listClasses={data.listTimetable}
         />
     }
 </div>
