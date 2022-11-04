@@ -8,11 +8,13 @@ export const Container = styled.header`
   align-items: center;
   
   text-align: center;
-  
-  padding: 0.4rem;
-  
+
   border: 1px solid var(--border-cell);
   border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+  margin-bottom: 1px;
 
   color: #000;  
   background-color: var(--background-cell);

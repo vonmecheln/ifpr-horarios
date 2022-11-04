@@ -6,7 +6,7 @@ export function Homepage() {
     <Container>
       <h1>Para visualizar o novo horário:</h1>
       <button>
-        <a href="../../../docs/intro">Clique aqui</a>
+        <a href="docs/intro">Clique aqui</a>
       </button>
     </Container>
   )

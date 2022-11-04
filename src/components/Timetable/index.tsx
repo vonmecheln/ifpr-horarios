@@ -1,6 +1,5 @@
 import { SlideItemModel } from '@site/src/css/SlideItemModel';
 import { createGridArea } from '@site/src/utils/create-grid-area';
-import { findPositionY } from '@site/src/utils/find-position-y';
 import { useKeenSlider } from 'keen-slider/react';
 import React from 'react';
 import { EmptyCell } from '../../css/EmptyCell'
@@ -16,6 +15,11 @@ export interface ClassesProps {
   students?: string;
   time: string;
   y?: number;
+  link: Array<
+  {
+    title: string;
+    url: string;
+  }>
 }
 
 export interface WeekClassesProps {
@@ -32,8 +36,6 @@ const or = 2 //OFFSET ROW
 const oc = 1 //OFFSET COL
 let count = 0
 let boxes
-
-
 
 function generateEmptyCells(cols: number, rows: number) {
   boxes = []
@@ -63,12 +65,51 @@ function generateEmptyCells(cols: number, rows: number) {
 export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] }) {
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
-      perView: 5
+      perView: 5,
+      spacing: 10  
     },
     breakpoints: {
-      "(max-width: 700px)": {
-        slides: { perView: 1},
+      "(max-width: 594px)": {
+        slides: {
+          perView: 1,
+        },
       },
+      "(min-width: 595px) and (max-width: 695px)":{
+        slides: {
+          perView: 2
+        }
+      },
+      "(min-width: 696px) and (max-width: 796px)":{
+        slides: {
+          perView: 3
+        }
+      },
+      "(min-width: 797px) and (max-width: 896px)":{
+        slides: {
+          perView: 4
+        }
+      },
+      "(min-width: 897px) and (max-width: 996px)":{
+        slides: {
+          perView: 5
+        }
+      },
+      "(min-width: 997px) and (max-width: 1096px)":{
+        slides: {
+          perView: 3
+        }
+      },
+      "(min-width: 1097px) and (max-width: 1196px)":{
+        slides: {
+          perView: 4
+        }
+      },
+      "(min-width: 1197px)":{
+        slides: {
+          perView: 5,
+          spacing: 2
+        }
+      }
     }
   })
   
@@ -88,7 +129,7 @@ export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] 
                 dayClass.timetable.map(day => {
                   return (
                     <SlideItemContainer gridArea={createGridArea({y: day.y, x: 1}, day.size)} key={count++}>
-                      <SlideItem timetable={day} timetableName={dayClass.title}/>
+                      <SlideItem timetable={day}/>
                     </SlideItemContainer>
                   )
                 })
