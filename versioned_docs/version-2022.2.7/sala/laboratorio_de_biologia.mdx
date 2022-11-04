@@ -1,0 +1,183 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Laboratório de Biologia",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Biologia III - 1083",
+          size: 2,
+          teacher: "Eliana Peliçon Pereira Figueira",
+          classroom: "Laboratório de Biologia",
+          students: "AGO2020",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Biologia II - 616",
+          size: 2,
+          teacher: "Karina Dias Espartosa",
+          classroom: "Laboratório de Biologia",
+          students: "AGO2021",
+          time: "13:10 - 14:00",
+        },
+      ],
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Biologia I - 1073",
+          size: 2,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Laboratório de Biologia",
+          students: "IIW2022A",
+          time: "13:10 - 14:00",
+        },
+        {
+          subject: "Biologia I - 459",
+          size: 2,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Laboratório de Biologia",
+          students: "AGO2022",
+          time: "15:05 - 15:55",
+        },
+      ],
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Biologia 2 - 168",
+          size: 1,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Laboratório de Biologia",
+          students: "EIN2021",
+          time: "10:15 - 11:05",
+        },
+        {
+          subject: "Biologia IV - 196",
+          size: 1,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Laboratório de Biologia",
+          students: "IIN2019",
+          time: "11:05 - 11:55",
+        },
+      ],
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Biologia 1 - 122",
+          size: 1,
+          teacher: "Eliana Peliçon Pereira Figueira",
+          classroom: "Laboratório de Biologia",
+          students: "EIN2022",
+          time: "07:30 - 08:20",
+        },
+      ],
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Biologia 3 - 202",
+          size: 2,
+          teacher: "Karina Dias Espartosa",
+          classroom: "Laboratório de Biologia",
+          students: "EIN2020",
+          time: "10:15 - 11:05",
+        },
+        {
+          subject: "Biologia 4 - 222",
+          size: 2,
+          teacher: "Leandro Luiz Borges",
+          classroom: "Laboratório de Biologia",
+          students: "EIN2019",
+          time: "07:30 - 08:20",
+        },
+      ],
+    },
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50,
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50,
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15,
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50,
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50,
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50,
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75,
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50,
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50,
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15,
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50,
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50,
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135,
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50,
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50,
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20,
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50,
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50,
+    },
+  ],
+};
+
+# Laboratório de Biologia
+
+<div>
+  {<Grid title={data.title} weekClasses={data.weekClasses} time={data.time} />}
+</div>

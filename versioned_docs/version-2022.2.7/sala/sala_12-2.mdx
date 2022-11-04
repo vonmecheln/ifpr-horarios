@@ -1,0 +1,303 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Sala 12-2",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Filosofia II - 1232",
+          size: 1,
+          teacher: "Fabio Antônio da Silva",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "11:05 - 11:55",
+        },
+        {
+          subject: "Arte I - 1235",
+          size: 1,
+          teacher: "Josiane Paula Maltauro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "13:10 - 14:00",
+        },
+        {
+          subject: "Geografia I - 1233",
+          size: 2,
+          teacher: "Renato Lada Guerreiro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Aula Livre",
+          size: 2,
+          teacher: "",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50",
+        },
+      ],
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Língua Estrangeira Moderna: Espanhol - 2237",
+          size: 1,
+          teacher: "Michelli Cristina Galli",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teacher: "Michelli Cristina Galli",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "10:15 - 11:05",
+        },
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50",
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 1,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 1,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "08:20 - 09:10",
+        },
+      ],
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
+          size: 1,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Genética de populações e evolução - 505",
+          size: 2,
+          teacher: "Gabriele Antico Freiria",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50",
+        },
+        {
+          subject: "Trabalho de conclusão de curso II - 1420",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:50 - 20:40",
+        },
+        {
+          subject: "Arte I - 1235",
+          size: 1,
+          teacher: "Josiane Paula Maltauro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15",
+        },
+      ],
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
+          size: 2,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "PCCC 8 - Origem e evolução da vida - 2037",
+          size: 2,
+          teacher: "Eliana Peliçon Pereira Figueira",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50",
+        },
+        {
+          subject: "Química II - 1230",
+          size: 2,
+          teacher: "Kathia Regina Kunzler Bechlin",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "10:15 - 11:05",
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 1,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "08:20 - 09:10",
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 1,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15",
+        },
+      ],
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Biologia II - 1228",
+          size: 2,
+          teacher: "Gabriele Antico Freiria",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Genética de populações e evolução - 505",
+          size: 2,
+          teacher: "Gabriele Antico Freiria",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teacher: "Michelli Cristina Galli",
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "15:05 - 15:55",
+        },
+      ],
+    },
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50,
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50,
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15,
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50,
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50,
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50,
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75,
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50,
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50,
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15,
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50,
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50,
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135,
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50,
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50,
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20,
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50,
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50,
+    },
+  ],
+};
+
+# Sala 12-2
+
+<div>
+  {<Grid title={data.title} weekClasses={data.weekClasses} time={data.time} />}
+</div>

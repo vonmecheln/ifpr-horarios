@@ -1,0 +1,279 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Laboratório de Física",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Eletrônica - 1554",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "EIN2021",
+          time: "10:15 - 11:05",
+        },
+        {
+          subject: "Eletrônica - 1554",
+          size: 1,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "EIN2021",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Eletrônica Analógica - 339",
+          size: 2,
+          teacher: "Wylliam Salviano Gongora",
+          classroom: "Laboratório de Física",
+          students: "ELM2022",
+          time: "19:00 - 19:50",
+        },
+      ],
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Análise de Circuitos - 341",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Laboratório de Física",
+          students: "ELM2022",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Análise de Circuitos - 341",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Laboratório de Física",
+          students: "ELM2022",
+          time: "21:00 - 21:50",
+        },
+        {
+          subject: "Física II - 1229",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "IIW2021",
+          time: "15:05 - 15:55",
+        },
+        {
+          subject: "Física II - 617",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "AGO2021",
+          time: "13:10 - 14:00",
+        },
+        {
+          subject: "Física III - 1084",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "AGO2020",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Física III - 1242",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "IIW2020",
+          time: "09:25 - 10:15",
+        },
+      ],
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Física I - 1070",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "IIW2022A",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Física IV - 190",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "Laboratório de Física",
+          students: "IIN2019",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Análise de Circuitos - 2072",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Análise de Circuitos - 2072",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "21:00 - 21:50",
+        },
+      ],
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Física 1 - 125",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2022",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Física 4 - 224",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2019",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Física I - 460",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "AGO2022",
+          time: "15:05 - 15:55",
+        },
+        {
+          subject: "Eletrônica Analógica (PPC 2020) - 2073",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Eletrônica Analógica (PPC 2020) - 2073",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022",
+          time: "21:00 - 21:50",
+        },
+      ],
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Física 2 - 175",
+          size: 1,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2021",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Física 3 - 205",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
+          students: "EIN2020",
+          time: "07:30 - 08:20",
+        },
+        {
+          subject: "Eletrônica Analógica - 339",
+          size: 2,
+          teacher: "Wylliam Salviano Gongora",
+          classroom: "Laboratório de Física",
+          students: "ELM2022",
+          time: "19:00 - 19:50",
+        },
+      ],
+    },
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50,
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50,
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15,
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50,
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50,
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50,
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75,
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50,
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50,
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15,
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50,
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50,
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135,
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50,
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50,
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20,
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50,
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50,
+    },
+  ],
+};
+
+# Laboratório de Física
+
+<div>
+  {<Grid title={data.title} weekClasses={data.weekClasses} time={data.time} />}
+</div>

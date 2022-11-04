@@ -63,7 +63,7 @@ function generateEmptyCells(cols: number, rows: number) {
 }
 
 export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] }) {
-  const [sliderRef, instanceRef] = useKeenSlider({
+  const [sliderRef, instanceRef] = useKeenSlider({  
     slides: {
       perView: 5,
       spacing: 10  

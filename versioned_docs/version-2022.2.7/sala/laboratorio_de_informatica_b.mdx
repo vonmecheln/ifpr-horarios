@@ -1,0 +1,240 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Laboratório de Informatica B",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "AGO2022 - Grupo B",
+          time: "13:10 - 14:00",
+        },
+        {
+          subject: "Laboratório de Banco de Dados - 1238",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Programação para Sistemas Embarcados - 22",
+          size: 2,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Segurança em Sistemas e Redes - 23",
+          size: 1,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:50 - 22:40",
+        },
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Laboratório de Informatica B",
+          students: "EIN2021",
+          time: "07:30 - 08:20",
+        },
+      ],
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Projeto Integrador II - 1239",
+          size: 2,
+          teacher: "Alexandre Rodrigues Monge",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "13:10 - 14:00",
+        },
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 2,
+          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 1,
+          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "11:05 - 11:55",
+        },
+      ],
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Projeto e Análise de Sistemas - 182",
+          size: 2,
+          teacher: "Novo(a) professor(a) Informática+Rafael Gil Ferques",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "09:25 - 10:15",
+        },
+      ],
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Programação Orientada a Objetos - 21",
+          size: 2,
+          teacher: "Humberto Fioravante Ferro",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Programação Orientada a Objetos - 21",
+          size: 2,
+          teacher: "Humberto Fioravante Ferro",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:00 - 21:50",
+        },
+        {
+          subject: "Serviços em nuvem - 1250",
+          size: 2,
+          teacher: "Joaquim José Honório de Lima",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "09:25 - 10:15",
+        },
+      ],
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Tópicos Especiais em Tecnologia - 35",
+          size: 2,
+          teacher:
+            "Luis Henrique Manosso Von Mecheln+Novo(a) professor(a) Informática",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "09:25 - 10:15",
+        },
+        {
+          subject: "Tópicos Especiais em Tecnologia da Informação - 25",
+          size: 2,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50",
+        },
+        {
+          subject: "Estatística aplicada a estratégias empresariais - 1514",
+          size: 2,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "Laboratório de Informatica B",
+          students: "TGC2022",
+          time: "21:00 - 21:50",
+        },
+        {
+          subject: "Projeto Integrador III - 1253",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2020",
+          time: "07:30 - 08:20",
+        },
+      ],
+    },
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50,
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50,
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15,
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50,
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50,
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50,
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75,
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50,
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50,
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15,
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50,
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50,
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135,
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50,
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50,
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20,
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50,
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50,
+    },
+  ],
+};
+
+# Laboratório de Informatica B
+
+<div>
+  {<Grid title={data.title} weekClasses={data.weekClasses} time={data.time} />}
+</div>
