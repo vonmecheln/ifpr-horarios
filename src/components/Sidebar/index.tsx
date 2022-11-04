@@ -11,7 +11,10 @@ export function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
   let timeOffSet = 2
   return(
     <Container rows={`${props.rows}`}>
-      <Cell gridArea="1 / 1 / 2 / 2" className="sidebar"></Cell>
+      <Cell gridArea="1 / 1 / 2 / 2" className="sidebar">
+        {/* <input type="checkbox" name="" id="" />
+        <label htmlFor=""></label> */}
+      </Cell>
       {
           props.timeClasses.map(timeEl => 
             <Cell className="sidebar"

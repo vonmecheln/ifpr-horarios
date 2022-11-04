@@ -14,6 +14,8 @@ export const Container = styled.div<{columns: string, size: number}>`
   overflow: hidden;
   margin: 1rem 0;
 
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='8' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5z' fill='%239C92AC' fill-opacity='.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+
   column-gap: 1px;
 
   @media print {

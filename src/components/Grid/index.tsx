@@ -16,14 +16,16 @@ export interface GridProps {
 export function Grid ({ title, time, weekClasses}: GridProps) {
   findPositionY({weekClasses, time})
   formatComponent({weekClasses, title})
-  // const numbersBetween = reduceTimetable(weekClasses)
+  const numbersBetween = reduceTimetable(weekClasses)
   // time = time.slice(numbersBetween[0], numbersBetween[1])
+  findPositionY({weekClasses, time})
 
   let rowsSize = ''
   let columnsSize = `10fr 90fr`
   time.forEach(el => {
     rowsSize += ` ${el.size}fr`
   })
+  
   let size = 0;
   time.forEach(el => {
     size += el.size

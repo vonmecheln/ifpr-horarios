@@ -14,6 +14,9 @@ export const Slide = styled.div<{rowsSize: string}>`
   grid-template-columns: 100%;
   position: relative;
   row-gap: 2px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
 `
 
 export const SlideItemContainer = styled.div<{gridArea: string}>`

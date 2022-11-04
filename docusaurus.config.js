@@ -42,7 +42,7 @@ const config = {
           versions: {
             current: {
               label: 'Atual',
-              path: '2022.2.8',
+              path: '',
             },
           },
             

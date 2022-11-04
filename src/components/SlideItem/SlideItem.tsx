@@ -10,21 +10,20 @@ export function SlideItem(props: {timetable: ClassesProps}) {
   let colorTeacher = createColorByTeacher(props.timetable.teacher).split(',')
     
   const theme = {
-    teacherBackground: `hsl(${colorTeacher[0]} ${Number(colorTeacher[1]) * 100}% 50%)`
+    teacherBackground: `hsl(${colorTeacher[0]} ${Number(colorTeacher[1]) * 100}% 50%)`,
   }
 
   return (
     <ThemeProvider theme={theme}>
       <SlideItemModel>
-      <span className="subject" title={props.timetable.subject}>{props.timetable.subject}</span>
-      {
-        props.timetable.link.map(a => {
-          return (
-            <a title={a.title} href={a.url} key={a.url}>{a.title}</a>
-          )
-        })
-      }
-      {/* <span title={props.timetable.teacher}>{props.timetable.teacher}</span> */}
+        <span className="subject" title={props.timetable.subject}>{props.timetable.subject}</span>
+        {
+          props.timetable.link.map(a => {
+            return (
+              <a title={a.title} href={a.url} key={a.url}>{a.title}</a>
+            )
+          })
+        }
       </SlideItemModel>
     </ThemeProvider>
   )

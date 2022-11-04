@@ -22,8 +22,9 @@ export const SlideItemModel = styled.div<{theme: ThemeProps}>`
 
   color: #000;  
   background-color: ${props => props.theme.teacherBackground};
+  
 
-  box-shadow: 0px 0spx 5px 1px var(--shadow);
+  box-shadow: 0px 0px 1px 1px var(--shadow);
 
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
