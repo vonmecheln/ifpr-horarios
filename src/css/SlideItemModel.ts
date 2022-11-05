@@ -16,8 +16,9 @@ export const SlideItemModel = styled.div<{theme: ThemeProps}>`
   text-align: center;
   
   padding: 0.4rem;
+  margin: 0 0px;
   
-  outline: 1px solid var(--border-cell);
+  border: 1px solid var(--border-cell);
   border-radius: 5px;
 
   color: #000;  
@@ -30,7 +31,7 @@ export const SlideItemModel = styled.div<{theme: ThemeProps}>`
   font-size: 0.9rem;
   font-weight: 300;
 
-  transition: all .5s;
+  transition: all .3s;
 
   word-break: break-word;
 
@@ -46,6 +47,7 @@ export const SlideItemModel = styled.div<{theme: ThemeProps}>`
     &:hover {
       filter: brightness(0.8);
       scale: 1.015;
+      z-index: 5;
     }
   }
 `

@@ -12,8 +12,17 @@ export function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
   return(
     <Container rows={`${props.rows}`}>
       <Cell gridArea="1 / 1 / 2 / 2" className="sidebar">
-        {/* <input type="checkbox" name="" id="" />
-        <label htmlFor=""></label> */}
+        {/* <div>
+          <input type="checkbox" name="" id="" />
+          <label htmlFor="">Teste</label>
+        </div>
+        <div>
+          <input type="checkbox" name="" id="" />
+          <label htmlFor="">Teste</label>
+        </div><div>
+          <input type="checkbox" name="" id="" />
+          <label htmlFor="">Teste</label>
+        </div> */}
       </Cell>
       {
           props.timeClasses.map(timeEl => 

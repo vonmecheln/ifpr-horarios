@@ -6,7 +6,7 @@ import { useKeenSlider } from 'keen-slider/react';
 import React from 'react';
 import { TimeProps } from '../Sidebar';
 import { SlideItem } from '../SlideItem/SlideItem';
-import { Container, SlideItemContainer, Slide } from './styles';
+import { Container, SlideItemContainer, Slide, SlideCell, EmptyCell } from './styles';
 
 export interface ClassesProps {
   subject: string;
@@ -69,89 +69,93 @@ export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] 
       "(max-width: 594px)": {
         slides: {
           perView: 1,
-          spacing: 3,
+          spacing: 1,
         },
       },
       "(min-width: 595px) and (max-width: 695px)":{
         slides: {
           perView: 2,
-          spacing: 3,
+          spacing: 1,
         }
       },
       "(min-width: 696px) and (max-width: 796px)":{
         slides: {
           perView: 3,
-          spacing: 3,
+          spacing: 1,
         }
       },
       "(min-width: 797px) and (max-width: 896px)":{
         slides: {
           perView: 4,
-          spacing: 3,
+          spacing: 1,
         }
       },
       "(min-width: 897px) and (max-width: 996px)":{
         slides: {
           perView: 5,
-          spacing: 3,
+          spacing: 1,
         }
       },
       "(min-width: 997px) and (max-width: 1096px)":{
         slides: {
           perView: 3,
-          spacing: 3,
+          spacing: 1,
         }
       },
       "(min-width: 1097px) and (max-width: 1196px)":{
         slides: {
           perView: 4,
-          spacing: 3,
+          spacing: 1,
         }
       },
       "(min-width: 1197px)":{
         slides: {
           perView: 5,
-          spacing: 3,
+          spacing: 1,
         }, 
       }
     }
   })
+
+  const array = []
+  for (let i = 0; i < props.time.length + 1; i++) {
+    array.push(i)
+  }
+  
   return (
     <Container ref={sliderRef}>
-      
       {
         props.timetable.weekClasses.map(dayClass => {
           let index = props.timetable.weekClasses.findIndex(value => value.title === dayClass.title)
           return (
-            <>
-              <Slide rowsSize={props.timetable.rowsSize} className={`keen-slider__slide number-slide${index + 1}`} key={index}>
-                <SlideItemContainer gridArea='1 / 1 / 2 / 2'>
-                  <SlideItemModel>
-                    <span>{dayClass.title}</span>
-                  </SlideItemModel>
-                </SlideItemContainer>
-                {/* {
-                  props.time.map(el => {
-                    let index = props.time.findIndex(i => el === i)
-                    return (
-                      <SlideItemContainer gridArea={createGridArea({y: index, x: 1}, 1)} key={count++} style={{border: '1px solid green'}}>
-                        <div>oi</div>
-                      </SlideItemContainer>
-                    )
-                  })
-                } */}
-                {
-                  dayClass.timetable.map(day => {
-                    return (
-                      <SlideItemContainer gridArea={createGridArea({y: day.y, x: 1}, day.size)} key={count++}>
-                        <SlideItem timetable={day}/>
-                      </SlideItemContainer>
-                    )
-                  })
-                }
-              </Slide>
-              <div></div>
-            </>
+            <Slide className={`keen-slider__slide number-slide${index + 1}`} key={index}>
+                <SlideCell rowsSize={props.timetable.rowsSize}>
+                  {
+                    array.map(el => {
+                      return (
+                        <SlideItemContainer gridArea={createGridArea({y: el, x: 1}, 1)} key={count++}>
+                          <EmptyCell></EmptyCell>
+                        </SlideItemContainer>)
+                    })
+                  }
+                </SlideCell>
+                <SlideCell rowsSize={props.timetable.rowsSize}>
+                  <SlideItemContainer gridArea='1 / 1 / 2 / 2'>
+                    <SlideItemModel>
+                      <span>{dayClass.title}</span>
+                    </SlideItemModel>
+                  </SlideItemContainer>
+                  {
+                    dayClass.timetable.map(day => {
+                      return (
+                        <SlideItemContainer gridArea={createGridArea({y: day.y, x: 1}, day.size)} key={count++}>
+                          <SlideItem timetable={day}/>
+                        </SlideItemContainer>
+                      )
+                    })
+                  }
+                </SlideCell>
+            </Slide>
           )
         })
       }
