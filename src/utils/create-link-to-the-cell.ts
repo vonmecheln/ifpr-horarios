@@ -1,9 +1,8 @@
-import { ClassesProps, WeekClassesProps } from "../components/Timetable";
+import { WeekClassesProps } from "../components/Timetable";
 import { createURL } from "./create-url-link";
-import React from 'react'
-import { GridProps } from "../components/Grid";
+// 
 
-export function formatComponent(props: {weekClasses: WeekClassesProps[], title: string}) {
+export function createLinkToTheCell(props: {weekClasses: WeekClassesProps[], title: string}) {
   props.weekClasses.forEach(dayClass => {
     dayClass.timetable.forEach(el => {
       if (props.title === el.teacher) {

@@ -1,4 +1,4 @@
-import { SlideItemModel } from "@site/src/css/SlideItemModel";
+import { ItemContent } from "@site/src/css/ItemContent";
 import { createColorByTeacher } from "@site/src/utils/create-color-by-teacher";
 import { createURL } from "@site/src/utils/create-url-link";
 import React from "react";
@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { createGridArea } from "../../utils/create-grid-area";
 import { ClassesProps, Timetable } from "../Timetable";
 
-export function SlideItem(props: {timetable: ClassesProps}) {
+export function Item(props: {timetable: ClassesProps}) {
   let colorTeacher = createColorByTeacher(props.timetable.teacher).split(',')
     
   const theme = {
@@ -15,7 +15,7 @@ export function SlideItem(props: {timetable: ClassesProps}) {
 
   return (
     <ThemeProvider theme={theme}>
-      <SlideItemModel>
+      <ItemContent>
         <span className="subject" title={props.timetable.subject}>{props.timetable.subject}</span>
         {
           props.timetable.link.map(a => {
@@ -24,7 +24,7 @@ export function SlideItem(props: {timetable: ClassesProps}) {
             )
           })
         }
-      </SlideItemModel>
+      </ItemContent>
     </ThemeProvider>
   )
 }

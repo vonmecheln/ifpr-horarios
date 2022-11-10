@@ -27,20 +27,18 @@ export const Container = styled.main`
       text-decoration: none;
       display: block;
     }
-
   }
-  `
+`
+export const ContainerText = styled.div`
+  outline: 1px solid black;
+  
+  width: 100%;
+  max-width: 18rem;
 
-  export const ContainerText = styled.div`
-    outline: 1px solid black;
-    
-    width: 100%;
-    max-width: 18rem;
-
-    span {
-      white-space: nowrap;
-      overflow: hidden; 
-      text-overflow: ellipsis;
-      display: block;
-    }
-  `
+  span {
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: block;
+  }
+`

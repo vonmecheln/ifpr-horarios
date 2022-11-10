@@ -4,7 +4,7 @@ interface ThemeProps {
   teacherBackground: string;
 }
 
-export const SlideItemModel = styled.div<{theme: ThemeProps}>`
+export const ItemContent = styled.div<{theme: ThemeProps}>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@ export const SlideItemModel = styled.div<{theme: ThemeProps}>`
   }
 `
 
-SlideItemModel.defaultProps = {
+ItemContent.defaultProps = {
   theme: {
     teacherBackground: "var(--background-cell)"
   }

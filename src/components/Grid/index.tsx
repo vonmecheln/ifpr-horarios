@@ -5,7 +5,8 @@ import { Sidebar, TimeProps } from '../Sidebar'
 import { Timetable, WeekClassesProps } from '../Timetable'
 import { findPositionY } from '@site/src/utils/find-position-y'
 import { reduceTimetable } from '@site/src/utils/reduce-timetable'
-import { formatComponent } from '@site/src/utils/format-component'
+import { createLinkToTheCell } from '@site/src/utils/create-link-to-the-cell'
+import { createGroupItems } from '@site/src/utils/create-group-items'
 
 export interface GridProps {
   title: string;
@@ -15,7 +16,7 @@ export interface GridProps {
   
 export function Grid ({ title, time, weekClasses}: GridProps) {
   findPositionY({weekClasses, time})
-  formatComponent({weekClasses, title})
+  createLinkToTheCell({weekClasses, title})
   const numbersBetween = reduceTimetable(weekClasses)
   // time = time.slice(numbersBetween[0], numbersBetween[1])
   findPositionY({weekClasses, time})

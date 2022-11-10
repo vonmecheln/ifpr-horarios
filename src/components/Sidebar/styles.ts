@@ -1,3 +1,4 @@
+import * as Dialog from "@radix-ui/react-dialog";
 import styled from "styled-components";
 
 export const Container = styled.aside<{rows: string}>`
@@ -13,3 +14,4 @@ export const Container = styled.aside<{rows: string}>`
     border-top-right-radius: 0;
   }
 `
+

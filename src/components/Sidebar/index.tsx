@@ -1,5 +1,7 @@
+import * as Dialog from '@radix-ui/react-dialog';
 import React from 'react'
 import { Cell } from '../../css/Cell'
+import { ModalEdit } from '../ModalEdit';
 import { Container } from './styles';
 
 export interface TimeProps {
@@ -12,17 +14,7 @@ export function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
   return(
     <Container rows={`${props.rows}`}>
       <Cell gridArea="1 / 1 / 2 / 2" className="sidebar">
-        {/* <div>
-          <input type="checkbox" name="" id="" />
-          <label htmlFor="">Teste</label>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="" />
-          <label htmlFor="">Teste</label>
-        </div><div>
-          <input type="checkbox" name="" id="" />
-          <label htmlFor="">Teste</label>
-        </div> */}
+        <ModalEdit/>
       </Cell>
       {
           props.timeClasses.map(timeEl => 

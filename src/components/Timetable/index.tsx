@@ -1,12 +1,13 @@
-import { SlideItemModel } from '@site/src/css/SlideItemModel';
-import { createEmptyCell } from '@site/src/utils/create-empty-cell';
+import { ItemContent } from '@site/src/css/ItemContent';
 import { createGridArea } from '@site/src/utils/create-grid-area';
 import { findPositionsUsed } from '@site/src/utils/find-positions-used';
 import { useKeenSlider } from 'keen-slider/react';
 import React from 'react';
+import { EmptyCell } from '../EmptyCell';
 import { TimeProps } from '../Sidebar';
-import { SlideItem } from '../SlideItem/SlideItem';
-import { Container, SlideItemContainer, Slide, SlideCell, EmptyCell } from './styles';
+import { Item } from '../Item/Item';
+import { Container, ItemGroup, SlidePage, SlideCell } from './styles';
+import { createGroupItems } from '@site/src/utils/create-group-items';
 
 export interface ClassesProps {
   subject: string;
@@ -33,35 +34,7 @@ interface TimetableProps {
   rowsSize: string;
 }
 
-const or = 2 //OFFSET ROW
-const oc = 1 //OFFSET COL
 let count = 0
-let boxes
-
-function generateEmptyCells(cols: number, rows: number) {
-  boxes = []
-  let row = 1
-  let col = 0
-  
-  for (let index = 0; index < 90; index++) {
-    if ( col < cols ) 
-      col++
-    else if (row < rows){ 
-      col = 1
-      row+=1
-    }
-    boxes.push({
-      title: (row + or) === 5 ||
-             (row + or) ===  9 ||
-             (row + or) ===  12 ||
-             (row + or) === 15 ||
-             (row + or) === 18
-             ? 'Intervalo' : '',
-      ga: `${or + row} / ${oc + col} / ${or + row + 1} / ${oc + col + 1}`,
-      className: `empty ${((col + oc) === 2 && (row + or) === 9) ? 'break-here' : ''}`
-    })
-  }
-}
 
 export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] }) {
   const [sliderRef, instanceRef] = useKeenSlider({  
@@ -116,46 +89,50 @@ export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] 
       }
     }
   })
+  const arrayItems = []
 
-  const array = []
-  for (let i = 0; i < props.time.length + 1; i++) {
-    array.push(i)
-  }
-  
   return (
     <Container ref={sliderRef}>
       {
         props.timetable.weekClasses.map(dayClass => {
+          const groupTimetable = createGroupItems(dayClass.timetable)
           let index = props.timetable.weekClasses.findIndex(value => value.title === dayClass.title)
+
           return (
-            <Slide className={`keen-slider__slide number-slide${index + 1}`} key={index}>
+            <SlidePage className={`keen-slider__slide number-slide${index + 1}`} key={index}>
                 <SlideCell rowsSize={props.timetable.rowsSize}>
-                  {
-                    array.map(el => {
-                      return (
-                        <SlideItemContainer gridArea={createGridArea({y: el, x: 1}, 1)} key={count++}>
-                          <EmptyCell></EmptyCell>
-                        </SlideItemContainer>)
-                    })
-                  }
+                  <EmptyCell timeLength={props.time.length + 1}/>
                 </SlideCell>
                 <SlideCell rowsSize={props.timetable.rowsSize}>
-                  <SlideItemContainer gridArea='1 / 1 / 2 / 2'>
-                    <SlideItemModel>
+                  <ItemGroup gridArea='1 / 1 / 2 / 2' className='day'>
+                    <ItemContent>
                       <span>{dayClass.title}</span>
-                    </SlideItemModel>
-                  </SlideItemContainer>
+                    </ItemContent>
+                  </ItemGroup>
                   {
-                    dayClass.timetable.map(day => {
+                    Object.keys(groupTimetable).map(group => {
+                      let y = groupTimetable[group][0].y
+                      let size = groupTimetable[group][0].size
                       return (
-                        <SlideItemContainer gridArea={createGridArea({y: day.y, x: 1}, day.size)} key={count++}>
-                          <SlideItem timetable={day}/>
-                        </SlideItemContainer>
+                        <ItemGroup gridArea={createGridArea({y, x: 1}, size)} key={count++}>
+                          {
+                            groupTimetable[group].map(el =>
+                              <Item timetable={el} key={count++}/>
+                            )
+                          }
+                        </ItemGroup>
                       )
                     })
+                    // dayClass.timetable.map(day => {
+                    //   return (
+                    //     <ItemGroup gridArea={createGridArea({y: day.y, x: 1}, day.size)} key={count++}>
+                    //       <Item timetable={day}/>
+                    //     </ItemGroup>
+                    //   )
+                    // })
                   }
                 </SlideCell>
-            </Slide>
+            </SlidePage>
           )
         })
       }
