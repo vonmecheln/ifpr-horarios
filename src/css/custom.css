@@ -16,6 +16,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   width: 100vw;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   position: relative;
 }

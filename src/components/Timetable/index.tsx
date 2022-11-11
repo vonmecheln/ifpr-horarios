@@ -17,7 +17,7 @@ export interface ClassesProps {
   students?: string;
   time: string;
   y?: number;
-  link: Array<
+  link?: Array<
   {
     title: string;
     url: string;
@@ -89,15 +89,13 @@ export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] 
       }
     }
   })
-  const arrayItems = []
-
+  
   return (
     <Container ref={sliderRef}>
       {
         props.timetable.weekClasses.map(dayClass => {
           const groupTimetable = createGroupItems(dayClass.timetable)
           let index = props.timetable.weekClasses.findIndex(value => value.title === dayClass.title)
-
           return (
             <SlidePage className={`keen-slider__slide number-slide${index + 1}`} key={index}>
                 <SlideCell rowsSize={props.timetable.rowsSize}>

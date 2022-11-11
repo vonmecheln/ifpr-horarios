@@ -19,6 +19,7 @@ export const Container = styled.main`
     font-size: 1.5rem;
     border-radius: .7rem;
     cursor: pointer;
+    
     width: 12rem;
     height: 3rem;
 

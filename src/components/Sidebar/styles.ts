@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.aside<{rows: string}>`
   display: grid;
-  grid-template-columns: max-content;
+  grid-template-columns: minmax(max-content, 100%);
   grid-template-rows: ${props => props.rows};
   grid-area: 1 / 1 / 4 / 2;
   row-gap: 1px;

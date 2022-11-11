@@ -6,7 +6,6 @@ import { Timetable, WeekClassesProps } from '../Timetable'
 import { findPositionY } from '@site/src/utils/find-position-y'
 import { reduceTimetable } from '@site/src/utils/reduce-timetable'
 import { createLinkToTheCell } from '@site/src/utils/create-link-to-the-cell'
-import { createGroupItems } from '@site/src/utils/create-group-items'
 
 export interface GridProps {
   title: string;
@@ -14,7 +13,7 @@ export interface GridProps {
   weekClasses: Array<WeekClassesProps>;
 }
   
-export function Grid ({ title, time, weekClasses}: GridProps) {
+export function Grid ({ title, time, weekClasses }: GridProps) {
   findPositionY({weekClasses, time})
   createLinkToTheCell({weekClasses, title})
   const numbersBetween = reduceTimetable(weekClasses)

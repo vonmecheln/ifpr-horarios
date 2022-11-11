@@ -20,6 +20,7 @@
     "@docusaurus/preset-classic": "^2.2.0",
     "@mdx-js/react": "^1.6.22",
     "@radix-ui/react-dialog": "^1.0.2",
+    "@types/react-dom": "^18.0.8",
     "clsx": "^1.2.1",
     "color-hash": "^2.0.1",
     "keen-slider": "^6.8.2",
