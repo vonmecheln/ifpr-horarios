@@ -1,304 +1,146 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import React from 'react'
 import { Grid } from '../Grid'
+import { ItemGroup, SlideCell, SlidePage } from '../Timetable/styles'
 import { Container } from './styles'
+import { useKeenSlider } from 'keen-slider/react';
 
 export function Homepage() {
-const data = {
-  title: "AGO2020",
-  weekClasses: [
-    {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Biologia III - 1083",
-          size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
-          classroom: "Laboratório de Biologia",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
-          size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Orientação de estágio supervisionado - 1097",
-          size: 1,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Laboratório de Informatica C",
-          students: "AGO2020",
-          time: "09:25 - 10:15"
-        }
-      ]
+const [sliderRef, instanceRef] = useKeenSlider({  
+  breakpoints: {
+    "(max-width: 594px)": {
+      slides: {
+        perView: 1,
+        spacing: 1,
+      },
     },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Filosofia III - 1088",
-          size: 1,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Filosofia III - 1088",
-          size: 1,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Cultura e Cinema Nacional III - 1193",
-          size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Produção Animal II - 1093",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Sanidade Animal - 1092",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Educação Física III - 1082",
-          size: 2,
-          teacher: "Tiago Amaral Silva",
-          classroom: "Educação Física / Sala 4 B2",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        }
-      ]
+    "(min-width: 595px) and (max-width: 695px)":{
+      slides: {
+        perView: 2,
+        spacing: 1,
+      }
     },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Língua Portuguesa e Literatura III - 1081",
-          size: 2,
-          teacher: "Pedro Leites Junior",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura III - 1081",
-          size: 1,
-          teacher: "Pedro Leites Junior",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Física III - 1084",
-          size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
-          classroom: "Laboratório de Física",
-          students: "AGO2020",
-          time: "10:15 - 11:05"
-        }
-      ]
+    "(min-width: 696px) and (max-width: 796px)":{
+      slides: {
+        perView: 3,
+        spacing: 1,
+      }
     },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Sociologia e extensão rural - 1087",
-          size: 1,
-          teacher: "Elias Franco",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Produção Animal II - 1093",
-          size: 1,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "15:55 - 16:45"
-        },
-        {
-          subject: "História II - 1089",
-          size: 2,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Culturas II - 1091",
-          size: 2,
-          teacher: "Sônia Maria Mandotti",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Culturas II - 1091",
-          size: 1,
-          teacher: "Sônia Maria Mandotti",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Horticultura - 1090",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "10:15 - 11:05"
-        }
-      ]
+    "(min-width: 797px) and (max-width: 896px)":{
+      slides: {
+        perView: 4,
+        spacing: 1,
+      }
     },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Matemática III - 1086",
-          size: 2,
-          teacher: "Carla Melli Tambarussi",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Gestão e Empreendedorismo Rural - 1095",
-          size: 2,
-          teacher: "Cesar Gomes de Freitas",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA) - 1094",
-          size: 2,
-          teacher: "Elias Franco",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Sociologia e extensão rural - 1087",
-          size: 1,
-          teacher: "Elias Franco",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Química III - 1085",
-          size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
-          classroom: "Laboratório de Química",
-          students: "AGO2020",
-          time: "13:10 - 14:00"
-        }
-      ]
+    "(min-width: 897px) and (max-width: 996px)":{
+      slides: {
+        perView: 5,
+        spacing: 1,
+      }
+    },
+    "(min-width: 997px) and (max-width: 1096px)":{
+      slides: {
+        perView: 3,
+        spacing: 1,
+      }
+    },
+    "(min-width: 1097px) and (max-width: 1196px)":{
+      slides: {
+        perView: 4,
+        spacing: 1,
+      }
+    },
+    "(min-width: 1197px)":{
+      slides: {
+        perView: 5,
+        spacing: 1,
+      }, 
     }
-  ],
-  time: [
-    {
-      time: "07:30 - 08:20",
-      size: 50
-    },
-    {
-      time: "08:20 - 09:10",
-      size: 50
-    },
-    {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
-      time: "09:25 - 10:15",
-      size: 50
-    },
-    {
-      time: "10:15 - 11:05",
-      size: 50
-    },
-    {
-      time: "11:05 - 11:55",
-      size: 50
-    },
-    {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
-      time: "13:10 - 14:00",
-      size: 50
-    },
-    {
-      time: "14:00 - 14:50",
-      size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
-    },
-    {
-      time: "15:05 - 15:55",
-      size: 50
-    },
-    {
-      time: "15:55 - 16:45",
-      size: 50
-    },
-    {
-      time: "16:45 - 19:00",
-      size: 135
-    },
-    {
-      time: "19:00 - 19:50",
-      size: 50
-    },
-    {
-      time: "19:50 - 20:40",
-      size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
-    },
-    {
-      time: "21:00 - 21:50",
-      size: 50
-    },
-    {
-      time: "21:50 - 22:40",
-      size: 50
-    }
-  ]
-}
+  }
+})
 
 return (
-  <Grid
-            title={data.title} 
-            weekClasses={data.weekClasses} 
-            time={data.time}
-        />
+  <Container ref={sliderRef}>
+    <SlidePage className={`keen-slider__slide number-slide1`}>
+      <SlideCell rowsSize='1fr' className="teste">
+        <ItemGroup gridArea='1 / 1 / 2 / 2' className='day'>
+          aside
+        </ItemGroup>
+        <ItemGroup gridArea='2 / 1 / 3 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='3 / 1 / 4 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='4 / 1 / 6 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='6 / 1 / 7 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='7 / 1 / 8 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='8 / 1 / 9 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='9 / 1 / 10 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='11 / 1 / 12 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='12 / 1 / 13 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='13 / 1 / 14 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='14 / 1 / 15 / 2' className=''>
+          Content
+        </ItemGroup>
+      </SlideCell>
+    </SlidePage><SlidePage className={`keen-slider__slide number-slide2`}>
+      <SlideCell rowsSize='1fr' className="teste">
+        <ItemGroup gridArea='1 / 1 / 2 / 2' className='day'>
+          aside
+        </ItemGroup>
+        <ItemGroup gridArea='2 / 1 / 3 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='3 / 1 / 4 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='4 / 1 / 6 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='6 / 1 / 7 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='7 / 1 / 8 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='8 / 1 / 9 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='9 / 1 / 10 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='11 / 1 / 12 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='12 / 1 / 13 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='13 / 1 / 14 / 2' className=''>
+          Content
+        </ItemGroup>
+        <ItemGroup gridArea='14 / 1 / 15 / 2' className=''>
+          Content
+        </ItemGroup>
+      </SlideCell>
+    </SlidePage>
+  </Container>
 )
   // return (
   //   <Container>

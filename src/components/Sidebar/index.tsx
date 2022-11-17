@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import React from 'react'
 import { Cell } from '../../css/Cell'
-import { ModalEdit } from '../ModalEdit';
+import { ModalSettings, ModalSettingsProps } from '../ModalSettings';
 import { Container } from './styles';
 
 export interface TimeProps {
@@ -9,15 +9,27 @@ export interface TimeProps {
   size?: number;
 }
 
-export function Sidebar(props: {timeClasses: Array<TimeProps>, rows: string}) {
+export interface SidebarProps {
+  timeClasses: Array<TimeProps>;
+  rows: string;
+  modal: ModalSettingsProps;
+}
+
+export function Sidebar({ timeClasses, modal, rows }: SidebarProps) {
   let timeOffSet = 2
   return(
-    <Container rows={`${props.rows}`}>
+    <Container rows={`${rows}`}>
       <Cell gridArea="1 / 1 / 2 / 2" className="sidebar">
-        <ModalEdit/>
+        <ModalSettings 
+          setIsMenuFixed={modal.setIsMenuFixed} 
+          isMenuFixed={modal.isMenuFixed}
+          setTimetableView={modal.setTimetableView}
+          timetableView={modal.timetableView}
+          downloadScreenshot={modal.downloadScreenshot}
+        />
       </Cell>
       {
-          props.timeClasses.map(timeEl => 
+          timeClasses.map(timeEl => 
             <Cell className="sidebar"
             gridArea= {`${timeOffSet} / 1 / ${timeOffSet++} / 2`} key={timeEl.time}>
               <span className="text-time">{timeEl.time}</span>

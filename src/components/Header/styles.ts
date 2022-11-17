@@ -19,7 +19,7 @@ export const Container = styled.header`
   color: #000;  
   background-color: var(--background-cell);
 
-  box-shadow: 0px 0px 1px 1px var(--shadow);
+  /* box-shadow: 0px 0px 1px 1px var(--shadow); */
 
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;

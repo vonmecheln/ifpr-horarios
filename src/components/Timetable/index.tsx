@@ -2,10 +2,10 @@ import { ItemContent } from '@site/src/css/ItemContent';
 import { createGridArea } from '@site/src/utils/create-grid-area';
 import { findPositionsUsed } from '@site/src/utils/find-positions-used';
 import { useKeenSlider } from 'keen-slider/react';
-import React from 'react';
+import React, { useState } from 'react';
 import { EmptyCell } from '../EmptyCell';
 import { TimeProps } from '../Sidebar';
-import { Item } from '../Item/Item';
+import { Item } from '../Item';
 import { Container, ItemGroup, SlidePage, SlideCell } from './styles';
 import { createGroupItems } from '@site/src/utils/create-group-items';
 
@@ -32,58 +32,61 @@ export interface WeekClassesProps {
 interface TimetableProps {
   weekClasses: Array<WeekClassesProps>;
   rowsSize: string;
+  time: TimeProps[];
+  isMenuFixed: boolean;
 }
 
 let count = 0
 
-export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] }) {
-  const [sliderRef, instanceRef] = useKeenSlider({  
+export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: TimetableProps) {
+  const timetableSize = weekClasses.length
+  const [sliderRef] = useKeenSlider({  
     breakpoints: {
       "(max-width: 594px)": {
         slides: {
-          perView: 1,
+          perView: timetableSize - 4,
           spacing: 1,
         },
       },
       "(min-width: 595px) and (max-width: 695px)":{
         slides: {
-          perView: 2,
+          perView: timetableSize - 3,
           spacing: 1,
         }
       },
       "(min-width: 696px) and (max-width: 796px)":{
         slides: {
-          perView: 3,
+          perView: timetableSize - 2,
           spacing: 1,
         }
       },
       "(min-width: 797px) and (max-width: 896px)":{
         slides: {
-          perView: 4,
+          perView: timetableSize - 1,
           spacing: 1,
         }
       },
       "(min-width: 897px) and (max-width: 996px)":{
         slides: {
-          perView: 5,
+          perView: timetableSize,
           spacing: 1,
         }
       },
       "(min-width: 997px) and (max-width: 1096px)":{
         slides: {
-          perView: 3,
+          perView: timetableSize - 2,
           spacing: 1,
         }
       },
       "(min-width: 1097px) and (max-width: 1196px)":{
         slides: {
-          perView: 4,
+          perView: timetableSize - 1,
           spacing: 1,
         }
       },
       "(min-width: 1197px)":{
         slides: {
-          perView: 5,
+          perView: timetableSize,
           spacing: 1,
         }, 
       }
@@ -91,17 +94,20 @@ export function Timetable(props: { timetable: TimetableProps, time: TimeProps[] 
   })
   
   return (
-    <Container ref={sliderRef}>
+    <Container 
+      ref={sliderRef}
+      isMenuFixed={isMenuFixed}
+    >
       {
-        props.timetable.weekClasses.map(dayClass => {
+        weekClasses.map(dayClass => {
           const groupTimetable = createGroupItems(dayClass.timetable)
-          let index = props.timetable.weekClasses.findIndex(value => value.title === dayClass.title)
+          let index = weekClasses.findIndex(value => value.title === dayClass.title)
           return (
             <SlidePage className={`keen-slider__slide number-slide${index + 1}`} key={index}>
-                <SlideCell rowsSize={props.timetable.rowsSize}>
-                  <EmptyCell timeLength={props.time.length + 1}/>
+                <SlideCell rowsSize={rowsSize}>
+                  <EmptyCell timeLength={time.length + 1}/>
                 </SlideCell>
-                <SlideCell rowsSize={props.timetable.rowsSize}>
+                <SlideCell rowsSize={rowsSize}>
                   <ItemGroup gridArea='1 / 1 / 2 / 2' className='day'>
                     <ItemContent>
                       <span>{dayClass.title}</span>

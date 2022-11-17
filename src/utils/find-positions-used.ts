@@ -19,6 +19,5 @@ export function findPositionsUsed(weekClasses: WeekClassesProps[]) {
     positionsPerSlide.push(positionY)
     positionsUsed.push(...positionY)
   })
-  
   return [positionsPerSlide, positionsUsed];
 }

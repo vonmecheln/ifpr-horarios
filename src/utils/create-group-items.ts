@@ -9,7 +9,6 @@ export function createGroupItems(timetable: ClassesProps[]) {
       }
       dict[el.time].push(el)
     })
-    console.log(dict);
     
   return dict
 }
