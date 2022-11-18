@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Header } from '../Header'
 import { Sidebar, TimeProps } from '../Sidebar'
 import { Timetable, WeekClassesProps } from '../Timetable'
@@ -7,22 +7,32 @@ import { reduceTimetable } from '@site/src/utils/reduce-timetable'
 import { createLinkToTheCell } from '@site/src/utils/create-link-to-the-cell'
 import { useScreenshot, createFileName } from "use-react-screenshot";
 import { Container } from './styles'
+import { Footer } from '../Footer'
+import { updateLocalStorage } from '@site/src/utils/update-local-storage'
+import { getItemFromLocalStorage } from '@site/src/utils/get-item-from-local-storage'
 
 export interface GridProps {
-  title: string;
+  title?: string;
   time: Array<TimeProps>;
   weekClasses: Array<WeekClassesProps>;
+  textFooter?: string;
 }
 
-export function Grid ({ title, time, weekClasses }: GridProps) {
-  const [isMenuFixed, setIsMenuFixed] = useState<boolean>(false)
-  const [timetableView, setTimetableView] = useState<string>('completed')
+function setGridTemplateRows(textFooter: string) {
+  let gridTemplateRows = '50px 1fr'
+  return textFooter ? gridTemplateRows+=' 50px' : gridTemplateRows
+}
+
+export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
+  const settingsOfTime = getItemFromLocalStorage()
+  console.log(settingsOfTime);
+  const [isMenuFixed, setIsMenuFixed] = useState<boolean>(settingsOfTime?.isMenuFixed ?? false)
+  const [timetableView, setTimetableView] = useState<string>(settingsOfTime?.timetableView ?? 'completed')
   const gridRef = useRef()
   const [image, takeScreenShot] = useScreenshot({
     type: "image/png",
     quality: 2.0
   });
-
   const download = (image: string, { name = title, extension = "png" } = {}) => {
     const a = document.createElement("a");
     a.href = image; 
@@ -40,14 +50,18 @@ export function Grid ({ title, time, weekClasses }: GridProps) {
   findPositionY({weekClasses, time})
 
   let rowsSize = ''
-  let columnsSize = `10fr 90fr`
+  let gridColumns = `10fr 90fr`
   time.forEach(el => {
     rowsSize += ` ${el.size}fr`
   })
   
+  useEffect(() => {
+    updateLocalStorage({isMenuFixed, timetableView})
+  }, [isMenuFixed, timetableView])
+  
   return(
-    <Container columns={columnsSize} ref={gridRef}>
-      <Header title={title}/>
+    <Container gridColumns={gridColumns} gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
+      <Header title={title}/> 
       <Sidebar 
         timeClasses={time} 
         rows={`100px${rowsSize}`}
@@ -59,6 +73,9 @@ export function Grid ({ title, time, weekClasses }: GridProps) {
         time={time} 
         isMenuFixed={isMenuFixed}
       />
+      {
+        textFooter ? <Footer textFooter={textFooter}/> : ''
+      }
     </Container>
   )
 }

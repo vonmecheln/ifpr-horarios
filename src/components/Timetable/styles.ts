@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section<{isMenuFixed: boolean}>`
-  grid-area: 2 / 2 / 4 / 3;
+  grid-area: 2 / 2 / 3 / 3;
   display: flex;
   width: 100%;
   overflow: ${props => props.isMenuFixed === true ? 'visible' : 'hidden'};

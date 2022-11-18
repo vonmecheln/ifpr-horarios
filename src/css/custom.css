@@ -21,22 +21,6 @@ body {
   overflow-x: hidden !important;
 }
 
-.container {
-  height: 100% !important;
-}
-
-main {
-  padding: 1rem;
-}
-
-nav {
-  /* position: static !important; */
-}
-
-footer {
-  display: none;
-}
-
 @media print {
   * {
     box-shadow: none;

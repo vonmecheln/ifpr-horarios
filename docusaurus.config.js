@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -34,10 +35,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           lastVersion: 'current',
           versions: {
             current: {
@@ -80,7 +77,7 @@ const config = {
           },
           {
             type: 'docsVersionDropdown',
-          }
+          },
         ],
       },
       prism: {
@@ -88,6 +85,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: [
+      // require.resolve("@cmfcmf/docusaurus-search-local")
+    ]
 };
 
 module.exports = config;

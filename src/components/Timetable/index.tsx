@@ -37,6 +37,7 @@ interface TimetableProps {
 }
 
 let count = 0
+const verifyNumber = (value: number, valueToCompare: number) => value > valueToCompare ? valueToCompare : value
 
 export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: TimetableProps) {
   const timetableSize = weekClasses.length
@@ -44,49 +45,49 @@ export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: Timetabl
     breakpoints: {
       "(max-width: 594px)": {
         slides: {
-          perView: timetableSize - 4,
+          perView: 1,
           spacing: 1,
         },
       },
       "(min-width: 595px) and (max-width: 695px)":{
         slides: {
-          perView: timetableSize - 3,
+          perView: verifyNumber(timetableSize, 2),
           spacing: 1,
         }
       },
       "(min-width: 696px) and (max-width: 796px)":{
         slides: {
-          perView: timetableSize - 2,
+          perView: verifyNumber(timetableSize, 3),
           spacing: 1,
         }
       },
       "(min-width: 797px) and (max-width: 896px)":{
         slides: {
-          perView: timetableSize - 1,
+          perView: verifyNumber(timetableSize, 4),
           spacing: 1,
         }
       },
       "(min-width: 897px) and (max-width: 996px)":{
         slides: {
-          perView: timetableSize,
+          perView: verifyNumber(timetableSize, 5),
           spacing: 1,
         }
       },
       "(min-width: 997px) and (max-width: 1096px)":{
         slides: {
-          perView: timetableSize - 2,
+          perView: verifyNumber(timetableSize, 3),
           spacing: 1,
         }
       },
       "(min-width: 1097px) and (max-width: 1196px)":{
         slides: {
-          perView: timetableSize - 1,
+          perView: verifyNumber(timetableSize, 4),
           spacing: 1,
         }
       },
       "(min-width: 1197px)":{
         slides: {
-          perView: timetableSize,
+          perView: verifyNumber(timetableSize, 5),
           spacing: 1,
         }, 
       }
