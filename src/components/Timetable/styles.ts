@@ -11,7 +11,7 @@ export const Container = styled.section<{isMenuFixed: boolean}>`
     position: sticky;
     top: ${props => props.isMenuFixed === true ? '3.5rem' : '0'};;
   }
-  `
+`
 
 export const SlidePage = styled.div`
   width: 100%;

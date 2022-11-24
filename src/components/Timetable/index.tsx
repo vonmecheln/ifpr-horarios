@@ -41,29 +41,30 @@ const verifyNumber = (value: number, valueToCompare: number) => value > valueToC
 
 export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: TimetableProps) {
   const timetableSize = weekClasses.length
-  const [sliderRef] = useKeenSlider({  
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    initial: 0,
     breakpoints: {
       "(max-width: 594px)": {
         slides: {
-          perView: 1,
+          perView: 1.2,
           spacing: 1,
         },
       },
       "(min-width: 595px) and (max-width: 695px)":{
         slides: {
-          perView: verifyNumber(timetableSize, 2),
+          perView: verifyNumber(timetableSize, 2.2),
           spacing: 1,
         }
       },
       "(min-width: 696px) and (max-width: 796px)":{
         slides: {
-          perView: verifyNumber(timetableSize, 3),
+          perView: verifyNumber(timetableSize, 3.2),
           spacing: 1,
         }
       },
       "(min-width: 797px) and (max-width: 896px)":{
         slides: {
-          perView: verifyNumber(timetableSize, 4),
+          perView: verifyNumber(timetableSize, 4.2),
           spacing: 1,
         }
       },
@@ -75,13 +76,13 @@ export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: Timetabl
       },
       "(min-width: 997px) and (max-width: 1096px)":{
         slides: {
-          perView: verifyNumber(timetableSize, 3),
+          perView: verifyNumber(timetableSize, 3.2),
           spacing: 1,
         }
       },
       "(min-width: 1097px) and (max-width: 1196px)":{
         slides: {
-          perView: verifyNumber(timetableSize, 4),
+          perView: verifyNumber(timetableSize, 4.2),
           spacing: 1,
         }
       },
@@ -128,19 +129,12 @@ export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: Timetabl
                         </ItemGroup>
                       )
                     })
-                    // dayClass.timetable.map(day => {
-                    //   return (
-                    //     <ItemGroup gridArea={createGridArea({y: day.y, x: 1}, day.size)} key={count++}>
-                    //       <Item timetable={day}/>
-                    //     </ItemGroup>
-                    //   )
-                    // })
                   }
                 </SlideCell>
             </SlidePage>
           )
         })
       }
-      </Container>
+    </Container>
   )
 }

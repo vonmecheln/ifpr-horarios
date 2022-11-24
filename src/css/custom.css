@@ -4,6 +4,7 @@
   --text-link: #2ca202;
   --text-link-hover: #134700;
   --text-interval: #666666;
+  --text-cell: #2d3133;
 
   --border-cell: #ffffff;
   --border-box: #b8b8b8;
@@ -13,12 +14,25 @@
   --shadow: #00000080;
 }
 
+[data-theme="dark"] {
+  --border-cell: #1c1e21;
+
+  --background-cell: #2d3133;
+
+  --text-cell: #d9d9d9;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
-  width: 100vw;
-  height: 100%;
+  /* width: 100vw; */
   font-family: "Poppins", sans-serif;
   overflow-x: hidden !important;
+  height: auto !important;
+  position: relative;
+}
+
+.container {
+  height: 100%;
 }
 
 @media print {

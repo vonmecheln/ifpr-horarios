@@ -10,6 +10,8 @@ export const Container = styled.div<{gridColumns: string, gridRows: string}>`
 
   margin: 1rem 0;
 
+  position: relative;
+
   @media print {
     width: 100vw;
     margin: 0px;

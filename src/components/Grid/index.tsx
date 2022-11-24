@@ -10,6 +10,7 @@ import { Container } from './styles'
 import { Footer } from '../Footer'
 import { updateLocalStorage } from '@site/src/utils/update-local-storage'
 import { getItemFromLocalStorage } from '@site/src/utils/get-item-from-local-storage'
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 export interface GridProps {
   title?: string;
@@ -24,8 +25,10 @@ function setGridTemplateRows(textFooter: string) {
 }
 
 export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
-  const settingsOfTime = getItemFromLocalStorage()
-  console.log(settingsOfTime);
+  let settingsOfTime 
+  if (ExecutionEnvironment.canUseDOM) {
+    settingsOfTime = getItemFromLocalStorage()
+  }
   const [isMenuFixed, setIsMenuFixed] = useState<boolean>(settingsOfTime?.isMenuFixed ?? false)
   const [timetableView, setTimetableView] = useState<string>(settingsOfTime?.timetableView ?? 'completed')
   const gridRef = useRef()
@@ -55,9 +58,12 @@ export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
     rowsSize += ` ${el.size}fr`
   })
   
-  useEffect(() => {
-    updateLocalStorage({isMenuFixed, timetableView})
-  }, [isMenuFixed, timetableView])
+  
+  if (ExecutionEnvironment.canUseDOM) {
+    useEffect(() => {
+      updateLocalStorage({isMenuFixed, timetableView})
+    }, [isMenuFixed, timetableView])
+  }
   
   return(
     <Container gridColumns={gridColumns} gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>

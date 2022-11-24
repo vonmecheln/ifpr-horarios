@@ -13,10 +13,10 @@ export const Cell = styled.div<{ gridArea: string }>`
   
   padding: 0.4rem;
   
-  border: 1px solid var(--border-cell);
+  /* border: 1px solid var(--border-cell); */
   border-radius: 5px;
 
-  color: #000;  
+  color: var(--text-cell);  
   background-color: var(--background-cell);
 
   /* box-shadow: 0px 0px 1px 1px var(--shadow); */
@@ -65,10 +65,6 @@ export const Cell = styled.div<{ gridArea: string }>`
 
   a:hover {
     color: var(--text-link-hover);
-  }
-
-  &:hover {
-    filter: brightness(0.9);
   }
 
   &.sidebar ~ &.sidebar:not(&.sidebar:nth-of-type(25)) {

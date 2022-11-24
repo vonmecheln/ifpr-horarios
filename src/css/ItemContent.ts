@@ -20,8 +20,12 @@ export const ItemContent = styled.div<{theme: ThemeProps}>`
   
   border: 1px solid var(--border-cell);
   border-radius: 5px;
+  
+  [data-theme="dark"] {
+    border: 1px solid var(--ifm-color-black);
+  }
 
-  color: #000;  
+  color: var(--text-cell);  
   background-color: ${props => props.theme.teacherBackground};
 
   /* box-shadow: 0px 0px 1px 1px var(--shadow); */

@@ -10,7 +10,7 @@ export const DialogTrigger = styled(Dialog.Trigger)`
   transition: filter 0.4s;
 
   &:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
   }
 `
 
