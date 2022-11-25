@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+html {
+  overflow-x: hidden !important;
+}
 
 :root {
   --text-link: #2ca202;
   --text-link-hover: #134700;
   --text-interval: #666666;
   --text-cell: #2d3133;
+  --ifm-color-primary: #237631;
+  --ifm-color-danger: #d61927;
 
   --border-cell: #ffffff;
   --border-box: #b8b8b8;
   --border-grid: #d9d9d9;
+  --border-empty-box: #ededed;
 
   --background-cell: #d9d9d9;
   --shadow: #00000080;
@@ -16,6 +22,8 @@
 
 [data-theme="dark"] {
   --border-cell: #1c1e21;
+  --border-grid: #3b4042;
+  --border-empty-box: #353a3c;
 
   --background-cell: #2d3133;
 
@@ -26,9 +34,8 @@ body {
   -webkit-font-smoothing: antialiased;
   /* width: 100vw; */
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden !important;
   height: auto !important;
-  position: relative;
+  overflow-x: hidden !important;
 }
 
 .container {

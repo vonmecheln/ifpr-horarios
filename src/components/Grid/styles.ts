@@ -8,7 +8,7 @@ export const Container = styled.div<{gridColumns: string, gridRows: string}>`
   border: 1px solid var(--border-grid);
   border-radius: 5px;
 
-  margin: 1rem 0;
+  margin: 1rem 0.3rem;
 
   position: relative;
 

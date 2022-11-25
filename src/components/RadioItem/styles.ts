@@ -44,6 +44,6 @@ export const RadioGroupIndicator = styled(RadioGroup.Indicator)`
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 50%;
-    background-color: green;
+    background-color: var(--ifm-color-primary);
   }
 `

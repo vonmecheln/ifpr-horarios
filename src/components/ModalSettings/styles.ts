@@ -4,7 +4,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 export const DialogTrigger = styled(Dialog.Trigger)`
   background: transparent;
   border: none;
-  color: green;
+  color: var(--ifm-color-primary);
   
   cursor: pointer;
   transition: filter 0.4s;
@@ -116,7 +116,7 @@ export const SettingsContainer = styled.main`
       box-shadow: 0px 0px 2px #00000080;
 
       background-color: #fff;
-      color: green;
+      color: var(--ifm-color-primary);
 
       cursor: pointer;
 
@@ -159,7 +159,7 @@ export const ScreenshotButton = styled.button`
   cursor: pointer;
 
   background-color: #fff;
-  color: green;
+  color: var(--ifm-color-primary);
 
   transition: filter 0.4s;
   

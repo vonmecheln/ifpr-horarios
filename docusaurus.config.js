@@ -19,7 +19,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'pt-BR',
-    locales: ['en','pt-BR'],
+    locales: ['pt-BR'],
     path: 'i18n',
   },
 
@@ -50,12 +50,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {
-        title: 'Horários',
+      navbar: { 
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.png',
-          width: 170,
+          src: 'img/logo.svg',
+          srcDark: 'img/logoDark.svg',
+          width: 200
         },
         items: [
           {

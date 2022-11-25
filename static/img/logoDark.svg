@@ -1,4 +1,4 @@
-<svg style="width: 150px; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 54" role="img" aria-label="[title + description]">
+<svg style="width: 380px; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 54" role="img" aria-label="[title + description]">
 	<title>Instituto Federal do Paraná</title>
 	<desc>Marca do IFPR</desc>
 	<path style="fill: green" d="M37.4 36.4c0 0.6-0.5 1.1-1 1.1h-8.7c-0.6 0-1.1-0.5-1.1-1.1v-8.7c0-0.6 0.5-1.1 1.1-1.1h8.7c0.6 0 1.1 0.5 1.1 1.1V36.4z"></path>
@@ -12,8 +12,8 @@
 	<path style="fill: green" d="M24.4 49.4c0 0.6-0.5 1.1-1.1 1.1h-8.7c-0.6 0-1.1-0.5-1.1-1.1v-8.7c0-0.6 0.5-1 1.1-1h8.7c0.6 0 1.1 0.5 1.1 1.1V49.4z"></path>
 	<path style="fill: red" d="M11.9 6c0 3.3-2.7 6-6 6C2.7 11.9 0 9.3 0 6S2.7 0 6 0C9.3 0 11.9 2.7 11.9 6"></path>
 	<text transform="matrix(1 0 0 1 43.6553 24.1582)">
-		<tspan style="font-size: 1.3rem; font-weight: 700; fill: #221F1F;">INSTITUTO FEDERAL</tspan>
+		<tspan style="font-size: 1.3rem; font-weight: 700; fill: #fff;">INSTITUTO FEDERAL</tspan>
 	</text>
-	<text transform="matrix(1.0017 0 0 1 43.9331 37.5249)" style="font-size: 1.1rem; fill: #221F1F">  Paraná</text>
-	<text transform="matrix(1.0017 0 0 1 43.9326 50.5059)" style="font-size: 1.1rem; fill: #221F1F">  Campus Assis Chateaubriand</text>
+	<text transform="matrix(1.0017 0 0 1 43.9331 37.5249)" style="font-size: 1.1rem; fill: #fff">  Paraná</text>
+	<text transform="matrix(1.0017 0 0 1 43.9326 50.5059)" style="font-size: 1.1rem; fill: #fff">  Campus Assis Chateaubriand</text>
 </svg>
