@@ -67,6 +67,10 @@ const config = {
           {
             type: 'docsVersionDropdown',
           },
+          {
+            type: 'search',
+            position: 'right',
+          },
         ],
       },
       prism: {
@@ -75,7 +79,7 @@ const config = {
       },
     }),
     plugins: [
-      // require.resolve("@cmfcmf/docusaurus-search-local")
+      require.resolve("@cmfcmf/docusaurus-search-local")
     ]
 };
 

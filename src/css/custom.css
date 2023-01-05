@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 html {
-  overflow-x: hidden !important;
+  height: auto !important;
 }
 
 :root {
@@ -12,10 +13,8 @@ html {
   --ifm-color-danger: #d61927;
 
   --border-cell: #ffffff;
-  --border-box: #b8b8b8;
   --border-grid: #d9d9d9;
-  --border-empty-box: #ededed;
-
+  --border-empty-box: #b8b8b8;
   --background-cell: #d9d9d9;
   --shadow: #00000080;
 }
@@ -36,6 +35,10 @@ body {
   font-family: "Poppins", sans-serif;
   height: auto !important;
   overflow-x: hidden !important;
+}
+
+.navbar {
+  box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.1);
 }
 
 .container {
