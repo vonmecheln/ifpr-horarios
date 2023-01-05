@@ -110,17 +110,26 @@ const config = {
             title: 'Mais',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub',
+                href: 'https://github.com/vonmecheln/ifpr-horarios',
               },
-              // {
-              //   label: 'GitHub',
-              //   href: 'https://github.com/facebook/docusaurus',
-              // },
+            ],
+          },
+          {
+            title: 'Contato',
+            items: [
+              {
+                label: 'vonmecheln',
+                href: 'https://github.com/vonmecheln',
+              },
+              {
+                label: 'ricardorhv',
+                href: 'https://github.com/ricardorhv',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Von Mechlen. Desenvolvido com Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Von Mechlen e Ricardo Vinciguerra. Desenvolvido com Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
