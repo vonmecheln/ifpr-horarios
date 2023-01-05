@@ -1,0 +1,212 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Laboratório de Informatica B",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "AGO2022 - Grupo A",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "AGO2022 - Grupo B",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Projeto Final de Curso - 181",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "IIN2019",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Segurança em Sistemas e Redes - 23",
+          size: 1,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Trabalho de Conclusão de Curso - 26",
+          size: 1,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Projeto Integrador II - 1239",
+          size: 2,
+          teacher: "Alexandre Rodrigues Monge",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Telecomunicações e Geoprocessamento - 24",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Engenharia de Software - 20",
+          size: 2,
+          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Programação Orientada a Objetos - 21",
+          size: 2,
+          teacher: "Humberto Fioravante Ferro",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Programação Orientada a Objetos - 21",
+          size: 2,
+          teacher: "Humberto Fioravante Ferro",
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teacher: "Vander Fabio Silveira",
+          classroom: "Laboratório de Informatica B",
+          students: "EIN2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Informatica B
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

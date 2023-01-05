@@ -21,7 +21,8 @@ export interface ClassesProps {
   {
     title: string;
     url: string;
-  }>
+  }>;
+  color?: string
 }
 
 export interface WeekClassesProps {

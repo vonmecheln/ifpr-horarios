@@ -11,6 +11,7 @@ import { Footer } from '../Footer'
 import { updateLocalStorage } from '@site/src/utils/update-local-storage'
 import { getItemFromLocalStorage } from '@site/src/utils/get-item-from-local-storage'
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
+import { defineColorBase } from '@site/src/utils/define-color-base'
 
 export interface GridProps {
   title?: string;
@@ -51,6 +52,10 @@ export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
   time = timeFormatted
   weekClasses = weekClassesFormatted
   findPositionY({weekClasses, time})
+
+  defineColorBase({weekClasses, title})
+
+  // findPositionY({weekClasses, time})
 
   let rowsSize = ''
   let gridColumns = `10fr 90fr`

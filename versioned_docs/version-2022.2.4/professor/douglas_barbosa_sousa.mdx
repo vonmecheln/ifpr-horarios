@@ -1,0 +1,154 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Douglas Barbosa Sousa",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Fundamentos de informática - 1076",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica A",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica A",
+          students: "AGO2022 - Grupo A",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica A",
+          students: "AGO2022 - Grupo B",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Laboratório de Banco de Dados - 1238",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica B",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Projeto Final de Curso - 181",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica C",
+          students: "IIN2019",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Douglas Barbosa Sousa
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

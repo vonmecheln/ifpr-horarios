@@ -1,0 +1,172 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Laboratório de Informatica C",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Informática Instrumental - 153",
+          size: 2,
+          teacher: "Alexandre Rodrigues Monge",
+          classroom: "Laboratório de Informatica C",
+          students: "ELM2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2022 - Grupo A",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teacher: "Douglas Barbosa Sousa",
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2022 - Grupo B",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "PCCC 1 - Integração de conteúdos do semestre por meio da informática - 486",
+          size: 2,
+          teacher: "Marcia Aparecida Barbosa",
+          classroom: "Laboratório de Informatica C",
+          students: "BIO2018",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Informática Instrumental - 596",
+          size: 2,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica C",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Orientação de estágio supervisionado - 1097",
+          size: 1,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Informática Instrumental - 1532",
+          size: 2,
+          teacher: "Vânio Berlin de Souza",
+          classroom: "Laboratório de Informatica C",
+          students: "EIN2022",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Informatica C
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

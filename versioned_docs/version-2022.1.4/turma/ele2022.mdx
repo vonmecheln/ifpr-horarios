@@ -1,0 +1,229 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "ELE2022",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo A",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo B",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletricidade Básica - 595",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022 - Grupo A",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletricidade Básica - 595",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022 - Grupo B",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Comunicação e Expressão - 598",
+          size: 2,
+          teacher: "Kátia Cristiane Kobus Novaes",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fundamentos da Matemática - 599",
+          size: 2,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Informática Instrumental - 596",
+          size: 2,
+          teacher: "Marcos Antonio Guido",
+          classroom: "Laboratório de Informatica C",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Fundamentos da Matemática - 599",
+          size: 2,
+          teacher: "Sérgio Augusto Dias Castro",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo A",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo B",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Eletricidade Básica - 595",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022 - Grupo A",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Eletricidade Básica - 595",
+          size: 2,
+          teacher: "Tiago Henrique dos Santos",
+          classroom: "Laboratório de Física",
+          students: "ELE2022 - Grupo B",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Instrumentos de Medidas Elétricas - 1138",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Física Aplicada - 597",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# ELE2022
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

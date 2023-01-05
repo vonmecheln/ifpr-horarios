@@ -1,0 +1,179 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Jhones Donizetti Mendes",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Geografia 4 - 227",
+          size: 2,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 9-2",
+          students: "EIN2019",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Geografia II - 623",
+          size: 2,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 15-2",
+          students: "AGO2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Geografia III - 195",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 3-1",
+          students: "IIN2019",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Geografia 2 - 177",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Geografia I - 463",
+          size: 2,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Geografia 1 - 126",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Geografia 3 - 206",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 8-2",
+          students: "EIN2020",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Trabalho de conclusão de curso I - 484",
+          size: 2,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Jhones Donizetti Mendes
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

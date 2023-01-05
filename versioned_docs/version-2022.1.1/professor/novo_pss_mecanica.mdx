@@ -1,0 +1,186 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Novo PSS Mecânica",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Desenho Técnico - 132",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELM2022 - Grupo A",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Desenho Técnico - 132",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELM2022 - Grupo B",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Processos de Fabricação 2 - 1573",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Laboratório de Usinagem B4",
+          students: "EIN2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Tecnologia dos Materiais - 1531",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Cálculo Mecânico - 154",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Desenho Técnico - 132",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELM2022 - Grupo A",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Desenho Técnico - 132",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELM2022 - Grupo B",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Processos de Fabricação 3 - 1590",
+          size: 2,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Laboratório de Usinagem B4",
+          students: "EIN2019",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Segurança do Trabalho - 197",
+          size: 1,
+          teacher: "Novo PSS Mecânica",
+          classroom: "Sala 8-2",
+          students: "EIN2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Novo PSS Mecânica
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

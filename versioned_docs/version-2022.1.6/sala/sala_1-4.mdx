@@ -1,0 +1,163 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Sala 1-4",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
+          size: 2,
+          teacher: "Grazielli Bueno",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 1-4",
+          students: "EIN2021",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Eletrônica de Potência - 2228",
+          size: 2,
+          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletrônica de Potência - 2228",
+          size: 2,
+          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Projetos elétricos industriais - 2232",
+          size: 2,
+          teacher: "Alex Miyamoto Mussi",
+          classroom: "Sala 1-4",
+          students: "ELE2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Sala 1-4
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

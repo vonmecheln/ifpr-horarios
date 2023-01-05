@@ -1,0 +1,245 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "EIN2018-4ANO",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "História 4 - 229",
+          size: 2,
+          teacher: "Amilcar Machado Profeta Filho",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Manutenção Industrial e Gestão da Produção - 1592",
+          size: 1,
+          teacher: "Cesar Gomes de Freitas",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Geografia 4 - 227",
+          size: 2,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Lingua Estrangeira Moderna 3 - Inglês - 230",
+          size: 1,
+          teacher: "Celina de Oliveira Barbosa Gomes",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Lingua Portuguesa 4 - 232",
+          size: 2,
+          teacher: "Kátia Cristiane Kobus Novaes",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Artes 3 - 221",
+          size: 1,
+          teacher: "Luiz Carlos do Couto Junior",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia 4 - 223",
+          size: 1,
+          teacher: "Neomar Sandro Mignoni",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "08:20 - 09:10"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Sociologia 4 - 238",
+          size: 1,
+          teacher: "Everaldo Lorensetti",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Biologia 4 - 222",
+          size: 2,
+          teacher: "Luis Eduardo Gazal",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Processos de Fabricação 3 - 1590",
+          size: 2,
+          teacher: "Mauro Buss",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Física 4 - 224",
+          size: 2,
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Química 4 - 235",
+          size: 2,
+          teacher: "Elizangela Cavazzini Cesca",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Projeto Integrador - 1593",
+          size: 1,
+          teacher: "Josiane Paula Maltauro Lopes",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Máquinas Térmicas e de Fluxo - 218",
+          size: 2,
+          teacher: "Luiz Inácio Chaves",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Matemática 4 - 234",
+          size: 2,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Matemática 4 - 234",
+          size: 1,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "09:25 - 10:15"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# EIN2018-4ANO
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

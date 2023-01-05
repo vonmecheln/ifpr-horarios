@@ -1,0 +1,171 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Edvaldo Luis Rossini",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Química 3 - 211",
+          size: 1,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "EIN2019-3ANO",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Química 1 - 143",
+          size: 1,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "EIN2021-1ANO",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: []
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Química I - 461",
+          size: 2,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "AGO2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Química 2 - 187",
+          size: 2,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "EIN2020-2ANO",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Optativa 1 Energia Nuclear e Radiação - Aplicações da Tecnologia Nuclear - 1179",
+          size: 2,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Química 4 - 235",
+          size: 2,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "EIN2018-4ANO",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Química I - 1068",
+          size: 2,
+          teacher: "Edvaldo Luis Rossini",
+          classroom: "",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Edvaldo Luis Rossini
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

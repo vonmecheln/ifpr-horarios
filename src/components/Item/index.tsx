@@ -7,10 +7,10 @@ import { createGridArea } from "../../utils/create-grid-area";
 import { ClassesProps, Timetable } from "../Timetable";
 
 export function Item(props: {timetable: ClassesProps}) {
-  let colorTeacher = createColorByTeacher(props.timetable.teacher).split(',')
+  let colorItem = props.timetable.color.split(',')
     
   const theme = {
-    teacherBackground: `hsl(${colorTeacher[0]} ${Number(colorTeacher[1]) * 100}% 50%)`,
+    teacherBackground: `hsl(${colorItem[0]} ${Number(colorItem[1]) * 100}% 50%)`,
   }
 
   return (

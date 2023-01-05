@@ -7,16 +7,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Quadro de Horários do IFPR - Assis Chateaubriand',
-  tagline: 'Este é o quadro de horários do IFPR - Assis Chateaubriand',
-  url: 'https://ricardorhv.github.io',
+  tagline: 'Com organização e tempo, acha-se o segredo de fazer tudo e bem feito.',
+  url: 'https://vonmecheln.github.io/',
   baseUrl: '/ifpr-horarios/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.gif',
-  
-  organizationName: 'ricardorhv', 
-  projectName: 'ifpr-horarios',
+  favicon: 'img/favicon.ico',
 
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'vonmecheln', // Usually your GitHub org/user name.
+  projectName: 'ifpr-horarios', // Usually your repo name.
+  trailingSlash: false,
+  
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
@@ -37,50 +43,90 @@ const config = {
               path: '',
             },
           },
-            
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
-      
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: { 
+      navbar: {
+        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
-          srcDark: 'img/logoDark.svg',
-          width: 200
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Menu',
+            label: 'Quadro de Horários',
           },
+          // {
+          //   href: 'https://assis.ifpr.edu.br',
+          //   label: 'Campus Assis Chateaubriand',
+          //   position: 'right',
+          // },
           {
             type: 'docsVersionDropdown',
           },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
-            type: 'search',
-            position: 'right',
+            title: 'Institucional',
+            items: [
+              {
+                label: 'Campus Assis Chateaubriand',
+                href: 'https://assis.ifpr.edu.br',
+              },
+              // {
+              //   label: 'Discord',
+              //   href: 'https://discordapp.com/invite/docusaurus',
+              // },
+              // {
+              //   label: 'Twitter',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
+            ],
+          },
+          {
+            title: 'Mais',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              // {
+              //   label: 'GitHub',
+              //   href: 'https://github.com/facebook/docusaurus',
+              // },
+            ],
           },
         ],
+        copyright: `Copyright © ${new Date().getFullYear()} Von Mechlen. Desenvolvido com Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins: [
-      require.resolve("@cmfcmf/docusaurus-search-local")
-    ]
 };
 
 module.exports = config;

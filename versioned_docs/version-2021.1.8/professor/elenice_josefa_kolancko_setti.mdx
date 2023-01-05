@@ -1,0 +1,164 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Elenice Josefa Kolancko Setti",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: []
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Matemática I - 1064",
+          size: 2,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "IIW2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Matemática IV - 184",
+          size: 3,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "IIN2018",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Matemática III - 156",
+          size: 2,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "IIN2019",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Matemática III - 1086",
+          size: 2,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "AGO2019",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Matemática I - 1064",
+          size: 2,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "IIW2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Matemática I - 462",
+          size: 2,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "AGO2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Elenice Josefa Kolancko Setti
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

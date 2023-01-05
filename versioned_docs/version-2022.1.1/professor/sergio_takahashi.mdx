@@ -1,0 +1,195 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Sérgio Takahashi",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2022 - Grupo B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 1,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2022 - Grupo B",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo A",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo B",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Metrologia - 1550",
+          size: 1,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Metrologia B4",
+          students: "EIN2021",
+          time: "08:20 - 09:10"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: []
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2022 - Grupo A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 1,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2022 - Grupo A",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Metrologia - 108",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Metrologia B4",
+          students: "ELM2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo A",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Desenho Técnico - 2226",
+          size: 2,
+          teacher: "Sérgio Takahashi",
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "ELE2022 - Grupo B",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Sérgio Takahashi
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

@@ -1,0 +1,237 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "IIN2018",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Projeto e Análise de Sistemas - 182",
+          size: 2,
+          teacher: "Alexandre Rodrigues Monge",
+          classroom: "",
+          students: "IIN2018",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Geografia III - 195",
+          size: 1,
+          teacher: "Jhones Donizetti Mendes",
+          classroom: "",
+          students: "IIN2018",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Biologia IV - 196",
+          size: 1,
+          teacher: "Paula Magalhães Souza Deccache",
+          classroom: "",
+          students: "IIN2018",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "História III - 194",
+          size: 1,
+          teacher: "Milton Aparecido Azevedo",
+          classroom: "",
+          students: "IIN2018",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Língua Portuguesa IV - 186",
+          size: 3,
+          teacher: "Alan Ricardo Costa",
+          classroom: "",
+          students: "IIN2018",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Química IV - 191",
+          size: 1,
+          teacher: "Kathia Regina Kunzler Bechlin",
+          classroom: "",
+          students: "IIN2018",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia IV - 193",
+          size: 1,
+          teacher: "Neomar Sandro Mignoni",
+          classroom: "",
+          students: "IIN2018",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Matemática IV - 184",
+          size: 3,
+          teacher: "Elenice Josefa Kolancko Setti",
+          classroom: "",
+          students: "IIN2018",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Tópicos Especiais em Tecnologia - 35",
+          size: 2,
+          teacher: "Alexandre Rodrigues Monge",
+          classroom: "",
+          students: "IIN2018",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Língua Estrangeira Moderna II - Inglês - 545",
+          size: 2,
+          teacher: "Adrian Lincoln Ferreira Clarindo",
+          classroom: "",
+          students: "IIN2018",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sociologia IV - 192",
+          size: 1,
+          teacher: "Everaldo Lorensetti",
+          classroom: "",
+          students: "IIN2018",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Física IV - 190",
+          size: 2,
+          teacher: "Polyanna Guimarães e Miranda",
+          classroom: "",
+          students: "IIN2018",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 2,
+          teacher: "Alex Vinicius Faria",
+          classroom: "",
+          students: "IIN2018",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 1,
+          teacher: "Alex Vinicius Faria",
+          classroom: "",
+          students: "IIN2018",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Projeto Final de Curso - 181",
+          size: 2,
+          teacher: "Olavo José Luiz Junior",
+          classroom: "",
+          students: "IIN2018",
+          time: "10:15 - 11:05"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# IIN2018
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>

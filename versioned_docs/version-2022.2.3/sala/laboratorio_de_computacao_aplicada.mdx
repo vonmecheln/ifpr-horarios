@@ -1,0 +1,155 @@
+import { Grid } from "../../../src/components/Grid";
+const data = {
+  title: "Laboratório de Computação Aplicada",
+  weekClasses: [
+    {
+      title: "Segunda-Feira",
+      timetable: [
+        {
+          subject: "Desenho técnico e topografia - 469",
+          size: 2,
+          teacher: "Octavio Henrique Viana",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "AGO2022 - Grupo A",
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      title: "Terça-Feira",
+      timetable: [
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Desenvolvimento para Dispositivos Móveis - 19",
+          size: 2,
+          teacher: "Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      title: "Quarta-Feira",
+      timetable: [
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen+Luis Henrique Manosso Von Mecheln",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2021",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
+          size: 2,
+          teacher: "Eduardo Alberto Felippsen",
+          classroom: "Laboratório de Computação Aplicada",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: []
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:10 - 09:25",
+      size: 15
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "11:55 - 13:10",
+      size: 75
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "14:50 - 15:05",
+      size: 15
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 19:00",
+      size: 135
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "20:40 - 21:00",
+      size: 20
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Computação Aplicada
+
+<div>
+    {
+        <Grid
+            title={data.title} 
+            weekClasses={data.weekClasses} 
+            time={data.time}
+        />
+    }
+</div>
