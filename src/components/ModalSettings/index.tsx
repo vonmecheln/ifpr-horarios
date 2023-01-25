@@ -2,6 +2,7 @@ import React from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 import * as Checkbox from '@radix-ui/react-checkbox';
 import * as RadioGroup from '@radix-ui/react-radio-group';
+import * as Slider from '@radix-ui/react-slider';
 import { DialogClose, DialogContent, DialogTrigger, ScreenshotButton, SettingsContainer } from './styles'
 import { Gear, X, Check, Camera} from 'phosphor-react'
 import { RadioItem } from '../RadioItem';
@@ -70,6 +71,14 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
 
 
           </SettingsContainer>
+
+          <Slider.Root className="SliderRoot" defaultValue={[50]} max={100} step={1} aria-label="Volume">
+            <Slider.Track className="SliderTrack">
+              <Slider.Range className="SliderRange" />
+            </Slider.Track>
+            <Slider.Thumb className="SliderThumb" />
+          </Slider.Root>
+
           <hr/>
           <footer>
             <Dialog.Description>

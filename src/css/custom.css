@@ -9,6 +9,7 @@ html {
   --text-link-hover: #134700;
   --text-interval: #666666;
   --text-cell: #2d3133;
+  --text-cell-light: #d9d9d9;
   --ifm-color-primary: #237631;
   --ifm-color-danger: #d61927;
 
@@ -17,6 +18,8 @@ html {
   --border-empty-box: #b8b8b8;
   --background-cell: #d9d9d9;
   --shadow: #00000080;
+
+  --font-size-base: 0.9rem;
 }
 
 [data-theme="dark"] {
@@ -27,6 +30,7 @@ html {
   --background-cell: #2d3133;
 
   --text-cell: #d9d9d9;
+  --text-cell-light: #d9d9d9;
 }
 
 body {

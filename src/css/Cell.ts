@@ -22,7 +22,7 @@ export const Cell = styled.div<{ gridArea: string }>`
   /* box-shadow: 0px 0px 1px 1px var(--shadow); */
 
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
+  font-size: var(--font-size-base);
   font-weight: 300;
 
   div {
@@ -82,6 +82,6 @@ export const Cell = styled.div<{ gridArea: string }>`
   }
 
   &.sidebar {
-    font-size: 0.8rem;
+    font-size: var(--font-size-base);
   }
 `

@@ -25,13 +25,13 @@ export const ItemContent = styled.div<{theme: ThemeProps}>`
     border: 1px solid var(--ifm-color-black);
   }
 
-  color: var(--text-cell);  
+  color: var(--text-cell-light);  
   background-color: ${props => props.theme.teacherBackground};
 
   /* box-shadow: 0px 0px 1px 1px var(--shadow); */
 
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
+  font-size: var(--font-size-base);
   font-weight: 300;
 
   transition: all .3s;

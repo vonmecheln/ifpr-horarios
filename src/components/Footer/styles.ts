@@ -13,6 +13,6 @@ export const Container = styled.footer`
 
   p {
     margin: 0px;
-    font-size: 0.9rem;
+    font-size: var(--font-size-base);
   }
 `

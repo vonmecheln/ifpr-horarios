@@ -28,8 +28,8 @@ export const DialogContent = styled(Dialog.Content)`
     padding: 0.8rem 1rem;
 
     background: #52c234; 
-    background: -webkit-linear-gradient(to right, #06170080, #52c23480);  
-    background: linear-gradient(to right, #06170080, #52c23480);
+    background: -webkit-linear-gradient(to right, #217d00ee, #52c234ee);  
+    background: linear-gradient(to right, #217d00ee, #52c234ee);
     backdrop-filter: blur(20px);
     color: #fff;
     
@@ -49,7 +49,7 @@ export const DialogContent = styled(Dialog.Content)`
 
       p {
         color: #D9D9D9;
-        font-size: 0.9rem;
+        font-size: var(--font-size-base);
         text-shadow: 0px 0px 2px #00000025;
       }
     }
@@ -88,7 +88,7 @@ export const SettingsContainer = styled.main`
   padding: 1rem 2rem;
   margin-top: 0.25rem;
 
-  font-size: 0.8rem;
+  font-size: var(--font-size-base);
   
   display: grid;
   align-items: center;

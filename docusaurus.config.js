@@ -36,13 +36,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          lastVersion: 'current',
-          versions: {
-            current: {
-              label: 'Atual',
-              path: '',
-            },
-          },
+          // lastVersion: 'current',
+          // versions: {
+          //   current: {
+          //     label: 'Atual',
+          //     path: '',
+          //   },
+          // },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
