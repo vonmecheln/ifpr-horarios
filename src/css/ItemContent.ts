@@ -6,7 +6,7 @@ interface ThemeProps {
 
 export const ItemContent = styled.div<{theme: ThemeProps}>`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 

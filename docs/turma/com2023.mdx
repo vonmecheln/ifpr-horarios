@@ -6,17 +6,41 @@ const data = {
       title: "Segunda-Feira",
       timetable: [
         {
-          subject: "Língua Portuguesa e Literatura I - 2322",
+          subject: "Fundamentos da Contabilidade - 2332",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teacher: "Cesar Gomes de Freitas",
           classroom: "",
           students: "COM2023",
           time: "13:10 - 14:00"
         },
         {
+          subject: "Projeto Integrador I - 2334",
+          size: 1,
+          teacher: "Josiane Paula Maltauro",
+          classroom: "",
+          students: "COM2023",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia I - 2328",
+          size: 1,
+          teacher: "José Jurandir Pereira Junior",
+          classroom: "",
+          students: "COM2023",
+          time: "11:05 - 11:55"
+        },
+        {
           subject: "Matemática I - 2327",
           size: 2,
           teacher: "Mauro César de Souza Siena",
+          classroom: "",
+          students: "COM2023",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Gestão de pessoas - 2331",
+          size: 2,
+          teacher: "Novo professor de Administração PSS - 40h",
           classroom: "",
           students: "COM2023",
           time: "15:05 - 15:55"
@@ -27,55 +51,29 @@ const data = {
       title: "Terça-Feira",
       timetable: [
         {
-          subject: "Fundamentos da Contabilidade - 2332",
+          subject: "Educação Física I - 2323",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teacher: "Bruna Valeriano da Silva Lisboa",
           classroom: "",
           students: "COM2023",
-          time: "13:10 - 14:00"
+          time: "07:30 - 08:20"
         },
         {
-          subject: "Direito do Trabalho e do consumidor - 2330",
+          subject: "Física I - 2325",
           size: 2,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "",
+          teacher: "Bruno Garcia Bonfim",
+          classroom: "Laboratório de Física",
           students: "COM2023",
-          time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
+          time: "09:25 - 10:15"
+        },
         {
           subject: "Língua Portuguesa e Literatura I - 2322",
           size: 2,
           teacher: "Celina de Oliveira Barbosa Gomes",
           classroom: "",
           students: "COM2023",
-          time: "10:15 - 11:05"
+          time: "15:05 - 15:55"
         },
-        {
-          subject: "Filosofia I - 2328",
-          size: 1,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "",
-          students: "COM2023",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Matemática I - 2327",
-          size: 2,
-          teacher: "Mauro César de Souza Siena",
-          classroom: "",
-          students: "COM2023",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
         {
           subject: "Química I - 2326",
           size: 2,
@@ -91,57 +89,17 @@ const data = {
           classroom: "",
           students: "COM2023",
           time: "11:05 - 11:55"
-        },
-        {
-          subject: "Projeto Integrador I - 2334",
-          size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "",
-          students: "COM2023",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Língua Estrangeira: Inglês - 2329",
-          size: 2,
-          teacher: "Keyla Christina Almeida Portela",
-          classroom: "",
-          students: "COM2023",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Fundamentos da Administração - 2333",
-          size: 2,
-          teacher: "Novo professor de Administração PSS - 40h",
-          classroom: "",
-          students: "COM2023",
-          time: "15:05 - 15:55"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
+      title: "Quarta-Feira",
       timetable: [
-        {
-          subject: "Educação Física I - 2323",
-          size: 2,
-          teacher: "Bruna Valeriano da Silva Lisboa",
-          classroom: "",
-          students: "COM2023",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Física I - 2325",
-          size: 2,
-          teacher: "Bruno Garcia Bonfim",
-          classroom: "",
-          students: "COM2023",
-          time: "07:30 - 08:20"
-        },
         {
           subject: "Biologia I - 2324",
           size: 2,
           teacher: "Eliana Peliçon Pereira Figueira",
-          classroom: "",
+          classroom: "Laboratório de Biologia",
           students: "COM2023",
           time: "09:25 - 10:15"
         },
@@ -154,12 +112,54 @@ const data = {
           time: "11:05 - 11:55"
         },
         {
-          subject: "Gestão de pessoas - 2331",
+          subject: "Matemática I - 2327",
+          size: 2,
+          teacher: "Mauro César de Souza Siena",
+          classroom: "",
+          students: "COM2023",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      title: "Quinta-Feira",
+      timetable: [
+        {
+          subject: "Língua Portuguesa e Literatura I - 2322",
+          size: 2,
+          teacher: "Celina de Oliveira Barbosa Gomes",
+          classroom: "",
+          students: "COM2023",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Direito do Trabalho e do consumidor - 2330",
+          size: 2,
+          teacher: "José Jurandir Pereira Junior",
+          classroom: "",
+          students: "COM2023",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      title: "Sexta-Feira",
+      timetable: [
+        {
+          subject: "Língua Estrangeira: Inglês - 2329",
+          size: 2,
+          teacher: "Keyla Christina Almeida Portela",
+          classroom: "",
+          students: "COM2023",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Fundamentos da Administração - 2333",
           size: 2,
           teacher: "Novo professor de Administração PSS - 40h",
           classroom: "",
           students: "COM2023",
-          time: "13:10 - 14:00"
+          time: "15:05 - 15:55"
         }
       ]
     }
