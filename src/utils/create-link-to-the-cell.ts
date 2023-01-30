@@ -15,6 +15,7 @@ export function createLinkToTheCell(props: {weekClasses: DayProps[], title: stri
   
   props.weekClasses.forEach(dayClass => {
     dayClass.dayClasses.forEach(el => {
+      el.links = []
       if (props.title === el.students) {
         el.links = [(createLink(el.classroom, 'Sala'))]
       }
@@ -32,12 +33,10 @@ export function createLinkToTheCell(props: {weekClasses: DayProps[], title: stri
           el.links.push(createLink(teacher, 'Professor'))
         }
   
-        else {
+        else if (props.title === el.classroom){
           el.links.push(createLink(teacher, 'Professor'))
         }
       })
-      console.log(el.links);
-      
     })
   })
 }
