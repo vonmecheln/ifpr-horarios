@@ -69,7 +69,7 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
               />
             </RadioGroup.Root>
 
-            <div className="sliderContainer">
+            {/* <div className="sliderContainer">
               <span>Tamanho da fonte</span>
               <Slider.Root 
                 className="slider" 
@@ -84,7 +84,7 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
                 </Slider.Track>
                 <Slider.Thumb className="sliderThumb" />
               </Slider.Root>
-            </div>
+            </div> */}
 
           </SettingsContainer>
 
