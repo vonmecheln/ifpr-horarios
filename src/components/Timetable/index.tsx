@@ -12,12 +12,12 @@ import { createGroupItems } from '@site/src/utils/create-group-items';
 export interface ClassesProps {
   subject: string;
   size: number;
-  teacher?: string[];
+  teachers?: string[];
   classroom?: string;
   students?: string;
   time: string;
   y?: number;
-  link?: Array<
+  links?: Array<
   {
     title: string;
     url: string;
@@ -25,13 +25,13 @@ export interface ClassesProps {
   color?: string
 }
 
-export interface WeekClassesProps {
-  title: string;
-  timetable: Array<ClassesProps>;
+export interface DayProps {
+  dayName: string;
+  dayClasses: Array<ClassesProps>;
 }
 
 interface TimetableProps {
-  weekClasses: Array<WeekClassesProps>;
+  weekClasses: Array<DayProps>;
   rowsSize: string;
   time: TimeProps[];
   isMenuFixed: boolean;
@@ -102,9 +102,9 @@ export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: Timetabl
       isMenuFixed={isMenuFixed}
     >
       {
-        weekClasses.map(dayClass => {
-          const groupTimetable = createGroupItems(dayClass.timetable)
-          let index = weekClasses.findIndex(value => value.title === dayClass.title)
+        weekClasses.map(week => {
+          const groupTimetable = createGroupItems(week.dayClasses)
+          let index = weekClasses.findIndex(value => value.dayName === week.dayName)
           return (
             <SlidePage className={`keen-slider__slide number-slide${index + 1}`} key={index}>
                 <SlideCell rowsSize={rowsSize}>
@@ -113,7 +113,7 @@ export function Timetable({ weekClasses, rowsSize, time, isMenuFixed }: Timetabl
                 <SlideCell rowsSize={rowsSize}>
                   <ItemGroup gridArea='1 / 1 / 2 / 2' className='day'>
                     <ItemContent>
-                      <span>{dayClass.title}</span>
+                      <span>{week.dayName}</span>
                     </ItemContent>
                   </ItemGroup>
                   {

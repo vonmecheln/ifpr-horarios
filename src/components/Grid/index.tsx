@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Header } from '../Header'
 import { Sidebar, TimeProps } from '../Sidebar'
-import { Timetable, WeekClassesProps } from '../Timetable'
+import { Timetable, DayProps } from '../Timetable'
 import { findPositionY } from '@site/src/utils/find-position-y'
 import { reduceTimetable } from '@site/src/utils/reduce-timetable'
 import { createLinkToTheCell } from '@site/src/utils/create-link-to-the-cell'
@@ -16,7 +16,7 @@ import { defineColorBase } from '@site/src/utils/define-color-base'
 export interface GridProps {
   title?: string;
   time: Array<TimeProps>;
-  weekClasses: Array<WeekClassesProps>;
+  weekClasses: Array<DayProps>;
   textFooter?: string;
 }
 
