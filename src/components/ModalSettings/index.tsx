@@ -21,7 +21,7 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
       <DialogTrigger>
         <Gear size={'2rem'}/>
       </DialogTrigger>
-      <Dialog.Portal>
+      <Dialog.Portal>''
         <DialogContent>
           <header>
             <div>
@@ -69,15 +69,25 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
               />
             </RadioGroup.Root>
 
+            <div className="sliderContainer">
+              <span>Tamanho da fonte</span>
+              <Slider.Root 
+                className="slider" 
+                defaultValue={[14.4]} 
+                min={8} 
+                max={30} 
+                step={1} 
+                aria-label="Tamanho da fonte"
+              >
+                <Slider.Track className="sliderTrack">
+                  <Slider.Range className="sliderRange" />
+                </Slider.Track>
+                <Slider.Thumb className="sliderThumb" />
+              </Slider.Root>
+            </div>
 
           </SettingsContainer>
 
-          <Slider.Root className="SliderRoot" defaultValue={[50]} max={100} step={1} aria-label="Volume">
-            <Slider.Track className="SliderTrack">
-              <Slider.Range className="SliderRange" />
-            </Slider.Track>
-            <Slider.Thumb className="SliderThumb" />
-          </Slider.Root>
 
           <hr/>
           <footer>

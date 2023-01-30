@@ -12,7 +12,7 @@ import { createGroupItems } from '@site/src/utils/create-group-items';
 export interface ClassesProps {
   subject: string;
   size: number;
-  teacher?: string;
+  teacher?: string[];
   classroom?: string;
   students?: string;
   time: string;

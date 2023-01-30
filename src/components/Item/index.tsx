@@ -16,7 +16,7 @@ export function Item(props: {timetable: ClassesProps}) {
   return (
     <ThemeProvider theme={theme}>
       <ItemContent>
-        <span className="subject" title={props.timetable.subject}>{props.timetable.subject}</span>
+        <strong className="subject" title={props.timetable.subject}>{props.timetable.subject}</strong>
         {
           props.timetable.link.map(a => {
             return (

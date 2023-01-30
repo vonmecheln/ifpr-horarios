@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList = [
   {
     title: 'Fácil de usar',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/vetor2.svg').default,
     description: (
       <>
         O horário foi projetado desde o início para ser facilmente visualizado e 
@@ -21,7 +21,7 @@ const FeatureList = [
   },
   {
     title: 'Foco na praticidade',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/vetor1.svg').default,
     description: (
       <>
         O horário é focado na praticidade para consulta do dia-a-dia.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Produzido pelo IFPR',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/vetor10.svg').default,
     description: (
       <>
         Um trabalho feito em equipe por docentes do campus Assis Chateaubriand 
@@ -42,7 +42,7 @@ const FeatureList = [
   },
   {
     title: 'Melhorias constantes',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/vetor9.svg').default,
     description: (
       <>
         O horário está em constante melhoria, adaptando-se da melhor maneira as mudanças 

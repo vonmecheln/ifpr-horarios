@@ -27,9 +27,11 @@ function setGridTemplateRows(textFooter: string) {
 
 export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
   let settingsOfTime 
+
   if (ExecutionEnvironment.canUseDOM) {
     settingsOfTime = getItemFromLocalStorage()
   }
+  
   const [isMenuFixed, setIsMenuFixed] = useState<boolean>(settingsOfTime?.isMenuFixed ?? false)
   const [timetableView, setTimetableView] = useState<string>(settingsOfTime?.timetableView ?? 'completed')
   const gridRef = useRef()
@@ -37,6 +39,7 @@ export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
     type: "image/png",
     quality: 2.0
   });
+
   const download = (image: string, { name = title, extension = "png" } = {}) => {
     const a = document.createElement("a");
     a.href = image; 

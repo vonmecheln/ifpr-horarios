@@ -19,7 +19,9 @@ html {
   --background-cell: #d9d9d9;
   --shadow: #00000080;
 
-  --font-size-base: 0.9rem;
+  --slider-track: #0000007a;
+
+  --font-size-base: 16;
 }
 
 [data-theme="dark"] {

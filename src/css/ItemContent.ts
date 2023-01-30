@@ -6,7 +6,7 @@ interface ThemeProps {
 
 export const ItemContent = styled.div<{theme: ThemeProps}>`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
@@ -15,7 +15,7 @@ export const ItemContent = styled.div<{theme: ThemeProps}>`
   
   text-align: center;
   
-  padding: 0.4rem;
+  padding: 0.4em;
   margin: 0 0px;
   
   border: 1px solid var(--border-cell);
@@ -25,25 +25,25 @@ export const ItemContent = styled.div<{theme: ThemeProps}>`
     border: 1px solid var(--ifm-color-black);
   }
 
-  color: var(--text-cell-light);  
+  color: var(--text-cell);  
   background-color: ${props => props.theme.teacherBackground};
 
   /* box-shadow: 0px 0px 1px 1px var(--shadow); */
 
   font-family: 'Poppins', sans-serif;
-  font-size: var(--font-size-base);
+  font-size: 0.9em;
   font-weight: 300;
 
   transition: all .3s;
 
   word-break: break-word;
 
-  a {
-    color: white;
-  }
-
   &:hover {
     filter: brightness(0.8);
+  }
+
+  .subject, a {
+    color: var(--text-cell-light);  
   }
 
   @media (min-width: 768px) {

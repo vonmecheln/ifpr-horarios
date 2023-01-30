@@ -49,7 +49,7 @@ export const DialogContent = styled(Dialog.Content)`
 
       p {
         color: #D9D9D9;
-        font-size: var(--font-size-base);
+        font-size: 0.9rem;
         text-shadow: 0px 0px 2px #00000025;
       }
     }
@@ -88,13 +88,11 @@ export const SettingsContainer = styled.main`
   padding: 1rem 2rem;
   margin-top: 0.25rem;
 
-  font-size: var(--font-size-base);
+  font-size: 0.9rem;
   
   display: grid;
   align-items: center;
   grid-template: repeat(2, 1fr) / repeat(2, minmax(max-content, 100%));
-  /* grid-template-areas: 
-    ""; */
 
   .menuFixed {
     display: flex;
@@ -140,6 +138,73 @@ export const SettingsContainer = styled.main`
 
     .radioContainer {
       grid-area: 2 / 1 / 3 / 2;
+    }
+  }
+
+  .sliderContainer {
+    height: 100%;
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    touch-action: none;
+    width: 150px;
+
+    &[data-orientation='horizontal'] {
+      height: 20px;
+    }
+
+    &[data-orientation='vertical'] {
+      flex-direction: column;
+      width: 20px;
+      height: 100px;
+    }
+
+    .sliderTrack {
+      background-color: var(--slider-track);
+      position: relative;
+      flex-grow: 1;
+      border-radius: 9999px;
+    }
+
+    .sliderTrack[data-orientation='horizontal'] {
+      height: 3px;
+    }
+
+    .sliderTrack[data-orientation='vertical'] {
+      width: 3px;
+    }
+
+    .sliderRange {
+      position: absolute;
+      background-color: white;
+      border-radius: 9999px;
+      height: 100%;
+    }
+
+    .sliderThumb {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px #00000024;
+      border-radius: 10px;
+    }
+
+    .sliderThumb:hover {
+      background-color: #f5f2ff;
+    }
+
+    .sliderThumb:focus {
+      outline: none;
+      box-shadow: 0 0 0 5px #00000038;
     }
   }
 `

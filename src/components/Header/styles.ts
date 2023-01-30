@@ -19,6 +19,6 @@ export const Container = styled.header`
   background-color: var(--background-cell);
 
   font-family: 'Poppins', sans-serif;
-  font-size: var(--font-size-base);
+  font-size: 0.9em;
   font-weight: 300;
 `

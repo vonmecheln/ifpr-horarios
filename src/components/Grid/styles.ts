@@ -4,6 +4,7 @@ export const Container = styled.div<{gridColumns: string, gridRows: string}>`
   display: grid;
   grid-template-columns: ${props => props.gridColumns};
   grid-template-rows: ${props => props.gridRows};
+  font-size: calc(var(--font-size-base) / 16 * 1rem);
 
   border: 1px solid var(--border-grid);
   border-radius: 5px;
