@@ -3,32 +3,46 @@ const data = {
   title: "Alexandre Rodrigues Monge",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
-          time: "09:25 - 10:15"
+          time: "07:30 - 08:20"
         },
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2023B",
-          time: "07:30 - 08:20"
+          time: "10:15 - 11:05"
         },
         {
           subject: "Testes, Verificação e Validação de Sistemas - 723",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "TDS2023-3S",
           time: "19:00 - 19:50"
@@ -36,24 +50,24 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "15:05 - 15:55"
+          time: "10:15 - 11:05"
         },
         {
           subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -61,16 +75,14 @@ const data = {
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIW2023A",
-          time: "09:25 - 10:15"
+          time: "15:05 - 15:55"
         }
       ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: []
     }
   ],
   time: [

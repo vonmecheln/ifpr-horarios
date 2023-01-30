@@ -3,75 +3,86 @@ const data = {
   title: "Karen Cristina Guedes Silva",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Métodos e Técnicas de Pesquisa Aplicada - 1513",
-          size: 2,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "Laboratório de Informatica C",
-          students: "TGC2023",
-          time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Máquinas, Equipamentos e Instalações Industriais - 2341",
-          size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Matemática Aplicada - 2342",
-          size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:50 - 20:40"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "(APOVA) - 1094",
           size: 1,
-          teacher: "Karen Cristina Guedes Silva",
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
           classroom: "",
           students: "AGO2021 - GB",
           time: "11:05 - 11:55"
-        },
-        {
-          subject: "Matemática Aplicada - 2342",
-          size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:00 - 21:50"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática Aplicada - 2342",
+          size: 1,
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Métodos e Técnicas de Pesquisa Aplicada - 1513",
+          size: 2,
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "TGC2023",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática Aplicada - 2342",
+          size: 1,
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:00 - 21:50"
+        },
         {
           subject: "Máquinas, Equipamentos e Instalações Industriais - 2341",
           size: 1,
-          teacher: "Karen Cristina Guedes Silva",
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "19:50 - 20:40"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Máquinas, Equipamentos e Instalações Industriais - 2341",
+          size: 1,
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:00 - 21:50"
         }
       ]
     }

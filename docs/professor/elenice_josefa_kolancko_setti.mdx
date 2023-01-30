@@ -3,106 +3,127 @@ const data = {
   title: "Elenice Josefa Kolancko Setti",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Matemática I - 1064",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "",
-          students: "IIW2023A",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Matemática I - 1064",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "",
-          students: "IIW2023A",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: []
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Bioestatística - 487",
-          size: 1,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Bioestatística - 487",
-          size: 1,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:50 - 20:40"
-        },
-        {
-          subject: "Fundamentos de Matemática - 129",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "",
-          students: "ELM2023",
-          time: "21:00 - 21:50"
-        },
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Matemática II - 622",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
-          time: "10:15 - 11:05"
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática I - 462",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "15:05 - 15:55"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática II - 1231",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
         },
         {
           subject: "Matemática III - 1086",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
-          time: "07:30 - 08:20"
+          time: "15:05 - 15:55"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Matemática I - 462",
+          subject: "Bioestatística - 487",
+          size: 1,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Fundamentos de Matemática - 129",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "",
-          students: "AGO2023",
+          students: "ELM2023",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Matemática I - 1064",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "",
+          students: "IIW2023A",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Matemática I - 1064",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "",
+          students: "IIW2023A",
           time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Bioestatística - 487",
+          size: 1,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
         }
       ]
     }

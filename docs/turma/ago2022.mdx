@@ -3,28 +3,169 @@ const data = {
   title: "AGO2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Construções e Instalações Rurais - 630",
+          subject: "Matemática II - 622",
           size: 2,
-          teacher: "Elias Franco",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Geografia II - 623",
-          size: 2,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
         },
         {
-          subject: "Cultura e Cinema Nacional II - 1192",
+          subject: "Construções e Instalações Rurais - 630",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia II - 624",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Meteorologia e Bioclimatologia na Agropecuária - 631",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Culturas I - 627",
+          size: 1,
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Educação Física II - 615",
+          size: 2,
+          teachers: [
+            "Bruna Valeriano da Silva Lisboa"
+          ],
+          classroom: "Educação Física / Sala 4 B2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Química II - 618",
+          size: 2,
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 613",
+          size: 1,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Artes II - 614",
+          size: 2,
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Culturas I - 627",
+          size: 2,
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia II - 623",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Produção Animal I - 628",
+          size: 1,
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Física II - 617",
+          size: 2,
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
+          classroom: "Laboratório de Física",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Sistemas Agroflorestais - 629",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Filosofia II - 624",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
@@ -32,81 +173,54 @@ const data = {
         {
           subject: "Produção Animal I - 628",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"
-        },
-        {
-          subject: "Meteorologia e Bioclimatologia na Agropecuária - 631",
-          size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "15:05 - 15:55"
         }
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
-          subject: "Educação Física II - 615",
+          subject: "Sociologia Rural - 625",
           size: 2,
-          teacher: "Bruna Valeriano da Silva Lisboa",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
-          time: "10:15 - 11:05"
+          time: "15:05 - 15:55"
         },
         {
-          subject: "Filosofia II - 624",
+          subject: "Cultura e Cinema Nacional II - 1192",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
-          time: "09:25 - 10:15"
+          time: "13:10 - 14:00"
         },
         {
           subject: "Biologia II - 616",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Laboratório de Biologia",
           students: "AGO2022",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Química II - 618",
-          size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
           time: "07:30 - 08:20"
         },
         {
           subject: "Língua Portuguesa e Literatura II - 613",
           size: 2,
-          teacher: "Pedro Leites Junior",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "13:10 - 14:00"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Sistemas Agroflorestais - 629",
-          size: 2,
-          teacher: "Elias Franco",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Física II - 617",
-          size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "10:15 - 11:05"
@@ -114,28 +228,9 @@ const data = {
         {
           subject: "História I - 626",
           size: 1,
-          teacher: "Suzane Conceição Pantolfi Tostes",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Matemática II - 622",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 613",
-          size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -143,63 +238,12 @@ const data = {
         {
           subject: "História I - 626",
           size: 1,
-          teacher: "Suzane Conceição Pantolfi Tostes",
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Culturas I - 627",
-          size: 1,
-          teacher: "Sônia Maria Mandotti",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "08:20 - 09:10"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Sociologia Rural - 625",
-          size: 2,
-          teacher: "Elias Franco",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Filosofia II - 624",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Produção Animal I - 628",
-          size: 1,
-          teacher: "Leiliane Cristine de Souza",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Artes II - 614",
-          size: 2,
-          teacher: "Renata Carolina Pereira",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Culturas I - 627",
-          size: 2,
-          teacher: "Sônia Maria Mandotti",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "10:15 - 11:05"
+          time: "14:00 - 14:50"
         }
       ]
     }

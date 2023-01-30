@@ -3,75 +3,89 @@ const data = {
   title: "Rafael Silva Santos",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Administração de Sistemas Operacionais e Redes - 1236",
-          size: 2,
-          teacher: "Rafael Silva Santos",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "13:10 - 14:00"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Informática Básica - 2340",
           size: 1,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Rafael Silva Santos"
+          ],
           classroom: "",
           students: "TAL2023",
-          time: "21:50 - 22:40"
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Informática Instrumental - 153",
+          size: 2,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "ELM2023",
+          time: "21:00 - 21:50"
         },
         {
           subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
           size: 2,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Rafael Silva Santos"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2021",
-          time: "07:30 - 08:20"
+          time: "09:25 - 10:15"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Comércio Eletrônico e Mídias Digitais - 1499",
+          size: 2,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Rafael Silva Santos"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
         },
         {
-          subject: "Comércio Eletrônico e Mídias Digitais - 1499",
-          size: 2,
-          teacher: "Rafael Silva Santos",
-          classroom: "Sala 15-2",
-          students: "TGC2021",
+          subject: "Informática Básica - 2340",
+          size: 1,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "",
+          students: "TAL2023",
           time: "21:00 - 21:50"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Comércio Eletrônico e Mídias Digitais - 1499",
-          size: 2,
-          teacher: "Rafael Silva Santos",
-          classroom: "Sala 15-2",
-          students: "TGC2021",
-          time: "21:00 - 21:50"
-        },
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Informática Básica - 2340",
           size: 1,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Rafael Silva Santos"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "19:00 - 19:50"
@@ -79,23 +93,27 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
-          subject: "Informática Básica - 2340",
-          size: 1,
-          teacher: "Rafael Silva Santos",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:00 - 21:50"
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
         },
         {
-          subject: "Informática Instrumental - 153",
+          subject: "Comércio Eletrônico e Mídias Digitais - 1499",
           size: 2,
-          teacher: "Rafael Silva Santos",
-          classroom: "Laboratório de Informatica C",
-          students: "ELM2023",
-          time: "19:00 - 19:50"
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "Sala 15-2",
+          students: "TGC2021",
+          time: "21:00 - 21:50"
         }
       ]
     }

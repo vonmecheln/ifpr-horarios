@@ -3,12 +3,39 @@ const data = {
   title: "Milton Aparecido Azevedo",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "História II - 1234",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "História III - 2236",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "11:05 - 11:55"
@@ -16,77 +43,66 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "IIW2023A",
-          time: "08:20 - 09:10"
+          time: "14:00 - 14:50"
         },
         {
           subject: "História II - 1234",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "História III - 2236",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "11:05 - 11:55"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "História III - 2236",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "História III - 2236",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
           time: "11:05 - 11:55"
         }
       ]

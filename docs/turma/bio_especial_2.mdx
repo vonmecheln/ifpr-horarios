@@ -3,33 +3,14 @@ const data = {
   title: "BIO_ESPECIAL_2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Diversidade e educação inclusiva - 657",
-          size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "19:50 - 20:40"
-        },
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Embriologia animal e histologia - 502",
           size: 1,
-          teacher: "Eliana Peliçon Pereira Figueira",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "21:50 - 22:40"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Embriologia animal e histologia - 502",
-          size: 1,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "",
           students: "BIO_ESPECIAL_2",
           time: "21:00 - 21:50"
@@ -37,7 +18,54 @@ const data = {
         {
           subject: "Embriologia animal e histologia - 502",
           size: 1,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "PCCC 2 - Sexualidade e gênero - 498",
+          size: 1,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "PCCC 2 - Sexualidade e gênero - 498",
+          size: 1,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "19:50 - 20:40"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Embriologia animal e histologia - 502",
+          size: 1,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "PCCC 2 - Sexualidade e gênero - 498",
+          size: 1,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "",
           students: "BIO_ESPECIAL_2",
           time: "19:50 - 20:40"
@@ -45,7 +73,59 @@ const data = {
         {
           subject: "Microbiologia e imunologia - 501",
           size: 1,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Microbiologia e imunologia - 501",
+          size: 1,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "21:50 - 22:40"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Microbiologia e imunologia - 501",
+          size: 1,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Diversidade e educação inclusiva - 657",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Diversidade e educação inclusiva - 657",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "BIO_ESPECIAL_2",
           time: "19:00 - 19:50"
@@ -53,78 +133,24 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Diversidade e educação inclusiva - 657",
-          size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Microbiologia e imunologia - 501",
-          size: 1,
-          teacher: "Leandro Luiz Borges",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Microbiologia e imunologia - 501",
-          size: 1,
-          teacher: "Leandro Luiz Borges",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "Microbiologia e imunologia - 501",
-          size: 1,
-          teacher: "Leandro Luiz Borges",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "19:50 - 20:40"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Embriologia animal e histologia - 502",
           size: 1,
-          teacher: "Eliana Peliçon Pereira Figueira",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "PCCC 2 - Sexualidade e gênero - 498",
-          size: 1,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "PCCC 2 - Sexualidade e gênero - 498",
-          size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "",
           students: "BIO_ESPECIAL_2",
           time: "19:50 - 20:40"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
+        },
         {
-          subject: "PCCC 2 - Sexualidade e gênero - 498",
+          subject: "Microbiologia e imunologia - 501",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "",
           students: "BIO_ESPECIAL_2",
           time: "21:00 - 21:50"

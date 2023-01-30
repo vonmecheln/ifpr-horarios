@@ -3,200 +3,34 @@ const data = {
   title: "Sala 6-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Legislação e ética profissional - 2229",
-          size: 2,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Física 2 - 175",
+          subject: "Lingua Estrangeira Moderna 1 - Inglês - 179",
           size: 1,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Lingua Estrangeira Moderna 1 - Inglês - 179",
-          size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "História 2 - 178",
-          size: 1,
-          teacher: "Suzane Conceição Pantolfi Tostes",
+          subject: "Matemática 2 - 185",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "07:30 - 08:20"
-        },
-        {
-          subject: "Instalações Elétricas - 691",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Sistemas Digitais - 1553",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Cálculo Mecânico - 154",
-          size: 2,
-          teacher: "Darlan Roque Dapieve",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Lingua Portuguesa 2 - 183",
-          size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Eletrônica de Potência - 2228",
-          size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "19:00 - 19:50"
         },
         {
           subject: "Projetos elétricos industriais - 2232",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Educação Física 2 - 170",
-          size: 1,
-          teacher: "Bruna Valeriano da Silva Lisboa",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Sociologia 2 - 189",
-          size: 1,
-          teacher: "Everaldo Lorensetti",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
-          size: 2,
-          teacher: "Grazielli Bueno",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Geografia 2 - 177",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Instalações Elétricas - 691",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Filosofia 2 - 173",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
-          size: 2,
-          teacher: "Grazielli Bueno",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Biologia 2 - 168",
-          size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Eletrônica - 1554",
-          size: 2,
-          teacher: "Tiago Henrique dos Santos",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Eletrônica - 1554",
-          size: 1,
-          teacher: "Tiago Henrique dos Santos",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "08:20 - 09:10"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Matemática 2 - 185",
-          size: 2,
-          teacher: "Mauro César de Souza Siena",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Eletrônica de Potência - 2228",
-          size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "19:00 - 19:50"
@@ -204,18 +38,172 @@ const data = {
         {
           subject: "Artes 2 - 166",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Instalações Elétricas - 691",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
+          size: 2,
+          teachers: [
+            "Grazielli Bueno"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "História 2 - 178",
+          size: 1,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Legislação e ética profissional - 2229",
+          size: 2,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Cálculo Mecânico - 154",
+          size: 2,
+          teachers: [
+            "Darlan Roque Dapieve"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Instalações Elétricas - 691",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia 2 - 189",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia 2 - 173",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Geografia 2 - 177",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Processos de Fabricação 1 - 1552",
+          subject: "Lingua Portuguesa 2 - 183",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "09:25 - 10:15"
+        },
+        {
+          subject: "Eletrônica de Potência - 2228",
+          size: 2,
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
+          size: 2,
+          teachers: [
+            "Grazielli Bueno"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletrônica de Potência - 2228",
+          size: 2,
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
         }
       ]
     }

@@ -3,74 +3,86 @@ const data = {
   title: "Michelli Cristina Galli",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura III - 1240",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: []
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Língua Portuguesa e Literatura I - 1069",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
-          classroom: "",
-          students: "IIW2023A",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua Estrangeira Moderna - Espanhol - 1540",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "",
           students: "EIN2023",
-          time: "07:30 - 08:20"
+          time: "09:25 - 10:15"
         },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "",
           students: "IIW2023A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
           time: "13:10 - 14:00"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "Língua Portuguesa e Literatura II - 1226",
+          subject: "Língua Portuguesa e Literatura III - 1240",
           size: 2,
-          teacher: "Michelli Cristina Galli",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Língua Portuguesa e Literatura I - 1069",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "",
+          students: "IIW2023A",
+          time: "13:10 - 14:00"
         }
       ]
     }

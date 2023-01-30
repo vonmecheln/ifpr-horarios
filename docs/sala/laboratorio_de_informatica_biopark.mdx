@@ -3,62 +3,74 @@ const data = {
   title: "Laboratório de Informatica BioPark",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos de informática - 1076",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
+          students: "IIW2023B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
+          students: "IIW2023B",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Lógica de programação - 1075",
           size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
-          classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2023B",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Projeto Integrador II - 1239",
-          size: 2,
-          teacher: "Eduardo Alberto Felippsen",
-          classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2022B",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Laboratório de Banco de Dados - 1238",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
-          classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2022B",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Projeto integrador I - 1078",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2023B",
           time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
+        },
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
+          students: "IIW2023B",
           time: "07:30 - 08:20"
         },
         {
           subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -66,41 +78,49 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Fundamentos de informática - 1076",
+          subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2023B",
-          time: "09:25 - 10:15"
+          students: "IIW2022B",
+          time: "07:30 - 08:20"
         },
         {
-          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2023B",
-          time: "07:30 - 08:20"
+          time: "10:15 - 11:05"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
-          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2023B",
+          students: "IIW2022B",
           time: "07:30 - 08:20"
         },
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
           time: "10:15 - 11:05"

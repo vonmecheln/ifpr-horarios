@@ -3,115 +3,24 @@ const data = {
   title: "EIN2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Física 2 - 175",
-          size: 1,
-          teacher: "Bruno Garcia Bonfim",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "11:05 - 11:55"
-        },
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua Estrangeira Moderna 1 - Inglês - 179",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "História 2 - 178",
-          size: 1,
-          teacher: "Suzane Conceição Pantolfi Tostes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Sistemas Digitais - 1553",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Cálculo Mecânico - 154",
-          size: 2,
-          teacher: "Darlan Roque Dapieve",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Lingua Portuguesa 2 - 183",
-          size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Metrologia - 1550",
-          size: 1,
-          teacher: "Sérgio Takahashi",
-          classroom: "Laboratório de Metrologia B4",
-          students: "EIN2022",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Educação Física 2 - 170",
-          size: 1,
-          teacher: "Bruna Valeriano da Silva Lisboa",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Química 2 - 187",
+          subject: "Matemática 2 - 185",
           size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
-          classroom: "Laboratório de Química",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Sociologia 2 - 189",
-          size: 1,
-          teacher: "Everaldo Lorensetti",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Geografia 2 - 177",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Filosofia 2 - 173",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "07:30 - 08:20"
@@ -119,55 +28,182 @@ const data = {
         {
           subject: "Biologia 2 - 168",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "EIN2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Artes 2 - 166",
+          size: 1,
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "História 2 - 178",
+          size: 1,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "11:05 - 11:55"
         },
         {
+          subject: "Metrologia - 1550",
+          size: 1,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Metrologia B4",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
+        },
+        {
           subject: "Eletrônica - 1554",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Eletrônica - 1554",
+          size: 1,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2022",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Educação Física 2 - 170",
+          size: 1,
+          teachers: [
+            "Bruna Valeriano da Silva Lisboa"
+          ],
+          classroom: "Educação Física / Sala 4 B2",
+          students: "EIN2022",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Cálculo Mecânico - 154",
+          size: 2,
+          teachers: [
+            "Darlan Roque Dapieve"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "09:25 - 10:15"
         },
         {
-          subject: "Eletrônica - 1554",
-          size: 1,
-          teacher: "Tiago Henrique dos Santos",
-          classroom: "Sala 6-2",
+          subject: "Processos de Fabricação 1 - 1552",
+          size: 2,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Usinagem B4",
           students: "EIN2022",
-          time: "08:20 - 09:10"
+          time: "07:30 - 08:20"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Matemática 2 - 185",
-          size: 2,
-          teacher: "Mauro César de Souza Siena",
+          subject: "Sociologia 2 - 189",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "07:30 - 08:20"
         },
         {
-          subject: "Artes 2 - 166",
+          subject: "Filosofia 2 - 173",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Geografia 2 - 177",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Processos de Fabricação 1 - 1552",
+          subject: "Lingua Portuguesa 2 - 183",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Física 2 - 175",
+          size: 1,
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
+          classroom: "Laboratório de Física",
+          students: "EIN2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Química 2 - 187",
+          size: 2,
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
+          classroom: "Laboratório de Química",
+          students: "EIN2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
         }
       ]
     }

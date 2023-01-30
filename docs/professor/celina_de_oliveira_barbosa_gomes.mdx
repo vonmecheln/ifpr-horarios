@@ -3,20 +3,14 @@ const data = {
   title: "Celina de Oliveira Barbosa Gomes",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Diversidade e educação inclusiva - 657",
-          size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "19:50 - 20:40"
-        },
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua Estrangeira Moderna 3 - Inglês - 230",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "11:05 - 11:55"
@@ -24,49 +18,34 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Lingua estrangeira - Inglês - 1225",
+          subject: "Lingua Estrangeira Moderna 2 - Ingles - 208",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "IIW2023A",
-          time: "09:25 - 10:15"
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "11:05 - 11:55"
         },
         {
           subject: "Língua Portuguesa e Literatura I - 2322",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "COM2023",
           time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Diversidade e educação inclusiva - 657",
-          size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "BIO_ESPECIAL_2",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Lingua estrangeira - Inglês - 1225",
-          size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "IIW2023A",
-          time: "11:05 - 11:55"
         },
         {
           subject: "Língua estrangeira - Inglês - 456",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "AGO2023",
           time: "07:30 - 08:20"
@@ -74,28 +53,67 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "Língua Portuguesa e Literatura I - 2322",
-          size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          subject: "Lingua estrangeira - Inglês - 1225",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
-          students: "COM2023",
-          time: "13:10 - 14:00"
+          students: "IIW2023A",
+          time: "11:05 - 11:55"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Lingua Estrangeira Moderna 2 - Ingles - 208",
+          subject: "Diversidade e educação inclusiva - 657",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "08:20 - 09:10"
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Diversidade e educação inclusiva - 657",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "",
+          students: "BIO_ESPECIAL_2",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura I - 2322",
+          size: 2,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "",
+          students: "COM2023",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Lingua estrangeira - Inglês - 1225",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "",
+          students: "IIW2023A",
+          time: "09:25 - 10:15"
         }
       ]
     }

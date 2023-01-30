@@ -3,33 +3,14 @@ const data = {
   title: "Novo professor Inglês Biopark 2023",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 1,
-          teacher: "Novo professor Inglês Biopark 2023",
-          classroom: "BioPark-02",
-          students: "IIW2023B",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: []
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Lingua estrangeira - Inglês - 1225",
-          size: 1,
-          teacher: "Novo professor Inglês Biopark 2023",
+          teachers: [
+            "Novo professor Inglês Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "11:05 - 11:55"
@@ -37,8 +18,31 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Lingua estrangeira - Inglês - 1225",
+          size: 1,
+          teachers: [
+            "Novo professor Inglês Biopark 2023"
+          ],
+          classroom: "BioPark-02",
+          students: "IIW2023B",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

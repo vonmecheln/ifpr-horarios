@@ -3,12 +3,24 @@ const data = {
   title: "Rafael Luis Bartz",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Programação para Sistemas Embarcados - 725",
+          subject: "Desenvolvimento para Dispositivos Móveis - 722",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
+          classroom: "",
+          students: "TDS2023-3S",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Desenvolvimento para Dispositivos Móveis - 722",
+          size: 2,
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "",
           students: "TDS2023-3S",
           time: "21:00 - 21:50"
@@ -16,16 +28,18 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -33,27 +47,21 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
-          subject: "Desenvolvimento para Dispositivos Móveis - 722",
+          subject: "Programação para Sistemas Embarcados - 725",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "",
           students: "TDS2023-3S",
           time: "21:00 - 21:50"
-        },
-        {
-          subject: "Desenvolvimento para Dispositivos Móveis - 722",
-          size: 2,
-          teacher: "Rafael Luis Bartz",
-          classroom: "",
-          students: "TDS2023-3S",
-          time: "19:00 - 19:50"
         }
       ]
     }

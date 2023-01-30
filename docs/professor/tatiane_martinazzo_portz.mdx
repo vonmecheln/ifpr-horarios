@@ -3,59 +3,67 @@ const data = {
   title: "Tatiane Martinazzo Portz",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Educação postural e Segurança no trabalho - 471",
-          size: 1,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "",
-          students: "AGO2023",
-          time: "09:25 - 10:15"
-        }
-      ]
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Agroecologia e DRS - 470",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "",
-          students: "AGO2023",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Agroecologia e desenvolvimento rural sustentavel - 1462",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGR2023",
-          time: "21:00 - 21:50"
+          time: "19:00 - 19:50"
         },
         {
-          subject: "Horticultura - 1090",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 15-2",
-          students: "AGO2021",
-          time: "15:05 - 15:55"
+          subject: "Educação postural e Segurança no trabalho - 471",
+          size: 1,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "11:05 - 11:55"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Horticultura - 1090",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 15-2",
+          students: "AGO2021",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Agroecologia e DRS - 470",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "10:15 - 11:05"
+        }
+      ]
     }
   ],
   time: [

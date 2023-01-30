@@ -3,61 +3,54 @@ const data = {
   title: "Vander Fabio Silveira",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Eletricidade Básica - 134",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "",
-          students: "ELM2023",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Instalações Elétricas - 691",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Sistemas Digitais - 1553",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Sala 6-2",
-          students: "EIN2022",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: []
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Elementos de Automação - 112",
           size: 2,
-          teacher: "Vander Fabio Silveira",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "ELM2022",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Elementos de Automação - 198",
-          size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
-          students: "EIN2021",
-          time: "07:30 - 08:20"
+          time: "19:00 - 19:50"
         },
         {
           subject: "Instalações Elétricas - 691",
           size: 2,
-          teacher: "Vander Fabio Silveira",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade Básica - 134",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELM2023",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Instalações Elétricas - 691",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "19:00 - 19:50"
@@ -65,21 +58,44 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Elementos de Automação - 198",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
+          students: "EIN2021",
+          time: "10:15 - 11:05"
+        },
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Vander Fabio Silveira",
-          classroom: "",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Laboratório de Eletrônica",
           students: "ELM2023",
-          time: "19:00 - 19:50"
+          time: "21:00 - 21:50"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Sistemas Digitais - 1553",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Sala 6-2",
+          students: "EIN2022",
+          time: "10:15 - 11:05"
+        }
+      ]
     }
   ],
   time: [

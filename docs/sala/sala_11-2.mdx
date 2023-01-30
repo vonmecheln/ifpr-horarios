@@ -3,12 +3,69 @@ const data = {
   title: "Sala 11-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Zoologia dos cordados II - 483",
+          size: 1,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "PCCC 7  - Temas transversais - 1549",
+          size: 1,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "PCCC 7  - Temas transversais - 1549",
+          size: 1,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:50 - 20:40"
+        },
         {
           subject: "Matemática II - 1231",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "15:05 - 15:55"
@@ -16,15 +73,9 @@ const data = {
         {
           subject: "Genética molecular - 85",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "Trabalho de conclusão de curso I - 484",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -32,31 +83,19 @@ const data = {
         {
           subject: "Química II - 1230",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
         },
         {
-          subject: "Zoologia dos cordados II - 483",
-          size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -64,227 +103,84 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "PCCC 7  - Temas transversais - 1549",
-          size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Genética molecular - 85",
-          size: 1,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Genética molecular - 85",
-          size: 1,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:50 - 20:40"
-        },
-        {
-          subject: "Filosofia II - 1232",
-          size: 1,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "11:05 - 11:55"
         },
         {
           subject: "Geografia I - 1233",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "09:25 - 10:15"
+          time: "07:30 - 08:20"
         },
         {
           subject: "Geologia e paleontologia - 491",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
-          time: "21:00 - 21:50"
+          time: "21:50 - 22:40"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "PCCC 7  - Temas transversais - 1549",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "PCCC 7  - Temas transversais - 1549",
-          size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:50 - 20:40"
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
         },
         {
           subject: "Genética molecular - 85",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
-          size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
+          time: "19:00 - 19:50"
         },
         {
           subject: "Zoologia dos cordados II - 483",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Administração de Sistemas Operacionais e Redes - 1236",
-          size: 2,
-          teacher: "Rafael Silva Santos",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Laboratório de Banco de Dados - 1238",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Projeto Integrador II - 1239",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Bioestatística - 487",
-          size: 1,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Bioestatística - 487",
-          size: 1,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:50 - 20:40"
-        },
-        {
-          subject: "Biologia II - 1228",
-          size: 2,
-          teacher: "Karina Dias Espartosa",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Física II - 1229",
-          size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Geologia e paleontologia - 491",
-          size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
         },
         {
-          subject: "Geologia e paleontologia - 491",
-          size: 1,
-          teacher: "Renato Lada Guerreiro",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "21:50 - 22:40"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Trabalho de conclusão de curso I - 484",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Rafael Silva Santos"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
@@ -292,7 +188,9 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -300,10 +198,162 @@ const data = {
         {
           subject: "Geologia e paleontologia - 491",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:50 - 22:40"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Bioestatística - 487",
+          size: 1,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Trabalho de conclusão de curso I - 484",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Filosofia II - 1232",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Geologia e paleontologia - 491",
+          size: 1,
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:50 - 20:40"
+        },
+        {
+          subject: "Geologia e paleontologia - 491",
+          size: 1,
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Laboratório de Banco de Dados - 1238",
+          size: 2,
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Projeto Integrador II - 1239",
+          size: 2,
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Bioestatística - 487",
+          size: 1,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Genética molecular - 85",
+          size: 1,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Genética molecular - 85",
+          size: 1,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Trabalho de conclusão de curso I - 484",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:50 - 20:40"
+        },
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
         }
       ]
     }

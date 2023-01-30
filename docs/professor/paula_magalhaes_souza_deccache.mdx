@@ -3,75 +3,88 @@ const data = {
   title: "Paula Magalhães Souza Deccache",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Zoologia dos cordados II - 483",
-          size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: []
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Biologia I - 1073",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "BioPark-02",
-          students: "IIW2023B",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Zoologia dos cordados II - 483",
-          size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Biologia 2 - 168",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 6-2",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Laboratório de Biologia",
           students: "EIN2022",
-          time: "11:05 - 11:55"
+          time: "09:25 - 10:15"
         },
         {
           subject: "Biologia I - 1073",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
+          time: "10:15 - 11:05"
         },
         {
-          subject: "Biologia II - 1228",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "09:25 - 10:15"
+          subject: "Zoologia dos cordados II - 483",
+          size: 1,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia II - 1228",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "IIW2022B",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Zoologia dos cordados II - 483",
+          size: 1,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia I - 1073",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "BioPark-02",
+          students: "IIW2023B",
+          time: "09:25 - 10:15"
+        }
+      ]
     }
   ],
   time: [

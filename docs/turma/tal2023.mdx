@@ -3,20 +3,70 @@ const data = {
   title: "TAL2023",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Gestão Ambiental na Indústria dos Alimentos - 2338",
           size: 1,
-          teacher: "Daniele de Almeida Paula",
+          teachers: [
+            "Daniele de Almeida Paula"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "19:50 - 20:40"
+        },
+        {
+          subject: "Gestão e Planejamento aplicados à Agroindústria - 2339",
+          size: 1,
+          teachers: [
+            "Daniele de Almeida Paula"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Comunicação técnica - 2335",
+          size: 1,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "21:00 - 21:50"
         },
         {
+          subject: "Informática Básica - 2340",
+          size: 1,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão e Planejamento aplicados à Agroindústria - 2339",
+          size: 1,
+          teachers: [
+            "Daniele de Almeida Paula"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "19:50 - 20:40"
+        },
+        {
           subject: "Fundamentos da Química - 2337",
           size: 1,
-          teacher: "Daniele de Almeida Paula+Elizangela Cavazzini Cesca",
+          teachers: [
+            "Daniele de Almeida Paula",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "19:00 - 19:50"
@@ -24,7 +74,45 @@ const data = {
         {
           subject: "Ética e relações humanas no trabalho - 2336",
           size: 1,
-          teacher: "José Jurandir Pereira Junior",
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Matemática Aplicada - 2342",
+          size: 1,
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:50 - 22:40"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão Ambiental na Indústria dos Alimentos - 2338",
+          size: 1,
+          teachers: [
+            "Daniele de Almeida Paula"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Fundamentos da Química - 2337",
+          size: 1,
+          teachers: [
+            "Daniele de Almeida Paula",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "19:50 - 20:40"
@@ -32,20 +120,80 @@ const data = {
         {
           subject: "Comunicação técnica - 2335",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "",
           students: "TAL2023",
-          time: "21:50 - 22:40"
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Informática Básica - 2340",
+          size: 1,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:00 - 21:50"
         }
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Gestão Ambiental na Indústria dos Alimentos - 2338",
+          subject: "Matemática Aplicada - 2342",
           size: 1,
-          teacher: "Daniele de Almeida Paula",
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Máquinas, Equipamentos e Instalações Industriais - 2341",
+          size: 1,
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "19:50 - 20:40"
+        },
+        {
+          subject: "Comunicação técnica - 2335",
+          size: 1,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "21:50 - 22:40"
+        },
+        {
+          subject: "Informática Básica - 2340",
+          size: 1,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "",
+          students: "TAL2023",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos da Química - 2337",
+          size: 1,
+          teachers: [
+            "Daniele de Almeida Paula",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "19:50 - 20:40"
@@ -53,44 +201,10 @@ const data = {
         {
           subject: "Fundamentos da Química - 2337",
           size: 1,
-          teacher: "Daniele de Almeida Paula+Elizangela Cavazzini Cesca",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Máquinas, Equipamentos e Instalações Industriais - 2341",
-          size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Informática Básica - 2340",
-          size: 1,
-          teacher: "Rafael Silva Santos",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:50 - 22:40"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Gestão e Planejamento aplicados à Agroindústria - 2339",
-          size: 1,
-          teacher: "Daniele de Almeida Paula",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "Fundamentos da Química - 2337",
-          size: 1,
-          teacher: "Daniele de Almeida Paula+Elizangela Cavazzini Cesca",
+          teachers: [
+            "Daniele de Almeida Paula",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "19:00 - 19:50"
@@ -98,65 +212,9 @@ const data = {
         {
           subject: "Ética e relações humanas no trabalho - 2336",
           size: 1,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Matemática Aplicada - 2342",
-          size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:50 - 20:40"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Gestão e Planejamento aplicados à Agroindústria - 2339",
-          size: 1,
-          teacher: "Daniele de Almeida Paula",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:50 - 22:40"
-        },
-        {
-          subject: "Matemática Aplicada - 2342",
-          size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Comunicação técnica - 2335",
-          size: 1,
-          teacher: "Pedro Leites Junior",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:50 - 20:40"
-        },
-        {
-          subject: "Informática Básica - 2340",
-          size: 1,
-          teacher: "Rafael Silva Santos",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Fundamentos da Química - 2337",
-          size: 1,
-          teacher: "Daniele de Almeida Paula+Elizangela Cavazzini Cesca",
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "21:50 - 22:40"
@@ -164,23 +222,9 @@ const data = {
         {
           subject: "Máquinas, Equipamentos e Instalações Industriais - 2341",
           size: 1,
-          teacher: "Karen Cristina Guedes Silva",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:50 - 20:40"
-        },
-        {
-          subject: "Comunicação técnica - 2335",
-          size: 1,
-          teacher: "Pedro Leites Junior",
-          classroom: "",
-          students: "TAL2023",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Informática Básica - 2340",
-          size: 1,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Karen Cristina Guedes Silva"
+          ],
           classroom: "",
           students: "TAL2023",
           time: "21:00 - 21:50"

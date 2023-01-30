@@ -3,139 +3,24 @@ const data = {
   title: "IIW2022B",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Projeto Integrador II - 1239",
+          subject: "Química II - 1230",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
-          classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2022B",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Laboratório de Banco de Dados - 1238",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
-          classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2022B",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Física II - 1229",
-          size: 2,
-          teacher: "Novo professor Física Biopark 2023",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Filosofia II - 1232",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Física II - 1229",
-          size: 2,
-          teacher: "Novo professor Física Biopark 2023",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Administração de Sistemas Operacionais e Redes - 1236",
-          size: 2,
-          teacher: "Olavo José Luiz Junior",
-          classroom: "Laboratório de Informatica BioPark",
-          students: "IIW2022B",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
-          size: 2,
-          teacher: "Rafael Luis Bartz",
-          classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
           time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+        },
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "BioPark-01",
-          students: "IIW2022B",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Biologia II - 1228",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "09:25 - 10:15"
@@ -143,7 +28,9 @@ const data = {
         {
           subject: "Geografia I - 1233",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -151,28 +38,179 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Química II - 1230",
-          size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
+          students: "IIW2022B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Biologia II - 1228",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "IIW2022B",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Física II - 1229",
+          size: 2,
+          teachers: [
+            "Novo professor Física Biopark 2023"
+          ],
+          classroom: "Laboratório de Física",
+          students: "IIW2022B",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
+          size: 2,
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
+          students: "IIW2022B",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Laboratório de Banco de Dados - 1238",
+          size: 2,
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
           time: "07:30 - 08:20"
         },
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "09:25 - 10:15"
         },
         {
+          subject: "Matemática II - 1231",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Projeto Integrador II - 1239",
+          size: 2,
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
+          classroom: "Laboratório de Informatica BioPark",
+          students: "IIW2022B",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia II - 1232",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Física II - 1229",
+          size: 2,
+          teachers: [
+            "Novo professor Física Biopark 2023"
+          ],
+          classroom: "Laboratório de Física",
+          students: "IIW2022B",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
+          classroom: "BioPark-01",
+          students: "IIW2022B",
+          time: "15:05 - 15:55"
+        },
+        {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica BioPark",
           students: "IIW2022B",
           time: "10:15 - 11:05"

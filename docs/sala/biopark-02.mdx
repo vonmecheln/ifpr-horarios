@@ -3,33 +3,54 @@ const data = {
   title: "BioPark-02",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Sociologia I - 1071",
+          subject: "Lingua estrangeira - Inglês - 1225",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Novo professor Inglês Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "11:05 - 11:55"
-        },
-        {
-          subject: "Matemática I - 1064",
-          size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
-          classroom: "BioPark-02",
-          students: "IIW2023B",
-          time: "07:30 - 08:20"
         }
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Química I - 1068",
+          size: 2,
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
+          classroom: "BioPark-02",
+          students: "IIW2023B",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Sociologia I - 1071",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "BioPark-02",
+          students: "IIW2023B",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Física I - 1070",
           size: 2,
-          teacher: "Novo professor Física Biopark 2023",
+          teachers: [
+            "Novo professor Física Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "13:10 - 14:00"
@@ -37,15 +58,19 @@ const data = {
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 1,
-          teacher: "Novo professor Inglês Biopark 2023",
+          teachers: [
+            "Novo professor Inglês Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "09:25 - 10:15"
+          time: "11:05 - 11:55"
         },
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "15:05 - 15:55"
@@ -53,97 +78,102 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "10:15 - 11:05"
+          time: "09:25 - 10:15"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Filosofia I - 1139",
+          subject: "História I - 1224",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "11:05 - 11:55"
+          time: "09:25 - 10:15"
         },
         {
-          subject: "Filosofia I - 1139",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
+          subject: "Matemática I - 1064",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "07:30 - 08:20"
-        },
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
-          subject: "Sociologia I - 1071",
+          subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "08:20 - 09:10"
         },
         {
-          subject: "Física I - 1070",
-          size: 2,
-          teacher: "Novo professor Física Biopark 2023",
+          subject: "Filosofia I - 1139",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "13:10 - 14:00"
+          time: "11:05 - 11:55"
         },
         {
-          subject: "Língua Portuguesa e Literatura I - 1069",
+          subject: "Sociologia I - 1071",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "BioPark-02",
+          students: "IIW2023B",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Física I - 1070",
           size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
+          teachers: [
+            "Novo professor Física Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "15:05 - 15:55"
         },
         {
-          subject: "Biologia I - 1073",
+          subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Lingua estrangeira - Inglês - 1225",
-          size: 1,
-          teacher: "Novo professor Inglês Biopark 2023",
-          classroom: "BioPark-02",
-          students: "IIW2023B",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Química I - 1068",
-          size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
-          classroom: "BioPark-02",
-          students: "IIW2023B",
-          time: "09:25 - 10:15"
+          time: "13:10 - 14:00"
         },
         {
-          subject: "História I - 1224",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          subject: "Biologia I - 1073",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "11:05 - 11:55"
+          time: "09:25 - 10:15"
         }
       ]
     }

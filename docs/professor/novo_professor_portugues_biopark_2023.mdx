@@ -3,16 +3,22 @@ const data = {
   title: "Novo professor Portugues Biopark 2023",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
           time: "15:05 - 15:55"
@@ -20,7 +26,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "13:10 - 14:00"
@@ -28,33 +36,33 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
           classroom: "BioPark-02",
           students: "IIW2023B",
-          time: "15:05 - 15:55"
+          time: "13:10 - 14:00"
         },
         {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Novo professor Portugues Biopark 2023",
+          teachers: [
+            "Novo professor Portugues Biopark 2023"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
-          time: "13:10 - 14:00"
+          time: "15:05 - 15:55"
         }
       ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: []
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: []
     }
   ],
   time: [

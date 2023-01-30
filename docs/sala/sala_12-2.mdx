@@ -3,28 +3,24 @@ const data = {
   title: "Sala 12-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Sociologia II - 1246",
+          subject: "História III - 2236",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
+          subject: "Matemática III - 1244",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura III - 1240",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -32,78 +28,84 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Serviços em nuvem - 1250",
-          size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "10:15 - 11:05"
-        },
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teacher: "José Jurandir Pereira Junior",
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "11:05 - 11:55"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "História III - 2236",
+          subject: "Serviços em nuvem - 1250",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sociologia II - 1246",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
-          size: 2,
-          teacher: "Rafael Gil Ferques",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Sociologia II - 1246",
+          subject: "Filosofia III - 1245",
           size: 1,
-          teacher: "Everaldo Lorensetti",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Biologia III - 1241",
-          size: 2,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "História III - 2236",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "15:05 - 15:55"
         },
         {
+          subject: "Língua Portuguesa e Literatura III - 1240",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia II - 1246",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        },
+        {
           subject: "Projeto Integrador III - 1253",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -111,31 +113,37 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
-          subject: "Filosofia III - 1245",
-          size: 1,
-          teacher: "José Jurandir Pereira Junior",
+          subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "História III - 2236",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "11:05 - 11:55"
         },
         {
           subject: "Geografia II - 1247",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Matemática III - 1244",
-          size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "07:30 - 08:20"
+          time: "09:25 - 10:15"
         }
       ]
     }

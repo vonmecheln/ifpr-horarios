@@ -3,12 +3,14 @@ const data = {
   title: "Laboratório de Eletrônica",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 114",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "Laboratório de Eletrônica",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -16,29 +18,144 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade Básica - 595",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELE2023",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletrônica - 1554",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Eletrônica - 1554",
+          size: 1,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Eletricidade Básica - 134",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELM2023",
+          time: "21:00 - 21:50"
+        }
+      ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 114",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "Laboratório de Eletrônica",
           students: "ELM2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - GA",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 1,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - GA",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Instrumentos de Medidas Elétricas - 1138",
+          size: 2,
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELE2023",
           time: "19:00 - 19:50"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade Básica - 134",
+          size: 2,
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELM2023",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade Básica - 595",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELE2023",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - GB",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 1,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - GB",
+          time: "09:25 - 10:15"
+        }
+      ]
     }
   ],
   time: [

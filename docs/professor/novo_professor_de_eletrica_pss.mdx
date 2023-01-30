@@ -3,33 +3,58 @@ const data = {
   title: "Novo Professor de Elétrica PSS",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 114",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "Laboratório de Eletrônica",
           students: "ELM2022",
           time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Eletrônica de Potência - 2228",
-          size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
-          classroom: "Sala 6-2",
-          students: "ELE2022",
-          time: "19:00 - 19:50"
         },
         {
           subject: "Projetos elétricos industriais - 2232",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
+          classroom: "Sala 6-2",
+          students: "ELE2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Eletrônica de Potência - 114",
+          size: 2,
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "ELM2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Eletrônica de Potência - 2228",
+          size: 2,
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -37,32 +62,17 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Eletrônica de Potência - 114",
-          size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
-          classroom: "Laboratório de Eletrônica",
-          students: "ELM2022",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 2228",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
-          time: "19:00 - 19:50"
+          time: "21:00 - 21:50"
         }
       ]
     }

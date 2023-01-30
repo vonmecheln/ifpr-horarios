@@ -3,134 +3,99 @@ const data = {
   title: "AGO2023",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Química I - 461",
-          size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
-          classroom: "Laboratório de Química",
-          students: "AGO2023",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Artes I - 458",
-          size: 2,
-          teacher: "Renata Carolina Pereira",
-          classroom: "",
-          students: "AGO2023",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Educação postural e Segurança no trabalho - 471",
-          size: 1,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "",
-          students: "AGO2023",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Sociologia I - 465",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "AGO2023",
-          time: "09:25 - 10:15"
+          time: "15:05 - 15:55"
         },
         {
           subject: "Filosofia I - 464",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "",
           students: "AGO2023",
-          time: "14:00 - 14:50"
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Filosofia I - 464",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "15:55 - 16:45"
         },
         {
           subject: "Geografia I - 463",
           size: 2,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "",
-          students: "AGO2023",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Cultura e Cinema Nacional I - 831",
-          size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "",
-          students: "AGO2023",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Física I - 460",
-          size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
-          classroom: "",
-          students: "AGO2023",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Agroecologia e DRS - 470",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "",
           students: "AGO2023",
           time: "07:30 - 08:20"
+        },
+        {
+          subject: "Química I - 461",
+          size: 2,
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
+          classroom: "Laboratório de Química",
+          students: "AGO2023",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Zootecnia Geral - 467",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "13:10 - 14:00"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Educação Física I - 457",
+          subject: "Língua estrangeira - Inglês - 456",
           size: 2,
-          teacher: "Bruna Valeriano da Silva Lisboa",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Matemática I - 462",
+          size: 2,
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "",
           students: "AGO2023",
           time: "09:25 - 10:15"
         },
         {
-          subject: "Língua estrangeira - Inglês - 456",
-          size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
-          classroom: "",
-          students: "AGO2023",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Biologia I - 459",
-          size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
-          classroom: "",
-          students: "AGO2023",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Informática instrumental e aplicada - 468",
-          size: 2,
-          teacher: "Joaquim José Honório de Lima",
-          classroom: "Laboratório de Informatica C",
-          students: "AGO2023 - GA",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Desenho técnico e topografia - 469",
-          size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "",
-          students: "AGO2023 - GB",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura I - 455",
+          subject: "Educação postural e Segurança no trabalho - 471",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGO2023",
           time: "11:05 - 11:55"
@@ -138,49 +103,94 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "Filosofia I - 464",
+          subject: "Biologia I - 459",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "AGO2023",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Informática instrumental e aplicada - 468",
+          size: 2,
+          teachers: [
+            "Joaquim José Honório de Lima"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2023 - GB",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Cultura e Cinema Nacional I - 831",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "",
+          students: "AGO2023",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Desenho técnico e topografia - 469",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "AGO2023 - GA",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Educação Física I - 457",
+          size: 2,
+          teachers: [
+            "Bruna Valeriano da Silva Lisboa"
+          ],
+          classroom: "Educação Física / Sala 4 B2",
           students: "AGO2023",
           time: "09:25 - 10:15"
         },
         {
           subject: "Língua Portuguesa e Literatura I - 455",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "",
           students: "AGO2023",
           time: "07:30 - 08:20"
         },
         {
-          subject: "Zootecnia Geral - 467",
-          size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          subject: "Língua Portuguesa e Literatura I - 455",
+          size: 1,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "",
           students: "AGO2023",
-          time: "10:15 - 11:05"
+          time: "11:05 - 11:55"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Matemática I - 462",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "",
-          students: "AGO2023",
-          time: "10:15 - 11:05"
-        },
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia I - 465",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "AGO2023",
           time: "09:25 - 10:15"
@@ -188,18 +198,52 @@ const data = {
         {
           subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Joaquim José Honório de Lima",
+          teachers: [
+            "Joaquim José Honório de Lima"
+          ],
           classroom: "Laboratório de Informatica C",
-          students: "AGO2023 - GB",
+          students: "AGO2023 - GA",
           time: "07:30 - 08:20"
         },
         {
           subject: "Desenho técnico e topografia - 469",
           size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "",
-          students: "AGO2023 - GA",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "AGO2023 - GB",
           time: "07:30 - 08:20"
+        },
+        {
+          subject: "Física I - 460",
+          size: 2,
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
+          classroom: "Laboratório de Física",
+          students: "AGO2023",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Artes I - 458",
+          size: 2,
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Agroecologia e DRS - 470",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "",
+          students: "AGO2023",
+          time: "10:15 - 11:05"
         }
       ]
     }

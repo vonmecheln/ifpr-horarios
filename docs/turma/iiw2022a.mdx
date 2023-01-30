@@ -3,12 +3,49 @@ const data = {
   title: "IIW2022A",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia II - 1228",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Matemática II - 1231",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "15:05 - 15:55"
@@ -16,23 +53,19 @@ const data = {
         {
           subject: "Química II - 1230",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
         },
         {
-          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Rafael Silva Santos",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -40,131 +73,44 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Filosofia II - 1232",
-          size: 1,
-          teacher: "José Jurandir Pereira Junior",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "11:05 - 11:55"
         },
         {
           subject: "Geografia I - 1233",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "09:25 - 10:15"
+          time: "07:30 - 08:20"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
+          subject: "Matemática II - 1231",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "07:30 - 08:20"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
         },
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Rafael Silva Santos",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Laboratório de Banco de Dados - 1238",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Projeto Integrador II - 1239",
-          size: 2,
-          teacher: "Alexandre Rodrigues Monge",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Biologia II - 1228",
-          size: 2,
-          teacher: "Karina Dias Espartosa",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Física II - 1229",
-          size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Educação Física II - 1227",
-          size: 2,
-          teacher: "Bruna Valeriano da Silva Lisboa",
-          classroom: "Educação Física / Sala 4 B2",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Rafael Silva Santos"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
@@ -172,10 +118,102 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia II - 1232",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Física II - 1229",
+          size: 2,
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
+          classroom: "Laboratório de Física",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Laboratório de Banco de Dados - 1238",
+          size: 2,
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Projeto Integrador II - 1239",
+          size: 2,
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Educação Física II - 1227",
+          size: 2,
+          teachers: [
+            "Bruna Valeriano da Silva Lisboa"
+          ],
+          classroom: "Educação Física / Sala 4 B2",
+          students: "IIW2022A",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Administração de Sistemas Operacionais e Redes - 1236",
+          size: 2,
+          teachers: [
+            "Rafael Silva Santos"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
         }
       ]
     }
