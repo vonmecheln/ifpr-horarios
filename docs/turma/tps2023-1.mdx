@@ -3,16 +3,15 @@ const data = {
   title: "TPS2023-1",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "",
           students: "TPS2023-1",
           time: "15:05 - 15:55"
@@ -20,7 +19,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 1,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "",
           students: "TPS2023-1",
           time: "14:00 - 14:50"
@@ -28,33 +30,43 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2023-1",
-          time: "15:05 - 15:55"
+          time: "13:10 - 14:00"
         },
         {
           subject: "Linguagem de Programação - 1484",
           size: 1,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2023-1",
-          time: "14:00 - 14:50"
+          time: "15:05 - 15:55"
         }
       ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [
