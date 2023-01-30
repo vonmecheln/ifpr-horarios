@@ -18,7 +18,7 @@ export function Item(props: {timetable: ClassesProps}) {
       <ItemContent>
         <strong className="subject" title={props.timetable.subject}>{props.timetable.subject}</strong>
         {
-          props.timetable.link.map(a => {
+          props.timetable.links.map(a => {
             return (
               <a title={a.title} href={a.url} key={a.url}>{a.title}</a>
             )

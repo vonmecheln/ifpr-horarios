@@ -1,4 +1,4 @@
-import { ClassesProps, WeekClassesProps } from "../components/Timetable";
+import { ClassesProps, DayProps } from "../components/Timetable";
 
 export function createGroupItems(timetable: ClassesProps[]) {
     let dict = {}

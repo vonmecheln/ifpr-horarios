@@ -1,42 +1,43 @@
-import { WeekClassesProps } from "../components/Timetable";
+import { DayProps } from "../components/Timetable";
 import { createURL } from "./create-url-link";
-// 
+// Passar uma lita de strings
+// Para cada string, eu crio um objeto {title, url}
+// Qual entidade pertence a string????
 
-export function createLinkToTheCell(props: {weekClasses: WeekClassesProps[], title: string}) {
+function createLink(title: string, entity: string) {
+  return {
+    title,
+    url: `../${entity}/${createURL(title)}`
+  }
+}
+
+export function createLinkToTheCell(props: {weekClasses: DayProps[], title: string}) {
+  
   props.weekClasses.forEach(dayClass => {
-    dayClass.timetable.forEach(el => {
-      if (props.title === el.teacher) {
-        el.link= [{
-          title: el.classroom,
-          url: `../Sala/${createURL(el.classroom)}`
-        },
-        {
-          title: el.students,
-          url: `../Turma/${createURL(el.students)}`
-        }]
+    dayClass.dayClasses.forEach(el => {
+      if (props.title === el.students) {
+        el.links = [(createLink(el.classroom, 'Sala'))]
       }
 
-      else if (props.title === el.students) {
-        el.link = [{
-          title: el.classroom,
-          url: `../Sala/${createURL(el.classroom)}`
-        },
-        {
-          title: el.teacher,
-          url: `../Professor/${createURL(el.teacher)}`
-        }]
+      else if (props.title === el.classroom) {
+        el.links = [(createLink(el.students, 'Turma'))]
       }
 
-      else {
-        el.link = [{
-          title: el.students,
-          url: `../Turma/${createURL(el.students)}`
-        },
-        {
-          title: el.teacher,
-          url: `../Professor/${createURL(el.teacher)}`
-        }]
-      }
+      el.teachers.map(teacher => {
+        if (props.title === teacher) {
+          el.links = [(createLink(el.classroom, 'Sala')), createLink(el.students, 'Turma')]
+        }
+  
+        else if (props.title === el.students) {
+          el.links.push(createLink(teacher, 'Professor'))
+        }
+  
+        else {
+          el.links.push(createLink(teacher, 'Professor'))
+        }
+      })
+      console.log(el.links);
+      
     })
   })
 }
