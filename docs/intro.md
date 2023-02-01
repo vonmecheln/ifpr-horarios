@@ -21,4 +21,4 @@ sidebar_position: 1
   - Condensado: Será exibido o horário entre a primeira e última aula, sem tirar os espaços vago.
   - Super condensado: Será exibido o horário entre a primeira e última aula, tirando os dias que não possui aula e os espaços vago.
 - A cada alteração no horário será criado uma nova versão e armazenada. Sendo assim, você consegue visualizar até os horários antigo.
-- Foto do horário por completo.
+- Foto do horário por completo (Disponível apenas para dispositivos Android e Desktop).

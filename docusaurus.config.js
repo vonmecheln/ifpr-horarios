@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/ifpr-horarios/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.gif',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -36,13 +36,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // lastVersion: 'current',
-          // versions: {
-          //   current: {
-          //     label: 'Atual',
-          //     path: '',
-          //   },
-          // },
+          versions: {
+            current: {
+              label: 'Em desenvolvimento 🚧'
+            }
+          }
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -55,10 +53,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logoDark.svg'
         },
         items: [
           {
