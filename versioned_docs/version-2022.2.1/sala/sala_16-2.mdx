@@ -1,96 +1,93 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 16-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Filosofia III - 1088",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
+          subject: "História II - 1089",
+          size: 2,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "07:30 - 08:20"
         },
         {
-          subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
-          size: 2,
-          teacher: "Octavio Henrique Viana",
+          subject: "Língua Portuguesa e Literatura III - 1081",
+          size: 1,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "09:25 - 10:15"
         },
         {
           subject: "Culturas II - 1091",
-          size: 1,
-          teacher: "Sônia Maria Mandotti",
+          size: 2,
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
-          time: "08:20 - 09:10"
+          time: "10:15 - 11:05"
         }
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Sociologia e extensão rural - 1087",
+          subject: "Filosofia III - 1088",
           size: 1,
-          teacher: "Elias Franco",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
-          time: "11:05 - 11:55"
+          time: "15:05 - 15:55"
         },
         {
-          subject: "Cultura e Cinema Nacional III - 1193",
+          subject: "Produção Animal II - 1093",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Produção Animal II - 1093",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:55 - 16:45"
         },
         {
-          subject: "Produção Animal II - 1093",
-          size: 1,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Sanidade Animal - 1092",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Horticultura - 1090",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
           subject: "Língua Portuguesa e Literatura III - 1081",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
-          time: "07:30 - 08:20"
+          time: "09:25 - 10:15"
         },
         {
-          subject: "Língua Portuguesa e Literatura III - 1081",
+          subject: "Culturas II - 1091",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "11:05 - 11:55"
@@ -98,76 +95,118 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "Filosofia III - 1088",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
+          subject: "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA) - 1094",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
-          time: "09:25 - 10:15"
+          time: "07:30 - 08:20"
         },
         {
-          subject: "Produção Animal II - 1093",
+          subject: "Cultura e Cinema Nacional III - 1193",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Sanidade Animal - 1092",
           size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "13:10 - 14:00"
         },
         {
-          subject: "História II - 1089",
+          subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
           size: 2,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Culturas II - 1091",
-          size: 2,
-          teacher: "Sônia Maria Mandotti",
-          classroom: "Sala 16-2",
-          students: "AGO2020",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Matemática III - 1086",
-          size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:05 - 15:55"
         },
         {
+          subject: "Horticultura - 1090",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática III - 1086",
+          size: 2,
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "13:10 - 14:00"
+        },
+        {
           subject: "Gestão e Empreendedorismo Rural - 1095",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "10:15 - 11:05"
         },
         {
-          subject: "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA) - 1094",
-          size: 2,
-          teacher: "Elias Franco",
+          subject: "Sociologia e extensão rural - 1087",
+          size: 1,
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
-          time: "07:30 - 08:20"
+          time: "08:20 - 09:10"
         },
         {
           subject: "Sociologia e extensão rural - 1087",
           size: 1,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "09:25 - 10:15"
+        },
+        {
+          subject: "Filosofia III - 1088",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 16-2",
+          students: "AGO2020",
+          time: "07:30 - 08:20"
         }
       ]
     }

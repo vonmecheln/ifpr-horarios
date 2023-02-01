@@ -1,14 +1,49 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Caroline Domingues Porto do Nascimento Barbieri",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Tópicos Especiais em Linguagem de Programação - 36",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Sala 3-1",
+          students: "IIN2019",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Tópicos Especiais em Tecnologia - 35",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Sala 3-1",
+          students: "IIN2019",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -16,68 +51,47 @@ const data = {
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Engenharia de Software - 20",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: "IIW2022A",
           time: "09:25 - 10:15"
         },
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: []
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Engenharia de Software - 20",
-          size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
-          classroom: "Laboratório de Informatica A",
-          students: "TADS2020",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Tópicos Especiais em Linguagem de Programação - 36",
-          size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
-          classroom: "Sala 3-1",
-          students: "IIN2019",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: []
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
-          size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
-          classroom: "Laboratório de Informatica A",
-          students: "IIW2022A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Tópicos Especiais em Tecnologia - 35",
-          size: 2,
-          teacher: "Caroline Domingues Porto do Nascimento Barbieri",
-          classroom: "Sala 3-1",
-          students: "IIN2019",
-          time: "09:25 - 10:15"
+          time: "08:20 - 09:10"
         }
       ]
     }

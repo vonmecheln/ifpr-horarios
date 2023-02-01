@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Informatica C",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Informática Instrumental - 153",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "AGO2022",
           time: "13:10 - 14:00"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "PCCC 1 - Integração de conteúdos do semestre por meio da informática - 486",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2018",
           time: "19:00 - 19:50"
@@ -37,12 +43,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Informática Instrumental - 596",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -50,7 +58,9 @@ const data = {
         {
           subject: "Orientação de estágio supervisionado - 1097",
           size: 1,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "AGO2020",
           time: "09:25 - 10:15"
@@ -58,16 +68,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Informática Instrumental - 1532",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022",
           time: "07:30 - 08:20"

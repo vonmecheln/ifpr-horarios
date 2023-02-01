@@ -1,26 +1,28 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Kathia Regina Kunzler Bechlin",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Química II - 1230",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -28,7 +30,9 @@ const data = {
         {
           subject: "Química II - 618",
           size: 1,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Laboratório de Química",
           students: "AGO2021",
           time: "08:20 - 09:10"
@@ -36,7 +40,9 @@ const data = {
         {
           subject: "Química II - 618",
           size: 1,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Laboratório de Química",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -44,12 +50,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Química III - 1085",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Laboratório de Química",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -57,7 +65,9 @@ const data = {
         {
           subject: "Química III - 1243",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Laboratório de Química",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -65,7 +75,9 @@ const data = {
         {
           subject: "Química IV - 191",
           size: 1,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 2-2",
           students: "IIN2019",
           time: "11:05 - 11:55"

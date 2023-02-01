@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 11-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Educação ambiental e desenvolvimento sustentável - 1354",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Zoologia dos invertebrados II - 77",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Optativa 1 - 1179",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "PCCC 5 - Teoria e prática para o ensino de ciências e biologia - 1182",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "15:05 - 15:55"
@@ -77,12 +93,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Ecologia de populações e comunidades - 1183",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -98,7 +118,11 @@ const data = {
         {
           subject: "Biofísica - 82",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache+Polyanna Guimarães e Miranda+Elizangela Cavazzini Cesca",
+          teachers: [
+            "Paula Magalhães Souza Deccache",
+            "Polyanna Guimarães e Miranda",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -106,7 +130,11 @@ const data = {
         {
           subject: "Biofísica - 82",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache+Polyanna Guimarães e Miranda+Elizangela Cavazzini Cesca",
+          teachers: [
+            "Paula Magalhães Souza Deccache",
+            "Polyanna Guimarães e Miranda",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:50 - 22:40"
@@ -114,7 +142,9 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
@@ -122,12 +152,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -135,7 +167,9 @@ const data = {
         {
           subject: "Educação ambiental e desenvolvimento sustentável - 1354",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -143,7 +177,9 @@ const data = {
         {
           subject: "Zoologia dos invertebrados II - 77",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -151,7 +187,9 @@ const data = {
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -159,7 +197,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -167,12 +207,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -180,7 +222,9 @@ const data = {
         {
           subject: "Estágio curricular supervisionado em ciências I - 84",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -188,7 +232,9 @@ const data = {
         {
           subject: "PCCC 5 - Teoria e prática para o ensino de ciências e biologia - 1182",
           size: 1,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:50 - 20:40"

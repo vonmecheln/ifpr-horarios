@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Grazielli Bueno",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Conservação de Recursos Naturais (PPC2020) - 2310",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Projetos e Instalações Elétricas - 200",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Segurança do Trabalho - 197",
           size: 1,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "11:05 - 11:55"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Segurança do Trabalho - 693",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "",
           students: "ELE2022+ELM2021",
           time: "19:00 - 19:50"
@@ -40,7 +48,10 @@ const data = {
         {
           subject: "Projeto Integrador - 1593",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes+Grazielli Bueno",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes",
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -48,12 +59,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Energias alternativas (PPC2020) - 2313",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "19:00 - 19:50"
@@ -61,7 +74,9 @@ const data = {
         {
           subject: "Energias alternativas (PPC2020) - 2313",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -69,16 +84,16 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "BIO2019",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Biogeografia - 492",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "",
           students: "BIO2019+BIO2020",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Aula Livre",
           size: 2,
-          teacher: "",
+          teachers: [
+            ""
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -24,62 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Fisiologia animal comparada - 506",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Fisiologia animal comparada - 506",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Ética profissional, cidadania e direitos humanos - 87",
-          size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "19:00 - 19:50"
-        },
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Trabalho de conclusão de curso II - 1420",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "19:50 - 20:40"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Ética profissional, cidadania e direitos humanos - 87",
-          size: 2,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -87,7 +43,9 @@ const data = {
         {
           subject: "PCCC 8 - Origem e evolução da vida - 2037",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -95,12 +53,64 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
+          size: 2,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
+          size: 1,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -108,7 +118,9 @@ const data = {
         {
           subject: "Estágio curricular supervisionado em biologia II - 1421",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2019",
           time: "21:00 - 21:50"

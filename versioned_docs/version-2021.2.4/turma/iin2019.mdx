@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "IIN2019",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Filosofia III - 174",
           size: 1,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Programação Orientada a Objetos - 34",
           size: 2,
-          teacher: "Paula Letícia Santos Lima",
+          teachers: [
+            "Paula Letícia Santos Lima"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Língua Portuguesa III - 158",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Lingua Estrangeira Moderna I - Inglês - 1256",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Biologia III - 167",
           size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Programação Orientada a Objetos - 34",
           size: 2,
-          teacher: "Paula Letícia Santos Lima",
+          teachers: [
+            "Paula Letícia Santos Lima"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -61,12 +73,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Matemática III - 156",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -74,7 +88,9 @@ const data = {
         {
           subject: "Educação Física III - 169",
           size: 1,
-          teacher: "Franciele Fernandes Baliero",
+          teachers: [
+            "Franciele Fernandes Baliero"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -82,7 +98,9 @@ const data = {
         {
           subject: "Física III - 165",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -90,12 +108,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Engenharia de Software - 32",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -103,7 +123,9 @@ const data = {
         {
           subject: "Sociologia III - 172",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -111,7 +133,9 @@ const data = {
         {
           subject: "Arte III - 1448",
           size: 1,
-          teacher: "Luiz Carlos do Couto Junior",
+          teachers: [
+            "Luiz Carlos do Couto Junior"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Língua Estrang. Moderna I-Espanhol (Opc.) - 162",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "08:20 - 09:10"
@@ -127,12 +153,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Química III - 163",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -140,7 +168,9 @@ const data = {
         {
           subject: "Redes de Computadores - 33",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -148,7 +178,9 @@ const data = {
         {
           subject: "Redes de Computadores - 33",
           size: 1,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "11:05 - 11:55"

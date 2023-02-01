@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Marcos Antonio Guido",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Programação para Sistemas Embarcados - 22",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 1,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "21:50 - 22:40"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Trabalho de Conclusão de Curso - 26",
           size: 1,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador - 720",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-02",
           students: "TDS2021-2B",
           time: "19:00 - 19:50"
@@ -45,16 +53,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -62,7 +72,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia da Informação - 25",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -70,8 +82,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

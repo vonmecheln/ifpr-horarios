@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Eduardo Alberto Felippsen",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -20,7 +22,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "13:10 - 14:00"
@@ -28,7 +33,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "15:05 - 15:55"
@@ -36,12 +44,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -49,7 +59,9 @@ const data = {
         {
           subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -57,7 +69,10 @@ const data = {
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2022-1",
           time: "15:05 - 15:55"
@@ -65,7 +80,10 @@ const data = {
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2022-1",
           time: "13:10 - 14:00"
@@ -73,12 +91,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -86,7 +106,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "15:05 - 15:55"
@@ -94,7 +117,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "13:10 - 14:00"
@@ -102,8 +128,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

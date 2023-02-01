@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Informatica B",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Projeto Final de Curso - 181",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Tecnologia e Automação comercial - 1512",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Planejamento Agropecuário - 2215",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Tecnologia e Automação comercial - 1512",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "15:05 - 15:55"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "13:10 - 14:00"
@@ -61,12 +73,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador III - 1253",
           size: 1,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "08:20 - 09:10"
@@ -74,7 +88,9 @@ const data = {
         {
           subject: "Projeto Integrador III - 1253",
           size: 1,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -82,12 +98,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -95,7 +113,9 @@ const data = {
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -103,12 +123,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -116,7 +138,9 @@ const data = {
         {
           subject: "Métodos e Técnicas de Pesquisa Aplicada - 1513",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -124,7 +148,9 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -132,7 +158,9 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "09:25 - 10:15"

@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Karina Dias Espartosa",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Biologia II - 616",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Laboratório de Biologia",
           students: "AGO2021",
           time: "13:10 - 14:00"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Parasitologia, higiene e saúde - 886",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:00 - 21:50"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Sistemática filogenética - 503",
           size: 1,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "19:50 - 20:40"
@@ -32,20 +38,22 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "PCCC 6 - Feira de ciências - 1301",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -53,7 +61,9 @@ const data = {
         {
           subject: "Zoologia dos cordados I - 92",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -61,12 +71,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 3 - 202",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2020",
           time: "10:15 - 11:05"
@@ -74,7 +86,9 @@ const data = {
         {
           subject: "Zoologia dos cordados I - 92",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"

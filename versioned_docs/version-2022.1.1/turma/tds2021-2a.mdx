@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "TDS2021-2A",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Fundamentos de Redes de Computadores - 700",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Pensamento Lógico e Modelagem Matemática - 698",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Algoritmos e Lógica de Programação - 699",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -37,7 +43,9 @@ const data = {
         {
           subject: "Algoritmos e Lógica de Programação - 699",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -45,12 +53,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Banco de Dados - 701",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -58,7 +68,9 @@ const data = {
         {
           subject: "Banco de Dados - 701",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -66,12 +78,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Algoritmos e Lógica de Programação - 699",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -79,7 +93,9 @@ const data = {
         {
           subject: "Empreendedorismo e Inovação - 697",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:50 - 20:40"
@@ -87,8 +103,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

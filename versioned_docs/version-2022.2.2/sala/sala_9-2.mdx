@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 9-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Parasitologia, higiene e saúde - 886",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Sistemática filogenética - 503",
           size: 1,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "19:50 - 20:40"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Lingua Portuguesa 4 - 232",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "10:15 - 11:05"
@@ -32,7 +38,10 @@ const data = {
         {
           subject: "Projeto Integrador - 1593",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes+Grazielli Bueno",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes",
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -40,7 +49,9 @@ const data = {
         {
           subject: "História 4 - 229",
           size: 2,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -48,12 +59,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Filosofia 4 - 223",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -61,7 +74,9 @@ const data = {
         {
           subject: "Artes 3 - 221",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "08:20 - 09:10"
@@ -69,7 +84,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 1,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "11:05 - 11:55"
@@ -77,12 +94,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Geografia 4 - 227",
           size: 2,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -90,7 +109,9 @@ const data = {
         {
           subject: "Lingua Estrangeira Moderna 3 - Inglês - 230",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -98,7 +119,9 @@ const data = {
         {
           subject: "Filosofia da educação e história da educação brasileira - 497",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "19:00 - 19:50"
@@ -106,7 +129,9 @@ const data = {
         {
           subject: "Filosofia da educação e história da educação brasileira - 497",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:00 - 21:50"
@@ -114,12 +139,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia 4 - 238",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -127,7 +154,9 @@ const data = {
         {
           subject: "Aula Livre",
           size: 2,
-          teacher: "",
+          teachers: [
+            ""
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "19:00 - 19:50"
@@ -135,12 +164,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Ecologia de ecossistemas - 81",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:00 - 21:50"
@@ -148,7 +179,9 @@ const data = {
         {
           subject: "Ecologia de ecossistemas - 81",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:50 - 22:40"
@@ -156,7 +189,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -164,7 +199,9 @@ const data = {
         {
           subject: "Manutenção Industrial e Gestão da Produção - 1592",
           size: 1,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "11:05 - 11:55"

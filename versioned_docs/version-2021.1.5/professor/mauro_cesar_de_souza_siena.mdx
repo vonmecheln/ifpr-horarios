@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Mauro César de Souza Siena",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Fundamentos da Matemática - 599",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "ELE2021-1SEM",
           time: "21:00 - 21:50"
@@ -16,16 +18,18 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Matemática 2 - 185",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -33,7 +37,9 @@ const data = {
         {
           subject: "Matemática 1 - 142",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2021-1ANO",
           time: "10:15 - 11:05"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Fundamentos da Matemática - 599",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "ELE2021-1SEM",
           time: "21:00 - 21:50"
@@ -49,12 +57,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática 3 - 210",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "09:25 - 10:15"
@@ -62,12 +72,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática 4 - 234",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2018-4ANO",
           time: "09:25 - 10:15"
@@ -75,7 +87,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 1,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2018-4ANO",
           time: "11:05 - 11:55"
@@ -83,7 +97,9 @@ const data = {
         {
           subject: "Fundamentos de Matemática - 129",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "21:00 - 21:50"

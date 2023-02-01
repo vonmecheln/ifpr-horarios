@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "AGO2019",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura III - 1081",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Produção Animal II - 1093",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "10:15 - 11:05"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Biologia III - 1083",
           size: 2,
-          teacher: "Luis Eduardo Gazal",
+          teachers: [
+            "Luis Eduardo Gazal"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "13:10 - 14:00"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "História II - 1089",
           size: 2,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "15:05 - 15:55"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "07:30 - 08:20"
@@ -48,12 +58,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Gestão e Empreendedorismo Rural - 1095",
           size: 2,
-          teacher: "Alexandre José Schumacher",
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "15:05 - 15:55"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Sociologia e extensão rural - 1087",
           size: 2,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "07:30 - 08:20"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Química III - 1085",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "13:10 - 14:00"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Produção Animal II - 1093",
           size: 1,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "11:05 - 11:55"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Horticultura - 1090",
           size: 2,
-          teacher: "Tatiane Martinazo Portz",
+          teachers: [
+            "Tatiane Martinazo Portz"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -93,12 +113,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura III - 1081",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "07:30 - 08:20"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA) - 1094",
           size: 2,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "10:15 - 11:05"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Orientação de estágio supervisionado - 1097",
           size: 1,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -122,12 +148,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática III - 1086",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Física III - 1084",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "07:30 - 08:20"
@@ -143,12 +173,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sanidade Animal - 1092",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "10:15 - 11:05"
@@ -156,7 +188,9 @@ const data = {
         {
           subject: "Filosofia III - 1088",
           size: 1,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -164,7 +198,9 @@ const data = {
         {
           subject: "Culturas II - 1091",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "13:10 - 14:00"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Culturas II - 1091",
           size: 1,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "15:05 - 15:55"
@@ -180,7 +218,9 @@ const data = {
         {
           subject: "Educação Física III - 1082",
           size: 2,
-          teacher: "Tiago Amaral Silva",
+          teachers: [
+            "Tiago Amaral Silva"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "07:30 - 08:20"
@@ -188,12 +228,14 @@ const data = {
       ]
     },
     {
-      title: "Sábado",
-      timetable: [
+      dayName: "Sábado",
+      dayClasses: [
         {
           subject: "Cultura e Cinema Nacional III - 1193",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "13:10 - 14:00"

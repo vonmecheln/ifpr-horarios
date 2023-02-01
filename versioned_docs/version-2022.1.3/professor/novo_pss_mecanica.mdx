@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Novo PSS Mecânica",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Processos de Fabricação 2 - 1573",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -36,20 +42,22 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -57,7 +65,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -65,7 +75,9 @@ const data = {
         {
           subject: "Processos de Fabricação 3 - 1590",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "EIN2019",
           time: "07:30 - 08:20"

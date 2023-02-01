@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Alex Miyamoto Mussi",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Projetos Elétricos Industriais - 794",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Sistemas Digitais - 342",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "19:00 - 19:50"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Instalações Elétricas - 691",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "19:00 - 19:50"
@@ -37,7 +43,9 @@ const data = {
         {
           subject: "Sistemas Digitais (PPC2020) - 1771",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELE2021-2SEM",
           time: "21:00 - 21:50"
@@ -45,12 +53,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sistemas Digitais (PPC2020) - 1771",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELE2021-2SEM",
           time: "21:00 - 21:50"
@@ -58,12 +68,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Instalações Elétricas - 691",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "21:00 - 21:50"
@@ -71,7 +83,9 @@ const data = {
         {
           subject: "Sistemas Digitais - 342",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "19:00 - 19:50"
@@ -79,8 +93,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

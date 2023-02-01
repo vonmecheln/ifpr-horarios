@@ -1,35 +1,37 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Joaquim José Honório de Lima",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teacher: "Joaquim José Honório de Lima",
-          classroom: "Laboratório de Informatica A",
+          teachers: [
+            "Joaquim José Honório de Lima"
+          ],
+          classroom: "Laboratório de Informatica B",
           students: "IIW2020",
-          time: "10:15 - 11:05"
+          time: "07:30 - 08:20"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Reginaldo Naves dos Reis",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Matemática II - 622",
           size: 2,
-          teacher: "Reginaldo Naves dos Reis",
+          teachers: [
+            "Reginaldo Naves dos Reis"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 2,
-          teacher: "Reginaldo Naves dos Reis",
+          teachers: [
+            "Reginaldo Naves dos Reis"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Matemática II - 1231",
           size: 2,
-          teacher: "Reginaldo Naves dos Reis",
+          teachers: [
+            "Reginaldo Naves dos Reis"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -37,16 +43,16 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

@@ -1,22 +1,26 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Luiz Inácio Chaves",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Processos de Fabricação 3 - 1590",
+          subject: "Máquinas Térmicas e de Fluxo - 218",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
-          classroom: "Laboratório de Usinagem B4",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
+          classroom: "Laboratório de Materiais e Hidráulica B4",
           students: "EIN2019",
           time: "10:15 - 11:05"
         },
         {
           subject: "Processos de Fabricação II - 344",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -24,54 +28,61 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Máquinas Térmicas e de Fluxo - 218",
-          size: 2,
-          teacher: "Luiz Inácio Chaves",
-          classroom: "Laboratório de Materiais e Hidráulica B4",
-          students: "EIN2019",
-          time: "10:15 - 11:05"
-        }
-      ]
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Processos de Fabricação 2 - 1573",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "EIN2020",
           time: "09:25 - 10:15"
         },
         {
-          subject: "Programação de Equipamentos Industriais - 348",
+          subject: "Processos de Fabricação 3 - 1590",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
-          classroom: "Sala 8-2",
-          students: "ELM2021",
-          time: "19:00 - 19:50"
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
+          classroom: "Laboratório de Usinagem B4",
+          students: "EIN2019",
+          time: "07:30 - 08:20"
         },
         {
           subject: "Programação de Equipamentos Industriais - 348",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "21:00 - 21:50"
+        },
+        {
+          subject: "Programação de Equipamentos Industriais - 348",
+          size: 2,
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
+          classroom: "Sala 8-2",
+          students: "ELM2021",
+          time: "19:00 - 19:50"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

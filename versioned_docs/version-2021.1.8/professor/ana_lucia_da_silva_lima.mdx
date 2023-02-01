@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Ana Lucia da Silva Lima",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Ecologia de populações e comunidades - 1183",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -24,12 +26,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Biologia II - 1228",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "13:10 - 14:00"
@@ -37,12 +41,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Biologia II - 616",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -50,7 +56,9 @@ const data = {
         {
           subject: "Sistemática vegetal I - 660",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -58,7 +66,9 @@ const data = {
         {
           subject: "Sistemática vegetal I - 660",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "21:00 - 21:50"

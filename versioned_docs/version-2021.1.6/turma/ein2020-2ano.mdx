@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "EIN2020-2ANO",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Processos de Fabr icação I - 1552",
           size: 2,
-          teacher: "Fábio Fernandes da Silva",
+          teachers: [
+            "Fábio Fernandes da Silva"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "10:15 - 11:05"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Geografia 2 - 177",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Artes 2 - 166",
           size: 1,
-          teacher: "Josiane Paula Maltauro Lopes",
+          teachers: [
+            "Josiane Paula Maltauro Lopes"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Filosofia 2 - 173",
           size: 1,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "08:20 - 09:10"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Biologia 2 - 168",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Educação Física 2 - 170",
           size: 1,
-          teacher: "Franciele Fernandes Baliero",
+          teachers: [
+            "Franciele Fernandes Baliero"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Língua Portuguesa 2 - 183",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "10:15 - 11:05"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Metrologia - 1550",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "08:20 - 09:10"
@@ -77,12 +93,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia 2 - 189",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Sistemas Digi tais - 1553",
           size: 2,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "10:15 - 11:05"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Matemática 2 - 185",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -106,12 +128,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Química 2 - 187",
           size: 2,
-          teacher: "Edvaldo Luis Rossini",
+          teachers: [
+            "Edvaldo Luis Rossini"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Eletrônica - 1554",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Eletrônica - 1554",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "11:05 - 11:55"
@@ -135,12 +163,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Lingua Estrangeira Moderna 1- Inglês - 179",
           size: 1,
-          teacher: "Adrian Lincoln Ferreira Clarindo",
+          teachers: [
+            "Adrian Lincoln Ferreira Clarindo"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -148,7 +178,9 @@ const data = {
         {
           subject: "História 2 - 178",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -156,7 +188,9 @@ const data = {
         {
           subject: "Física 2 - 175",
           size: 1,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "08:20 - 09:10"
@@ -164,7 +198,9 @@ const data = {
         {
           subject: "Cálculo Mecânico - 154",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "10:15 - 11:05"

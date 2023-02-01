@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Informatica B",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "AGO2022 - Grupo A",
           time: "15:05 - 15:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "AGO2022 - Grupo B",
           time: "13:10 - 14:00"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Elementos de Automação - 198",
           size: 2,
-          teacher: "Vander Fabio Silveira",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Sistemas Digitais - 1553",
           size: 2,
-          teacher: "Vander Fabio Silveira",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "EIN2021",
           time: "07:30 - 08:20"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura III - 1240",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -53,7 +63,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -61,7 +74,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -69,20 +85,22 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Projeto Final de Curso - 181",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -90,7 +108,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia - 35",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln+Novo(a) professor(a) Informática",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -98,7 +119,9 @@ const data = {
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -106,7 +129,9 @@ const data = {
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "21:00 - 21:50"

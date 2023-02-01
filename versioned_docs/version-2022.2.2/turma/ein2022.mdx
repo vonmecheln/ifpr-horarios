@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "EIN2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Filosofia 1 - 124",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Geografia 1 - 126",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "08:20 - 09:10"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "História 1 - 131",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "09:25 - 10:15"
@@ -32,7 +38,10 @@ const data = {
         {
           subject: "Informática Instrumental - 1532",
           size: 2,
-          teacher: "Vânio Berlin de Souza+Humberto Fioravante Ferro",
+          teachers: [
+            "Vânio Berlin de Souza",
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -40,12 +49,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Química 1 - 143",
           size: 1,
-          teacher: "Elizangela Cavazzini Cesca",
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Laboratório de Química",
           students: "EIN2022",
           time: "11:05 - 11:55"
@@ -53,7 +64,9 @@ const data = {
         {
           subject: "Artes 1 - 121",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -61,7 +74,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo A",
           time: "07:30 - 08:20"
@@ -69,7 +84,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -77,7 +94,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo B",
           time: "07:30 - 08:20"
@@ -85,7 +104,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -93,12 +114,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo B",
           time: "07:30 - 08:20"
@@ -106,7 +129,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -114,7 +139,9 @@ const data = {
         {
           subject: "Tecnologia dos Materiais - 1531",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -122,7 +149,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo A",
           time: "07:30 - 08:20"
@@ -130,7 +159,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -138,12 +169,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 1 - 122",
           size: 1,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2022",
           time: "09:25 - 10:15"
@@ -151,7 +184,9 @@ const data = {
         {
           subject: "Educação Física 1 - 123",
           size: 1,
-          teacher: "Karina Alves da Silva",
+          teachers: [
+            "Karina Alves da Silva"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "EIN2022",
           time: "08:20 - 09:10"
@@ -159,7 +194,9 @@ const data = {
         {
           subject: "Lingua Portuguesa 1 - 138",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -167,7 +204,9 @@ const data = {
         {
           subject: "Lingua Estrangeira Moderna - Espanhol - 1540",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "07:30 - 08:20"
@@ -175,12 +214,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Física 1 - 125",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "Laboratório de Física",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -188,7 +229,9 @@ const data = {
         {
           subject: "Sociologia 1 - 146",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "09:25 - 10:15"
@@ -196,7 +239,9 @@ const data = {
         {
           subject: "Matemática 1 - 142",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "07:30 - 08:20"

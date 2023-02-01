@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Pecuária / Sala 3 B2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Bovinocultura de Corte - 2208",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Laboratório de Pecuária / Sala 3 B2",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Zootecnia Geral - 467",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Laboratório de Pecuária / Sala 3 B2",
           students: "AGO2022",
           time: "13:10 - 14:00"
@@ -28,16 +32,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Bovinocultura de Corte - 2208",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Laboratório de Pecuária / Sala 3 B2",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -45,8 +51,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

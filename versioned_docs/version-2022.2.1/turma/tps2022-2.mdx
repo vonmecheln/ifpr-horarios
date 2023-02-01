@@ -1,39 +1,75 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "TPS2022-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Lógica de Programação - 1483",
+          size: 2,
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
+          classroom: "BioPark-02",
+          students: "TPS2022-2",
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-2",
-          time: "13:10 - 14:00"
+          time: "15:05 - 15:55"
         },
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-2",
-          time: "15:05 - 15:55"
+          time: "13:10 - 14:00"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-2",
           time: "13:10 - 14:00"
@@ -41,7 +77,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-2",
           time: "15:05 - 15:55"
@@ -49,29 +88,8 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Lógica de Programação - 1483",
-          size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
-          classroom: "BioPark-02",
-          students: "TPS2022-2",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Lógica de Programação - 1483",
-          size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
-          classroom: "BioPark-02",
-          students: "TPS2022-2",
-          time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

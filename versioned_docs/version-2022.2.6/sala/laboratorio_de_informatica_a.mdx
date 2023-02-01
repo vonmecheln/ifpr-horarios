@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Informatica A",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Fundamentos de informática - 1076",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Programação para Sistemas Embarcados - 22",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 1,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:50 - 22:40"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Trabalho de Conclusão de Curso - 26",
           size: 1,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -48,12 +58,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Lógica de programação - 1075",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "10:15 - 11:05"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "15:05 - 15:55"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Telecomunicações e Geoprocessamento - 24",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -85,7 +103,10 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -93,12 +114,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Gestão de Projetos - 18",
           size: 2,
-          teacher: "Alexandre José Schumacher",
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -106,7 +129,10 @@ const data = {
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática+Rafael Gil Ferques",
+          teachers: [
+            "Novo(a) professor(a) Informática",
+            "Rafael Gil Ferques"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -114,7 +140,10 @@ const data = {
         {
           subject: "Engenharia de Software - 20",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -122,7 +151,10 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -130,12 +162,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Programação Orientada a Objetos - 21",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -143,7 +177,9 @@ const data = {
         {
           subject: "Programação Orientada a Objetos - 21",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -151,7 +187,9 @@ const data = {
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teacher: "Joaquim José Honório de Lima",
+          teachers: [
+            "Joaquim José Honório de Lima"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -159,12 +197,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -172,7 +212,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia da Informação - 25",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -180,7 +222,9 @@ const data = {
         {
           subject: "Projeto Integrador III - 1253",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2020",
           time: "07:30 - 08:20"

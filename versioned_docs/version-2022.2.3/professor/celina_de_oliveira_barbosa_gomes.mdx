@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Celina de Oliveira Barbosa Gomes",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "13:10 - 14:00"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Língua Estrangeira Moderna II - Inglês - 545",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "Sala 2-2",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "15:05 - 15:55"
@@ -36,12 +42,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Cultura e Identidade Brasileira - 2253",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "FPE2022-1",
           time: "21:00 - 21:50"
@@ -49,7 +57,9 @@ const data = {
         {
           subject: "Cultura e Identidade Brasileira - 2253",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "FPE2022-1",
           time: "19:50 - 20:40"
@@ -57,7 +67,9 @@ const data = {
         {
           subject: "Língua estrangeira - Inglês - 456",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"
@@ -65,12 +77,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "13:10 - 14:00"
@@ -78,8 +92,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

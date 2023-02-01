@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Grazielli Bueno",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Geração, Transmissão e Distribuição de Energia - 796",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "21:00 - 21:50"
@@ -24,16 +26,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Geração, Transmissão e Distribuição de Energia - 796",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "21:00 - 21:50"

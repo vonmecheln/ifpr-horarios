@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "EIN2019-3ANO",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua Estrangeira Moderna 2 - Ingles - 208",
           size: 1,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "11:05 - 11:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Biologia 3 - 202",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "09:25 - 10:15"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Elementos de Automação - 198",
           size: 2,
-          teacher: "Wylliam Salviano Gongora",
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "07:30 - 08:20"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Física 3 - 205",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "07:30 - 08:20"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Química 3 - 211",
           size: 1,
-          teacher: "Edvaldo Luis Rossini",
+          teachers: [
+            "Edvaldo Luis Rossini"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "11:05 - 11:55"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Geografia 3 - 206",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "10:15 - 11:05"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Segurança do Trabalho - 197",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "09:25 - 10:15"
@@ -69,12 +83,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Educação Física 3 - 203",
           size: 1,
-          teacher: "Franciele Fernandes Baliero",
+          teachers: [
+            "Franciele Fernandes Baliero"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "11:05 - 11:55"
@@ -82,7 +98,9 @@ const data = {
         {
           subject: "Processos de Fabricação 2 - 1573",
           size: 2,
-          teacher: "Fábio Fernandes da Silva",
+          teachers: [
+            "Fábio Fernandes da Silva"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "07:30 - 08:20"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Matemática 3 - 210",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "09:25 - 10:15"
@@ -98,12 +118,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História 3 - 207",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "11:05 - 11:55"
@@ -111,7 +133,9 @@ const data = {
         {
           subject: "Lingua Portuguesa 3 - 209",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "09:25 - 10:15"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Projetos e Instalações Elétricas - 200",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "07:30 - 08:20"
@@ -127,12 +153,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia 3 - 212",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "08:20 - 09:10"
@@ -140,7 +168,9 @@ const data = {
         {
           subject: "Filosofia 3 - 204",
           size: 1,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "07:30 - 08:20"
@@ -148,7 +178,9 @@ const data = {
         {
           subject: "Máquinas e Acionamentos - 1575",
           size: 3,
-          teacher: "Wylliam Salviano Gongora",
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "09:25 - 10:15"

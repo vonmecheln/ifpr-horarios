@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "IIW2022A",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lógica de programação - 1075",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Fundamentos de informática - 1076",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Física I - 1070",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "Laboratório de Física",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "15:05 - 15:55"
@@ -77,12 +93,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Biologia I - 1073",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "10:15 - 11:05"
@@ -106,12 +128,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Química I - 1068",
           size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Laboratório de Química",
           students: "IIW2022A",
           time: "15:05 - 15:55"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Educação Física I - 1072",
           size: 2,
-          teacher: "Guilherme Franca Fusco",
+          teachers: [
+            "Guilherme Franca Fusco"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -151,12 +183,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
@@ -164,7 +198,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "09:25 - 10:15"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"

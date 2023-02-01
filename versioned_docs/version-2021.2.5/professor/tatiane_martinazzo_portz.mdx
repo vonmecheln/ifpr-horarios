@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Tatiane Martinazzo Portz",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Horticultura - 1090",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "07:30 - 08:20"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Educação postural e Segurança no trabalho - 471",
           size: 1,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -36,16 +42,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Agricultura geral - 466",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "07:30 - 08:20"
@@ -53,7 +61,9 @@ const data = {
         {
           subject: "Agroecologia e DRS - 470",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "15:05 - 15:55"
@@ -61,12 +71,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "",
           students: "AGR2021",
           time: "21:00 - 21:50"

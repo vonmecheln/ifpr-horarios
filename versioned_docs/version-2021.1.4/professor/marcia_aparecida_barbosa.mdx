@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Marcia Aparecida Barbosa",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Didática geral - 76",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -24,7 +26,9 @@ const data = {
         {
           subject: "Didática geral - 76",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -32,12 +36,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Psicologia da educação - 72",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -45,8 +51,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

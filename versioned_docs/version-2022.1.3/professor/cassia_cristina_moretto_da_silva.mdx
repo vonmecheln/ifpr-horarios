@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Cassia Cristina Moretto da Silva",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Direito do Trabalho - 1520",
           size: 2,
-          teacher: "Cassia Cristina Moretto da Silva",
+          teachers: [
+            "Cassia Cristina Moretto da Silva"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "21:00 - 21:50"
@@ -24,12 +26,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Legislação Aplicada e Direito do Consumidor - 1509",
           size: 2,
-          teacher: "Cassia Cristina Moretto da Silva",
+          teachers: [
+            "Cassia Cristina Moretto da Silva"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -37,7 +41,9 @@ const data = {
         {
           subject: "Legislação Aplicada e Direito do Consumidor - 1509",
           size: 2,
-          teacher: "Cassia Cristina Moretto da Silva",
+          teachers: [
+            "Cassia Cristina Moretto da Silva"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -45,8 +51,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

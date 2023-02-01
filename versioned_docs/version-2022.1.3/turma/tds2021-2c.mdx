@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "TDS2021-2C",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento WEB - 721",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "BioPark-03",
           students: "TDS2021-2C",
           time: "21:00 - 21:50"
@@ -16,16 +18,18 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento WEB - 721",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "BioPark-03",
           students: "TDS2021-2C",
           time: "21:00 - 21:50"
@@ -33,7 +37,9 @@ const data = {
         {
           subject: "Desenvolvimento WEB - 721",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "BioPark-03",
           students: "TDS2021-2C",
           time: "19:00 - 19:50"
@@ -41,12 +47,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento para Dispositivos Móveis - 722",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "BioPark-03",
           students: "TDS2021-2C",
           time: "21:00 - 21:50"
@@ -54,7 +62,9 @@ const data = {
         {
           subject: "Desenvolvimento para Dispositivos Móveis - 722",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "BioPark-03",
           students: "TDS2021-2C",
           time: "19:00 - 19:50"
@@ -62,8 +72,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

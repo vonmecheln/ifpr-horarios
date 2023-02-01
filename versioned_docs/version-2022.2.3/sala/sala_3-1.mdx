@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 3-1",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Direito do Trabalho - 1520",
           size: 2,
-          teacher: "Alexandre José Schumacher",
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Geografia III - 195",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Comunicação empresarial - 1157",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Língua Portuguesa IV - 186",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Análise Econômica e Mercado - 1517",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Introdução a Contabilidade - 1158",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Matemática 2 - 185",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2021",
           time: "07:30 - 08:20"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Matemática 3 - 210",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 1,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2019",
           time: "11:05 - 11:55"
@@ -85,12 +103,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Empreendedorismo e Novos Negócios - 1518",
           size: 2,
-          teacher: "Alexandre José Schumacher",
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Filosofia IV - 193",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Marketing de Relacionamento - 1519",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Língua Portuguesa IV - 186",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -122,12 +148,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História III - 194",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 1,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -151,7 +183,9 @@ const data = {
         {
           subject: "Análise Econômica e Mercado - 1517",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "19:00 - 19:50"
@@ -159,7 +193,9 @@ const data = {
         {
           subject: "Introdução a Contabilidade - 1158",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -167,7 +203,9 @@ const data = {
         {
           subject: "Sociologia IV - 192",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -175,12 +213,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática 1 - 142",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2022",
           time: "07:30 - 08:20"
@@ -188,7 +228,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2019",
           time: "09:25 - 10:15"

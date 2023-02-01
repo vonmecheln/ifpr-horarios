@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Novo PSS Ed. Física",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Educação Física 1 - 123",
           size: 1,
-          teacher: "Novo PSS Ed. Física",
+          teachers: [
+            "Novo PSS Ed. Física"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "EIN2022",
           time: "08:20 - 09:10"
@@ -24,7 +26,9 @@ const data = {
         {
           subject: "Educação Física 2 - 170",
           size: 1,
-          teacher: "Novo PSS Ed. Física",
+          teachers: [
+            "Novo PSS Ed. Física"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "EIN2021",
           time: "09:25 - 10:15"
@@ -32,7 +36,9 @@ const data = {
         {
           subject: "Educação Física 3 - 203",
           size: 1,
-          teacher: "Novo PSS Ed. Física",
+          teachers: [
+            "Novo PSS Ed. Física"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -40,16 +46,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Educação Física I - 1072",
           size: 2,
-          teacher: "Novo PSS Ed. Física",
+          teachers: [
+            "Novo PSS Ed. Física"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"

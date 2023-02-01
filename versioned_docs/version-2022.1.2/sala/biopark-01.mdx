@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "BioPark-01",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Fundamentos de Redes de Computadores - 700",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Sociologia I - 1071",
           size: 2,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Física I - 1070",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Pensamento Lógico e Modelagem Matemática - 698",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "13:10 - 14:00"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Fundamentos de informática - 1076",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "15:05 - 15:55"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Algoritmos e Lógica de Programação - 699",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Algoritmos e Lógica de Programação - 699",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Lógica de programação - 1075",
           size: 2,
-          teacher: "Rafael Luis Bartz",
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -93,12 +113,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Banco de Dados - 701",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Banco de Dados - 701",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "09:25 - 10:15"
@@ -122,7 +148,9 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -130,7 +158,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -138,12 +168,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "13:10 - 14:00"
@@ -151,7 +183,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "15:05 - 15:55"
@@ -159,7 +193,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -167,7 +203,9 @@ const data = {
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -175,7 +213,9 @@ const data = {
         {
           subject: "Algoritmos e Lógica de Programação - 699",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -183,7 +223,9 @@ const data = {
         {
           subject: "Empreendedorismo e Inovação - 697",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:50 - 20:40"
@@ -191,12 +233,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Química I - 1068",
           size: 2,
-          teacher: "Ana Paula Sone",
+          teachers: [
+            "Ana Paula Sone"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "13:10 - 14:00"
@@ -204,7 +248,9 @@ const data = {
         {
           subject: "Educação Física I - 1072",
           size: 2,
-          teacher: "Guilherme Franca Fusco",
+          teachers: [
+            "Guilherme Franca Fusco"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "10:15 - 11:05"
@@ -212,7 +258,9 @@ const data = {
         {
           subject: "Biologia I - 1073",
           size: 2,
-          teacher: "Michele Fernanda Bortolini",
+          teachers: [
+            "Michele Fernanda Bortolini"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "15:05 - 15:55"
@@ -220,7 +268,9 @@ const data = {
         {
           subject: "Filosofia I - 1139",
           size: 2,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"

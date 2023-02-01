@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Biologia",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Biologia I - 459",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Biologia 3 - 202",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Biologia 2 - 168",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2021",
           time: "11:05 - 11:55"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Biologia Celular - 62",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "BIO2018",
           time: "21:00 - 21:50"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Biologia II - 1228",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Biologia 4 - 222",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2019",
           time: "10:15 - 11:05"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Microbiologia e imunologia - 501",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Laboratório de Biologia",
           students: "BIO2018",
           time: "21:00 - 21:50"
@@ -69,12 +83,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Biologia II - 616",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Laboratório de Biologia",
           students: "AGO2021",
           time: "10:15 - 11:05"
@@ -82,7 +98,9 @@ const data = {
         {
           subject: "Biologia Celular - 62",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "BIO2018",
           time: "19:00 - 19:50"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Biologia I - 1073",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -98,12 +118,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 1 - 122",
           size: 1,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2022",
           time: "09:25 - 10:15"
@@ -111,7 +133,9 @@ const data = {
         {
           subject: "Biologia III - 1241",
           size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Microbiologia e imunologia - 501",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Laboratório de Biologia",
           students: "BIO2018",
           time: "19:00 - 19:50"
@@ -127,8 +153,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

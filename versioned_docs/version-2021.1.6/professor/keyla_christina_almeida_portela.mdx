@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Keyla Christina Almeida Portela",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "11:05 - 11:55"
@@ -20,12 +22,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "11:05 - 11:55"
@@ -33,7 +37,9 @@ const data = {
         {
           subject: "Plano de Marketing - 1498",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "19:00 - 19:50"
@@ -41,12 +47,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Artes 1 - 121",
           size: 1,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "",
           students: "EIN2021-1ANO",
           time: "09:25 - 10:15"
@@ -54,7 +62,9 @@ const data = {
         {
           subject: "Promoção e organização de eventos empresariais - 1495",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "19:00 - 19:50"
@@ -62,8 +72,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

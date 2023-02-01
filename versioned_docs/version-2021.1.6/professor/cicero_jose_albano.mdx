@@ -1,30 +1,32 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Cícero José Albano",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Direito Empresarial e Tributário - 1494",
           size: 2,
-          teacher: "Cícero José Albano",
+          teachers: [
+            "Cícero José Albano"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "19:00 - 19:50"
@@ -32,7 +34,9 @@ const data = {
         {
           subject: "Direito Empresarial e Tributário - 1494",
           size: 2,
-          teacher: "Cícero José Albano",
+          teachers: [
+            "Cícero José Albano"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "21:00 - 21:50"

@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Alex Miyamoto Mussi",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Instrumentos de Medidas Elétricas - 139",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -24,7 +26,9 @@ const data = {
         {
           subject: "Sistemas Digitais - 1553",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Sala 7-2",
           students: "EIN2021",
           time: "07:30 - 08:20"
@@ -32,16 +36,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Instrumentos de Medidas Elétricas - 1138",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -49,7 +55,9 @@ const data = {
         {
           subject: "Projetos elétricos industriais - 2232",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "19:00 - 19:50"

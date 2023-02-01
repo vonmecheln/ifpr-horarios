@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Luis Henrique Manosso Von Mecheln",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento WEB - 721",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Desenvolvimento WEB - 721",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
           time: "21:00 - 21:50"
@@ -24,60 +28,70 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Computação Aplicada",
-          students: "IIW2020",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Desenvolvimento para Dispositivos Móveis - 19",
-          size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
-          classroom: "Laboratório de Computação Aplicada",
-          students: "TADS2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
-          size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
-          classroom: "Laboratório de Informatica A",
           students: "IIW2020",
           time: "13:10 - 14:00"
         },
         {
-          subject: "Telecomunicações e Geoprocessamento - 24",
+          subject: "Desenvolvimento para Dispositivos Móveis - 19",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
-          classroom: "Laboratório de Informatica A",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
           students: "TADS2020",
           time: "21:00 - 21:50"
+        },
+        {
+          subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: "IIW2020",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Telecomunicações e Geoprocessamento - 24",
+          size: 2,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: "TADS2020",
+          time: "19:00 - 19:50"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Desenvolvimento WEB - 721",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "BioPark-01",
           students: "TDS2021-2A",
-          time: "19:00 - 19:50"
+          time: "21:00 - 21:50"
         }
       ]
     }

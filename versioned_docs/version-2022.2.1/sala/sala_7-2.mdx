@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 7-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua Portuguesa 2 - 183",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 7-2",
           students: "EIN2021",
           time: "10:15 - 11:05"
@@ -16,57 +18,59 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Artes 2 - 166",
-          size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Lingua Estrangeira Moderna 1 - Inglês - 179",
-          size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Filosofia 2 - 173",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Geografia 2 - 177",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "09:25 - 10:15"
-        },
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Matemática 2 - 185",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 7-2",
           students: "EIN2021",
           time: "07:30 - 08:20"
         },
         {
+          subject: "Cálculo Mecânico - 154",
+          size: 2,
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia 2 - 177",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Artes 2 - 166",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "08:20 - 09:10"
+        },
+        {
           subject: "Tecnologia dos Materiais - 343",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -74,28 +78,34 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia 2 - 189",
           size: 1,
-          teacher: "Everaldo Lorensetti",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "História 2 - 178",
-          size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 7-2",
           students: "EIN2021",
           time: "08:20 - 09:10"
         },
         {
+          subject: "História 2 - 178",
+          size: 1,
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "09:25 - 10:15"
+        },
+        {
           subject: "Desenho Assistido por computador - 340",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -103,28 +113,34 @@ const data = {
         {
           subject: "Tecnologia dos Materiais - 343",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "19:00 - 19:50"
-        },
-        {
-          subject: "Cálculo Mecânico - 154",
-          size: 2,
-          teacher: "Vânio Berlin de Souza",
-          classroom: "Sala 7-2",
-          students: "EIN2021",
-          time: "09:25 - 10:15"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia 2 - 173",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2021",
+          time: "09:25 - 10:15"
+        },
         {
           subject: "Sistemas Digitais - 1553",
           size: 2,
-          teacher: "Vander Fabio Silveira",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
           classroom: "Sala 7-2",
           students: "EIN2021",
           time: "07:30 - 08:20"

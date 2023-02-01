@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Metrologia B4",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Metrologia - 1550",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2021",
           time: "08:20 - 09:10"
@@ -16,16 +18,18 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Metrologia - 108",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -33,12 +37,12 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

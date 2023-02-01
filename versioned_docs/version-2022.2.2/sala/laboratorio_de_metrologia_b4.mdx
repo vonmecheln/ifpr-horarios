@@ -3,16 +3,18 @@ const data = {
   title: "Laboratório de Metrologia B4",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Metrologia - 1550",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2021",
           time: "11:05 - 11:55"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo B",
           time: "07:30 - 08:20"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -36,12 +42,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo A",
           time: "07:30 - 08:20"
@@ -49,7 +57,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -57,12 +67,12 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

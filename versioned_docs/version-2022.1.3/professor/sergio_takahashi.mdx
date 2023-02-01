@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sérgio Takahashi",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo B",
           time: "11:05 - 11:55"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Metrologia - 1550",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2021",
           time: "08:20 - 09:10"
@@ -48,16 +58,18 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -65,7 +77,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo A",
           time: "11:05 - 11:55"
@@ -73,7 +87,9 @@ const data = {
         {
           subject: "Metrologia - 108",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -81,12 +97,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -94,7 +112,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -102,8 +122,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

@@ -1,205 +1,249 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "AGO2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Informática instrumental e aplicada - 468",
+          subject: "Língua estrangeira - Inglês - 456",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
-          classroom: "Laboratório de Informatica A",
-          students: "AGO2022 - Grupo A",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
           time: "13:10 - 14:00"
         },
-        {
-          subject: "Informática instrumental e aplicada - 468",
-          size: 2,
-          teacher: "Douglas Barbosa Sousa",
-          classroom: "Laboratório de Informatica C",
-          students: "AGO2022 - Grupo B",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Geografia I - 463",
-          size: 2,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Desenho técnico e topografia - 469",
-          size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Laboratório de Computação Aplicada",
-          students: "AGO2022 - Grupo A",
-          time: "15:05 - 15:55"
-        },
-        {
-          subject: "Desenho técnico e topografia - 469",
-          size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Laboratório de Computação Aplicada",
-          students: "AGO2022 - Grupo B",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura I - 455",
-          size: 1,
-          teacher: "Pedro Leites Junior",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Zootecnia Geral - 467",
-          size: 2,
-          teacher: "Roberto Haruyoshi Ito",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
         {
           subject: "Artes I - 458",
           size: 2,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
-          time: "13:10 - 14:00"
+          time: "15:05 - 15:55"
         },
         {
           subject: "Educação Física I - 457",
           size: 2,
-          teacher: "Karina Alves da Silva",
+          teachers: [
+            "Karina Alves da Silva"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "AGO2022",
           time: "07:30 - 08:20"
         },
         {
-          subject: "Biologia I - 459",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Laboratório de Biologia",
-          students: "AGO2022",
-          time: "15:05 - 15:55"
-        },
-        {
           subject: "Língua Portuguesa e Literatura I - 455",
-          size: 2,
-          teacher: "Pedro Leites Junior",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Educação postural e Segurança no trabalho - 471",
           size: 1,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Cultura e Cinema Nacional I - 831",
-          size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Agricultura geral - 466",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "09:25 - 10:15"
         },
         {
           subject: "Agroecologia e DRS - 470",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
-          time: "07:30 - 08:20"
+          time: "09:25 - 10:15"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Física I - 460",
+          subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
-          classroom: "Laboratório de Física",
-          students: "AGO2022",
-          time: "09:25 - 10:15"
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: "AGO2022 - Grupo A",
+          time: "15:05 - 15:55"
         },
         {
-          subject: "Matemática I - 462",
+          subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Química I - 461",
-          size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
-          classroom: "Laboratório de Química",
-          students: "AGO2022",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: "AGO2022 - Grupo B",
           time: "13:10 - 14:00"
         },
         {
           subject: "Filosofia I - 464",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Filosofia I - 464",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
-        {
-          subject: "Língua estrangeira - Inglês - 456",
+          subject: "Geografia I - 463",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
         },
         {
-          subject: "Sociologia I - 465",
+          subject: "Desenho técnico e topografia - 469",
           size: 2,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2022 - Grupo A",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Desenho técnico e topografia - 469",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: "AGO2022 - Grupo B",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura I - 455",
+          size: 2,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia I - 464",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Cultura e Cinema Nacional I - 831",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Zootecnia Geral - 467",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Física I - 460",
+          size: 2,
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
+          classroom: "Laboratório de Física",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Química I - 461",
+          size: 2,
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
+          classroom: "Laboratório de Química",
+          students: "AGO2022",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Biologia I - 459",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "AGO2022",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Agricultura geral - 466",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Educação postural e Segurança no trabalho - 471",
+          size: 1,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática I - 462",
+          size: 2,
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sociologia I - 465",
+          size: 2,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
         }
       ]
     }

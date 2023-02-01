@@ -1,18 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Materiais e Hidráulica B4",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Máquinas Térmicas e de Fluxo - 218",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Materiais e Hidráulica B4",
           students: "EIN2019",
           time: "10:15 - 11:05"
@@ -20,16 +18,20 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

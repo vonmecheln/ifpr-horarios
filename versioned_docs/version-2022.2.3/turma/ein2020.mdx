@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "EIN2020",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Projetos e Instalações Elétricas - 200",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Segurança do Trabalho - 197",
           size: 1,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "11:05 - 11:55"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Educação Física 3 - 203",
           size: 1,
-          teacher: "Karina Alves da Silva",
+          teachers: [
+            "Karina Alves da Silva"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "História 3 - 207",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "10:15 - 11:05"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Processos de Fabricação 2 - 1573",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Matemática 3 - 210",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Máquinas e Acionamentos - 1575",
           size: 1,
-          teacher: "Wylliam Salviano Gongora",
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "EIN2020",
           time: "11:05 - 11:55"
@@ -69,12 +83,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia 3 - 212",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "08:20 - 09:10"
@@ -82,7 +98,9 @@ const data = {
         {
           subject: "Filosofia 3 - 204",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Geografia 3 - 206",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Lingua Portuguesa 3 - 209",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "10:15 - 11:05"
@@ -106,12 +128,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 3 - 202",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2020",
           time: "10:15 - 11:05"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Lingua Estrangeira Moderna 2 - Ingles - 208",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 8-2",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Máquinas e Acionamentos - 1575",
           size: 2,
-          teacher: "Wylliam Salviano Gongora",
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -135,12 +163,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Física 3 - 205",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "Laboratório de Física",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -148,7 +178,9 @@ const data = {
         {
           subject: "Química 3 - 211",
           size: 1,
-          teacher: "Elizangela Cavazzini Cesca",
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Laboratório de Química",
           students: "EIN2020",
           time: "11:05 - 11:55"
@@ -156,7 +188,9 @@ const data = {
         {
           subject: "Elementos de Automação - 198",
           size: 2,
-          teacher: "Vander Fabio Silveira",
+          teachers: [
+            "Vander Fabio Silveira"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "EIN2020",
           time: "09:25 - 10:15"

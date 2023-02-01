@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 1-4",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Equipamentos elétricos e Sistema elétricos de potência - 2234",
           size: 2,
-          teacher: "Grazielli Bueno",
+          teachers: [
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -24,16 +28,18 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sistemas Digitais - 1553",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Sala 1-4",
           students: "EIN2021",
           time: "07:30 - 08:20"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Eletrônica de Potência - 2228",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "19:00 - 19:50"
@@ -49,7 +57,9 @@ const data = {
         {
           subject: "Eletrônica de Potência - 2228",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -57,16 +67,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Projetos elétricos industriais - 2232",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "19:00 - 19:50"

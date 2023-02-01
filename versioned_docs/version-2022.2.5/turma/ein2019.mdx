@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "EIN2019",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua Portuguesa 4 - 232",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "10:15 - 11:05"
@@ -16,7 +18,10 @@ const data = {
         {
           subject: "Projeto Integrador - 1593",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes+Grazielli Bueno",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes",
+            "Grazielli Bueno"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -24,7 +29,9 @@ const data = {
         {
           subject: "História 4 - 229",
           size: 2,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -32,12 +39,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Filosofia 4 - 223",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -45,7 +54,9 @@ const data = {
         {
           subject: "Artes 3 - 221",
           size: 1,
-          teacher: "Renata Carolina Pereira",
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "08:20 - 09:10"
@@ -53,7 +64,9 @@ const data = {
         {
           subject: "Lingua Estrangeira Moderna 3 - Inglês - 230",
           size: 1,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "11:05 - 11:55"
@@ -61,7 +74,9 @@ const data = {
         {
           subject: "Máquinas Térmicas e de Fluxo - 218",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Materiais e Hidráulica B4",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -69,12 +84,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Geografia 4 - 227",
           size: 2,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -82,7 +99,9 @@ const data = {
         {
           subject: "Processos de Fabricação 3 - 1590",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "EIN2019",
           time: "10:15 - 11:05"
@@ -90,7 +109,9 @@ const data = {
         {
           subject: "Manutenção Industrial e Gestão da Produção - 1592",
           size: 1,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -98,12 +119,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Física 4 - 224",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "Laboratório de Física",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -111,7 +134,9 @@ const data = {
         {
           subject: "Química 4 - 235",
           size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Laboratório de Química",
           students: "EIN2019",
           time: "10:15 - 11:05"
@@ -119,7 +144,9 @@ const data = {
         {
           subject: "Sociologia 4 - 238",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 9-2",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -127,12 +154,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 4 - 222",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -140,7 +169,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2019",
           time: "09:25 - 10:15"
@@ -148,7 +179,9 @@ const data = {
         {
           subject: "Matemática 4 - 234",
           size: 1,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 3-1",
           students: "EIN2019",
           time: "11:05 - 11:55"

@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Cesar Gomes de Freitas",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Contabilidade de Custos e Formação de Preços - 1492",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "21:00 - 21:50"
@@ -16,12 +18,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Contabilidade de Custos e Formação de Preços - 1492",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "19:00 - 19:50"
@@ -29,7 +33,9 @@ const data = {
         {
           subject: "Gestão de Compras e Estoques - 1491",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "",
           students: "TGC2020",
           time: "21:00 - 21:50"
@@ -37,20 +43,22 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia Rural e Cooperativismo - 853",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "",
           students: "AGE 2017",
           time: "19:00 - 19:50"

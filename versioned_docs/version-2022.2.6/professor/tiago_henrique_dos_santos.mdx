@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Tiago Henrique dos Santos",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica - 1554",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "EIN2021",
           time: "10:15 - 11:05"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Eletrônica - 1554",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "EIN2021",
           time: "09:25 - 10:15"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo A",
           time: "07:30 - 08:20"
@@ -37,7 +43,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -45,12 +53,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Análise de Circuitos - 2072",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022",
           time: "19:00 - 19:50"
@@ -58,7 +68,9 @@ const data = {
         {
           subject: "Análise de Circuitos - 2072",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -66,7 +78,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo B",
           time: "07:30 - 08:20"
@@ -74,7 +88,9 @@ const data = {
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 1,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -82,12 +98,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica Analógica (PPC 2020) - 2073",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022",
           time: "19:00 - 19:50"
@@ -95,7 +113,9 @@ const data = {
         {
           subject: "Eletrônica Analógica (PPC 2020) - 2073",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -103,8 +123,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

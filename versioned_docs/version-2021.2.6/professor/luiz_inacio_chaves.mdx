@@ -1,26 +1,28 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Luiz Inácio Chaves",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Cálculo Mecânico - 154",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -28,7 +30,9 @@ const data = {
         {
           subject: "Máquinas Elétricas e Acionamentos - 110",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "ELM2020",
           time: "21:00 - 21:50"
@@ -36,12 +40,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Máquinas Térmicas e de Fluxo - 218",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "EIN2018-4ANO",
           time: "10:15 - 11:05"
@@ -49,7 +55,9 @@ const data = {
         {
           subject: "Programação de Equipamentos Industriais - 348",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "ELM2020",
           time: "19:00 - 19:50"
@@ -57,7 +65,9 @@ const data = {
         {
           subject: "Programação de Equipamentos Industriais - 348",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "",
           students: "ELM2020",
           time: "21:00 - 21:50"

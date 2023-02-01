@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "AGO2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Biologia I - 459",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Língua estrangeira - Inglês - 456",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Informática instrumental e aplicada - 468",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "AGO2022",
           time: "13:10 - 14:00"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Desenho técnico e topografia - 469",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "AGO2022",
           time: "15:05 - 15:55"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 455",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
@@ -48,12 +58,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Educação Física I - 457",
           size: 2,
-          teacher: "Guilherme Franca Fusco",
+          teachers: [
+            "Guilherme Franca Fusco"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "AGO2022",
           time: "07:30 - 08:20"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Geografia I - 463",
           size: 2,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Artes I - 458",
           size: 1,
-          teacher: "Luiz Carlos do Couto Junior",
+          teachers: [
+            "Luiz Carlos do Couto Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Cultura e Cinema Nacional I - 831",
           size: 1,
-          teacher: "Luiz Carlos do Couto Junior",
+          teachers: [
+            "Luiz Carlos do Couto Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "15:55 - 16:45"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Filosofia I - 464",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "15:05 - 15:55"
@@ -93,7 +113,9 @@ const data = {
         {
           subject: "Zootecnia Geral - 467",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "13:10 - 14:00"
@@ -101,12 +123,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Química I - 461",
           size: 2,
-          teacher: "Elizangela Cavazzini Cesca",
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Laboratório de Química",
           students: "AGO2022",
           time: "07:30 - 08:20"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Sociologia I - 465",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -122,7 +148,9 @@ const data = {
         {
           subject: "Agricultura geral - 466",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "10:15 - 11:05"
@@ -130,12 +158,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Física I - 460",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "Laboratório de Física",
           students: "AGO2022",
           time: "13:10 - 14:00"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Sociologia I - 465",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"
@@ -151,7 +183,9 @@ const data = {
         {
           subject: "Artes I - 458",
           size: 1,
-          teacher: "Luiz Carlos do Couto Junior",
+          teachers: [
+            "Luiz Carlos do Couto Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
@@ -159,7 +193,9 @@ const data = {
         {
           subject: "Agroecologia e DRS - 470",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -167,7 +203,9 @@ const data = {
         {
           subject: "Educação postural e Segurança no trabalho - 471",
           size: 1,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "08:20 - 09:10"
@@ -175,12 +213,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 462",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -188,7 +228,9 @@ const data = {
         {
           subject: "Filosofia I - 464",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
@@ -196,7 +238,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 455",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"

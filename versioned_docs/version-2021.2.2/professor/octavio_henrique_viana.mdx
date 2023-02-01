@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Octavio Henrique Viana",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "15:05 - 15:55"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Desenho técnico e topografia - 469",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -28,12 +32,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Orientação de estágio supervisionado - 1097",
           size: 1,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Topografia e Geoprocessamento - 1467",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -49,12 +57,12 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

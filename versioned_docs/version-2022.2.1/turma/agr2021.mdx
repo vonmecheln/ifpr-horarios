@@ -1,98 +1,118 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "AGR2021",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Ovinocaprinocultura - 2218",
+          subject: "Culturas III - 2222",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
-          time: "21:00 - 21:50"
+          time: "19:00 - 19:50"
         },
         {
           subject: "Extensão e Comunicação Rural - 2213",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
-          time: "19:00 - 19:50"
+          time: "21:00 - 21:50"
         }
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Tecnologia de Produtos de Origem Vegetal - 2220",
+          subject: "Bovinocultura de Leite - 2209",
           size: 2,
-          teacher: "Elias Franco",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
-          time: "21:00 - 21:50"
+          time: "19:00 - 19:50"
         },
         {
           subject: "Projeto Integrador - 2211",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
-          time: "19:00 - 19:50"
+          time: "21:00 - 21:50"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
-          subject: "Bovinocultura de Leite - 2209",
+          subject: "Tecnologia de Produtos de Origem Vegetal - 2220",
           size: 2,
-          teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
-          time: "21:00 - 21:50"
+          time: "19:00 - 19:50"
         },
         {
           subject: "Irrigação e Drenagem - 2216",
           size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Sala 13-2",
-          students: "AGR2021",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Bovinocultura de Leite - 2209",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "21:00 - 21:50"
-        },
-        {
-          subject: "Culturas III - 2222",
-          size: 2,
-          teacher: "Sônia Maria Mandotti",
-          classroom: "Sala 13-2",
-          students: "AGR2021",
-          time: "19:00 - 19:50"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Bovinocultura de Leite - 2209",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Ovinocaprinocultura - 2218",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Tecnologias de Produtos de Origem Animal - 2219",
           size: 2,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"

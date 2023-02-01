@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Kathia Regina Kunzler Bechlin",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Química III - 1085",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "13:10 - 14:00"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Química IV - 191",
           size: 1,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "08:20 - 09:10"
@@ -28,16 +32,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Química II - 1230",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -45,12 +51,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Química II - 618",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -58,7 +66,9 @@ const data = {
         {
           subject: "Química III - 163",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"

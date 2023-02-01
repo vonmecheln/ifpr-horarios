@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Novo(a) professor(a) Informática",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -36,12 +42,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Engenharia de Software - 20",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -49,7 +57,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -57,16 +67,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -74,7 +86,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia - 35",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"

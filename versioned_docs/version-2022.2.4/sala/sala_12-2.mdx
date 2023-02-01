@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 12-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Filosofia II - 1232",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "11:05 - 11:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Geografia I - 1233",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Aula Livre",
           size: 2,
-          teacher: "",
+          teachers: [
+            ""
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Língua Estrangeira Moderna: Espanhol - 2237",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Fisiologia animal comparada - 506",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Fisiologia animal comparada - 506",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "08:20 - 09:10"
@@ -93,12 +113,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Ética profissional, cidadania e direitos humanos - 87",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Trabalho de conclusão de curso II - 1420",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:50 - 20:40"
@@ -122,7 +148,9 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -130,12 +158,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História II - 1234",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Ética profissional, cidadania e direitos humanos - 87",
           size: 2,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -151,7 +183,9 @@ const data = {
         {
           subject: "PCCC 8 - Origem e evolução da vida - 2037",
           size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -159,7 +193,9 @@ const data = {
         {
           subject: "Química II - 1230",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -167,7 +203,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "08:20 - 09:10"
@@ -175,7 +213,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -183,12 +223,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "História II - 1234",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -196,7 +238,9 @@ const data = {
         {
           subject: "Biologia II - 1228",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -204,7 +248,9 @@ const data = {
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -212,7 +258,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "15:05 - 15:55"

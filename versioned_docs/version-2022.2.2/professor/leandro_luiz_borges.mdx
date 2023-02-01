@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Leandro Luiz Borges",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Fisiologia vegetal - 504",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Genética básica e humana - 1304",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -28,12 +32,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Fisiologia vegetal - 504",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Genética básica e humana - 1304",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -49,16 +57,18 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 4 - 222",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2019",
           time: "07:30 - 08:20"
@@ -66,7 +76,9 @@ const data = {
         {
           subject: "Metodologia Científica e Técnicas de Apresentação de Trabalhos - 1466",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "21:00 - 21:50"

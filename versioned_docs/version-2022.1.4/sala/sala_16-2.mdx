@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 16-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "História II - 1089",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "11:05 - 11:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura III - 1081",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Culturas II - 1091",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "09:25 - 10:15"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA) - 1094",
           size: 2,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Sociologia e extensão rural - 1087",
           size: 1,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "09:25 - 10:15"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Produção Animal II - 1093",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Mecanização Agrícola, Irrigação e Drenagem - 1096",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "10:15 - 11:05"
@@ -69,12 +83,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia e extensão rural - 1087",
           size: 1,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "11:05 - 11:55"
@@ -82,7 +98,9 @@ const data = {
         {
           subject: "Culturas II - 1091",
           size: 1,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "10:15 - 11:05"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Horticultura - 1090",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -98,12 +118,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Legislação e ética profissional - 2229",
           size: 2,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 16-2",
           students: "ELE2021",
           time: "19:00 - 19:50"
@@ -111,7 +133,9 @@ const data = {
         {
           subject: "Gestão e Empreendedorismo Rural - 1095",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "09:25 - 10:15"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Biologia III - 1083",
           size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Produção Animal II - 1093",
           size: 1,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:05 - 15:55"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Sanidade Animal - 1092",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Cultura e Cinema Nacional III - 1193",
           size: 1,
-          teacher: "Luiz Carlos do Couto Junior",
+          teachers: [
+            "Luiz Carlos do Couto Junior"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:55 - 16:45"
@@ -151,7 +183,9 @@ const data = {
         {
           subject: "História II - 1089",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "11:05 - 11:55"
@@ -159,12 +193,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática III - 1086",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Filosofia III - 1088",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -180,7 +218,9 @@ const data = {
         {
           subject: "Filosofia III - 1088",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "14:00 - 14:50"
@@ -188,7 +228,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura III - 1081",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "11:05 - 11:55"

@@ -1,88 +1,26 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 11-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Sociologia da educação - 1303",
-          size: 2,
-          teacher: "Milton Aparecido Azevedo",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Matemática I - 1064",
-          size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Filosofia I - 1139",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 11-2",
-          students: "IIW2022A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Zoologia dos cordados I - 92",
-          size: 2,
-          teacher: "Karina Dias Espartosa",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Genética básica e humana - 1304",
-          size: 2,
-          teacher: "Leandro Luiz Borges",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Sociologia I - 1071",
-          size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "11:05 - 11:55"
         },
         {
-          subject: "Fisiologia vegetal - 504",
+          subject: "Sociologia da educação - 1303",
           size: 2,
-          teacher: "Leandro Luiz Borges",
-          classroom: "Sala 11-2",
-          students: "BIO2020",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Genética básica e humana - 1304",
-          size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -90,7 +28,9 @@ const data = {
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -98,28 +38,114 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia I - 1139",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Genética básica e humana - 1304",
+          size: 2,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Genética básica e humana - 1304",
+          size: 2,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia I - 1071",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Fisiologia vegetal - 504",
+          size: 2,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fisiologia vegetal - 504",
+          size: 2,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "Sala 11-2",
+          students: "BIO2020",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Matemática I - 1064",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
+          classroom: "Sala 11-2",
+          students: "IIW2022A",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "11:05 - 11:55"
+          time: "09:25 - 10:15"
         },
         {
           subject: "PCCC 6 - Feira de ciências - 1301",
           size: 1,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
-          time: "21:50 - 22:40"
+          time: "21:00 - 21:50"
         },
         {
           subject: "Zoologia dos cordados I - 92",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Lingua estrangeira - Inglês - 1225",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -135,28 +163,34 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "07:30 - 08:20"
+          time: "10:15 - 11:05"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "09:25 - 10:15"
+          time: "11:05 - 11:55"
         },
         {
-          subject: "Fisiologia vegetal - 504",
+          subject: "Zoologia dos cordados I - 92",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -164,10 +198,12 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 11-2",
           students: "IIW2022A",
-          time: "10:15 - 11:05"
+          time: "07:30 - 08:20"
         }
       ]
     }

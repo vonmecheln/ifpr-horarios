@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Carla Melli Tambarussi",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -24,12 +26,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "15:05 - 15:55"
@@ -37,7 +41,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -45,7 +51,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 1,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -53,12 +61,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 462",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "09:25 - 10:15"
@@ -66,7 +76,9 @@ const data = {
         {
           subject: "Matemática II - 622",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "07:30 - 08:20"
@@ -74,7 +86,9 @@ const data = {
         {
           subject: "Matemática III - 1086",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:05 - 15:55"

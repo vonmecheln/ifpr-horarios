@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Vânio Berlin de Souza",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Elementos de Máquinas - 349",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -20,12 +22,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Circuitos Hidráulicos e Pneumáticos - 347",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -33,12 +37,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Manutenção Elétrica Industrial\n (PPC2020) - 2311",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -46,7 +52,9 @@ const data = {
         {
           subject: "Manutenção Industrial - 351",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "19:00 - 19:50"
@@ -54,12 +62,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Circuitos Hidráulicos e Pneumáticos - 347",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "19:00 - 19:50"
@@ -67,7 +77,9 @@ const data = {
         {
           subject: "Gestão da Produção\n (PPC2020) - 2314",
           size: 2,
-          teacher: "Vânio Berlin de Souza",
+          teachers: [
+            "Vânio Berlin de Souza"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"

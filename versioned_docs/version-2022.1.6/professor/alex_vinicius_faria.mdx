@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Alex Vinicius Faria",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia - 35",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -36,7 +42,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "13:10 - 14:00"
@@ -44,20 +52,22 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -65,7 +75,9 @@ const data = {
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -73,7 +85,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"

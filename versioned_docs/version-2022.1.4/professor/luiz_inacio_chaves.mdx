@@ -1,26 +1,28 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Luiz Inácio Chaves",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Instalações elétricas - 2230",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Eletrônica e Instalações Elétricas",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -28,7 +30,9 @@ const data = {
         {
           subject: "Máquinas e Acionamentos - 1575",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "EIN2020",
           time: "09:25 - 10:15"
@@ -36,7 +40,9 @@ const data = {
         {
           subject: "Máquinas e Acionamentos - 1575",
           size: 1,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "EIN2020",
           time: "11:05 - 11:55"
@@ -44,7 +50,9 @@ const data = {
         {
           subject: "Processos de Fabricação I - 149",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -52,7 +60,9 @@ const data = {
         {
           subject: "Projetos e Instalações Elétricas - 200",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Eletrônica e Instalações Elétricas",
           students: "EIN2020",
           time: "07:30 - 08:20"
@@ -60,12 +70,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Instalações elétricas - 2230",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Eletrônica e Instalações Elétricas",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -73,7 +85,9 @@ const data = {
         {
           subject: "Máquinas Elétricas e Acionamentos - 110",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
           students: "ELM2021",
           time: "19:00 - 19:50"
@@ -81,7 +95,9 @@ const data = {
         {
           subject: "Máquinas Térmicas e de Fluxo - 218",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Materiais e Hidráulica B4",
           students: "EIN2019",
           time: "10:15 - 11:05"

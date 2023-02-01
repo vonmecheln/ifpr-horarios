@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sérgio Takahashi",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Tecnologia dos Materiais - 1531",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 6-2",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -16,12 +18,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo B",
           time: "07:30 - 08:20"
@@ -29,7 +33,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -37,7 +43,9 @@ const data = {
         {
           subject: "Metrologia - 1550",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Metrologia B4",
           students: "EIN2021",
           time: "11:05 - 11:55"
@@ -45,12 +53,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo A",
           time: "07:30 - 08:20"
@@ -58,7 +68,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -66,7 +78,9 @@ const data = {
         {
           subject: "Tecnologia dos Materiais - 343",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -74,12 +88,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Assistido por computador - 340",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -87,7 +103,9 @@ const data = {
         {
           subject: "Tecnologia dos Materiais - 343",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -95,8 +113,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

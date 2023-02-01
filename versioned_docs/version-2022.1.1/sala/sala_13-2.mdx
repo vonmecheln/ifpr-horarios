@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 13-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Gestão e Empreendedorismo Rural - 2214",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Geografia II - 1247",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Geografia II - 1247",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "08:20 - 09:10"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Matemática III - 1244",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Planejamento Agropecuário - 2215",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -48,12 +58,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "História III - 2236",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "História III - 2236",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "11:05 - 11:55"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Avicultura - 2207",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Bovinocultura de Corte - 2208",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -93,12 +113,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia II - 1246",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Mecanização Agrícola - 2217",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Culturas II - 2221",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -122,12 +148,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia II - 1246",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Avicultura - 2207",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Bovinocultura de Corte - 2208",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -151,12 +183,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -164,7 +198,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura III - 1240",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -180,7 +218,9 @@ const data = {
         {
           subject: "Culturas II - 2221",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"

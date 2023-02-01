@@ -1,18 +1,102 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Tatiane Martinazzo Portz",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Agroecologia e DRS - 470",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        }
+      ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Bovinocultura de Leite - 2209",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Sociologia Rural - 625",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 15-2",
+          students: "AGO2021",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Bovinocultura de Leite - 2209",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 13-2",
+          students: "AGR2021",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Agricultura geral - 466",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGO2022",
+          time: "07:30 - 08:20"
+        },
         {
           subject: "Educação postural e Segurança no trabalho - 471",
           size: 1,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "11:05 - 11:55"
@@ -20,82 +104,18 @@ const data = {
         {
           subject: "Horticultura - 1090",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Bovinocultura de Leite - 2209",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
-          classroom: "Sala 13-2",
-          students: "AGR2021",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Agricultura geral - 466",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Agroecologia e DRS - 470",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 14-2",
-          students: "AGO2022",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 14-2",
-          students: "AGR2022",
-          time: "19:00 - 19:50"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Bovinocultura de Leite - 2209",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Tatiane Martinazzo Portz",
-          classroom: "Sala 13-2",
-          students: "AGR2021",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 14-2",
-          students: "AGR2022",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Sociologia Rural - 625",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
-          classroom: "Sala 15-2",
-          students: "AGO2021",
-          time: "13:10 - 14:00"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

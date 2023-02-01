@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "IIW2020",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Geografia II - 1247",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Geografia II - 1247",
           size: 1,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "08:20 - 09:10"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Matemática III - 1244",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "História III - 2236",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "História III - 2236",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "11:05 - 11:55"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "15:05 - 15:55"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "13:10 - 14:00"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Física III - 1242",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "Laboratório de Física",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -85,12 +103,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Sociologia II - 1246",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Projeto Integrador III - 1253",
           size: 1,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "08:20 - 09:10"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Projeto Integrador III - 1253",
           size: 1,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -122,12 +148,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Sociologia II - 1246",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Química III - 1243",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Laboratório de Química",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Biologia III - 1241",
           size: 2,
-          teacher: "Luis Eduardo Gazal",
+          teachers: [
+            "Luis Eduardo Gazal"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -151,12 +183,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -164,7 +198,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura III - 1240",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 13-2",
           students: "IIW2020",
           time: "09:25 - 10:15"

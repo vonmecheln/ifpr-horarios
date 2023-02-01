@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "IIN2019",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Projeto Final de Curso - 181",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Geografia III - 195",
           size: 1,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Língua Portuguesa IV - 186",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Língua Estrangeira Moderna II - Inglês - 545",
           size: 2,
-          teacher: "Celina de Oliveira Barbosa Gomes",
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
           classroom: "Sala 2-2",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -61,12 +73,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Filosofia IV - 193",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -74,7 +88,9 @@ const data = {
         {
           subject: "Biologia IV - 196",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -82,7 +98,9 @@ const data = {
         {
           subject: "Língua Portuguesa IV - 186",
           size: 1,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Física IV - 190",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "Laboratório de Física",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -98,12 +118,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História III - 194",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "10:15 - 11:05"
@@ -111,7 +133,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 1,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Sociologia IV - 192",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "Sala 3-1",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -135,12 +163,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -148,7 +178,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia - 35",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática",
+          teachers: [
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -156,7 +188,9 @@ const data = {
         {
           subject: "Química IV - 191",
           size: 1,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 2-2",
           students: "IIN2019",
           time: "11:05 - 11:55"

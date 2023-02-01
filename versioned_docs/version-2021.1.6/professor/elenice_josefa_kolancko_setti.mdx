@@ -1,26 +1,28 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Elenice Josefa Kolancko Setti",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática III - 1086",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "09:25 - 10:15"
@@ -28,12 +30,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 462",
           size: 2,
-          teacher: "Elenice Josefa Kolancko Setti",
+          teachers: [
+            "Elenice Josefa Kolancko Setti"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "07:30 - 08:20"

@@ -1,82 +1,105 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Informatica C",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
-        {
-          subject: "Informática instrumental e aplicada - 468",
-          size: 2,
-          teacher: "Douglas Barbosa Sousa",
-          classroom: "Laboratório de Informatica C",
-          students: "AGO2022 - Grupo B",
-          time: "15:05 - 15:55"
-        },
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "07:30 - 08:20"
         },
-        {
-          subject: "Orientação de estágio supervisionado - 1097",
-          size: 1,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Laboratório de Informatica C",
-          students: "AGO2020",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
         {
           subject: "Informática Instrumental - 1532",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022",
-          time: "07:30 - 08:20"
+          time: "10:15 - 11:05"
         }
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Desenho Técnico - 1529",
+          subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica C",
-          students: "EIN2022 - Grupo A",
-          time: "07:30 - 08:20"
+          students: "IIW2021",
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Desenho técnico e topografia - 469",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2022 - Grupo A",
+          time: "13:10 - 14:00"
         }
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Orientação de estágio supervisionado - 1097",
+          size: 1,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "AGO2020",
+          time: "11:05 - 11:55"
+        },
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 1,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "EIN2022 - Grupo B",
+          time: "08:20 - 09:10"
         }
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Estágio curricular supervisionado em biologia II - 1421",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -84,7 +107,9 @@ const data = {
         {
           subject: "Estágio curricular supervisionado em ciências II - 2039",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -92,10 +117,22 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "IIW2021",
           time: "10:15 - 11:05"
+        },
+        {
+          subject: "Projeto Integrador III - 1253",
+          size: 2,
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: "IIW2020",
+          time: "07:30 - 08:20"
         }
       ]
     }

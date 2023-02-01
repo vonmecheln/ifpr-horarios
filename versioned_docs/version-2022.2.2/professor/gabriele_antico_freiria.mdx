@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Gabriele Antico Freiria",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Biologia II - 1228",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -24,7 +26,9 @@ const data = {
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -32,12 +36,15 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "PCCC 8 - Origem e evolução da vida - 2037",
           size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira+Gabriele Antico Freiria",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira",
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -45,12 +52,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Ecologia de ecossistemas - 81",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:00 - 21:50"
@@ -58,7 +67,9 @@ const data = {
         {
           subject: "Ecologia de ecossistemas - 81",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 9-2",
           students: "BIO_ESPECIAL",
           time: "21:50 - 22:40"
@@ -66,7 +77,9 @@ const data = {
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"

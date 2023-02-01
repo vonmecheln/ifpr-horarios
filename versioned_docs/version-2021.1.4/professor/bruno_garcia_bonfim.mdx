@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Bruno Garcia Bonfim",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Física 3 - 205",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "EIN2019-3ANO",
           time: "07:30 - 08:20"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Física Aplicada - 597/144",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "ELE2021-1SEM+ELM2021",
           time: "19:00 - 19:50"
@@ -28,12 +32,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Biofísica - 82",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Física 4 - 224",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "EIN2018-4ANO",
           time: "07:30 - 08:20"
@@ -49,12 +57,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Física I - 460",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "13:10 - 14:00"
@@ -62,12 +72,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Física 2 - 175",
           size: 1,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "08:20 - 09:10"
@@ -75,7 +87,9 @@ const data = {
         {
           subject: "Física 1 - 125",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "",
           students: "EIN2021-1ANO",
           time: "10:15 - 11:05"

@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "IIW2021",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Filosofia II - 1232",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "11:05 - 11:55"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Geografia I - 1233",
           size: 2,
-          teacher: "Renato Lada Guerreiro",
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Língua Estrangeira Moderna: Espanhol - 2237",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Física II - 1229",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "Laboratório de Física",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -77,7 +93,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "08:20 - 09:10"
@@ -93,12 +113,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Arte I - 1235",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -106,7 +128,9 @@ const data = {
         {
           subject: "Educação Física II - 1227",
           size: 2,
-          teacher: "Karina Alves da Silva",
+          teachers: [
+            "Karina Alves da Silva"
+          ],
           classroom: "Educação Física / Sala 4 B2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -114,7 +138,9 @@ const data = {
         {
           subject: "Desenvolvimento WEB Orientado a Objetos - 1237",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -122,12 +148,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "História II - 1234",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -135,7 +163,9 @@ const data = {
         {
           subject: "Química II - 1230",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -143,7 +173,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "08:20 - 09:10"
@@ -151,7 +183,9 @@ const data = {
         {
           subject: "Matemática II - 1231",
           size: 1,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -159,12 +193,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "História II - 1234",
           size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Biologia II - 1228",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -180,7 +218,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -188,7 +228,9 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -196,7 +238,9 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Computação Aplicada",
           students: "IIW2021",
           time: "13:10 - 14:00"

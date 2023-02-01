@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Tiago Amaral Silva",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Educação Física III - 1082",
           size: 2,
-          teacher: "Tiago Amaral Silva",
+          teachers: [
+            "Tiago Amaral Silva"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "15:05 - 15:55"
@@ -16,24 +18,26 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Educação Física II - 615",
           size: 2,
-          teacher: "Tiago Amaral Silva",
+          teachers: [
+            "Tiago Amaral Silva"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -41,7 +45,9 @@ const data = {
         {
           subject: "Educação Física I - 457",
           size: 2,
-          teacher: "Tiago Amaral Silva",
+          teachers: [
+            "Tiago Amaral Silva"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "09:25 - 10:15"

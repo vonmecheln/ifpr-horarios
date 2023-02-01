@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "BIO2020",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Educação ambiental e desenvolvimento sustentável - 1354",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Zoologia dos invertebrados II - 77",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Optativa 1 - 1179",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -37,7 +43,9 @@ const data = {
         {
           subject: "PCCC 5 - Teoria e prática para o ensino de ciências e biologia - 1182",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -45,12 +53,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Ecologia de populações e comunidades - 1183",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -58,7 +68,11 @@ const data = {
         {
           subject: "Biofísica - 82",
           size: 1,
-          teacher: "Leandro Luiz Borges+Polyanna Guimarães e Miranda+Elizangela Cavazzini Cesca",
+          teachers: [
+            "Leandro Luiz Borges",
+            "Polyanna Guimarães e Miranda",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -66,7 +80,11 @@ const data = {
         {
           subject: "Biofísica - 82",
           size: 1,
-          teacher: "Leandro Luiz Borges+Polyanna Guimarães e Miranda+Elizangela Cavazzini Cesca",
+          teachers: [
+            "Leandro Luiz Borges",
+            "Polyanna Guimarães e Miranda",
+            "Elizangela Cavazzini Cesca"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:50 - 22:40"
@@ -74,12 +92,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Educação ambiental e desenvolvimento sustentável - 1354",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -87,7 +107,9 @@ const data = {
         {
           subject: "Zoologia dos invertebrados II - 77",
           size: 2,
-          teacher: "Karina Dias Espartosa",
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
           classroom: "Sala 11-2",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -95,12 +117,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Estágio curricular supervisionado em ciências I - 84",
           size: 2,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -108,7 +132,9 @@ const data = {
         {
           subject: "PCCC 5 - Teoria e prática para o ensino de ciências e biologia - 1182",
           size: 1,
-          teacher: "Marcia Aparecida Barbosa",
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "BIO2020",
           time: "19:50 - 20:40"

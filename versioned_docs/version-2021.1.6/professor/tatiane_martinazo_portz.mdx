@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Tatiane Martinazo Portz",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Entomologia agrícola e manejo de pragas - 431",
           size: 2,
-          teacher: "Tatiane Martinazo Portz",
+          teachers: [
+            "Tatiane Martinazo Portz"
+          ],
           classroom: "",
           students: "AGE 2017",
           time: "19:00 - 19:50"
@@ -20,16 +22,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Fitopatologia e manejo de doenças - 433",
           size: 2,
-          teacher: "Tatiane Martinazo Portz",
+          teachers: [
+            "Tatiane Martinazo Portz"
+          ],
           classroom: "",
           students: "AGE 2017",
           time: "21:00 - 21:50"
@@ -37,8 +41,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

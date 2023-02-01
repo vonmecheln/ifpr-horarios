@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Marcos Aurelio Freire Ferraz Passos",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -28,12 +32,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 2228",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "19:00 - 19:50"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Eletrônica de Potência - 2228",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 1-4",
           students: "ELE2021",
           time: "21:00 - 21:50"
@@ -49,12 +57,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 114",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "19:00 - 19:50"
@@ -62,7 +72,9 @@ const data = {
         {
           subject: "Eletrônica de Potência - 114",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 8-2",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -70,12 +82,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -83,7 +97,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -91,7 +107,9 @@ const data = {
         {
           subject: "Cálculo Mecânico - 154",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Sala 7-2",
           students: "EIN2021",
           time: "10:15 - 11:05"

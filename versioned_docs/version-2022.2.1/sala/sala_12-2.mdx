@@ -1,30 +1,26 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 12-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Filosofia II - 1232",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Geografia I - 1233",
-          size: 2,
-          teacher: "Renato Lada Guerreiro",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "07:30 - 08:20"
+          time: "09:25 - 10:15"
         },
         {
           subject: "Matemática II - 1231",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -32,7 +28,9 @@ const data = {
         {
           subject: "Aula Livre",
           size: 2,
-          teacher: "",
+          teachers: [
+            ""
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -40,134 +38,109 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
-          subject: "Arte I - 1235",
+          subject: "Filosofia II - 1232",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Língua Portuguesa e Literatura II - 1226",
-          size: 2,
-          teacher: "Michelli Cristina Galli",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Fisiologia animal comparada - 506",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Fisiologia animal comparada - 506",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Ética profissional, cidadania e direitos humanos - 87",
-          size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "19:00 - 19:50"
+          time: "14:00 - 14:50"
         },
         {
           subject: "Genética de populações e evolução - 505",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Trabalho de conclusão de curso II - 1420",
-          size: 1,
-          teacher: "Jhones Donizetti Mendes",
-          classroom: "Sala 12-2",
-          students: "BIO2019",
-          time: "19:50 - 20:40"
-        },
-        {
-          subject: "Arte I - 1235",
-          size: 1,
-          teacher: "Josiane Paula Maltauro",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Matemática II - 1231",
-          size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "História II - 1234",
-          size: 1,
-          teacher: "Amilcar Machado Profeta Filho",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Ética profissional, cidadania e direitos humanos - 87",
-          size: 2,
-          teacher: "Amilcar Machado Profeta Filho",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
-        },
-        {
-          subject: "Filosofia II - 1232",
-          size: 1,
-          teacher: "Fabio Antônio da Silva",
-          classroom: "Sala 12-2",
-          students: "IIW2021",
-          time: "07:30 - 08:20"
         },
         {
           subject: "PCCC 8 - Origem e evolução da vida - 2037",
           size: 1,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
         },
         {
+          subject: "Arte I - 1235",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Língua Estrangeira Moderna: Espanhol - 2237",
+          size: 1,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        },
+        {
           subject: "Língua Portuguesa e Literatura II - 1226",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Arte I - 1235",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fisiologia animal comparada - 506",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Matemática II - 1231",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -175,23 +148,82 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
-          subject: "Genética de populações e evolução - 505",
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
           size: 2,
-          teacher: "Gabriele Antico Freiria",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
         },
         {
-          subject: "Língua Estrangeira Moderna: Espanhol - 2237",
+          subject: "Ética profissional, cidadania e direitos humanos - 87",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Geografia I - 1233",
+          size: 2,
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
           classroom: "Sala 12-2",
           students: "IIW2021",
           time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "História II - 1234",
+          size: 1,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Genética de populações e evolução - 505",
+          size: 2,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 12-2",
+          students: "BIO2019",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II - 1226",
+          size: 2,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 12-2",
+          students: "IIW2021",
+          time: "15:05 - 15:55"
         }
       ]
     }

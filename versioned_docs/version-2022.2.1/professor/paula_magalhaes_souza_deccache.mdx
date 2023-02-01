@@ -1,34 +1,34 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Paula Magalhães Souza Deccache",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Biologia I - 1073",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIW2022A",
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Biologia I - 459",
-          size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
-          classroom: "Laboratório de Biologia",
-          students: "AGO2022",
-          time: "15:05 - 15:55"
+          time: "10:15 - 11:05"
         },
         {
           subject: "Fisiologia animal comparada - 506",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "19:00 - 19:50"
@@ -36,7 +36,9 @@ const data = {
         {
           subject: "Fisiologia animal comparada - 506",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Sala 12-2",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -44,7 +46,9 @@ const data = {
         {
           subject: "Aula Livre",
           size: 2,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "",
           students: "",
           time: "07:30 - 08:20"
@@ -52,20 +56,34 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Biologia 2 - 168",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "EIN2021",
           time: "10:15 - 11:05"
         },
         {
+          subject: "Biologia I - 459",
+          size: 2,
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "AGO2022",
+          time: "15:05 - 15:55"
+        },
+        {
           subject: "Biologia IV - 196",
           size: 1,
-          teacher: "Paula Magalhães Souza Deccache",
+          teachers: [
+            "Paula Magalhães Souza Deccache"
+          ],
           classroom: "Laboratório de Biologia",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -73,12 +91,8 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

@@ -1,43 +1,101 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "TGC2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Comunicação empresarial - 1157",
+          subject: "Análise Econômica e Mercado - 1517",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
+        },
+        {
+          subject: "Introdução a Contabilidade - 1158",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Análise Econômica e Mercado - 1517",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Introdução a Contabilidade - 1158",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Direito do Trabalho - 1520",
+          size: 2,
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Comunicação empresarial - 1157",
+          size: 2,
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Empreendedorismo e Novos Negócios - 1518",
+          size: 2,
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
+          classroom: "Sala 3-1",
+          students: "TGC2022",
+          time: "19:00 - 19:50"
         },
         {
           subject: "Marketing de Relacionamento - 1519",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
-          classroom: "Sala 3-1",
-          students: "TGC2022",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Análise Econômica e Mercado - 1517",
-          size: 2,
-          teacher: "Cesar Gomes de Freitas",
-          classroom: "Sala 3-1",
-          students: "TGC2022",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Introdução a Contabilidade - 1158",
-          size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 3-1",
           students: "TGC2022",
           time: "21:00 - 21:50"
@@ -45,62 +103,24 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
-        {
-          subject: "Empreendedorismo e Novos Negócios - 1518",
-          size: 2,
-          teacher: "Alexandre José Schumacher",
-          classroom: "Sala 3-1",
-          students: "TGC2022",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Análise Econômica e Mercado - 1517",
-          size: 2,
-          teacher: "Cesar Gomes de Freitas",
-          classroom: "Sala 3-1",
-          students: "TGC2022",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
-        {
-          subject: "Direito do Trabalho - 1520",
-          size: 2,
-          teacher: "Alexandre José Schumacher",
-          classroom: "Sala 3-1",
-          students: "TGC2022",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Introdução a Contabilidade - 1158",
-          size: 2,
-          teacher: "Cesar Gomes de Freitas",
-          classroom: "Sala 3-1",
-          students: "TGC2022",
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
-          classroom: "Laboratório de Informatica B",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica A",
           students: "TGC2022",
           time: "19:00 - 19:50"
         },
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "21:00 - 21:50"

@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Alexandre Rodrigues Monge",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 1,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "11:05 - 11:55"
@@ -24,7 +26,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Tecnologia - 35",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "07:30 - 08:20"
@@ -32,7 +36,9 @@ const data = {
         {
           subject: "Lógica de programação - 1075",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -40,7 +46,9 @@ const data = {
         {
           subject: "Engenharia de Software - 20",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "TADS2019",
           time: "19:00 - 19:50"
@@ -48,12 +56,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 1,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "11:05 - 11:55"
@@ -61,7 +71,9 @@ const data = {
         {
           subject: "Engenharia de Software - 32",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -69,7 +81,9 @@ const data = {
         {
           subject: "Banco de Dados II - 13",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -77,16 +91,18 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sábado",
-      timetable: [
+      dayName: "Sábado",
+      dayClasses: [
         {
           subject: "Análise de Requisitos e Modelagem de Sistemas - 12",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "TADS2019/2020",
           time: "21:00 - 21:50"
@@ -94,7 +110,9 @@ const data = {
         {
           subject: "Banco de Dados I - 5",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "TADS2020/2021",
           time: "19:00 - 19:50"

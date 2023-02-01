@@ -1,22 +1,26 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "AGR2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
-          subject: "Piscicultura e Apicultura - 1471",
+          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "19:00 - 19:50"
         },
         {
-          subject: "Culturas I - 1472",
+          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "21:00 - 21:50"
@@ -24,62 +28,50 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
-        {
-          subject: "Forragicultura e pastagens - 1470",
-          size: 2,
-          teacher: "Leiliane Cristine de Souza+Elias Franco",
-          classroom: "Sala 14-2",
-          students: "AGR2022",
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Piscicultura e Apicultura - 1471",
-          size: 2,
-          teacher: "Roberto Haruyoshi Ito",
-          classroom: "Sala 14-2",
-          students: "AGR2022",
-          time: "21:00 - 21:50"
-        }
-      ]
-    },
-    {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Topografia e Geoprocessamento - 1467",
           size: 2,
-          teacher: "Octavio Henrique Viana",
-          classroom: "Sala 14-2",
-          students: "AGR2022",
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
-          size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      title: "Quinta-Feira",
-      timetable: [
+        },
         {
           subject: "Culturas I - 1472",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Forragicultura e pastagens - 1470",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Elias Franco"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "21:00 - 21:50"
         },
         {
-          subject: "Fertilidade, Manejo e Conservação dos Solos - 1473",
+          subject: "Piscicultura e Apicultura - 1471",
           size: 2,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "19:00 - 19:50"
@@ -87,12 +79,39 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Piscicultura e Apicultura - 1471",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Culturas I - 1472",
+          size: 2,
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 14-2",
+          students: "AGR2022",
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Metodologia Científica e Técnicas de Apresentação de Trabalhos - 1466",
           size: 2,
-          teacher: "Leandro Luiz Borges",
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "19:00 - 19:50"
@@ -100,7 +119,10 @@ const data = {
         {
           subject: "Forragicultura e pastagens - 1470",
           size: 2,
-          teacher: "Leiliane Cristine de Souza+Elias Franco",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Elias Franco"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "21:00 - 21:50"

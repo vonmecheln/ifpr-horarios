@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Guilherme Masquetti Pelz",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Sistemas Digitais - 1553",
           size: 2,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "07:30 - 08:20"
@@ -24,12 +26,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade e Medidas Elétricas - 1530",
           size: 3,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "EIN2021-1ANO",
           time: "09:25 - 10:15"
@@ -37,7 +41,9 @@ const data = {
         {
           subject: "Análise de Circuitos - 689",
           size: 2,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "ELE2021-2SEM",
           time: "19:00 - 19:50"
@@ -45,7 +51,9 @@ const data = {
         {
           subject: "Análise de Circuitos - 341",
           size: 2,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -53,12 +61,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Análise de Circuitos - 689",
           size: 2,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "ELE2021-2SEM",
           time: "21:00 - 21:50"
@@ -66,7 +76,9 @@ const data = {
         {
           subject: "Análise de Circuitos - 341",
           size: 2,
-          teacher: "Guilherme Masquetti Pelz",
+          teachers: [
+            "Guilherme Masquetti Pelz"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "19:00 - 19:50"

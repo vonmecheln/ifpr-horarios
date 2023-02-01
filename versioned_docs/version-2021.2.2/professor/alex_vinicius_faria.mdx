@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Alex Vinicius Faria",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Programação para Sistemas Embarcados - 725",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "TDS2019-2-2SEM",
           time: "21:00 - 21:50"
@@ -16,12 +18,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Programação para Sistemas Embarcados - 22",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "TADS2019",
           time: "19:00 - 19:50"
@@ -29,7 +33,9 @@ const data = {
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "TADS2019",
           time: "21:00 - 21:50"
@@ -37,20 +43,22 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "07:30 - 08:20"
@@ -58,7 +66,9 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "09:25 - 10:15"
@@ -66,7 +76,9 @@ const data = {
         {
           subject: "Gestão de Projetos - 18",
           size: 2,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "TADS2019",
           time: "21:00 - 21:50"
@@ -74,7 +86,9 @@ const data = {
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 1,
-          teacher: "Alex Vinicius Faria",
+          teachers: [
+            "Alex Vinicius Faria"
+          ],
           classroom: "",
           students: "TADS2019",
           time: "19:50 - 20:40"

@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "ELE2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 595",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 595",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -40,12 +48,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Comunicação e Expressão - 598",
           size: 2,
-          teacher: "Kátia Cristiane Kobus Novaes",
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "19:00 - 19:50"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Fundamentos da Matemática - 599",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -61,12 +73,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Informática Instrumental - 596",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -74,7 +88,9 @@ const data = {
         {
           subject: "Fundamentos da Matemática - 599",
           size: 2,
-          teacher: "Sérgio Augusto Dias Castro",
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "19:00 - 19:50"
@@ -82,12 +98,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -95,7 +113,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -103,7 +123,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 595",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -111,7 +133,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 595",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELE2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -119,12 +143,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Instrumentos de Medidas Elétricas - 1138",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "21:00 - 21:50"
@@ -132,7 +158,9 @@ const data = {
         {
           subject: "Física Aplicada - 597",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "Sala 6-2",
           students: "ELE2022",
           time: "19:00 - 19:50"

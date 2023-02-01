@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Informatica B",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Laboratório de Banco de Dados - 1238",
           size: 2,
-          teacher: "Douglas Barbosa Sousa",
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Programação para Sistemas Embarcados - 22",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Telecomunicações e Geoprocessamento - 24",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -37,7 +43,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -45,7 +54,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -53,12 +65,15 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Engenharia de Software - 20",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -66,7 +81,10 @@ const data = {
         {
           subject: "Informática Instrumental - 1532",
           size: 2,
-          teacher: "Vânio Berlin de Souza+Humberto Fioravante Ferro",
+          teachers: [
+            "Vânio Berlin de Souza",
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "EIN2022",
           time: "10:15 - 11:05"
@@ -74,12 +92,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teacher: "Joaquim José Honório de Lima",
+          teachers: [
+            "Joaquim José Honório de Lima"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -87,12 +107,15 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Tópicos Especiais em Tecnologia - 35",
           size: 2,
-          teacher: "Luis Henrique Manosso Von Mecheln+Novo(a) professor(a) Informática",
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -100,7 +123,9 @@ const data = {
         {
           subject: "Segurança em Sistemas e Redes - 23",
           size: 2,
-          teacher: "Marcos Antonio Guido",
+          teachers: [
+            "Marcos Antonio Guido"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -108,7 +133,9 @@ const data = {
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TGC2022",
           time: "19:00 - 19:50"

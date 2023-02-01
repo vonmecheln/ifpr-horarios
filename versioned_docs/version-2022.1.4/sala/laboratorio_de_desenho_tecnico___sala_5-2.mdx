@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Laboratório de Desenho Técnico / Sala 5-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Desenho técnico e topografia - 469",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "AGO2022 - Grupo A",
           time: "15:05 - 15:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Desenho técnico e topografia - 469",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "AGO2022 - Grupo B",
           time: "13:10 - 14:00"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo B",
           time: "09:25 - 10:15"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo B",
           time: "11:05 - 11:55"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -48,7 +58,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -56,12 +68,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -77,12 +93,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Desenho técnico e instalações agropecuárias - 1456",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "AGR2022",
           time: "21:00 - 21:50"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo A",
           time: "09:25 - 10:15"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Desenho Técnico - 1529",
           size: 1,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "EIN2022 - Grupo A",
           time: "11:05 - 11:55"
@@ -106,12 +128,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Desenho Técnico - 2226",
           size: 2,
-          teacher: "Sérgio Takahashi",
+          teachers: [
+            "Sérgio Takahashi"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELE2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -127,12 +153,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -140,7 +168,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo B",
           time: "19:00 - 19:50"

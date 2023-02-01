@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Roberto Haruyoshi Ito",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Ovinocaprinocultura - 2218",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 13-2",
           students: "AGR2021",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Piscicultura e Apicultura - 1471",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "21:00 - 21:50"
@@ -24,12 +28,15 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Produção Animal II - 1093",
           size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:05 - 15:55"
@@ -37,7 +44,10 @@ const data = {
         {
           subject: "Sanidade Animal - 1092",
           size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "13:10 - 14:00"
@@ -45,7 +55,9 @@ const data = {
         {
           subject: "Piscicultura e Apicultura - 1471",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 14-2",
           students: "AGR2022",
           time: "19:00 - 19:50"
@@ -53,16 +65,19 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Produção Animal I - 628",
           size: 2,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "13:10 - 14:00"
@@ -70,7 +85,10 @@ const data = {
         {
           subject: "Produção Animal I - 628",
           size: 1,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "15:05 - 15:55"
@@ -78,7 +96,10 @@ const data = {
         {
           subject: "Produção Animal II - 1093",
           size: 1,
-          teacher: "Leiliane Cristine de Souza+Roberto Haruyoshi Ito",
+          teachers: [
+            "Leiliane Cristine de Souza",
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 16-2",
           students: "AGO2020",
           time: "15:55 - 16:45"
@@ -86,7 +107,9 @@ const data = {
         {
           subject: "Meteorologia e Bioclimatologia na Agropecuária - 631",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "10:15 - 11:05"
@@ -94,7 +117,9 @@ const data = {
         {
           subject: "Zootecnia Geral - 467",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "Sala 14-2",
           students: "AGO2022",
           time: "07:30 - 08:20"
@@ -102,8 +127,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

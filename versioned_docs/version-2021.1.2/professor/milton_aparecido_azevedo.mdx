@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Milton Aparecido Azevedo",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "História II - 1089",
           size: 2,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "AGO2019",
           time: "15:05 - 15:55"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "História III - 194",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "11:05 - 11:55"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -32,20 +38,22 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Cultura e Cinema Nacional II - 1192",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "15:05 - 15:55"
@@ -53,12 +61,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "História I - 626",
           size: 2,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "15:05 - 15:55"
@@ -66,12 +76,14 @@ const data = {
       ]
     },
     {
-      title: "Sábado",
-      timetable: [
+      dayName: "Sábado",
+      dayClasses: [
         {
           subject: "Cultura e Cinema Nacional I - 831",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "14:00 - 14:50"

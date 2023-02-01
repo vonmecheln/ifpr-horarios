@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Sala 15-2",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Empreendedorismo e Novos Negócios - 1518",
           size: 2,
-          teacher: "Alexandre José Schumacher",
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "21:00 - 21:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Análise Econômica e Mercado - 1517",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "19:00 - 19:50"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "Geografia II - 623",
           size: 2,
-          teacher: "Jhones Donizetti Mendes",
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -32,7 +38,9 @@ const data = {
         {
           subject: "Produção Animal I - 628",
           size: 2,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "13:10 - 14:00"
@@ -40,7 +48,9 @@ const data = {
         {
           subject: "Artes II - 614",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "11:05 - 11:55"
@@ -48,7 +58,9 @@ const data = {
         {
           subject: "Cultura e Cinema Nacional II - 1192",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "15:55 - 16:45"
@@ -56,7 +68,9 @@ const data = {
         {
           subject: "História I - 626",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "15:05 - 15:55"
@@ -64,7 +78,9 @@ const data = {
         {
           subject: "Culturas I - 627",
           size: 2,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "07:30 - 08:20"
@@ -72,12 +88,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Sistemas Agroflorestais - 629",
           size: 2,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "10:15 - 11:05"
@@ -85,7 +103,9 @@ const data = {
         {
           subject: "Marketing de Relacionamento - 1519",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "19:00 - 19:50"
@@ -93,7 +113,9 @@ const data = {
         {
           subject: "Artes II - 614",
           size: 1,
-          teacher: "Josiane Paula Maltauro",
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -101,7 +123,9 @@ const data = {
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "21:00 - 21:50"
@@ -109,7 +133,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 613",
           size: 2,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "15:05 - 15:55"
@@ -117,7 +143,9 @@ const data = {
         {
           subject: "História I - 626",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "08:20 - 09:10"
@@ -125,7 +153,9 @@ const data = {
         {
           subject: "Filosofia II - 624",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "07:30 - 08:20"
@@ -133,12 +163,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Direito do Trabalho - 1520",
           size: 2,
-          teacher: "Cassia Cristina Moretto da Silva",
+          teachers: [
+            "Cassia Cristina Moretto da Silva"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "21:00 - 21:50"
@@ -146,7 +178,9 @@ const data = {
         {
           subject: "Comunicação empresarial - 1157",
           size: 2,
-          teacher: "Keyla Christina Almeida Portela",
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "19:00 - 19:50"
@@ -154,7 +188,9 @@ const data = {
         {
           subject: "Meteorologia e Bioclimatologia na Agropecuária - 631",
           size: 2,
-          teacher: "Octavio Henrique Viana",
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "07:30 - 08:20"
@@ -162,7 +198,9 @@ const data = {
         {
           subject: "Sociologia Rural - 625",
           size: 1,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -170,12 +208,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática II - 622",
           size: 2,
-          teacher: "Carla Melli Tambarussi",
+          teachers: [
+            "Carla Melli Tambarussi"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "13:10 - 14:00"
@@ -183,7 +223,9 @@ const data = {
         {
           subject: "Análise Econômica e Mercado - 1517",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "19:00 - 19:50"
@@ -191,7 +233,9 @@ const data = {
         {
           subject: "Introdução a Contabilidade - 1158",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "21:00 - 21:50"
@@ -199,7 +243,9 @@ const data = {
         {
           subject: "Construções e Instalações Rurais - 630",
           size: 1,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "08:20 - 09:10"
@@ -207,7 +253,9 @@ const data = {
         {
           subject: "Construções e Instalações Rurais - 630",
           size: 1,
-          teacher: "Elias Franco",
+          teachers: [
+            "Elias Franco"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "09:25 - 10:15"
@@ -215,7 +263,9 @@ const data = {
         {
           subject: "Química II - 618",
           size: 2,
-          teacher: "Kathia Regina Kunzler Bechlin",
+          teachers: [
+            "Kathia Regina Kunzler Bechlin"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "10:15 - 11:05"
@@ -223,7 +273,9 @@ const data = {
         {
           subject: "Produção Animal I - 628",
           size: 1,
-          teacher: "Leiliane Cristine de Souza",
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "15:55 - 16:45"
@@ -231,7 +283,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura II - 613",
           size: 1,
-          teacher: "Michelli Cristina Galli",
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "15:05 - 15:55"
@@ -239,7 +293,9 @@ const data = {
         {
           subject: "Sociologia Rural - 625",
           size: 1,
-          teacher: "Tatiane Martinazzo Portz",
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "07:30 - 08:20"
@@ -247,12 +303,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Introdução a Contabilidade - 1158",
           size: 2,
-          teacher: "Cesar Gomes de Freitas",
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "19:00 - 19:50"
@@ -260,7 +318,9 @@ const data = {
         {
           subject: "Estatística aplicada a estratégias empresariais - 1514",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 15-2",
           students: "TGC2021",
           time: "21:00 - 21:50"
@@ -268,7 +328,9 @@ const data = {
         {
           subject: "Filosofia II - 624",
           size: 1,
-          teacher: "Fabio Antônio da Silva",
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "10:15 - 11:05"
@@ -276,7 +338,9 @@ const data = {
         {
           subject: "Culturas I - 627",
           size: 1,
-          teacher: "Sônia Maria Mandotti",
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
           classroom: "Sala 15-2",
           students: "AGO2021",
           time: "09:25 - 10:15"

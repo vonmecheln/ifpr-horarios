@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Novo Professor de Elétrica PSS",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Projetos Elétricos Industriais - 346",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "",
           students: "ELM2020",
           time: "21:00 - 21:50"
@@ -16,12 +18,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Projetos Elétricos Industriais - 346",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "",
           students: "ELM2020",
           time: "21:00 - 21:50"
@@ -29,16 +33,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Robótica Aplicada - 350",
           size: 2,
-          teacher: "Novo Professor de Elétrica PSS - 40h",
+          teachers: [
+            "Novo Professor de Elétrica PSS - 40h"
+          ],
           classroom: "",
           students: "ELM2020",
           time: "19:00 - 19:50"
@@ -46,8 +52,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

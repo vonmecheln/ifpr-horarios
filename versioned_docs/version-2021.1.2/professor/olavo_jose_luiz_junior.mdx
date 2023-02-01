@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Olavo José Luiz Junior",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "07:30 - 08:20"
@@ -24,7 +26,9 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2021-1",
           time: "13:10 - 14:00"
@@ -32,7 +36,9 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2021-1",
           time: "15:05 - 15:55"
@@ -40,12 +46,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador II - 1239",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "10:15 - 11:05"
@@ -53,7 +61,9 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2021-1",
           time: "15:05 - 15:55"
@@ -61,12 +71,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Projeto Final de Curso - 181",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "10:15 - 11:05"
@@ -74,7 +86,9 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "07:30 - 08:20"

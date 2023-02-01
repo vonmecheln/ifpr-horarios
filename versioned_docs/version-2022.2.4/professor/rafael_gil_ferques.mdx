@@ -1,18 +1,21 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Rafael Gil Ferques",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -20,7 +23,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -28,7 +34,10 @@ const data = {
         {
           subject: "Tópicos Especiais em Linguagem de Programação - 36",
           size: 1,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -36,12 +45,15 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Projeto e Análise de Sistemas - 182",
           size: 2,
-          teacher: "Novo(a) professor(a) Informática+Rafael Gil Ferques",
+          teachers: [
+            "Novo(a) professor(a) Informática",
+            "Rafael Gil Ferques"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -49,7 +61,10 @@ const data = {
         {
           subject: "Engenharia de Software - 20",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -57,7 +72,10 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques+Novo(a) professor(a) Informática",
+          teachers: [
+            "Rafael Gil Ferques",
+            "Novo(a) professor(a) Informática"
+          ],
           classroom: "Laboratório de Informatica A",
           students: "IIW2022A",
           time: "07:30 - 08:20"
@@ -65,12 +83,12 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

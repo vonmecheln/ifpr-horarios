@@ -1,22 +1,24 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Ana Lucia da Silva Lima",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Fisiologia vegetal - 504",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -24,12 +26,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Anatomia e morfologia vegetal - 63",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "21:00 - 21:50"
@@ -37,7 +41,9 @@ const data = {
         {
           subject: "Anatomia e morfologia vegetal - 63",
           size: 1,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "19:50 - 20:40"
@@ -45,7 +51,9 @@ const data = {
         {
           subject: "Sistemática vegetal II - 800",
           size: 1,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "19:00 - 19:50"
@@ -53,7 +61,9 @@ const data = {
         {
           subject: "Biologia II - 1228",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "IIW2020",
           time: "13:10 - 14:00"
@@ -61,12 +71,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Fisiologia vegetal - 504",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2019",
           time: "21:00 - 21:50"
@@ -74,7 +86,9 @@ const data = {
         {
           subject: "Sistemática vegetal II - 800",
           size: 2,
-          teacher: "Ana Lucia da Silva Lima",
+          teachers: [
+            "Ana Lucia da Silva Lima"
+          ],
           classroom: "",
           students: "BIO2020",
           time: "19:00 - 19:50"

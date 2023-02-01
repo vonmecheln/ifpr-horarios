@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Olavo José Luiz Junior",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Projeto Integrador - 720",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "BioPark-02",
           students: "TDS2021-2B",
           time: "19:00 - 19:50"
@@ -20,7 +22,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "13:10 - 14:00"
@@ -28,7 +33,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "15:05 - 15:55"
@@ -36,12 +44,15 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2022-1",
           time: "15:05 - 15:55"
@@ -49,7 +60,10 @@ const data = {
         {
           subject: "Linguagem de Programação - 1484",
           size: 2,
-          teacher: "Eduardo Alberto Felippsen+Olavo José Luiz Junior",
+          teachers: [
+            "Eduardo Alberto Felippsen",
+            "Olavo José Luiz Junior"
+          ],
           classroom: "",
           students: "TPS2022-1",
           time: "13:10 - 14:00"
@@ -57,7 +71,9 @@ const data = {
         {
           subject: "Projeto Integrador III - 1253",
           size: 1,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "08:20 - 09:10"
@@ -65,7 +81,9 @@ const data = {
         {
           subject: "Projeto Integrador III - 1253",
           size: 1,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2020",
           time: "09:25 - 10:15"
@@ -73,12 +91,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "BioPark-01",
           students: "IIW2022B",
           time: "07:30 - 08:20"
@@ -86,7 +106,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "15:05 - 15:55"
@@ -94,7 +117,10 @@ const data = {
         {
           subject: "Lógica de Programação - 1483",
           size: 2,
-          teacher: "Olavo José Luiz Junior+Eduardo Alberto Felippsen",
+          teachers: [
+            "Olavo José Luiz Junior",
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "BioPark-02",
           students: "TPS2022-1",
           time: "13:10 - 14:00"
@@ -102,12 +128,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -115,7 +143,9 @@ const data = {
         {
           subject: "Administração de Sistemas Operacionais e Redes - 1236",
           size: 2,
-          teacher: "Olavo José Luiz Junior",
+          teachers: [
+            "Olavo José Luiz Junior"
+          ],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
           time: "09:25 - 10:15"

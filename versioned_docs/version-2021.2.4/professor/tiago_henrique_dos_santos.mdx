@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Tiago Henrique dos Santos",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 793",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "19:00 - 19:50"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Eletrônica Analógica - 339",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "21:00 - 21:50"
@@ -28,12 +32,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica de Potência - 793",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "ELE2019-4SEM",
           time: "19:00 - 19:50"
@@ -41,12 +47,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica - 1554",
           size: 3,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "EIN2020-2ANO",
           time: "09:25 - 10:15"
@@ -54,7 +62,9 @@ const data = {
         {
           subject: "Eletrônica Analógica (PPC2020) - 1766",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "ELE2021-2SEM",
           time: "21:00 - 21:50"
@@ -62,12 +72,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Eletrônica Analógica (PPC2020) - 1766",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "ELE2021-2SEM",
           time: "19:00 - 19:50"
@@ -75,7 +87,9 @@ const data = {
         {
           subject: "Eletrônica Analógica - 339",
           size: 2,
-          teacher: "Tiago Henrique dos Santos",
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
           classroom: "",
           students: "ELM2021",
           time: "21:00 - 21:50"

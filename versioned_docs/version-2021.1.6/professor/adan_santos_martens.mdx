@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Adan Santos Martens",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -20,12 +22,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Bioestatística - 487",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "BIO2018",
           time: "19:00 - 19:50"
@@ -33,7 +37,9 @@ const data = {
         {
           subject: "Matemática IV - 184",
           size: 3,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "IIN2018",
           time: "09:25 - 10:15"
@@ -41,7 +47,9 @@ const data = {
         {
           subject: "Matemática III - 156",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "07:30 - 08:20"
@@ -49,12 +57,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -62,12 +72,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Matemática Aplicada - 10",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "TADS2020",
           time: "21:00 - 21:50"

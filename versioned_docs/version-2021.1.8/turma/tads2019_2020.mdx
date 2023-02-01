@@ -1,34 +1,36 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "TADS2019/2020",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: []
+      dayName: "Terça-Feira",
+      dayClasses: []
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: []
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     },
     {
-      title: "Sábado",
-      timetable: [
+      dayName: "Sábado",
+      dayClasses: [
         {
           subject: "Análise de Requisitos e Modelagem de Sistemas - 12",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "TADS2019/2020",
           time: "21:00 - 21:50"
@@ -36,7 +38,9 @@ const data = {
         {
           subject: "Projeto Integrador - 15",
           size: 1,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "",
           students: "TADS2019/2020",
           time: "19:50 - 20:40"
@@ -44,7 +48,9 @@ const data = {
         {
           subject: "Trabalho de Conclusão de Curso - 26",
           size: 1,
-          teacher: "Eduardo Alberto Felippsen",
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
           classroom: "",
           students: "TADS2019/2020",
           time: "19:00 - 19:50"

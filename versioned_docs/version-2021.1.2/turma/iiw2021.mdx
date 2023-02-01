@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "IIW2021",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Lingua estrangeira: Inglês - 1225",
           size: 2,
-          teacher: "Adrian Lincoln Ferreira Clarindo",
+          teachers: [
+            "Adrian Lincoln Ferreira Clarindo"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Fundamentos de informática - 1076",
           size: 2,
-          teacher: "Humberto Fioravante Ferro",
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "10:15 - 11:05"
@@ -24,7 +28,9 @@ const data = {
         {
           subject: "História I - 1224",
           size: 1,
-          teacher: "Milton Aparecido Azevedo",
+          teachers: [
+            "Milton Aparecido Azevedo"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -32,12 +38,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Alan Ricardo Costa",
+          teachers: [
+            "Alan Ricardo Costa"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "11:05 - 11:55"
@@ -61,7 +73,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -69,7 +83,9 @@ const data = {
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -77,12 +93,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Lógica de programação - 1075",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -90,7 +108,9 @@ const data = {
         {
           subject: "Filosofia I - 1139",
           size: 1,
-          teacher: "Neomar Sandro Mignoni",
+          teachers: [
+            "Neomar Sandro Mignoni"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "11:05 - 11:55"
@@ -98,7 +118,9 @@ const data = {
         {
           subject: "Física I - 1070",
           size: 2,
-          teacher: "Polyanna Guimarães e Miranda",
+          teachers: [
+            "Polyanna Guimarães e Miranda"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -106,12 +128,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática I - 1064",
           size: 2,
-          teacher: "Adan Santos Martens",
+          teachers: [
+            "Adan Santos Martens"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -119,7 +143,9 @@ const data = {
         {
           subject: "Biologia I - 1073",
           size: 2,
-          teacher: "Eliana Peliçon Pereira Figueira",
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -127,7 +153,9 @@ const data = {
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "11:05 - 11:55"
@@ -135,12 +163,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Língua Portuguesa e Literatura I - 1069",
           size: 2,
-          teacher: "Alan Ricardo Costa",
+          teachers: [
+            "Alan Ricardo Costa"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "07:30 - 08:20"
@@ -148,7 +178,9 @@ const data = {
         {
           subject: "Sociologia I - 1071",
           size: 1,
-          teacher: "Everaldo Lorensetti",
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "11:05 - 11:55"
@@ -156,7 +188,9 @@ const data = {
         {
           subject: "Educação Física I - 1072",
           size: 2,
-          teacher: "Franciele Fernandes Baliero",
+          teachers: [
+            "Franciele Fernandes Baliero"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -164,7 +198,9 @@ const data = {
         {
           subject: "Química I - 1068",
           size: 2,
-          teacher: "Edvaldo Luis Rossini",
+          teachers: [
+            "Edvaldo Luis Rossini"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "09:25 - 10:15"
@@ -172,7 +208,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "13:10 - 14:00"

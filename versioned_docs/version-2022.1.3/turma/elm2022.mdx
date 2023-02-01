@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "ELM2022",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Informática Instrumental - 153",
           size: 2,
-          teacher: "Alexandre Rodrigues Monge",
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
           classroom: "Laboratório de Informatica C",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Comunicação e Expressão - 128",
           size: 2,
-          teacher: "Pedro Leites Junior",
+          teachers: [
+            "Pedro Leites Junior"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -37,7 +43,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo B",
           time: "19:00 - 19:50"
@@ -45,7 +53,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -53,7 +63,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -61,12 +73,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Instrumentos de Medidas Elétricas - 139",
           size: 2,
-          teacher: "Alex Miyamoto Mussi",
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -74,7 +88,9 @@ const data = {
         {
           subject: "Física Aplicada - 144",
           size: 2,
-          teacher: "Bruno Garcia Bonfim",
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -82,12 +98,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Processos de Fabricação I - 149",
           size: 2,
-          teacher: "Luiz Inácio Chaves",
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
           classroom: "Laboratório de Usinagem B4",
           students: "ELM2022",
           time: "19:00 - 19:50"
@@ -95,7 +113,9 @@ const data = {
         {
           subject: "Fundamentos de Matemática - 129",
           size: 2,
-          teacher: "Mauro César de Souza Siena",
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
           classroom: "Sala 7-2",
           students: "ELM2022",
           time: "21:00 - 21:50"
@@ -103,12 +123,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo A",
           time: "19:00 - 19:50"
@@ -116,7 +138,9 @@ const data = {
         {
           subject: "Eletricidade Básica - 134",
           size: 2,
-          teacher: "Marcos Aurelio Freire Ferraz Passos",
+          teachers: [
+            "Marcos Aurelio Freire Ferraz Passos"
+          ],
           classroom: "Laboratório de Física",
           students: "ELM2022 - Grupo B",
           time: "21:00 - 21:50"
@@ -124,7 +148,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo A",
           time: "21:00 - 21:50"
@@ -132,7 +158,9 @@ const data = {
         {
           subject: "Desenho Técnico - 132",
           size: 2,
-          teacher: "Novo PSS Mecânica",
+          teachers: [
+            "Novo PSS Mecânica"
+          ],
           classroom: "Laboratório de Desenho Técnico / Sala 5-2",
           students: "ELM2022 - Grupo B",
           time: "19:00 - 19:50"

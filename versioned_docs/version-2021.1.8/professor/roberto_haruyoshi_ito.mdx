@@ -1,14 +1,16 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Roberto Haruyoshi Ito",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: [
+      dayName: "Segunda-Feira",
+      dayClasses: [
         {
           subject: "Sanidade animal na agroecologia - 430",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "",
           students: "AGE 2017",
           time: "19:00 - 19:50"
@@ -16,7 +18,9 @@ const data = {
         {
           subject: "Suinocultura - 1461",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "",
           students: "AGR2021",
           time: "21:00 - 21:50"
@@ -24,12 +28,14 @@ const data = {
       ]
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Educação postural e Segurança no trabalho - 471",
           size: 1,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "",
           students: "AGO2021",
           time: "11:05 - 11:55"
@@ -37,12 +43,14 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: [
+      dayName: "Quarta-Feira",
+      dayClasses: [
         {
           subject: "Bovinocultura de corte na agroecologia - 432",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "",
           students: "AGE 2017",
           time: "19:00 - 19:50"
@@ -50,12 +58,14 @@ const data = {
       ]
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Produção Animal I - 628",
           size: 2,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "07:30 - 08:20"
@@ -63,7 +73,9 @@ const data = {
         {
           subject: "Produção Animal I - 628",
           size: 1,
-          teacher: "Roberto Haruyoshi Ito",
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
           classroom: "",
           students: "AGO2020",
           time: "09:25 - 10:15"
@@ -71,8 +83,8 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: []
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [

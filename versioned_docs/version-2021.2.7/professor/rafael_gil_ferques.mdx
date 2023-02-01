@@ -1,18 +1,20 @@
-import { Grid } from "../../../src/components/Grid";
+import { Grid } from "@site/src/components/Grid";
 const data = {
   title: "Rafael Gil Ferques",
   weekClasses: [
     {
-      title: "Segunda-Feira",
-      timetable: []
+      dayName: "Segunda-Feira",
+      dayClasses: []
     },
     {
-      title: "Terça-Feira",
-      timetable: [
+      dayName: "Terça-Feira",
+      dayClasses: [
         {
           subject: "Informática Instrumental - 1532",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "EIN2021-1ANO",
           time: "07:30 - 08:20"
@@ -20,7 +22,9 @@ const data = {
         {
           subject: "Redes de Computadores - 33",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "09:25 - 10:15"
@@ -28,7 +32,9 @@ const data = {
         {
           subject: "Redes de Computadores - 33",
           size: 1,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIN2019",
           time: "11:05 - 11:55"
@@ -36,7 +42,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "13:10 - 14:00"
@@ -44,7 +52,9 @@ const data = {
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos - 1074",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -52,16 +62,18 @@ const data = {
       ]
     },
     {
-      title: "Quarta-Feira",
-      timetable: []
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
-      title: "Quinta-Feira",
-      timetable: [
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Introdução a Tecnologia da Computação - 7",
           size: 1,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "TADS2020/2021",
           time: "18:10 - 19:00"
@@ -69,12 +81,14 @@ const data = {
       ]
     },
     {
-      title: "Sexta-Feira",
-      timetable: [
+      dayName: "Sexta-Feira",
+      dayClasses: [
         {
           subject: "Projeto integrador I - 1078",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "IIW2021",
           time: "15:05 - 15:55"
@@ -82,7 +96,9 @@ const data = {
         {
           subject: "Redes de Computadores - 16",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "TADS2020",
           time: "19:00 - 19:50"
@@ -90,7 +106,9 @@ const data = {
         {
           subject: "Redes de Computadores - 16",
           size: 2,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "TADS2020",
           time: "21:00 - 21:50"
@@ -98,7 +116,9 @@ const data = {
         {
           subject: "Introdução a Tecnologia da Computação - 7",
           size: 1,
-          teacher: "Rafael Gil Ferques",
+          teachers: [
+            "Rafael Gil Ferques"
+          ],
           classroom: "",
           students: "TADS2020/2021",
           time: "18:10 - 19:00"
