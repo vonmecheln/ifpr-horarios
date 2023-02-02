@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Quadro de Horários do IFPR - Assis Chateaubriand',
-  tagline: 'Com organização e tempo, acha-se o segredo de fazer tudo e bem feito.',
+  tagline: 'Com organização e tempo, acha-se o segredo de fazer tudo e bem feito. - Pitágoras',
   url: 'https://vonmecheln.github.io/',
   baseUrl: '/ifpr-horarios/',
   onBrokenLinks: 'throw',

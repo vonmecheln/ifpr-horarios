@@ -6,22 +6,32 @@ const data = {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Física 4 - 224",
-          size: 2,
+          subject: "Sociologia 4 - 238",
+          size: 1,
           teachers: [
-            "Bruno Garcia Bonfim"
+            "Everaldo Lorensetti"
           ],
-          classroom: "Laboratório de Física",
+          classroom: "Sala 2-2",
           students: "EIN2020",
           time: "07:30 - 08:20"
         },
         {
-          subject: "Máquinas Térmicas e de Fluxo - 218",
+          subject: "Projeto Integrador - 1593",
+          size: 1,
+          teachers: [
+            "Grazielli Bueno"
+          ],
+          classroom: "Sala 2-2",
+          students: "EIN2020",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Processos de Fabricação 3 - 1590",
           size: 2,
           teachers: [
             "Luiz Inácio Chaves"
           ],
-          classroom: "Laboratório de Materiais e Hidráulica B4",
+          classroom: "Laboratório de Usinagem B4",
           students: "EIN2020",
           time: "09:25 - 10:15"
         },
@@ -33,7 +43,7 @@ const data = {
           ],
           classroom: "Sala 2-2",
           students: "EIN2020",
-          time: "11:05 - 11:55"
+          time: "08:20 - 09:10"
         }
       ]
     },
@@ -41,22 +51,92 @@ const data = {
       dayName: "Terça-Feira",
       dayClasses: [
         {
-          subject: "Lingua Portuguesa 4 - 232",
+          subject: "Física 4 - 224",
           size: 2,
           teachers: [
-            "Kátia Cristiane Kobus Novaes"
+            "Bruno Garcia Bonfim"
+          ],
+          classroom: "Laboratório de Física",
+          students: "EIN2020",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia 4 - 223",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 2-2",
+          students: "EIN2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Máquinas Térmicas e de Fluxo - 218",
+          size: 2,
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
+          classroom: "Laboratório de Materiais e Hidráulica B4",
+          students: "EIN2020",
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Manutenção Industrial e Gestão da Produção - 1592",
+          size: 1,
+          teachers: [
+            "Darlan Roque Dapieve"
+          ],
+          classroom: "Sala 2-2",
+          students: "EIN2020",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Química 4 - 235",
+          size: 2,
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
+          classroom: "Laboratório de Química",
+          students: "EIN2020",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "História 4 - 229",
+          size: 2,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
+          classroom: "Sala 2-2",
+          students: "EIN2020",
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia 4 - 227",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
           ],
           classroom: "Sala 2-2",
           students: "EIN2020",
           time: "10:15 - 11:05"
         },
         {
-          subject: "Processos de Fabricação 3 - 1590",
+          subject: "Matemática 4 - 234",
           size: 2,
           teachers: [
-            "Luiz Inácio Chaves"
+            "Mauro César de Souza Siena"
           ],
-          classroom: "Laboratório de Usinagem B4",
+          classroom: "Sala 2-2",
           students: "EIN2020",
           time: "07:30 - 08:20"
         },
@@ -73,8 +153,18 @@ const data = {
       ]
     },
     {
-      dayName: "Quarta-Feira",
+      dayName: "Sexta-Feira",
       dayClasses: [
+        {
+          subject: "Lingua Estrangeira Moderna 3 - Inglês - 230",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "Sala 2-2",
+          students: "EIN2020",
+          time: "11:05 - 11:55"
+        },
         {
           subject: "Biologia 4 - 222",
           size: 2,
@@ -86,100 +176,10 @@ const data = {
           time: "09:25 - 10:15"
         },
         {
-          subject: "Sociologia 4 - 238",
-          size: 1,
-          teachers: [
-            "Everaldo Lorensetti"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Geografia 4 - 227",
+          subject: "Lingua Portuguesa 4 - 232",
           size: 2,
           teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "07:30 - 08:20"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
-      dayClasses: [
-        {
-          subject: "Manutenção Industrial e Gestão da Produção - 1592",
-          size: 1,
-          teachers: [
-            "Darlan Roque Dapieve"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Filosofia 4 - 223",
-          size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Projeto Integrador - 1593",
-          size: 1,
-          teachers: [
-            "Grazielli Bueno"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Matemática 4 - 234",
-          size: 2,
-          teachers: [
-            "Mauro César de Souza Siena"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      dayName: "Sexta-Feira",
-      dayClasses: [
-        {
-          subject: "Lingua Estrangeira Moderna 3 - Inglês - 230",
-          size: 1,
-          teachers: [
-            "Celina de Oliveira Barbosa Gomes"
-          ],
-          classroom: "Sala 2-2",
-          students: "EIN2020",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Química 4 - 235",
-          size: 2,
-          teachers: [
-            "Elizangela Cavazzini Cesca"
-          ],
-          classroom: "Laboratório de Química",
-          students: "EIN2020",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "História 4 - 229",
-          size: 2,
-          teachers: [
-            "Suzane Conceição Pantolfi Tostes"
+            "Kátia Cristiane Kobus Novaes"
           ],
           classroom: "Sala 2-2",
           students: "EIN2020",
