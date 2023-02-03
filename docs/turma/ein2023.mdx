@@ -6,32 +6,22 @@ const data = {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Biologia 1 - 122",
+          subject: "Educação Física 1 - 123",
           size: 1,
           teachers: [
-            "Eliana Peliçon Pereira Figueira"
+            "Bruna Valeriano da Silva Lisboa"
           ],
-          classroom: "Laboratório de Biologia",
-          students: "EIN2023",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Química 1 - 143",
-          size: 1,
-          teachers: [
-            "Elizangela Cavazzini Cesca"
-          ],
-          classroom: "Laboratório de Química",
+          classroom: "Educação Física / Sala 4 B2",
           students: "EIN2023",
           time: "09:25 - 10:15"
         },
         {
-          subject: "História 1 - 131",
-          size: 1,
+          subject: "Física 1 - 125",
+          size: 2,
           teachers: [
-            "Suzane Conceição Pantolfi Tostes"
+            "Bruno Garcia Bonfim"
           ],
-          classroom: "Sala 7-2",
+          classroom: "Laboratório de Física",
           students: "EIN2023",
           time: "07:30 - 08:20"
         },
@@ -51,106 +41,6 @@ const data = {
       dayName: "Terça-Feira",
       dayClasses: [
         {
-          subject: "Educação Física 1 - 123",
-          size: 1,
-          teachers: [
-            "Bruna Valeriano da Silva Lisboa"
-          ],
-          classroom: "Educação Física / Sala 4 B2",
-          students: "EIN2023",
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Física 1 - 125",
-          size: 2,
-          teachers: [
-            "Bruno Garcia Bonfim"
-          ],
-          classroom: "Laboratório de Física",
-          students: "EIN2023",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Filosofia 1 - 124",
-          size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 7-2",
-          students: "EIN2023",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Geografia 1 - 126",
-          size: 1,
-          teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 7-2",
-          students: "EIN2023",
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      dayName: "Quarta-Feira",
-      dayClasses: [
-        {
-          subject: "Lingua Portuguesa 1 - 138",
-          size: 2,
-          teachers: [
-            "Kátia Cristiane Kobus Novaes"
-          ],
-          classroom: "Sala 7-2",
-          students: "EIN2023",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Desenho Técnico - 1529",
-          size: 2,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: "EIN2023 - Grupo A",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Desenho Técnico - 1529",
-          size: 1,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: "EIN2023 - Grupo A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Eletricidade e Medidas Elétricas - 1530",
-          size: 2,
-          teachers: [
-            "Tiago Henrique dos Santos"
-          ],
-          classroom: "Laboratório de Eletrônica",
-          students: "EIN2023 - Grupo B",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Eletricidade e Medidas Elétricas - 1530",
-          size: 1,
-          teachers: [
-            "Tiago Henrique dos Santos"
-          ],
-          classroom: "Laboratório de Eletrônica",
-          students: "EIN2023 - Grupo B",
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
-      dayClasses: [
-        {
           subject: "Tecnologia dos Materiais - 1531",
           size: 2,
           teachers: [
@@ -161,12 +51,142 @@ const data = {
           time: "07:30 - 08:20"
         },
         {
+          subject: "Desenho Técnico - 1529",
+          size: 2,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2023 - Grupo B",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 1,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2023 - Grupo B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - Grupo A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 1,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - Grupo A",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
           subject: "Sociologia 1 - 146",
           size: 1,
           teachers: [
             "Everaldo Lorensetti"
           ],
           classroom: "Sala 7-2",
+          students: "EIN2023",
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "História 1 - 131",
+          size: 1,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2023",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 2,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2023 - Grupo A",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenho Técnico - 1529",
+          size: 1,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: "EIN2023 - Grupo A",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 2,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - Grupo B",
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas - 1530",
+          size: 1,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "Laboratório de Eletrônica",
+          students: "EIN2023 - Grupo B",
+          time: "11:05 - 11:55"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia 1 - 122",
+          size: 1,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: "EIN2023",
+          time: "11:05 - 11:55"
+        },
+        {
+          subject: "Geografia 1 - 126",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2023",
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Informática Instrumental - 1532",
+          size: 2,
+          teachers: [
+            "Joaquim José Honório de Lima"
+          ],
+          classroom: "Laboratório de Informatica A",
           students: "EIN2023",
           time: "09:25 - 10:15"
         },
@@ -178,7 +198,42 @@ const data = {
           ],
           classroom: "Sala 7-2",
           students: "EIN2023",
+          time: "08:20 - 09:10"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Química 1 - 143",
+          size: 1,
+          teachers: [
+            "Elizangela Cavazzini Cesca"
+          ],
+          classroom: "Laboratório de Química",
+          students: "EIN2023",
           time: "11:05 - 11:55"
+        },
+        {
+          subject: "Filosofia 1 - 124",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2023",
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Lingua Portuguesa 1 - 138",
+          size: 2,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 7-2",
+          students: "EIN2023",
+          time: "07:30 - 08:20"
         },
         {
           subject: "Artes 1 - 121",
@@ -188,62 +243,7 @@ const data = {
           ],
           classroom: "Sala 7-2",
           students: "EIN2023",
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      dayName: "Sexta-Feira",
-      dayClasses: [
-        {
-          subject: "Informática Instrumental - 1532",
-          size: 2,
-          teachers: [
-            "Joaquim José Honório de Lima"
-          ],
-          classroom: "Laboratório de Informatica A",
-          students: "EIN2023",
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Desenho Técnico - 1529",
-          size: 2,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: "EIN2023 - Grupo B",
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Desenho Técnico - 1529",
-          size: 1,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: "EIN2023 - Grupo B",
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Eletricidade e Medidas Elétricas - 1530",
-          size: 2,
-          teachers: [
-            "Tiago Henrique dos Santos"
-          ],
-          classroom: "Laboratório de Eletrônica",
-          students: "EIN2023 - Grupo A",
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Eletricidade e Medidas Elétricas - 1530",
-          size: 1,
-          teachers: [
-            "Tiago Henrique dos Santos"
-          ],
-          classroom: "Laboratório de Eletrônica",
-          students: "EIN2023 - Grupo A",
-          time: "11:05 - 11:55"
         }
       ]
     }
