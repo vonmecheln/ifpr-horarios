@@ -58,14 +58,12 @@ export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
 
   defineColorBase({weekClasses, title})
 
-  // findPositionY({weekClasses, time})
-
   let rowsSize = ''
   let gridColumns = `10fr 90fr`
   time.forEach(el => {
     rowsSize += ` ${el.size}fr`
   })
-  
+
   
   if (ExecutionEnvironment.canUseDOM) {
     useEffect(() => {
