@@ -73,6 +73,10 @@ const config = {
           {
             type: 'docsVersionDropdown',
           },
+          {
+            type: 'search',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -143,6 +147,16 @@ const config = {
         anonymizeIP: false,
       },
     ],
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+
+      },
+    ]
   ],
 
 };
