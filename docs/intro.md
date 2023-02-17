@@ -8,13 +8,16 @@ sidebar_position: 1
   Seja bem-vindo ao novo sistema web para o quadro de horários do Instituto Federal do Paraná - Campus Assis Chateaubriand. 
 </p>
 
+## Novidades
+
+12/fev/2023: Ferramenta de busca
+01/fev/2023: Versão "Em desenvolvimento" para planejamento de trocas e proxímas atualizações
+
 ## Novas funcionalidades
 
-\*Entidade = Professor, turma, ou sala de aula.
 
 - Menu lateral para melhorar sua navegação.
-- Fácil acesso ao horário de qualquer entidade.
-- Cada entidade possui uma cor para agilizar o uso no site.
+- Fácil acesso ao horário de qualquer professor, turma, ou sala de aula.
 - Tema claro e escuro.
 - Configure o seu próprio horário escolhendo a forma como quer seja exibido.
   - Completo (Padrão): Será exibido o horário das aulas de todos os dias das 07:30 até as 22:40.
