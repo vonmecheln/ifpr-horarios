@@ -1,0 +1,11 @@
+.course {
+    font-size: 15px;
+  }
+  
+  .courseMeta {
+    color: var(--ifm-color-emphasis-700);
+  }
+  
+  .courseMeta strong {
+    color: var(--ifm-font-color-base);
+  }

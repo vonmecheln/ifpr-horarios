@@ -6,9 +6,36 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const isBuildFast = false && !!process.env.BUILD_FAST;
 const isVersioningDisabled = false;
-const isDev = false;
+const isDev = true;
 const isDeployPreview = false;
 const isBranchDeploy = false;
+
+const prefixCurrentVersions = '2023.1'
+
+function isCurrentVersions(value) {
+  return value.toString().startsWith(prefixCurrentVersions);
+}
+
+function makeVerionNames(){
+  
+  var names = {
+    current: {
+      label: 'Em desenvolvimento 🚧',
+      noIndex: true,
+      badge: false
+    }
+  };
+
+  var docVersions = [...versions.slice(0, 1)];
+  if(docVersions.length > 0){
+    name = docVersions[0]
+    names[name] = {
+      label: name + ' (Atual)',
+    };
+  }
+  
+  return names;
+}
 
 // @ts-ignore
 const versions = require('./versions.json');
@@ -57,24 +84,16 @@ const config = {
           //   return includeVersions;
 
           // }),
-          versions: {
-            '2023.1.3' : {
-              label: '2023.1.3 (Atual)',
-            },
-            current: {
-              label: 'Em desenvolvimento 🚧',
-              noIndex: true,
-              badge: false
-            }
-          },
+          versions: makeVerionNames(),
           onlyIncludeVersions: (() => {
-
-            
             if (isBuildFast) {
               return ['current'];
             } else if (!isVersioningDisabled) {
 
-              var includeVersions = [...versions.slice(0, 10)]
+              var includeVersions = [...versions]
+              includeVersions = includeVersions.filter(isCurrentVersions)
+              includeVersions = includeVersions.slice(0, 5)
+              
               if((isDev || isDeployPreview || isBranchDeploy)){                
                 includeVersions.push('current');
               }
@@ -114,6 +133,16 @@ const config = {
           // },
           {
             type: 'docsVersionDropdown',
+            // dropdownItemsAfter: [
+            //   {
+            //     type: 'html',
+            //     value: '<hr class="dropdown-separator">',
+            //   },
+            //   {
+            //     to: '/versions',
+            //     label: 'Todas as versões',
+            //   },
+            // ]
           },
           {
             type: 'search',
