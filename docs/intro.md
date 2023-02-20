@@ -11,6 +11,7 @@ sidebar_position: 1
 ## Novidades
 
 12/fev/2023: Ferramenta de busca
+
 01/fev/2023: Versão "Em desenvolvimento" para planejamento de trocas e proxímas atualizações
 
 ## Novas funcionalidades

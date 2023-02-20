@@ -4,6 +4,16 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const isBuildFast = false && !!process.env.BUILD_FAST;
+const isVersioningDisabled = false;
+const isDev = false;
+const isDeployPreview = false;
+const isBranchDeploy = false;
+
+// @ts-ignore
+const versions = require('./versions.json');
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Quadro de Horários do IFPR - Assis Chateaubriand',
@@ -35,12 +45,44 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          
+          // lastVersion: isDev || isDeployPreview || isBranchDeploy ? 'current' : undefined,
+
           sidebarPath: require.resolve('./sidebars.js'),
+          // versions:(() => {
+            
+          //   return {current: {label: 'Em desenvolvimento 🚧',}};
+          //   var includeVersions = [...versions.slice(0, 2)]
+            
+          //   return includeVersions;
+
+          // }),
           versions: {
+            '2023.1.3' : {
+              label: '2023.1.3 (Atual)',
+            },
             current: {
-              label: 'Em desenvolvimento 🚧'
+              label: 'Em desenvolvimento 🚧',
+              noIndex: true,
+              badge: false
             }
-          }
+          },
+          onlyIncludeVersions: (() => {
+
+            
+            if (isBuildFast) {
+              return ['current'];
+            } else if (!isVersioningDisabled) {
+
+              var includeVersions = [...versions.slice(0, 10)]
+              if((isDev || isDeployPreview || isBranchDeploy)){                
+                includeVersions.push('current');
+              }
+
+              return includeVersions;
+            }
+            return undefined;
+          })(),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
