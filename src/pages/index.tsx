@@ -34,7 +34,7 @@ function TimetablesAnnouncement() {
       data-theme="dark">
       <div className={styles.announcementInner}>
         <Link className="button button--primary button--lg" to="/docs/intro">
-            Acessar Qaudro de Horários
+            Acessar Quadro de Horários
           </Link>
       </div>
     </div>

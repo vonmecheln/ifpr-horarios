@@ -16,23 +16,30 @@ function isCurrentVersions(value) {
   return value.toString().startsWith(prefixCurrentVersions);
 }
 
+function renameVersion(value) {
+  const re = /(.+[.])(\d+)$/;
+  var v = value.replace(re, "$1v$2");
+  return v;
+}
+
 function makeVerionNames(){
   
-  var names = {
-    current: {
-      label: 'Em desenvolvimento 🚧',
-      noIndex: true,
-      badge: false
-    }
-  };
+  var names = {};
+  [...versions].forEach((item, index) => {
+    var name = renameVersion(item)
 
-  var docVersions = [...versions.slice(0, 1)];
-  if(docVersions.length > 0){
-    name = docVersions[0]
-    names[name] = {
-      label: name + ' (Atual)',
+    if(index == 0)
+      name = name + " (Atual)"
+      names[item]= { 
+      label : name
     };
-  }
+  });
+
+  names['current'] = {
+    label: 'Em desenvolvimento 🚧',
+    noIndex: true,
+    badge: false
+  };
   
   return names;
 }
