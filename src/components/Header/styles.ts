@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Container = styled.header`
+export const HeaderContainer = styled.header`
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   text-align: center;
 
   border: 1px solid var(--border-cell);
@@ -15,7 +15,7 @@ export const Container = styled.header`
 
   margin-bottom: 1px;
 
-  color: var(--text-cell);  
+  color: var(--text-cell);
   background-color: var(--background-cell);
 
   font-family: 'Poppins', sans-serif;

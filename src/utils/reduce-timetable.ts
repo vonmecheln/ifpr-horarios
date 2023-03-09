@@ -1,26 +1,32 @@
-import { TimeProps } from "../components/Sidebar";
-import { DayProps } from "../components/Timetable";
-import { findPositionsUsed } from "./find-positions-used";
+import { Days, Time } from '../interfaces/interfaces'
+import { findPositionsUsed } from './find-positions-used'
 // According to the positions used, find the min and max index of classes in the whole component. This way, we can cut off the empty space. But if the timetableView is equals to superCondensed, cut off ALL empty space.
 
 interface ReduceTimetableProps {
-  weekClasses: DayProps[];
-  time: TimeProps[];
-  timetableView: string;
+  weekClasses: Days[]
+  time: Time[]
+  timetableView: string
 }
 
-export function reduceTimetable({ weekClasses, time, timetableView }: ReduceTimetableProps): [TimeProps[], DayProps[]] {
-  const positions = findPositionsUsed(weekClasses)[1]
-  const positionsPerSlide = findPositionsUsed(weekClasses)[0]
-  const minMax = [Math.min(...positions), Math.max(...positions) + 1]
+export function reduceTimetable({
+  weekClasses,
+  time,
+  timetableView,
+}: ReduceTimetableProps) {
+  const positions = findPositionsUsed(weekClasses)
+  const positionOfFirstClass = Math.min(...positions)
+  const positionOfLastClass = Math.max(...positions) + 1
 
   if (timetableView === 'condensed') {
-    return [time.slice(...minMax), weekClasses]
-  }
-  else if (timetableView === 'superCondensed') {
-    const timeSuperCondensed = time.filter(value => positions.includes(time.findIndex(el => el === value)))
-    const weekClassesSuperCondensed = weekClasses.filter(week => week.dayClasses.length !== 0)
-    
+    return [time.slice(positionOfFirstClass, positionOfLastClass), weekClasses]
+  } else if (timetableView === 'superCondensed') {
+    const timeSuperCondensed = time.filter((value) =>
+      positions.includes(time.findIndex((el) => el === value)),
+    )
+    const weekClassesSuperCondensed = weekClasses.filter(
+      (week) => week.dayClasses.length !== 0,
+    )
+
     return [timeSuperCondensed, weekClassesSuperCondensed]
   }
 

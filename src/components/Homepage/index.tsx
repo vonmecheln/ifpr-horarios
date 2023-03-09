@@ -1,14 +1,15 @@
-import clsx from 'clsx';
+import clsx from 'clsx'
 import React from 'react'
 import { Container } from './styles'
-import styles from './styles.module.css';
-import Image from '@site/static/img/img1.svg';
+import styles from './styles.module.css'
+import Image from '@site/static/img/img1.svg'
 
 type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
-};
+  title: string
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>
+  // eslint-disable-next-line no-undef
+  description: JSX.Element
+}
 
 const FeatureList: FeatureItem[] = [
   {
@@ -16,7 +17,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('../../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        O horário foi projetado desde o início para ser facilmente visualizado e 
+        O horário foi projetado desde o início para ser facilmente visualizado e
         usado por alunos, professores e toda comunidade.
       </>
     ),
@@ -26,9 +27,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require('../../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        O horário é focado na praticidade para consulta do dia-a-dia.
-        Verifique a distribuição de aulas por <code>turmas</code>, 
-        <code>professores</code> e <code>cursos</code>.
+        O horário é focado na praticidade para consulta do dia-a-dia. Verifique
+        a distribuição de aulas por <code>turmas</code>,<code>professores</code>{' '}
+        e <code>cursos</code>.
       </>
     ),
   },
@@ -37,7 +38,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('../../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Um trabalho feito em equipe por docentes do campus Assis Chateaubriand 
+        Um trabalho feito em equipe por docentes do campus Assis Chateaubriand
         com muito esmero e carinho.
       </>
     ),
@@ -47,14 +48,14 @@ const FeatureList: FeatureItem[] = [
     Svg: require('../../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        O horário está em constante melhoria, adaptando-se da melhor maneira as mudanças 
-        de rotina do campus .
+        O horário está em constante melhoria, adaptando-se da melhor maneira as
+        mudanças de rotina do campus .
       </>
     ),
   },
-];
+]
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -66,7 +67,7 @@ function Feature({title, Svg, description}: FeatureItem) {
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
 export function Homepage() {

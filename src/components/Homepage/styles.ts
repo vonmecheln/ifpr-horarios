@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.main`
   width: 100vw;
@@ -17,9 +17,9 @@ export const Container = styled.main`
     border: none;
     outline: none;
     font-size: 1.5rem;
-    border-radius: .7rem;
+    border-radius: 0.7rem;
     cursor: pointer;
-    
+
     width: 12rem;
     height: 3rem;
 

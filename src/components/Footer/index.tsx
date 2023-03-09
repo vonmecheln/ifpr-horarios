@@ -1,11 +1,11 @@
-import React from "react"
-import { Container } from "./styles"
+import React from 'react'
+import { Container } from './styles'
 
 interface FooterProps {
-  textFooter: string;
+  textFooter: string
 }
 
-export function Footer({ textFooter }: FooterProps){
+export function Footer({ textFooter }: FooterProps) {
   return (
     <Container>
       <p>{textFooter}</p>

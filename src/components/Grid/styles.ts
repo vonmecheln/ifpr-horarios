@@ -1,9 +1,11 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-export const Container = styled.div<{gridColumns: string, gridRows: string}>`
+export const GridContainer = styled.div<{
+  gridRows: string
+}>`
   display: grid;
-  grid-template-columns: ${props => props.gridColumns};
-  grid-template-rows: ${props => props.gridRows};
+  grid-template-columns: 10fr 90fr;
+  grid-template-rows: ${(props) => props.gridRows};
   font-size: calc(var(--font-size-base) / 16 * 1rem);
 
   border: 1px solid var(--border-grid);
@@ -19,7 +21,8 @@ export const Container = styled.div<{gridColumns: string, gridRows: string}>`
 
     border: 1px solid black;
 
-    div span, div a {
+    div span,
+    div a {
       display: block;
       text-overflow: inherit;
       overflow: auto;
@@ -39,4 +42,3 @@ export const Container = styled.div<{gridColumns: string, gridRows: string}>`
     }
   }
 `
-
