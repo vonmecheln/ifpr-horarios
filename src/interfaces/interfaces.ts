@@ -32,12 +32,14 @@ export interface GridContextType {
   title: string
   timeChanged: Time[]
   weekClassesChanged: Days[]
+  timeInitial: Time[]
+  weekClassesInitial: Days[]
   timetableView: TimetableViewType
   isMenuFixed: boolean
   rowsSize: string
   gridRef: React.MutableRefObject<undefined>
-  changeMenu: (isMenuFixed: boolean) => void
-  changeTimetableView: (timetableView: TimetableViewType) => void
+  modifyMenu: (isMenuFixed: boolean) => void
+  reduceGrid: (timetableView: TimetableViewType) => void
 }
 
 export interface GridContextProviderProps {

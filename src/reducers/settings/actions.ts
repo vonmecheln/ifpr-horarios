@@ -1,3 +1,4 @@
+import { Days, Time } from '@site/src/interfaces/interfaces'
 import { TimetableViewType } from './reducer'
 
 export enum ActionTypes {
@@ -5,11 +6,23 @@ export enum ActionTypes {
   CHANGE_MENU = 'CHANGE_MENU',
 }
 
-export function changeTimetableView(timetableView: TimetableViewType) {
+interface ChangeTimetableViewProps {
+  timetableView: TimetableViewType
+  timeInitial: Time[]
+  weekClassesInitial: Days[]
+}
+
+export function changeTimetableView({
+  timetableView,
+  timeInitial,
+  weekClassesInitial,
+}: ChangeTimetableViewProps) {
   return {
     type: ActionTypes.CHANGE_TIMETABLE_VIEW,
     payload: {
       timetableView,
+      timeInitial,
+      weekClassesInitial,
     },
   }
 }

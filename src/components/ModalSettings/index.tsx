@@ -20,15 +20,15 @@ export interface ModalSettingsProps {
 }
 
 export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
-  const { isMenuFixed, changeMenu, timetableView, changeTimetableView } =
+  const { isMenuFixed, modifyMenu, timetableView, reduceGrid } =
     useContext(GridContext)
 
   function handleChangeMenu() {
-    changeMenu(!isMenuFixed)
+    modifyMenu(!isMenuFixed)
   }
 
   function handleChangeTimetableView(newView: TimetableViewType) {
-    changeTimetableView(newView)
+    reduceGrid(newView)
   }
 
   return (

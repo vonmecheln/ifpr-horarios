@@ -8,34 +8,28 @@ const data = {
         {
           subject: "Física I",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Física II",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "AGO2022",
-          time: "13:10 - 14:00"
+          time: "13:10 - 14:00",
         },
         {
           subject: "Física III",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "IIW2021",
-          time: "10:15 - 11:05"
-        }
-      ]
+          time: "10:15 - 11:05",
+        },
+      ],
     },
     {
       dayName: "Terça-Feira",
@@ -43,132 +37,130 @@ const data = {
         {
           subject: "Física I",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "AGO2023",
-          time: "15:05 - 15:55"
+          time: "15:05 - 15:55",
         },
         {
           subject: "Física II",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "IIW2022A",
-          time: "13:10 - 14:00"
+          time: "13:10 - 14:00",
         },
         {
           subject: "Física III",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "AGO2021",
-          time: "07:30 - 08:20"
-        }
-      ]
+          time: "07:30 - 08:20",
+        },
+      ],
     },
     {
       dayName: "Quarta-Feira",
-      dayClasses: []
+      dayClasses: [],
     },
     {
       dayName: "Quinta-Feira",
-      dayClasses: []
+      dayClasses: [],
     },
     {
       dayName: "Sexta-Feira",
-      dayClasses: []
-    }
+      dayClasses: [],
+    },
   ],
   time: [
     {
       time: "07:30 - 08:20",
-      size: 50
+      size: 50,
     },
     {
       time: "08:20 - 09:10",
-      size: 50
+      size: 50,
     },
     {
       time: "09:10 - 09:25",
-      size: 15
+      size: 15,
     },
     {
       time: "09:25 - 10:15",
-      size: 50
+      size: 50,
     },
     {
       time: "10:15 - 11:05",
-      size: 50
+      size: 50,
     },
     {
       time: "11:05 - 11:55",
-      size: 50
+      size: 50,
     },
     {
       time: "11:55 - 13:10",
-      size: 75
+      size: 75,
     },
     {
       time: "13:10 - 14:00",
-      size: 50
+      size: 50,
     },
     {
       time: "14:00 - 14:50",
-      size: 50
+      size: 50,
     },
     {
       time: "14:50 - 15:05",
-      size: 15
+      size: 15,
     },
     {
       time: "15:05 - 15:55",
-      size: 50
+      size: 50,
     },
     {
       time: "15:55 - 16:45",
-      size: 50
+      size: 50,
     },
     {
       time: "16:45 - 19:00",
-      size: 135
+      size: 135,
     },
     {
       time: "19:00 - 19:50",
-      size: 50
+      size: 50,
     },
     {
       time: "19:50 - 20:40",
-      size: 50
+      size: 50,
     },
     {
       time: "20:40 - 21:00",
-      size: 20
+      size: 20,
     },
     {
       time: "21:00 - 21:50",
-      size: 50
+      size: 50,
     },
     {
       time: "21:50 - 22:40",
-      size: 50
-    }
-  ]
-}
+      size: 50,
+    },
+  ],
+};
 
 # Polyanna Guimarães e Miranda
 
 <div>
-    {
+  {
+    <BrowserOnly>
+      {() => (
         <Grid
-            title={data.title} 
-            weekClasses={data.weekClasses} 
-            time={data.time}
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
         />
-    }
+      )}
+    </BrowserOnly>
+  }
 </div>

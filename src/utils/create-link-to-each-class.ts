@@ -11,7 +11,7 @@ function createLink(title: string, entity: string) {
   }
 }
 
-export function createLinkToTheCell(props: {
+export function createLinkToEachClass(props: {
   weekClasses: Days[]
   title: string
 }) {

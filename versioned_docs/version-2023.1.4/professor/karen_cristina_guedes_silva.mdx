@@ -1,10 +1,11 @@
 import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Karen Cristina Guedes Silva",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
-      dayClasses: []
+      dayClasses: [],
     },
     {
       dayName: "Terça-Feira",
@@ -12,18 +13,16 @@ const data = {
         {
           subject: "Máquinas, Equipamentos e Instalações Industriais",
           size: 2,
-          teachers: [
-            "Karen Cristina Guedes Silva"
-          ],
+          teachers: ["Karen Cristina Guedes Silva"],
           classroom: "Sala 2-2",
           students: "TAL2023",
-          time: "19:00 - 19:50"
-        }
-      ]
+          time: "19:00 - 19:50",
+        },
+      ],
     },
     {
       dayName: "Quarta-Feira",
-      dayClasses: []
+      dayClasses: [],
     },
     {
       dayName: "Quinta-Feira",
@@ -31,126 +30,124 @@ const data = {
         {
           subject: "Métodos e Técnicas de Pesquisa Aplicada",
           size: 2,
-          teachers: [
-            "Karen Cristina Guedes Silva"
-          ],
+          teachers: ["Karen Cristina Guedes Silva"],
           classroom: "Laboratório de Informatica C",
           students: "TGC2023",
-          time: "21:00 - 21:50"
-        }
-      ]
+          time: "21:00 - 21:50",
+        },
+      ],
     },
     {
       dayName: "Sexta-Feira",
       dayClasses: [
         {
-          subject: "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA)",
+          subject:
+            "Agroindustrialização de Produtos de Origem Vegetal e Animal (APOVA)",
           size: 2,
-          teachers: [
-            "Daniele de Almeida Paula",
-            "Karen Cristina Guedes Silva"
-          ],
+          teachers: ["Daniele de Almeida Paula", "Karen Cristina Guedes Silva"],
           classroom: "Sala 14-2",
           students: "AGO2021",
-          time: "10:15 - 11:05"
+          time: "10:15 - 11:05",
         },
         {
           subject: "Matemática Aplicada",
           size: 2,
-          teachers: [
-            "Karen Cristina Guedes Silva"
-          ],
+          teachers: ["Karen Cristina Guedes Silva"],
           classroom: "Sala 2-2",
           students: "TAL2023",
-          time: "19:00 - 19:50"
-        }
-      ]
-    }
+          time: "19:00 - 19:50",
+        },
+      ],
+    },
   ],
   time: [
     {
       time: "07:30 - 08:20",
-      size: 50
+      size: 50,
     },
     {
       time: "08:20 - 09:10",
-      size: 50
+      size: 50,
     },
     {
       time: "09:10 - 09:25",
-      size: 15
+      size: 15,
     },
     {
       time: "09:25 - 10:15",
-      size: 50
+      size: 50,
     },
     {
       time: "10:15 - 11:05",
-      size: 50
+      size: 50,
     },
     {
       time: "11:05 - 11:55",
-      size: 50
+      size: 50,
     },
     {
       time: "11:55 - 13:10",
-      size: 75
+      size: 75,
     },
     {
       time: "13:10 - 14:00",
-      size: 50
+      size: 50,
     },
     {
       time: "14:00 - 14:50",
-      size: 50
+      size: 50,
     },
     {
       time: "14:50 - 15:05",
-      size: 15
+      size: 15,
     },
     {
       time: "15:05 - 15:55",
-      size: 50
+      size: 50,
     },
     {
       time: "15:55 - 16:45",
-      size: 50
+      size: 50,
     },
     {
       time: "16:45 - 19:00",
-      size: 135
+      size: 135,
     },
     {
       time: "19:00 - 19:50",
-      size: 50
+      size: 50,
     },
     {
       time: "19:50 - 20:40",
-      size: 50
+      size: 50,
     },
     {
       time: "20:40 - 21:00",
-      size: 20
+      size: 20,
     },
     {
       time: "21:00 - 21:50",
-      size: 50
+      size: 50,
     },
     {
       time: "21:50 - 22:40",
-      size: 50
-    }
-  ]
-}
+      size: 50,
+    },
+  ],
+};
 
 # Karen Cristina Guedes Silva
 
 <div>
-    {
+  {
+    <BrowserOnly>
+      {() => (
         <Grid
-            title={data.title} 
-            weekClasses={data.weekClasses} 
-            time={data.time}
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
         />
-    }
+      )}
+    </BrowserOnly>
+  }
 </div>
