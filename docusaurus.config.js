@@ -1,57 +1,55 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer/themes/github')
+const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
-const isBuildFast = false && !!process.env.BUILD_FAST;
-const isVersioningDisabled = false;
-const isDev = false;
-const isDeployPreview = false;
-const isBranchDeploy = false;
+const isBuildFast = false && !!process.env.BUILD_FAST
+const isVersioningDisabled = false
+const isDev = false
+const isDeployPreview = false
+const isBranchDeploy = false
 
 const prefixCurrentVersions = '2023.1'
 
 function isCurrentVersions(value) {
-  return value.toString().startsWith(prefixCurrentVersions);
+  return value.toString().startsWith(prefixCurrentVersions)
 }
 
 function renameVersion(value) {
-  const re = /(.+[.])(\d+)$/;
-  var v = value.replace(re, "$1v$2");
-  return v;
+  const re = /(.+[.])(\d+)$/
+  const v = value.replace(re, '$1v$2')
+  return v
 }
 
-function makeVerionNames(){
-  
-  var names = {};
-  [...versions].forEach((item, index) => {
-    var name = renameVersion(item)
+function makeVersionNames() {
+  const names = {}
+  ;[...versions].forEach((item, index) => {
+    let name = renameVersion(item)
 
-    if(index == 0)
-      name = name + " (Atual)"
-      names[item]= { 
-      label : name
-    };
-  });
+    if (index === 0) name = name + ' (Atual)'
+    names[item] = {
+      label: name,
+    }
+  })
 
-  names['current'] = {
+  names.current = {
     label: 'Em desenvolvimento 🚧',
     noIndex: true,
-    badge: false
-  };
-  
-  return names;
+    badge: false,
+  }
+
+  return names
 }
 
 // @ts-ignore
-const versions = require('./versions.json');
-
+const versions = require('./versions.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Quadro de Horários do IFPR - Assis Chateaubriand',
-  tagline: '"Com organização e tempo, acha-se o segredo de fazer tudo e bem feito." - Pitágoras',
+  tagline:
+    '"Com organização e tempo, acha-se o segredo de fazer tudo e bem feito." - Pitágoras',
   url: 'https://vonmecheln.github.io/',
   baseUrl: '/ifpr-horarios/',
   onBrokenLinks: 'throw',
@@ -63,7 +61,7 @@ const config = {
   organizationName: 'vonmecheln', // Usually your GitHub org/user name.
   projectName: 'ifpr-horarios', // Usually your repo name.
   trailingSlash: false,
-  
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -79,35 +77,33 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          
           // lastVersion: isDev || isDeployPreview || isBranchDeploy ? 'current' : undefined,
 
           sidebarPath: require.resolve('./sidebars.js'),
           // versions:(() => {
-            
+
           //   return {current: {label: 'Em desenvolvimento 🚧',}};
           //   var includeVersions = [...versions.slice(0, 2)]
-            
+
           //   return includeVersions;
 
           // }),
-          versions: makeVerionNames(),
+          versions: makeVersionNames(),
           onlyIncludeVersions: (() => {
             if (isBuildFast) {
-              return ['current'];
+              return ['current']
             } else if (!isVersioningDisabled) {
-
-              var includeVersions = [...versions]
+              let includeVersions = [...versions]
               includeVersions = includeVersions.filter(isCurrentVersions)
               includeVersions = includeVersions.slice(0, 5)
-              
-              if((isDev || isDeployPreview || isBranchDeploy)){                
-                includeVersions.push('current');
+
+              if (isDev || isDeployPreview || isBranchDeploy) {
+                includeVersions.push('current')
               }
 
-              return includeVersions;
+              return includeVersions
             }
-            return undefined;
+            return undefined
           })(),
         },
         theme: {
@@ -124,7 +120,7 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
-          srcDark: 'img/logoDark.svg'
+          srcDark: 'img/logoDark.svg',
         },
         items: [
           {
@@ -226,17 +222,15 @@ const config = {
       },
     ],
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
+      require.resolve('@cmfcmf/docusaurus-search-local'),
       {
         // Options here
         indexDocs: true,
         indexBlog: false,
         indexPages: false,
-
       },
-    ]
+    ],
   ],
+}
 
-};
-
-module.exports = config;
+module.exports = config

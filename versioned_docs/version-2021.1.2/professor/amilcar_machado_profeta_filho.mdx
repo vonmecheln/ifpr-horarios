@@ -1,4 +1,5 @@
 import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Amilcar Machado Profeta Filho",
   weekClasses: [
@@ -8,24 +9,20 @@ const data = {
         {
           subject: "História 1 - 131",
           size: 1,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "EIN2021-1ANO",
-          time: "10:15 - 11:05"
+          time: "10:15 - 11:05",
         },
         {
           subject: "Ética e Responsabilidade Social e Ambiental - 1497",
           size: 2,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "TGC2020",
-          time: "19:00 - 19:50"
-        }
-      ]
+          time: "19:00 - 19:50",
+        },
+      ],
     },
     {
       dayName: "Terça-Feira",
@@ -33,18 +30,16 @@ const data = {
         {
           subject: "História 4 - 229",
           size: 2,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "EIN2018-4ANO",
-          time: "10:15 - 11:05"
-        }
-      ]
+          time: "10:15 - 11:05",
+        },
+      ],
     },
     {
       dayName: "Quarta-Feira",
-      dayClasses: []
+      dayClasses: [],
     },
     {
       dayName: "Quinta-Feira",
@@ -52,24 +47,20 @@ const data = {
         {
           subject: "História 3 - 207",
           size: 1,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "EIN2019-3ANO",
-          time: "11:05 - 11:55"
+          time: "11:05 - 11:55",
         },
         {
           subject: "História II - 1234",
           size: 2,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "IIW2020",
-          time: "15:05 - 15:55"
-        }
-      ]
+          time: "15:05 - 15:55",
+        },
+      ],
     },
     {
       dayName: "Sexta-Feira",
@@ -77,14 +68,12 @@ const data = {
         {
           subject: "História 2 - 178",
           size: 1,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "EIN2020-2ANO",
-          time: "09:25 - 10:15"
-        }
-      ]
+          time: "09:25 - 10:15",
+        },
+      ],
     },
     {
       dayName: "Sábado",
@@ -92,100 +81,102 @@ const data = {
         {
           subject: "Cultura e Cinema Nacional III - 1193",
           size: 1,
-          teachers: [
-            "Amilcar Machado Profeta Filho"
-          ],
+          teachers: ["Amilcar Machado Profeta Filho"],
           classroom: "",
           students: "AGO2019",
-          time: "13:10 - 14:00"
-        }
-      ]
-    }
+          time: "13:10 - 14:00",
+        },
+      ],
+    },
   ],
   time: [
     {
       time: "07:30 - 08:20",
-      size: 50
+      size: 50,
     },
     {
       time: "08:20 - 09:10",
-      size: 50
+      size: 50,
     },
     {
       time: "09:10 - 09:25",
-      size: 15
+      size: 15,
     },
     {
       time: "09:25 - 10:15",
-      size: 50
+      size: 50,
     },
     {
       time: "10:15 - 11:05",
-      size: 50
+      size: 50,
     },
     {
       time: "11:05 - 11:55",
-      size: 50
+      size: 50,
     },
     {
       time: "11:55 - 13:10",
-      size: 75
+      size: 75,
     },
     {
       time: "13:10 - 14:00",
-      size: 50
+      size: 50,
     },
     {
       time: "14:00 - 14:50",
-      size: 50
+      size: 50,
     },
     {
       time: "14:50 - 15:05",
-      size: 15
+      size: 15,
     },
     {
       time: "15:05 - 15:55",
-      size: 50
+      size: 50,
     },
     {
       time: "15:55 - 16:45",
-      size: 50
+      size: 50,
     },
     {
       time: "16:45 - 19:00",
-      size: 135
+      size: 135,
     },
     {
       time: "19:00 - 19:50",
-      size: 50
+      size: 50,
     },
     {
       time: "19:50 - 20:40",
-      size: 50
+      size: 50,
     },
     {
       time: "20:40 - 21:00",
-      size: 20
+      size: 20,
     },
     {
       time: "21:00 - 21:50",
-      size: 50
+      size: 50,
     },
     {
       time: "21:50 - 22:40",
-      size: 50
-    }
-  ]
-}
+      size: 50,
+    },
+  ],
+};
 
 # Amilcar Machado Profeta Filho
 
 <div>
-    {
+  {
+    <BrowserOnly>
+      {() => (
         <Grid
-            title={data.title} 
-            weekClasses={data.weekClasses} 
-            time={data.time}
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
         />
-    }
+      )}
+    </BrowserOnly>
+  }
 </div>

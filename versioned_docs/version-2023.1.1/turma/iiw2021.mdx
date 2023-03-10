@@ -1,4 +1,5 @@
 import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "IIW2021",
   weekClasses: [
@@ -8,34 +9,28 @@ const data = {
         {
           subject: "História III - 2236",
           size: 1,
-          teachers: [
-            "Milton Aparecido Azevedo"
-          ],
+          teachers: ["Milton Aparecido Azevedo"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Física III - 1242",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "IIW2021",
-          time: "10:15 - 11:05"
+          time: "10:15 - 11:05",
         },
         {
           subject: "Matemática III - 1244",
           size: 2,
-          teachers: [
-            "Sérgio Augusto Dias Castro"
-          ],
+          teachers: ["Sérgio Augusto Dias Castro"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "07:30 - 08:20"
-        }
-      ]
+          time: "07:30 - 08:20",
+        },
+      ],
     },
     {
       dayName: "Terça-Feira",
@@ -43,34 +38,28 @@ const data = {
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teachers: [
-            "José Jurandir Pereira Junior"
-          ],
+          teachers: ["José Jurandir Pereira Junior"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Desenvolvimento Responsivo e Otimização de Sites - 1249",
           size: 2,
-          teachers: [
-            "Luis Henrique Manosso Von Mecheln"
-          ],
+          teachers: ["Luis Henrique Manosso Von Mecheln"],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Sistemas Gerenciadores de Conteúdo WEB - 1252",
           size: 2,
-          teachers: [
-            "Rafael Gil Ferques"
-          ],
+          teachers: ["Rafael Gil Ferques"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2021",
-          time: "10:15 - 11:05"
-        }
-      ]
+          time: "10:15 - 11:05",
+        },
+      ],
     },
     {
       dayName: "Quarta-Feira",
@@ -78,34 +67,28 @@ const data = {
         {
           subject: "Sociologia II - 1246",
           size: 1,
-          teachers: [
-            "Everaldo Lorensetti"
-          ],
+          teachers: ["Everaldo Lorensetti"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "11:05 - 11:55"
+          time: "11:05 - 11:55",
         },
         {
           subject: "Biologia III - 1241",
           size: 2,
-          teachers: [
-            "Gabriele Antico Freiria"
-          ],
+          teachers: ["Gabriele Antico Freiria"],
           classroom: "Laboratório de Biologia",
           students: "IIW2021",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Língua Portuguesa e Literatura III - 1240",
           size: 2,
-          teachers: [
-            "Michelli Cristina Galli"
-          ],
+          teachers: ["Michelli Cristina Galli"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
-        }
-      ]
+          time: "09:25 - 10:15",
+        },
+      ],
     },
     {
       dayName: "Quinta-Feira",
@@ -113,175 +96,164 @@ const data = {
         {
           subject: "Sociologia II - 1246",
           size: 1,
-          teachers: [
-            "Everaldo Lorensetti"
-          ],
+          teachers: ["Everaldo Lorensetti"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "11:05 - 11:55"
+          time: "11:05 - 11:55",
         },
         {
           subject: "Química III - 1243",
           size: 2,
-          teachers: [
-            "Kathia Regina Kunzler Bechlin"
-          ],
+          teachers: ["Kathia Regina Kunzler Bechlin"],
           classroom: "Laboratório de Química",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Geografia II - 1247",
           size: 2,
-          teachers: [
-            "Renato Lada Guerreiro"
-          ],
+          teachers: ["Renato Lada Guerreiro"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "07:30 - 08:20"
-        }
-      ]
+          time: "07:30 - 08:20",
+        },
+      ],
     },
     {
       dayName: "Sexta-Feira",
       dayClasses: [
         {
-          subject: "Prototipação de Interfaces e Interação Humano-Computador - 1251",
+          subject:
+            "Prototipação de Interfaces e Interação Humano-Computador - 1251",
           size: 2,
-          teachers: [
-            "Eduardo Alberto Felippsen"
-          ],
+          teachers: ["Eduardo Alberto Felippsen"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2021",
-          time: "10:15 - 11:05"
+          time: "10:15 - 11:05",
         },
         {
           subject: "Filosofia III - 1245",
           size: 1,
-          teachers: [
-            "José Jurandir Pereira Junior"
-          ],
+          teachers: ["José Jurandir Pereira Junior"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "História III - 2236",
           size: 1,
-          teachers: [
-            "Milton Aparecido Azevedo"
-          ],
+          teachers: ["Milton Aparecido Azevedo"],
           classroom: "Sala 16-2",
           students: "IIW2021",
-          time: "15:05 - 15:55"
+          time: "15:05 - 15:55",
         },
         {
           subject: "Projeto Integrador III - 1253",
           size: 2,
-          teachers: [
-            "Olavo José Luiz Junior"
-          ],
+          teachers: ["Olavo José Luiz Junior"],
           classroom: "Laboratório de Informatica B",
           students: "IIW2021",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Serviços em nuvem - 1250",
           size: 2,
-          teachers: [
-            "Rafael Gil Ferques"
-          ],
+          teachers: ["Rafael Gil Ferques"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2021",
-          time: "13:10 - 14:00"
-        }
-      ]
-    }
+          time: "13:10 - 14:00",
+        },
+      ],
+    },
   ],
   time: [
     {
       time: "07:30 - 08:20",
-      size: 50
+      size: 50,
     },
     {
       time: "08:20 - 09:10",
-      size: 50
+      size: 50,
     },
     {
       time: "09:10 - 09:25",
-      size: 15
+      size: 15,
     },
     {
       time: "09:25 - 10:15",
-      size: 50
+      size: 50,
     },
     {
       time: "10:15 - 11:05",
-      size: 50
+      size: 50,
     },
     {
       time: "11:05 - 11:55",
-      size: 50
+      size: 50,
     },
     {
       time: "11:55 - 13:10",
-      size: 75
+      size: 75,
     },
     {
       time: "13:10 - 14:00",
-      size: 50
+      size: 50,
     },
     {
       time: "14:00 - 14:50",
-      size: 50
+      size: 50,
     },
     {
       time: "14:50 - 15:05",
-      size: 15
+      size: 15,
     },
     {
       time: "15:05 - 15:55",
-      size: 50
+      size: 50,
     },
     {
       time: "15:55 - 16:45",
-      size: 50
+      size: 50,
     },
     {
       time: "16:45 - 19:00",
-      size: 135
+      size: 135,
     },
     {
       time: "19:00 - 19:50",
-      size: 50
+      size: 50,
     },
     {
       time: "19:50 - 20:40",
-      size: 50
+      size: 50,
     },
     {
       time: "20:40 - 21:00",
-      size: 20
+      size: 20,
     },
     {
       time: "21:00 - 21:50",
-      size: 50
+      size: 50,
     },
     {
       time: "21:50 - 22:40",
-      size: 50
-    }
-  ]
-}
+      size: 50,
+    },
+  ],
+};
 
 # IIW2021
 
 <div>
-    {
+  {
+    <BrowserOnly>
+      {() => (
         <Grid
-            title={data.title} 
-            weekClasses={data.weekClasses} 
-            time={data.time}
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
         />
-    }
+      )}
+    </BrowserOnly>
+  }
 </div>

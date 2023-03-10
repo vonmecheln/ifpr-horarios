@@ -1,71 +1,84 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
-import * as Checkbox from '@radix-ui/react-checkbox';
-import * as RadioGroup from '@radix-ui/react-radio-group';
-import * as Slider from '@radix-ui/react-slider';
-import { DialogClose, DialogContent, DialogTrigger, ScreenshotButton, SettingsContainer } from './styles'
-import { Gear, X, Check, Camera} from 'phosphor-react'
-import { RadioItem } from '../RadioItem';
+import * as Checkbox from '@radix-ui/react-checkbox'
+import * as RadioGroup from '@radix-ui/react-radio-group'
+import * as Slider from '@radix-ui/react-slider'
+import {
+  DialogClose,
+  DialogContent,
+  DialogTrigger,
+  ScreenshotButton,
+  SettingsContainer,
+} from './styles'
+import { Gear, X, Check, Camera } from 'phosphor-react'
+import { RadioItem } from '../RadioItem'
+import { GridContext } from '../Grid'
+import { TimetableViewType } from '@site/src/reducers/settings/reducer'
 
 export interface ModalSettingsProps {
-  isMenuFixed: boolean;
-  setIsMenuFixed: React.Dispatch<React.SetStateAction<boolean>>
-  timetableView: string;
-  setTimetableView: React.Dispatch<React.SetStateAction<string>>;
-  downloadScreenshot: () => any;
+  downloadScreenshot: () => any
 }
 
-export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setTimetableView, downloadScreenshot}: ModalSettingsProps) {
+export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
+  const { isMenuFixed, modifyMenu, timetableView, reduceGrid } =
+    useContext(GridContext)
+
+  function handleChangeMenu() {
+    modifyMenu(!isMenuFixed)
+  }
+
+  function handleChangeTimetableView(newView: TimetableViewType) {
+    reduceGrid(newView)
+  }
+
   return (
     <Dialog.Root>
       <DialogTrigger>
-        <Gear size={'2rem'}/>
+        <Gear size={'2rem'} />
       </DialogTrigger>
-      <Dialog.Portal>''
+      <Dialog.Portal>
         <DialogContent>
           <header>
             <div>
               <Dialog.Title>Configurações</Dialog.Title>
-              <Dialog.Description>Configure o horário da maneira como quiser</Dialog.Description>
+              <Dialog.Description>
+                Configure o horário da maneira como quiser
+              </Dialog.Description>
             </div>
-            
+
             <DialogClose type="button">
-              <X size={'1.5rem'}/>
+              <X size={'1.5rem'} />
             </DialogClose>
           </header>
-          
+
           <hr />
 
           <SettingsContainer>
-            <div className='menuFixed'>
-              <Checkbox.Root 
-                id='menuFixed'
+            <div className="menuFixed">
+              <Checkbox.Root
+                id="menuFixed"
                 defaultChecked={isMenuFixed}
-                onCheckedChange={() => setIsMenuFixed(!isMenuFixed)}
+                onCheckedChange={handleChangeMenu}
               >
                 <Checkbox.Indicator>
-                  <Check size={'1rem'}/>
+                  <Check size={'1rem'} />
                 </Checkbox.Indicator>
               </Checkbox.Root>
               <label htmlFor="menuFixed">Menu fixo</label>
             </div>
 
             <RadioGroup.Root
-              className='radioContainer'
+              className="radioContainer"
               defaultValue={timetableView}
-              onValueChange={(value) => setTimetableView(value)}
+              onValueChange={(value: TimetableViewType) =>
+                handleChangeTimetableView(value)
+              }
             >
-              <RadioItem 
-                title="Horário Completo" 
-                value='completed'
-              />
-              <RadioItem 
-                title="Horário Condensado" 
-                value='condensed'
-              />
-              <RadioItem 
-                title="Horário Super Condensado" 
-                value='superCondensed'
+              <RadioItem title="Horário Completo" value="completed" />
+              <RadioItem title="Horário Condensado" value="condensed" />
+              <RadioItem
+                title="Horário Super Condensado"
+                value="superCondensed"
               />
             </RadioGroup.Root>
 
@@ -85,11 +98,9 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
                 <Slider.Thumb className="sliderThumb" />
               </Slider.Root>
             </div> */}
-
           </SettingsContainer>
 
-
-          <hr/>
+          <hr />
           <footer>
             <Dialog.Description>
               Caso queira ter o horário como uma imagem
@@ -98,7 +109,7 @@ export function ModalSettings({ isMenuFixed, setIsMenuFixed, timetableView, setT
               onClick={downloadScreenshot}
               title="Download do horário como imagem"
             >
-              <Camera size={25}/>
+              <Camera size={25} />
             </ScreenshotButton>
           </footer>
         </DialogContent>

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import * as RadioGroup from '@radix-ui/react-radio-group';
+import styled from 'styled-components'
+import * as RadioGroup from '@radix-ui/react-radio-group'
 
 export const Container = styled.div`
   width: 100%;
@@ -39,7 +39,7 @@ export const RadioGroupIndicator = styled(RadioGroup.Indicator)`
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     width: 0.7rem;
     height: 0.7rem;

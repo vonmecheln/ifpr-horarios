@@ -1,93 +1,143 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Header } from '../Header'
-import { Sidebar, TimeProps } from '../Sidebar'
-import { Timetable, DayProps } from '../Timetable'
+import React, { createContext, useEffect, useReducer, useRef } from 'react'
+
+import {
+  settingsReducer,
+  TimetableViewType,
+} from '@site/src/reducers/settings/reducer'
+
+import { Days, GridContextType, Time } from '@site/src/interfaces/interfaces'
+import { GridContainer } from './styles'
 import { findPositionY } from '@site/src/utils/find-position-y'
 import { reduceTimetable } from '@site/src/utils/reduce-timetable'
-import { createLinkToTheCell } from '@site/src/utils/create-link-to-the-cell'
-import { useScreenshot, createFileName } from "use-react-screenshot";
-import { Container } from './styles'
-import { Footer } from '../Footer'
-import { updateLocalStorage } from '@site/src/utils/update-local-storage'
-import { getItemFromLocalStorage } from '@site/src/utils/get-item-from-local-storage'
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 import { defineColorBase } from '@site/src/utils/define-color-base'
+import { Header } from '../Header'
+import { Sidebar } from '../Sidebar'
+import { Timetable } from '../Timetable'
+import { Footer } from '../Footer'
+import {
+  changeMenu,
+  changeTimetableView,
+} from '@site/src/reducers/settings/actions'
+import { createLinkToEachClass } from '@site/src/utils/create-link-to-each-class'
 
-export interface GridProps {
-  title?: string;
-  time: Array<TimeProps>;
-  weekClasses: Array<DayProps>;
-  textFooter?: string;
+interface GridProps {
+  title?: string
+  time: Time[]
+  weekClasses: Days[]
+  textFooter?: string
 }
 
 function setGridTemplateRows(textFooter: string) {
   let gridTemplateRows = '50px 1fr'
-  return textFooter ? gridTemplateRows+=' 50px' : gridTemplateRows
+  return textFooter ? (gridTemplateRows += ' 50px') : gridTemplateRows
 }
 
-export function Grid ({ title, time, weekClasses, textFooter }: GridProps) {
-  let settingsOfTime 
-
-  if (ExecutionEnvironment.canUseDOM) {
-    settingsOfTime = getItemFromLocalStorage()
-  }
-  
-  const [isMenuFixed, setIsMenuFixed] = useState<boolean>(settingsOfTime?.isMenuFixed ?? false)
-  const [timetableView, setTimetableView] = useState<string>(settingsOfTime?.timetableView ?? 'completed')
-  const gridRef = useRef()
-  const [image, takeScreenShot] = useScreenshot({
-    type: "image/png",
-    quality: 2.0
-  });
-
-  const download = (image: string, { name = title, extension = "png" } = {}) => {
-    const a = document.createElement("a");
-    a.href = image; 
-    a.download = createFileName(extension, name);
-    a.click();
-  };
-   
-  const downloadScreenshot = () => takeScreenShot(gridRef.current).then(download);
-
-  findPositionY({weekClasses, time})
-  createLinkToTheCell({weekClasses, title})
-  let [timeFormatted, weekClassesFormatted] = reduceTimetable({weekClasses, time, timetableView})
-  time = timeFormatted
-  weekClasses = weekClassesFormatted
-  findPositionY({weekClasses, time})
-
-  defineColorBase({weekClasses, title})
-
-  let rowsSize = ''
-  let gridColumns = `10fr 90fr`
-  time.forEach(el => {
-    rowsSize += ` ${el.size}fr`
+function setWeekClassesSettings(
+  weekClasses: Days[],
+  title: string,
+  time: Time[],
+) {
+  let newWeekClasses = []
+  // newWeekClasses = findPositionY({ weekClasses, time })
+  newWeekClasses = createLinkToEachClass({
+    weekClasses,
+    title,
   })
+  newWeekClasses = defineColorBase({
+    weekClasses,
+    title,
+  })
+  return newWeekClasses
+}
 
-  
-  if (ExecutionEnvironment.canUseDOM) {
-    useEffect(() => {
-      updateLocalStorage({isMenuFixed, timetableView})
-    }, [isMenuFixed, timetableView])
-  }
-  
-  return(
-    <Container gridColumns={gridColumns} gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
-      <Header title={title}/> 
-      <Sidebar 
-        timeClasses={time} 
-        rows={`100px${rowsSize}`}
-        modal={{setIsMenuFixed, isMenuFixed, setTimetableView, timetableView, downloadScreenshot}}
-      />
-      <Timetable 
-        weekClasses={weekClasses} 
-        rowsSize={rowsSize} 
-        time={time} 
-        isMenuFixed={isMenuFixed}
-      />
-      {
-        textFooter ? <Footer textFooter={textFooter}/> : ''
+export const GridContext = createContext({} as GridContextType)
+
+export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
+  console.log(weekClasses)
+
+  const [settingsState, dispatch] = useReducer(
+    settingsReducer,
+    {
+      settings: {
+        isMenuFixed: false,
+        timetableView: 'completed',
+      },
+      timeChanged: [],
+      weekClassesChanged: [],
+    },
+    (initialState) => {
+      const storedStateAsJSON = localStorage.getItem('settings-of-time')
+      const newWeekClasses = setWeekClassesSettings(weekClasses, title, time)
+
+      if (storedStateAsJSON) {
+        initialState.settings = JSON.parse(storedStateAsJSON)
       }
-    </Container>
+
+      const timetableViewInitial = initialState.settings.timetableView
+      const { timeChanged, weekClassesChanged } = reduceTimetable({
+        weekClasses: newWeekClasses,
+        time,
+        timetableView: timetableViewInitial,
+      })
+
+      return {
+        ...initialState,
+        weekClassesChanged,
+        timeChanged,
+      }
+    },
+  )
+  const { settings, timeChanged, weekClassesChanged } = settingsState
+  const { timetableView, isMenuFixed } = settings
+
+  function reduceGrid(newTimetableView: TimetableViewType) {
+    const data = {
+      timetableView: newTimetableView,
+      timeInitial: time,
+      weekClassesInitial: weekClasses,
+    }
+    dispatch(changeTimetableView(data))
+  }
+
+  function modifyMenu(data: boolean) {
+    dispatch(changeMenu(data))
+  }
+
+  const rowsSize = timeChanged.reduce((acc, elemento) => {
+    return (acc += ` ${elemento.size}fr`)
+  }, '')
+
+  const gridRef = useRef()
+
+  useEffect(() => {
+    const { settings } = settingsState
+    const stateJSON = JSON.stringify(settings)
+
+    localStorage.setItem('settings-of-time', stateJSON)
+  }, [settingsState])
+
+  return (
+    <GridContext.Provider
+      value={{
+        title,
+        timeChanged,
+        weekClassesChanged,
+        timetableView,
+        isMenuFixed,
+        rowsSize,
+        gridRef,
+        modifyMenu,
+        reduceGrid,
+        weekClassesInitial: weekClasses,
+        timeInitial: time,
+      }}
+    >
+      <GridContainer gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
+        <Header />
+        <Sidebar />
+        <Timetable />
+        {/* {textFooter ? <Footer textFooter={textFooter} /> : ''} */}
+      </GridContainer>
+    </GridContext.Provider>
   )
 }

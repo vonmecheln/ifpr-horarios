@@ -1,4 +1,5 @@
 import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "IIW2023A",
   weekClasses: [
@@ -8,34 +9,28 @@ const data = {
         {
           subject: "Educação Física I",
           size: 2,
-          teachers: [
-            "Bruna Valeriano da Silva Lisboa"
-          ],
+          teachers: ["Bruna Valeriano da Silva Lisboa"],
           classroom: "Educação Física / Sala 4 B2",
           students: "IIW2023A",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Lingua estrangeira - Inglês",
           size: 1,
-          teachers: [
-            "Celina de Oliveira Barbosa Gomes"
-          ],
+          teachers: ["Celina de Oliveira Barbosa Gomes"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "11:05 - 11:55"
+          time: "11:05 - 11:55",
         },
         {
           subject: "Matemática I",
           size: 2,
-          teachers: [
-            "Elenice Josefa Kolancko Setti"
-          ],
+          teachers: ["Elenice Josefa Kolancko Setti"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
-        }
-      ]
+          time: "07:30 - 08:20",
+        },
+      ],
     },
     {
       dayName: "Terça-Feira",
@@ -43,54 +38,44 @@ const data = {
         {
           subject: "Projeto integrador I",
           size: 2,
-          teachers: [
-            "Alexandre Rodrigues Monge"
-          ],
+          teachers: ["Alexandre Rodrigues Monge"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2023A",
-          time: "13:10 - 14:00"
+          time: "13:10 - 14:00",
         },
         {
           subject: "Matemática I",
           size: 2,
-          teachers: [
-            "Elenice Josefa Kolancko Setti"
-          ],
+          teachers: ["Elenice Josefa Kolancko Setti"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Filosofia I",
           size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
+          teachers: ["Fabio Antônio da Silva"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "11:05 - 11:55"
+          time: "11:05 - 11:55",
         },
         {
           subject: "Física I",
           size: 2,
-          teachers: [
-            "Polyanna Guimarães e Miranda"
-          ],
+          teachers: ["Polyanna Guimarães e Miranda"],
           classroom: "Laboratório de Física",
           students: "IIW2023A",
-          time: "15:05 - 15:55"
+          time: "15:05 - 15:55",
         },
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos",
           size: 2,
-          teachers: [
-            "Rafael Gil Ferques"
-          ],
+          teachers: ["Rafael Gil Ferques"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
-        }
-      ]
+          time: "07:30 - 08:20",
+        },
+      ],
     },
     {
       dayName: "Quarta-Feira",
@@ -98,34 +83,28 @@ const data = {
         {
           subject: "Sociologia I",
           size: 1,
-          teachers: [
-            "Everaldo Lorensetti"
-          ],
+          teachers: ["Everaldo Lorensetti"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Língua Portuguesa e Literatura I",
           size: 2,
-          teachers: [
-            "Michelli Cristina Galli"
-          ],
+          teachers: ["Michelli Cristina Galli"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Biologia I",
           size: 2,
-          teachers: [
-            "Paula Magalhães Souza Deccache"
-          ],
+          teachers: ["Paula Magalhães Souza Deccache"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "10:15 - 11:05"
-        }
-      ]
+          time: "10:15 - 11:05",
+        },
+      ],
     },
     {
       dayName: "Quinta-Feira",
@@ -133,64 +112,52 @@ const data = {
         {
           subject: "Fundamentos de informática",
           size: 2,
-          teachers: [
-            "Caroline Domingues Porto do Nascimento Barbieri"
-          ],
+          teachers: ["Caroline Domingues Porto do Nascimento Barbieri"],
           classroom: "Laboratório de Informatica B",
           students: "IIW2023A",
-          time: "10:15 - 11:05"
+          time: "10:15 - 11:05",
         },
         {
           subject: "Lógica de programação",
           size: 2,
-          teachers: [
-            "Caroline Domingues Porto do Nascimento Barbieri"
-          ],
+          teachers: ["Caroline Domingues Porto do Nascimento Barbieri"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Lingua estrangeira - Inglês",
           size: 1,
-          teachers: [
-            "Celina de Oliveira Barbosa Gomes"
-          ],
+          teachers: ["Celina de Oliveira Barbosa Gomes"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "09:25 - 10:15"
+          time: "09:25 - 10:15",
         },
         {
           subject: "Filosofia I",
           size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
+          teachers: ["Fabio Antônio da Silva"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "13:10 - 14:00"
+          time: "13:10 - 14:00",
         },
         {
           subject: "História I",
           size: 1,
-          teachers: [
-            "Milton Aparecido Azevedo"
-          ],
+          teachers: ["Milton Aparecido Azevedo"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "14:00 - 14:50"
+          time: "14:00 - 14:50",
         },
         {
           subject: "Linguagens de apresentação e estruturação de conteúdos",
           size: 2,
-          teachers: [
-            "Rafael Gil Ferques"
-          ],
+          teachers: ["Rafael Gil Ferques"],
           classroom: "Laboratório de Informatica A",
           students: "IIW2023A",
-          time: "15:05 - 15:55"
-        }
-      ]
+          time: "15:05 - 15:55",
+        },
+      ],
     },
     {
       dayName: "Sexta-Feira",
@@ -198,120 +165,118 @@ const data = {
         {
           subject: "Sociologia I",
           size: 1,
-          teachers: [
-            "Everaldo Lorensetti"
-          ],
+          teachers: ["Everaldo Lorensetti"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "11:05 - 11:55"
+          time: "11:05 - 11:55",
         },
         {
           subject: "Química I",
           size: 2,
-          teachers: [
-            "Kathia Regina Kunzler Bechlin"
-          ],
+          teachers: ["Kathia Regina Kunzler Bechlin"],
           classroom: "Laboratório de Química",
           students: "IIW2023A",
-          time: "07:30 - 08:20"
+          time: "07:30 - 08:20",
         },
         {
           subject: "Língua Portuguesa e Literatura I",
           size: 2,
-          teachers: [
-            "Michelli Cristina Galli"
-          ],
+          teachers: ["Michelli Cristina Galli"],
           classroom: "Sala 9-2",
           students: "IIW2023A",
-          time: "09:25 - 10:15"
-        }
-      ]
-    }
+          time: "09:25 - 10:15",
+        },
+      ],
+    },
   ],
   time: [
     {
       time: "07:30 - 08:20",
-      size: 50
+      size: 50,
     },
     {
       time: "08:20 - 09:10",
-      size: 50
+      size: 50,
     },
     {
       time: "09:10 - 09:25",
-      size: 15
+      size: 15,
     },
     {
       time: "09:25 - 10:15",
-      size: 50
+      size: 50,
     },
     {
       time: "10:15 - 11:05",
-      size: 50
+      size: 50,
     },
     {
       time: "11:05 - 11:55",
-      size: 50
+      size: 50,
     },
     {
       time: "11:55 - 13:10",
-      size: 75
+      size: 75,
     },
     {
       time: "13:10 - 14:00",
-      size: 50
+      size: 50,
     },
     {
       time: "14:00 - 14:50",
-      size: 50
+      size: 50,
     },
     {
       time: "14:50 - 15:05",
-      size: 15
+      size: 15,
     },
     {
       time: "15:05 - 15:55",
-      size: 50
+      size: 50,
     },
     {
       time: "15:55 - 16:45",
-      size: 50
+      size: 50,
     },
     {
       time: "16:45 - 19:00",
-      size: 135
+      size: 135,
     },
     {
       time: "19:00 - 19:50",
-      size: 50
+      size: 50,
     },
     {
       time: "19:50 - 20:40",
-      size: 50
+      size: 50,
     },
     {
       time: "20:40 - 21:00",
-      size: 20
+      size: 20,
     },
     {
       time: "21:00 - 21:50",
-      size: 50
+      size: 50,
     },
     {
       time: "21:50 - 22:40",
-      size: 50
-    }
-  ]
-}
+      size: 50,
+    },
+  ],
+};
 
 # IIW2023A
 
 <div>
-    {
+  {
+    <BrowserOnly>
+      {() => (
         <Grid
-            title={data.title} 
-            weekClasses={data.weekClasses} 
-            time={data.time}
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
         />
-    }
+      )}
+    </BrowserOnly>
+  }
 </div>

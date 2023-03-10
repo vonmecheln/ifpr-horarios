@@ -1,14 +1,13 @@
-import { ClassesProps, DayProps } from "../components/Timetable";
+import { Classes } from '../interfaces/interfaces'
 
-export function createGroupItems(timetable: ClassesProps[]) {
-    let dict = {}
+export function createGroupItems(timetable: Classes[]) {
+  const dict = {}
+  timetable.forEach((el) => {
+    if (!dict[el.time]) {
+      dict[el.time] = []
+    }
+    dict[el.time].push(el)
+  })
 
-    timetable.forEach(el => {
-      if (!dict[el.time]) {
-        dict[el.time] = []
-      }
-      dict[el.time].push(el)
-    })
-    
   return dict
 }

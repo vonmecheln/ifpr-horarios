@@ -1,10 +1,10 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import styled from "styled-components";
 
-export const Container = styled.aside<{rows: string}>`
+export const Container = styled.aside<{rowsSize: string}>`
   display: grid;
   grid-template-columns: minmax(max-content, 100%);
-  grid-template-rows: ${props => props.rows};
+  grid-template-rows: 100px${props => props.rowsSize};
   grid-area: 1 / 1 / 3 / 2;
   row-gap: 1px;
 

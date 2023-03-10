@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
 
 export const DialogTrigger = styled(Dialog.Trigger)`
   background: transparent;
   border: none;
   color: var(--ifm-color-primary);
-  
+
   cursor: pointer;
   transition: filter 0.4s;
 
@@ -15,68 +15,66 @@ export const DialogTrigger = styled(Dialog.Trigger)`
 `
 
 export const DialogContent = styled(Dialog.Content)`
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 20;
-    
-    width: min(30rem, 80%);
-    height: 25rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
 
-    transform: translate(-50%, -50%);
+  width: min(30rem, 80%);
+  height: 25rem;
 
-    padding: 0.8rem 1rem;
+  transform: translate(-50%, -50%);
 
-    background: #52c234; 
-    background: -webkit-linear-gradient(to right, #217d00ee, #52c234ee);  
-    background: linear-gradient(to right, #217d00ee, #52c234ee);
-    backdrop-filter: blur(20px);
-    color: #fff;
-    
-    box-shadow: 0px 0px 10px #000000, inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+  padding: 0.8rem 1rem;
 
+  background: #52c234;
+  background: -webkit-linear-gradient(to right, #217d00ee, #52c234ee);
+  background: linear-gradient(to right, #217d00ee, #52c234ee);
+  backdrop-filter: blur(20px);
+  color: #fff;
 
-    border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px #000000, inset 0px 0px 2px rgba(255, 255, 255, 0.25);
 
-    header, footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  border-radius: 0.5rem;
 
-      * {
-        margin: 0;
-      }
+  header,
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-      p {
-        color: #D9D9D9;
-        font-size: 0.9rem;
-        text-shadow: 0px 0px 2px #00000025;
-      }
+    * {
+      margin: 0;
     }
 
-    hr {
-      margin: 0px;
-      box-shadow: 0px 0px 2px #00000050;
+    p {
+      color: #d9d9d9;
+      font-size: 0.9rem;
+      text-shadow: 0px 0px 2px #00000025;
     }
+  }
 
-    footer {
-      height: 4rem;
-    }
+  hr {
+    margin: 0px;
+    box-shadow: 0px 0px 2px #00000050;
+  }
 
-    
+  footer {
+    height: 4rem;
+  }
 `
 export const DialogClose = styled(Dialog.Close)`
   background: transparent;
   color: red;
-  
+
   padding: 0;
 
   outline: none;
   border: none;
 
   cursor: pointer;
-  
-  transition: filter .4s;
+
+  transition: filter 0.4s;
 
   &:hover {
     filter: brightness(0.9);
@@ -89,7 +87,7 @@ export const SettingsContainer = styled.main`
   margin-top: 0.25rem;
 
   font-size: 0.9rem;
-  
+
   display: grid;
   align-items: center;
   grid-template: repeat(2, 1fr) / repeat(2, minmax(max-content, 100%));
@@ -98,7 +96,7 @@ export const SettingsContainer = styled.main`
     display: flex;
     align-items: center;
     grid-area: 1 / 1 / 2 / 2;
-    gap: .5rem;
+    gap: 0.5rem;
 
     button {
       all: unset;
@@ -106,10 +104,10 @@ export const SettingsContainer = styled.main`
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
       width: 1.2rem;
       height: 1.2rem;
-      border-radius: .2rem;
+      border-radius: 0.2rem;
 
       box-shadow: 0px 0px 2px #00000080;
 
@@ -129,7 +127,7 @@ export const SettingsContainer = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     grid-area: 1 / 2 / 2 / 3;
   }
 
@@ -227,7 +225,7 @@ export const ScreenshotButton = styled.button`
   color: var(--ifm-color-primary);
 
   transition: filter 0.4s;
-  
+
   box-shadow: 0px 0px 2px #00000080;
 
   &:hover {

@@ -1,14 +1,13 @@
-import React from 'react'
-import { Container } from './styles';
+import React, { useContext } from 'react'
+import { GridContext } from '../Grid'
+import { HeaderContainer } from './styles'
 
-interface WeekProps{
-  title: string;
-}
+export function Header() {
+  const { title } = useContext(GridContext)
 
-export function Header(props: WeekProps) {
   return (
-    <Container>
-      <strong>{props.title}</strong>
-    </Container>
-  ) 
+    <HeaderContainer>
+      <strong>{title}</strong>
+    </HeaderContainer>
+  )
 }
