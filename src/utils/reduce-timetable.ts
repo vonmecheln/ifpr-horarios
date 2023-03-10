@@ -19,9 +19,15 @@ export function reduceTimetable({
   time,
   timetableView,
 }: ReduceTimetableProps): ReduceTimetableReturn {
+  weekClasses = findPositionY({ weekClasses, time })
   const positions = findPositionsUsed(weekClasses)
   const positionOfFirstClass = Math.min(...positions)
   const positionOfLastClass = Math.max(...positions) + 1
+
+  console.log(positions)
+
+  console.log(positionOfFirstClass)
+  console.log(positionOfLastClass)
 
   if (timetableView === 'condensed') {
     time = time.slice(positionOfFirstClass, positionOfLastClass)

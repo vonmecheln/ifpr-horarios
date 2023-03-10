@@ -38,7 +38,7 @@ function setWeekClassesSettings(
   time: Time[],
 ) {
   let newWeekClasses = []
-  newWeekClasses = findPositionY({ weekClasses, time })
+  // newWeekClasses = findPositionY({ weekClasses, time })
   newWeekClasses = createLinkToEachClass({
     weekClasses,
     title,
@@ -53,6 +53,8 @@ function setWeekClassesSettings(
 export const GridContext = createContext({} as GridContextType)
 
 export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
+  console.log(weekClasses)
+
   const [settingsState, dispatch] = useReducer(
     settingsReducer,
     {
