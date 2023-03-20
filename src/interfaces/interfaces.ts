@@ -11,7 +11,7 @@ export interface Classes {
   size: number
   teachers?: string[]
   classroom?: string
-  students?: string
+  students?: string[]
   time: string
   positionY?: number
   links?: LinksType[]

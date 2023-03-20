@@ -53,7 +53,7 @@ function setWeekClassesSettings(
 export const GridContext = createContext({} as GridContextType)
 
 export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
-  console.log(weekClasses)
+  // console.log(weekClasses)
 
   const [settingsState, dispatch] = useReducer(
     settingsReducer,

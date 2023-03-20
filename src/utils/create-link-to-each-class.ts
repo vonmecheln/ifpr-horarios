@@ -20,22 +20,17 @@ export function createLinkToEachClass(props: {
       ...week,
       dayClasses: week.dayClasses.map((el) => {
         el.links = []
-        if (props.title === el.students) {
-          el.links = [createLink(el.classroom, 'Sala')]
-        } else if (props.title === el.classroom) {
-          el.links = [createLink(el.students, 'Turma')]
-        }
-
         el.teachers.forEach((teacher) => {
-          if (props.title === teacher) {
-            el.links = [
-              createLink(el.classroom, 'Sala'),
-              createLink(el.students, 'Turma'),
-            ]
-          } else if (props.title === el.students) {
+          if (props.title !== teacher) {
             el.links.push(createLink(teacher, 'Professor'))
-          } else if (props.title === el.classroom) {
-            el.links.push(createLink(teacher, 'Professor'))
+          }
+        })
+        if (props.title !== el.classroom) {
+          el.links.push(createLink(el.classroom, 'Sala'))
+        }
+        el.students.forEach((student) => {
+          if (props.title !== student) {
+            el.links.push(createLink(student, 'Turma'))
           }
         })
         return el

@@ -24,11 +24,6 @@ export function reduceTimetable({
   const positionOfFirstClass = Math.min(...positions)
   const positionOfLastClass = Math.max(...positions) + 1
 
-  console.log(positions)
-
-  console.log(positionOfFirstClass)
-  console.log(positionOfLastClass)
-
   if (timetableView === 'condensed') {
     time = time.slice(positionOfFirstClass, positionOfLastClass)
   } else if (timetableView === 'superCondensed') {
