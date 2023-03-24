@@ -8,6 +8,7 @@ export function defineColorBase(props: { weekClasses: Days[]; title: String }) {
       dayClasses: week.dayClasses.map((el) => {
         // let colorBase = props.title == el.teacher ? el.students : el.teacher
         const labels = []
+        labels.push(el.subject)
         el.teachers.forEach((teacher) => {
           if (props.title !== teacher) {
             labels.push(teacher)
@@ -23,7 +24,13 @@ export function defineColorBase(props: { weekClasses: Days[]; title: String }) {
         })
 
         const text = labels.join('-')
-        el.color = `${new ColorHash().hsl(text)}`
+        const ch = new ColorHash({
+          lightness: 0.5,
+          hue: { min: 90, max: 360 },
+          saturation: 0.45,
+        })
+
+        el.color = `${ch.hsl(text)}`
 
         return el
       }),
