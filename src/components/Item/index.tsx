@@ -5,6 +5,7 @@ import { createURL } from '@site/src/utils/create-url-link'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { createGridArea } from '../../utils/create-grid-area'
+import Link from '@docusaurus/Link'
 
 export function Item(props: { timetable: Classes }) {
   const colorItem = props.timetable.color.split(',')
@@ -23,9 +24,9 @@ export function Item(props: { timetable: Classes }) {
         </strong>
         {props.timetable.links.map((a) => {
           return (
-            <a title={a.title} href={a.url} key={a.url}>
+            <Link title={a.title} to={a.url} key={a.url}>
               {a.title}
-            </a>
+            </Link>
           )
         })}
       </ItemContent>
