@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 const isBuildFast = false && !!process.env.BUILD_FAST
 const isVersioningDisabled = false
-const isDev = true
+const isDev = false
 const isDeployPreview = false
 const isBranchDeploy = false
 
@@ -95,7 +95,7 @@ const config = {
             } else if (!isVersioningDisabled) {
               let includeVersions = [...versions]
               includeVersions = includeVersions.filter(isCurrentVersions)
-              includeVersions = includeVersions.slice(0, 2)
+              includeVersions = includeVersions.slice(0, 5)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
                 includeVersions.push('current')
