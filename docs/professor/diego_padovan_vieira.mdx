@@ -2,12 +2,25 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Diego Padovan Vieira",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Gestão Empresarial",
+          subject: "Empreendedorismo (PPC2020)",
+          size: 2,
+          teachers: [
+            "Diego Padovan Vieira"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "ELE2022"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Empreendedorismo",
           size: 2,
           teachers: [
             "Diego Padovan Vieira"
@@ -19,16 +32,16 @@ const data = {
           time: "21:00 - 21:50"
         },
         {
-          subject: "Plano de Negócio",
+          subject: "Gestão de pessoas",
           size: 2,
           teachers: [
             "Diego Padovan Vieira"
           ],
-          classroom: "Sala 6-2",
+          classroom: "Sala 8-2",
           students: [
-            "TGC2021"
+            "COM2023"
           ],
-          time: "19:00 - 19:50"
+          time: "15:05 - 15:55"
         }
       ]
     },
@@ -40,7 +53,19 @@ const data = {
       dayName: "Quarta-Feira",
       dayClasses: [
         {
-          subject: "Gestão Empresarial",
+          subject: "Gestão da Informação e documentação",
+          size: 2,
+          teachers: [
+            "Diego Padovan Vieira"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2022"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Gestão da informação, comunicação e documentação",
           size: 2,
           teachers: [
             "Diego Padovan Vieira"
@@ -49,19 +74,7 @@ const data = {
           students: [
             "TGC2023"
           ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Gestão de pessoas",
-          size: 2,
-          teachers: [
-            "Diego Padovan Vieira"
-          ],
-          classroom: "Sala 8-2",
-          students: [
-            "COM2023"
-          ],
-          time: "07:30 - 08:20"
+          time: "21:00 - 21:50"
         }
       ]
     },
@@ -69,31 +82,19 @@ const data = {
       dayName: "Quinta-Feira",
       dayClasses: [
         {
-          subject: "Planejamento e Gestão estratégica",
-          size: 2,
+          subject: "Orçamento e compras públicas",
+          size: 1,
           teachers: [
             "Diego Padovan Vieira"
           ],
-          classroom: "Sala 6-2",
+          classroom: "",
           students: [
-            "TGC2021"
+            "EGE2023"
           ],
-          time: "19:00 - 19:50"
+          time: "19:50 - 20:40"
         },
         {
-          subject: "Projeto Integrador I",
-          size: 2,
-          teachers: [
-            "Diego Padovan Vieira"
-          ],
-          classroom: "Sala 8-2",
-          students: [
-            "COM2023"
-          ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Técnicas de Vendas e Negociação",
+          subject: "Plano de Negócio",
           size: 2,
           teachers: [
             "Diego Padovan Vieira"
@@ -110,7 +111,19 @@ const data = {
       dayName: "Sexta-Feira",
       dayClasses: [
         {
-          subject: "Fundamentos da Administração",
+          subject: "Marketing de Relacionamento",
+          size: 2,
+          teachers: [
+            "Diego Padovan Vieira"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "TGC2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Projeto Integrador I",
           size: 2,
           teachers: [
             "Diego Padovan Vieira"
@@ -120,30 +133,6 @@ const data = {
             "COM2023"
           ],
           time: "13:10 - 14:00"
-        },
-        {
-          subject: "Gestão Estratégica de Pessoas",
-          size: 2,
-          teachers: [
-            "Diego Padovan Vieira"
-          ],
-          classroom: "Sala 3-1",
-          students: [
-            "TGC2022"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Planejamento e Gestão estratégica",
-          size: 2,
-          teachers: [
-            "Diego Padovan Vieira"
-          ],
-          classroom: "Sala 6-2",
-          students: [
-            "TGC2021"
-          ],
-          time: "21:00 - 21:50"
         }
       ]
     }
@@ -158,10 +147,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -174,20 +159,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -198,8 +175,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -208,10 +185,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

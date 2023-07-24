@@ -2,24 +2,13 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Octavio Henrique Viana",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Desenho técnico e instalações agropecuárias",
-          size: 2,
-          teachers: [
-            "Octavio Henrique Viana"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: [
-            "AGR2023"
-          ],
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Mecanização Agrícola",
+          subject: "Irrigação e Drenagem",
           size: 2,
           teachers: [
             "Octavio Henrique Viana"
@@ -40,17 +29,17 @@ const data = {
           students: [
             "AGO2021"
           ],
-          time: "09:25 - 10:15"
+          time: "08:20 - 09:10"
         },
         {
-          subject: "Meteorologia e Bioclimatologia na Agropecuária",
-          size: 2,
+          subject: "Orientação de estágio supervisionado",
+          size: 1,
           teachers: [
             "Octavio Henrique Viana"
           ],
-          classroom: "Sala 11-2",
+          classroom: "Laboratório de Informatica C",
           students: [
-            "AGO2022"
+            "AGO2021"
           ],
           time: "07:30 - 08:20"
         }
@@ -62,7 +51,20 @@ const data = {
     },
     {
       dayName: "Quarta-Feira",
-      dayClasses: []
+      dayClasses: [
+        {
+          subject: "Topografia e Geoprocessamento",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
     },
     {
       dayName: "Quinta-Feira",
@@ -77,7 +79,7 @@ const data = {
           students: [
             "AGO2023 - Grupo A"
           ],
-          time: "15:05 - 15:55"
+          time: "13:10 - 14:00"
         },
         {
           subject: "Desenho técnico e topografia",
@@ -89,19 +91,7 @@ const data = {
           students: [
             "AGO2023 - Grupo B"
           ],
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Orientação de estágio supervisionado",
-          size: 1,
-          teachers: [
-            "Octavio Henrique Viana"
-          ],
-          classroom: "Laboratório de Informatica C",
-          students: [
-            "AGO2021"
-          ],
-          time: "09:25 - 10:15"
+          time: "15:05 - 15:55"
         }
       ]
     },
@@ -120,10 +110,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -136,20 +122,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -160,8 +138,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -170,10 +148,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

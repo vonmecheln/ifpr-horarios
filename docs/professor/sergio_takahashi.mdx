@@ -2,145 +2,74 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Sérgio Takahashi",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Desenho Técnico",
-          size: 2,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: [
-            "EIN2023 - Grupo B"
-          ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Desenho Técnico",
+          subject: "Metrologia",
           size: 1,
           teachers: [
             "Sérgio Takahashi"
           ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: [
-            "EIN2023 - Grupo B"
-          ],
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Processos de Fabricação 1",
-          size: 1,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Usinagem B4",
+          classroom: "Laboratório de Metrologia B4",
           students: [
             "EIN2022"
           ],
           time: "07:30 - 08:20"
         },
         {
-          subject: "Processos de Fabricação 1",
-          size: 1,
+          subject: "Tecnologia dos Materiais",
+          size: 4,
           teachers: [
             "Sérgio Takahashi"
           ],
-          classroom: "Laboratório de Usinagem B4",
+          classroom: "Sala 9-2",
           students: [
-            "EIN2022"
+            "ELM2023"
           ],
-          time: "08:20 - 09:10"
+          time: "19:00 - 19:50"
         }
       ]
     },
     {
       dayName: "Terça-Feira",
-      dayClasses: [
-        {
-          subject: "Metrologia",
-          size: 2,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Metrologia B4",
-          students: [
-            "ELM2022"
-          ],
-          time: "19:00 - 19:50"
-        }
-      ]
+      dayClasses: []
     },
     {
       dayName: "Quarta-Feira",
       dayClasses: [
         {
           subject: "Desenho Técnico",
-          size: 2,
+          size: 3,
           teachers: [
             "Sérgio Takahashi"
           ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          classroom: "Laboratório de Computação Aplicada",
           students: [
-            "EIN2023 - Grupo A"
+            "EIN2023 - Grupo B"
           ],
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Desenho Técnico",
-          size: 1,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
-          students: [
-            "EIN2023 - Grupo A"
-          ],
-          time: "11:05 - 11:55"
-        },
-        {
-          subject: "Desenho Técnico",
-          size: 2,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Computação Aplicada",
-          students: [
-            "ELE2023"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Desenho Técnico",
-          size: 2,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Computação Aplicada",
-          students: [
-            "ELE2023"
-          ],
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Metrologia",
-          size: 1,
-          teachers: [
-            "Sérgio Takahashi"
-          ],
-          classroom: "Laboratório de Metrologia B4",
-          students: [
-            "EIN2022"
-          ],
-          time: "08:20 - 09:10"
         }
       ]
     },
     {
       dayName: "Quinta-Feira",
-      dayClasses: []
+      dayClasses: [
+        {
+          subject: "Desenho Técnico",
+          size: 3,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "EIN2023 - Grupo A"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
     },
     {
       dayName: "Sexta-Feira",
@@ -157,10 +86,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -173,20 +98,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -197,8 +114,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -207,10 +124,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

@@ -2,10 +2,23 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Kátia Cristiane Kobus Novaes",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
+        {
+          subject: "Lingua Estrangeira Moderna 1 - Inglês",
+          size: 1,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "EIN2022"
+          ],
+          time: "08:20 - 09:10"
+        },
         {
           subject: "Lingua Portuguesa 4",
           size: 2,
@@ -24,42 +37,6 @@ const data = {
       dayName: "Terça-Feira",
       dayClasses: [
         {
-          subject: "Comunicação e Expressão",
-          size: 2,
-          teachers: [
-            "Kátia Cristiane Kobus Novaes"
-          ],
-          classroom: "Sala 9-2",
-          students: [
-            "ELM2023"
-          ],
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Comunicação e Expressão",
-          size: 2,
-          teachers: [
-            "Kátia Cristiane Kobus Novaes"
-          ],
-          classroom: "Sala 7-2",
-          students: [
-            "ELE2023"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Lingua Estrangeira Moderna 1 - Inglês",
-          size: 1,
-          teachers: [
-            "Kátia Cristiane Kobus Novaes"
-          ],
-          classroom: "Sala 12-2",
-          students: [
-            "EIN2022"
-          ],
-          time: "08:20 - 09:10"
-        },
-        {
           subject: "Lingua Portuguesa 3",
           size: 2,
           teachers: [
@@ -75,10 +52,27 @@ const data = {
     },
     {
       dayName: "Quarta-Feira",
-      dayClasses: []
+      dayClasses: [
+        {
+          subject: "Português Instrumental",
+          size: 2,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "ELE2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
     },
     {
       dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
       dayClasses: [
         {
           subject: "Lingua Portuguesa 1",
@@ -91,12 +85,7 @@ const data = {
             "EIN2023"
           ],
           time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      dayName: "Sexta-Feira",
-      dayClasses: [
+        },
         {
           subject: "Lingua Portuguesa 2",
           size: 2,
@@ -107,7 +96,7 @@ const data = {
           students: [
             "EIN2022"
           ],
-          time: "09:25 - 10:15"
+          time: "08:20 - 09:10"
         }
       ]
     }
@@ -122,10 +111,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -138,20 +123,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -162,8 +139,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -172,10 +149,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

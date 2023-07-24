@@ -2,21 +2,22 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Fabio Antônio da Silva",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Filosofia I",
+          subject: "Filosofia II",
           size: 1,
           teachers: [
             "Fabio Antônio da Silva"
           ],
-          classroom: "Sala 8",
+          classroom: "Sala 6",
           students: [
-            "IIW2023B"
+            "IIW2022B"
           ],
-          time: "07:30 - 08:20"
+          time: "11:05 - 11:55"
         },
         {
           subject: "Filosofia II",
@@ -29,6 +30,18 @@ const data = {
             "AGO2022"
           ],
           time: "14:00 - 14:50"
+        },
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 8",
+          students: [
+            "IIW2023B"
+          ],
+          time: "09:25 - 10:15"
         }
       ]
     },
@@ -45,17 +58,17 @@ const data = {
           students: [
             "EIN2023"
           ],
-          time: "10:15 - 11:05"
+          time: "09:25 - 10:15"
         },
         {
-          subject: "Filosofia 3",
+          subject: "Filosofia 4",
           size: 1,
           teachers: [
             "Fabio Antônio da Silva"
           ],
-          classroom: "Sala 15-2",
+          classroom: "Sala 2-2",
           students: [
-            "EIN2021"
+            "EIN2020"
           ],
           time: "08:20 - 09:10"
         },
@@ -69,7 +82,19 @@ const data = {
           students: [
             "IIW2023A"
           ],
-          time: "11:05 - 11:55"
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Filosofia I",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "IIW2023A"
+          ],
+          time: "14:00 - 14:50"
         },
         {
           subject: "Filosofia I",
@@ -93,19 +118,7 @@ const data = {
           students: [
             "AGO2022"
           ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Filosofia III",
-          size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 14-2",
-          students: [
-            "AGO2021"
-          ],
-          time: "15:55 - 16:45"
+          time: "15:05 - 15:55"
         }
       ]
     },
@@ -122,31 +135,19 @@ const data = {
           students: [
             "EIN2022"
           ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia 3",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Filosofia 4",
-          size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 2-2",
-          students: [
-            "EIN2020"
-          ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Filosofia I",
-          size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 9-2",
-          students: [
-            "IIW2023A"
-          ],
-          time: "11:05 - 11:55"
         },
         {
           subject: "Filosofia I",
@@ -158,7 +159,7 @@ const data = {
           students: [
             "AGO2023"
           ],
-          time: "08:20 - 09:10"
+          time: "07:30 - 08:20"
         }
       ]
     },
@@ -171,6 +172,18 @@ const data = {
       dayClasses: [
         {
           subject: "Filosofia I",
+          size: 2,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 8",
+          students: [
+            "IIW2023B"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sociologia I",
           size: 1,
           teachers: [
             "Fabio Antônio da Silva"
@@ -180,30 +193,6 @@ const data = {
             "IIW2023B"
           ],
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Filosofia II",
-          size: 1,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 6",
-          students: [
-            "IIW2022B"
-          ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Sociologia I",
-          size: 2,
-          teachers: [
-            "Fabio Antônio da Silva"
-          ],
-          classroom: "Sala 8",
-          students: [
-            "IIW2023B"
-          ],
-          time: "10:15 - 11:05"
         }
       ]
     }
@@ -218,10 +207,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -234,20 +219,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -258,8 +235,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -268,10 +245,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

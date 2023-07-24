@@ -2,13 +2,14 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Guilherme de Loreno",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
           subject: "Matemática I",
-          size: 1,
+          size: 2,
           teachers: [
             "Guilherme de Loreno"
           ],
@@ -16,23 +17,11 @@ const data = {
           students: [
             "IIW2023B"
           ],
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Matemática I",
-          size: 1,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 8",
-          students: [
-            "IIW2023B"
-          ],
-          time: "11:05 - 11:55"
+          time: "15:05 - 15:55"
         },
         {
           subject: "Matemática II",
-          size: 1,
+          size: 2,
           teachers: [
             "Guilherme de Loreno"
           ],
@@ -40,19 +29,7 @@ const data = {
           students: [
             "IIW2022B"
           ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Matemática II",
-          size: 1,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 6",
-          students: [
-            "IIW2022B"
-          ],
-          time: "08:20 - 09:10"
+          time: "13:10 - 14:00"
         }
       ]
     },
@@ -60,68 +37,20 @@ const data = {
       dayName: "Terça-Feira",
       dayClasses: [
         {
-          subject: "Bioestatística",
-          size: 2,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 16-2",
-          students: [
-            "BIO2020"
-          ],
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Fundamentos de Matemática",
-          size: 2,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 9-2",
-          students: [
-            "ELM2023"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
           subject: "Matemática I",
-          size: 1,
+          size: 2,
           teachers: [
             "Guilherme de Loreno"
           ],
           classroom: "Sala 8",
           students: [
             "IIW2023B"
-          ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Matemática I",
-          size: 1,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 8",
-          students: [
-            "IIW2023B"
-          ],
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Matemática II",
-          size: 1,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 6",
-          students: [
-            "IIW2022B"
           ],
           time: "10:15 - 11:05"
         },
         {
           subject: "Matemática II",
-          size: 1,
+          size: 2,
           teachers: [
             "Guilherme de Loreno"
           ],
@@ -129,29 +58,12 @@ const data = {
           students: [
             "IIW2022B"
           ],
-          time: "11:05 - 11:55"
+          time: "07:30 - 08:20"
         }
       ]
     },
     {
       dayName: "Quarta-Feira",
-      dayClasses: [
-        {
-          subject: "Matemática 4",
-          size: 2,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 3-1",
-          students: [
-            "EIN2020"
-          ],
-          time: "10:15 - 11:05"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
       dayClasses: [
         {
           subject: "Matemática 2",
@@ -163,8 +75,25 @@ const data = {
           students: [
             "EIN2022"
           ],
-          time: "07:30 - 08:20"
+          time: "10:15 - 11:05"
         },
+        {
+          subject: "Matemática 4",
+          size: 2,
+          teachers: [
+            "Guilherme de Loreno"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "EIN2020"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Matemática 4",
           size: 1,
@@ -176,30 +105,6 @@ const data = {
             "EIN2020"
           ],
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Fundamentos da Matemática",
-          size: 2,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 7-2",
-          students: [
-            "ELE2023"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Fundamentos da Matemática",
-          size: 2,
-          teachers: [
-            "Guilherme de Loreno"
-          ],
-          classroom: "Sala 7-2",
-          students: [
-            "ELE2023"
-          ],
-          time: "21:00 - 21:50"
         }
       ]
     },
@@ -218,10 +123,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -234,20 +135,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -258,8 +151,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -268,10 +161,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

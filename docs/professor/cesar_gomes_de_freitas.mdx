@@ -2,108 +2,22 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Cesar Gomes de Freitas",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
-          subject: "Gestão de Compras e Estoques",
-          size: 2,
-          teachers: [
-            "Cesar Gomes de Freitas"
-          ],
-          classroom: "Sala 3-1",
-          students: [
-            "TGC2022"
-          ],
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      dayName: "Terça-Feira",
-      dayClasses: [
-        {
-          subject: "Fundamentos da Contabilidade",
-          size: 2,
-          teachers: [
-            "Cesar Gomes de Freitas"
-          ],
-          classroom: "Sala 8-2",
-          students: [
-            "COM2023"
-          ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Gestão de Produção",
-          size: 2,
-          teachers: [
-            "Cesar Gomes de Freitas"
-          ],
-          classroom: "Sala 8-2",
-          students: [
-            "ELM2022"
-          ],
-          time: "21:00 - 21:50"
-        },
-        {
-          subject: "Logística aplicada",
+          subject: "Gestão da Produção",
           size: 2,
           teachers: [
             "Cesar Gomes de Freitas"
           ],
           classroom: "Sala 6-2",
           students: [
-            "TGC2021"
-          ],
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      dayName: "Quarta-Feira",
-      dayClasses: [
-        {
-          subject: "Contabilidade de Custos e Formação de Preços",
-          size: 2,
-          teachers: [
-            "Cesar Gomes de Freitas"
-          ],
-          classroom: "Sala 3-1",
-          students: [
-            "TGC2022"
+            "ELE2022"
           ],
           time: "21:00 - 21:50"
-        },
-        {
-          subject: "Logística aplicada",
-          size: 2,
-          teachers: [
-            "Cesar Gomes de Freitas"
-          ],
-          classroom: "Sala 6-2",
-          students: [
-            "TGC2021"
-          ],
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
-      dayClasses: [
-        {
-          subject: "Contabilidade de Custos e Formação de Preços",
-          size: 2,
-          teachers: [
-            "Cesar Gomes de Freitas"
-          ],
-          classroom: "Sala 3-1",
-          students: [
-            "TGC2022"
-          ],
-          time: "19:00 - 19:50"
         },
         {
           subject: "Gestão e Empreendedorismo Rural",
@@ -118,14 +32,88 @@ const data = {
           time: "10:15 - 11:05"
         },
         {
-          subject: "Gestão e Empreendedorismo Rural",
+          subject: "Introdução a Contabilidade",
           size: 2,
           teachers: [
             "Cesar Gomes de Freitas"
           ],
-          classroom: "Sala 14-2",
+          classroom: "Sala 2-2",
           students: [
-            "AGR2022"
+            "TGC2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Logística aplicada",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2022"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Logística aplicada",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2022"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Análise Econômica de Mercado",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "TGC2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Fundamentos da Contabilidade",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Introdução a Contabilidade",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "TGC2023"
           ],
           time: "21:00 - 21:50"
         }
@@ -146,10 +134,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -162,20 +146,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -186,8 +162,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -196,10 +172,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

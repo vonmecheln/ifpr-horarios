@@ -2,6 +2,7 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Renata Carolina Pereira",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
@@ -16,13 +17,26 @@ const data = {
           students: [
             "AGO2022"
           ],
-          time: "15:05 - 15:55"
+          time: "13:10 - 14:00"
         }
       ]
     },
     {
       dayName: "Terça-Feira",
       dayClasses: [
+        {
+          subject: "Artes 3",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro",
+            "Renata Carolina Pereira"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "EIN2020"
+          ],
+          time: "07:30 - 08:20"
+        },
         {
           subject: "Arte I",
           size: 1,
@@ -33,31 +47,7 @@ const data = {
           students: [
             "IIW2022A"
           ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Artes 1",
-          size: 1,
-          teachers: [
-            "Renata Carolina Pereira"
-          ],
-          classroom: "Sala 7-2",
-          students: [
-            "EIN2023"
-          ],
           time: "09:25 - 10:15"
-        },
-        {
-          subject: "Artes I",
-          size: 1,
-          teachers: [
-            "Renata Carolina Pereira"
-          ],
-          classroom: "Sala 6-2",
-          students: [
-            "AGO2023"
-          ],
-          time: "08:20 - 09:10"
         },
         {
           subject: "Artes II",
@@ -69,7 +59,7 @@ const data = {
           students: [
             "AGO2022"
           ],
-          time: "15:05 - 15:55"
+          time: "15:55 - 16:45"
         }
       ]
     },
@@ -86,7 +76,19 @@ const data = {
           students: [
             "IIW2022A"
           ],
-          time: "11:05 - 11:55"
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Artes 1",
+          size: 1,
+          teachers: [
+            "Renata Carolina Pereira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "EIN2023"
+          ],
+          time: "08:20 - 09:10"
         },
         {
           subject: "Artes 2",
@@ -102,7 +104,7 @@ const data = {
         },
         {
           subject: "Artes I",
-          size: 1,
+          size: 2,
           teachers: [
             "Renata Carolina Pereira"
           ],
@@ -110,7 +112,7 @@ const data = {
           students: [
             "AGO2023"
           ],
-          time: "09:25 - 10:15"
+          time: "10:15 - 11:05"
         }
       ]
     },
@@ -133,10 +135,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -149,20 +147,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -173,8 +163,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -183,10 +173,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

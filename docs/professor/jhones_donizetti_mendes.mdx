@@ -2,6 +2,7 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Jhones Donizetti Mendes",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
@@ -16,37 +17,8 @@ const data = {
           students: [
             "EIN2023"
           ],
-          time: "08:20 - 09:10"
+          time: "07:30 - 08:20"
         },
-        {
-          subject: "Geografia I",
-          size: 1,
-          teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 6-2",
-          students: [
-            "AGO2023"
-          ],
-          time: "10:15 - 11:05"
-        },
-        {
-          subject: "Geografia II",
-          size: 1,
-          teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 11-2",
-          students: [
-            "AGO2022"
-          ],
-          time: "09:25 - 10:15"
-        }
-      ]
-    },
-    {
-      dayName: "Terça-Feira",
-      dayClasses: [
         {
           subject: "Geografia 2",
           size: 1,
@@ -57,49 +29,8 @@ const data = {
           students: [
             "EIN2022"
           ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Geografia 4",
-          size: 1,
-          teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 2-2",
-          students: [
-            "EIN2020"
-          ],
           time: "09:25 - 10:15"
         },
-        {
-          subject: "Geografia II",
-          size: 1,
-          teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 11-2",
-          students: [
-            "AGO2022"
-          ],
-          time: "08:20 - 09:10"
-        },
-        {
-          subject: "Trabalho de conclusão de curso I",
-          size: 2,
-          teachers: [
-            "Jhones Donizetti Mendes"
-          ],
-          classroom: "Sala 16-2",
-          students: [
-            "BIO2020"
-          ],
-          time: "19:00 - 19:50"
-        }
-      ]
-    },
-    {
-      dayName: "Quarta-Feira",
-      dayClasses: [
         {
           subject: "Geografia 3",
           size: 1,
@@ -110,11 +41,28 @@ const data = {
           students: [
             "EIN2021"
           ],
-          time: "09:25 - 10:15"
+          time: "08:20 - 09:10"
         },
         {
+          subject: "Geografia II",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "AGO2022"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
           subject: "Geografia 4",
-          size: 1,
+          size: 2,
           teachers: [
             "Jhones Donizetti Mendes"
           ],
@@ -122,11 +70,11 @@ const data = {
           students: [
             "EIN2020"
           ],
-          time: "08:20 - 09:10"
+          time: "10:15 - 11:05"
         },
         {
           subject: "Geografia I",
-          size: 1,
+          size: 2,
           teachers: [
             "Jhones Donizetti Mendes"
           ],
@@ -134,9 +82,26 @@ const data = {
           students: [
             "AGO2023"
           ],
-          time: "10:15 - 11:05"
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Trabalho de conclusão de curso I",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes",
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_ESTÁGIO"
+          ],
+          time: "19:00 - 19:50"
         }
       ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
     },
     {
       dayName: "Quinta-Feira",
@@ -157,10 +122,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -173,20 +134,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -197,8 +150,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -207,10 +160,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

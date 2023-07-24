@@ -2,13 +2,14 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Renato Lada Guerreiro",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
       dayClasses: [
         {
           subject: "Geografia I",
-          size: 1,
+          size: 2,
           teachers: [
             "Renato Lada Guerreiro"
           ],
@@ -16,82 +17,13 @@ const data = {
           students: [
             "IIW2022B"
           ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Geologia e paleontologia",
-          size: 2,
-          teachers: [
-            "Renato Lada Guerreiro"
-          ],
-          classroom: "Sala 1-2",
-          students: [
-            "BIO2020"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Geologia e paleontologia",
-          size: 2,
-          teachers: [
-            "Renato Lada Guerreiro"
-          ],
-          classroom: "Sala 1-2",
-          students: [
-            "BIO2020"
-          ],
-          time: "21:00 - 21:50"
+          time: "07:30 - 08:20"
         }
       ]
     },
     {
       dayName: "Terça-Feira",
-      dayClasses: []
-    },
-    {
-      dayName: "Quarta-Feira",
       dayClasses: [
-        {
-          subject: "Geografia I",
-          size: 1,
-          teachers: [
-            "Renato Lada Guerreiro"
-          ],
-          classroom: "Sala 6",
-          students: [
-            "IIW2022B"
-          ],
-          time: "11:05 - 11:55"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
-      dayClasses: [
-        {
-          subject: "Geografia I",
-          size: 1,
-          teachers: [
-            "Renato Lada Guerreiro"
-          ],
-          classroom: "Sala 13-2",
-          students: [
-            "IIW2022A"
-          ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Geografia I",
-          size: 1,
-          teachers: [
-            "Renato Lada Guerreiro"
-          ],
-          classroom: "Sala 13-2",
-          students: [
-            "IIW2022A"
-          ],
-          time: "08:20 - 09:10"
-        },
         {
           subject: "Geografia II",
           size: 2,
@@ -102,9 +34,30 @@ const data = {
           students: [
             "IIW2021"
           ],
-          time: "09:25 - 10:15"
+          time: "10:15 - 11:05"
         }
       ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia I",
+          size: 2,
+          teachers: [
+            "Renato Lada Guerreiro"
+          ],
+          classroom: "Sala 13-2",
+          students: [
+            "IIW2022A"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: []
     },
     {
       dayName: "Sexta-Feira",
@@ -121,10 +74,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -137,20 +86,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -161,8 +102,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -171,10 +112,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

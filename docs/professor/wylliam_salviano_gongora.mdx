@@ -2,39 +2,26 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Wylliam Salviano Gongora",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
-      dayClasses: [
-        {
-          subject: "Máquinas Elétricas e Acionamentos",
-          size: 2,
-          teachers: [
-            "Wylliam Salviano Gongora"
-          ],
-          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
-          students: [
-            "ELM2022"
-          ],
-          time: "21:00 - 21:50"
-        }
-      ]
+      dayClasses: []
     },
     {
       dayName: "Terça-Feira",
       dayClasses: [
         {
-          subject: "Física 4",
+          subject: "Manutenção Elétrica Industrial",
           size: 2,
           teachers: [
-            "Bruno Garcia Bonfim",
             "Wylliam Salviano Gongora"
           ],
-          classroom: "Laboratório de Física",
+          classroom: "Sala 6-2",
           students: [
-            "EIN2020"
+            "ELE2022"
           ],
-          time: "10:15 - 11:05"
+          time: "19:00 - 19:50"
         }
       ]
     },
@@ -46,8 +33,20 @@ const data = {
       dayName: "Quinta-Feira",
       dayClasses: [
         {
+          subject: "Elementos de automação (PPC2020)",
+          size: 4,
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
+          classroom: "Laboratório de Automação e Robótica Industrial",
+          students: [
+            "ELE2022"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
           subject: "Máquinas e Acionamentos",
-          size: 2,
+          size: 3,
           teachers: [
             "Wylliam Salviano Gongora"
           ],
@@ -56,48 +55,25 @@ const data = {
             "EIN2021"
           ],
           time: "07:30 - 08:20"
-        },
-        {
-          subject: "Máquinas e Acionamentos",
-          size: 1,
-          teachers: [
-            "Wylliam Salviano Gongora"
-          ],
-          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
-          students: [
-            "EIN2021"
-          ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Máquinas elétricas",
-          size: 2,
-          teachers: [
-            "Wylliam Salviano Gongora"
-          ],
-          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
-          students: [
-            "ELE2022"
-          ],
-          time: "19:00 - 19:50"
-        },
-        {
-          subject: "Máquinas elétricas",
-          size: 2,
-          teachers: [
-            "Wylliam Salviano Gongora"
-          ],
-          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
-          students: [
-            "ELE2022"
-          ],
-          time: "21:00 - 21:50"
         }
       ]
     },
     {
       dayName: "Sexta-Feira",
-      dayClasses: []
+      dayClasses: [
+        {
+          subject: "Projetos Elétricos Industriais",
+          size: 4,
+          teachers: [
+            "Wylliam Salviano Gongora"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "ELM2022"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
     }
   ],
   time: [
@@ -108,10 +84,6 @@ const data = {
     {
       time: "08:20 - 09:10",
       size: 50
-    },
-    {
-      time: "09:10 - 09:25",
-      size: 15
     },
     {
       time: "09:25 - 10:15",
@@ -126,20 +98,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -150,8 +114,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -160,10 +124,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

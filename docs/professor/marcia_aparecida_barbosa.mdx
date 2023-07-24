@@ -2,76 +2,79 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Marcia Aparecida Barbosa",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
-      dayClasses: []
-    },
-    {
-      dayName: "Terça-Feira",
-      dayClasses: []
-    },
-    {
-      dayName: "Quarta-Feira",
       dayClasses: [
         {
-          subject: "Estágio curricular supervisionado em biologia I",
-          size: 2,
+          subject: "Didática geral",
+          size: 4,
           teachers: [
             "Marcia Aparecida Barbosa"
           ],
-          classroom: "Sala 16-2",
+          classroom: "",
           students: [
-            "BIO2020"
+            "BIO_ESPECIAL_1"
           ],
           time: "19:00 - 19:50"
-        },
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Estágio curricular supervisionado 1421/496/2039",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira",
+            "Marcia Aparecida Barbosa"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "BIO_ESPECIAL_ESTÁGIO"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
         {
           subject: "Estágio curricular supervisionado em ciências I",
           size: 1,
           teachers: [
             "Marcia Aparecida Barbosa"
           ],
-          classroom: "Sala 12-2",
+          classroom: "",
           students: [
-            "BIO_ESPECIAL"
+            "BIO_ESPECIAL_1"
           ],
           time: "21:50 - 22:40"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
-      dayClasses: []
-    },
-    {
-      dayName: "Sexta-Feira",
-      dayClasses: [
+        },
         {
-          subject: "PCCC 4 - Tecnologia da informação e comunicação na educação",
+          subject: "PCCC 5 - Teoria e prática para o ensino de ciências e biologia",
           size: 2,
           teachers: [
             "Marcia Aparecida Barbosa"
           ],
-          classroom: "Sala 12-2",
+          classroom: "",
           students: [
-            "BIO_ESPECIAL"
+            "BIO_ESPECIAL_2"
           ],
           time: "19:00 - 19:50"
-        },
-        {
-          subject: "PCCC 4 - Tecnologia da informação e comunicação na educação",
-          size: 1,
-          teachers: [
-            "Marcia Aparecida Barbosa"
-          ],
-          classroom: "Sala 12-2",
-          students: [
-            "BIO_ESPECIAL"
-          ],
-          time: "21:00 - 21:50"
         }
       ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
     }
   ],
   time: [
@@ -82,10 +85,6 @@ const data = {
     {
       time: "08:20 - 09:10",
       size: 50
-    },
-    {
-      time: "09:10 - 09:25",
-      size: 15
     },
     {
       time: "09:25 - 10:15",
@@ -100,20 +99,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -124,8 +115,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -134,10 +125,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",

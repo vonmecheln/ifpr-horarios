@@ -10,6 +10,10 @@ sidebar_position: 1
 
 ## Novidades
 
+23/jul/2023: Organização da Turma por Cursos e das Salas por Prédios
+
+![novidade_menu_grupo](./assets/novidade_menu_grupo.png)
+
 12/fev/2023: Ferramenta de busca
 
 01/fev/2023: Versão "Em desenvolvimento" para planejamento de trocas e proxímas atualizações

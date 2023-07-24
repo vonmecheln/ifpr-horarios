@@ -2,125 +2,83 @@ import { Grid } from "@site/src/components/Grid";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 const data = {
   title: "Eduardo Alberto Felippsen",
+  base: "",
   weekClasses: [
     {
       dayName: "Segunda-Feira",
-      dayClasses: []
-    },
-    {
-      dayName: "Terça-Feira",
       dayClasses: [
         {
-          subject: "Prototipação de Interfaces e Interação Humano-Computador",
+          subject: "Linguagens de Apresentação e Estruturação de conteúdos",
+          size: 4,
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
+          classroom: "Laboratório de Robótica",
+          students: [
+            "FPW2023"
+          ],
+          time: "14:00 - 14:50"
+        },
+        {
+          subject: "Projeto Integrador III",
           size: 2,
           teachers: [
             "Eduardo Alberto Felippsen"
           ],
-          classroom: "Laboratório de Informatica C",
+          classroom: "Sala 16-2",
           students: [
             "IIW2021"
           ],
-          time: "07:30 - 08:20"
-        },
-        {
-          subject: "Linguagem de Programação",
-          size: 2,
-          teachers: [
-            "Eduardo Alberto Felippsen",
-            "Olavo José Luiz Junior"
-          ],
-          classroom: "Sala 3",
-          students: [
-            "TPS2023-1"
-          ],
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Linguagem de Programação",
-          size: 2,
-          teachers: [
-            "Eduardo Alberto Felippsen",
-            "Olavo José Luiz Junior"
-          ],
-          classroom: "Sala 3",
-          students: [
-            "TPS2023-1"
-          ],
-          time: "15:05 - 15:55"
+          time: "10:15 - 11:05"
         }
       ]
     },
     {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
       dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
       dayClasses: [
+        {
+          subject: "Algoritmos e Linguagens de programação Web",
+          size: 2,
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
+          classroom: "Sala 3",
+          students: [
+            "FPW2023"
+          ],
+          time: "15:55 - 16:45"
+        },
+        {
+          subject: "Linguagens de Apresentação e Estruturação de conteúdos",
+          size: 2,
+          teachers: [
+            "Eduardo Alberto Felippsen"
+          ],
+          classroom: "Laboratório de Robótica",
+          students: [
+            "FPW2023"
+          ],
+          time: "14:00 - 14:50"
+        },
         {
           subject: "Projeto Integrador II",
           size: 2,
           teachers: [
             "Eduardo Alberto Felippsen"
           ],
-          classroom: "Laboratório de Informatica BioPark",
+          classroom: "Sala 6",
           students: [
             "IIW2022B"
           ],
-          time: "09:25 - 10:15"
-        },
-        {
-          subject: "Linguagem de Programação",
-          size: 2,
-          teachers: [
-            "Eduardo Alberto Felippsen",
-            "Olavo José Luiz Junior"
-          ],
-          classroom: "Sala 3",
-          students: [
-            "TPS2023-1"
-          ],
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Lógica de Programação",
-          size: 2,
-          teachers: [
-            "Olavo José Luiz Junior",
-            "Eduardo Alberto Felippsen"
-          ],
-          classroom: "Sala 3",
-          students: [
-            "TPS2023-1"
-          ],
-          time: "15:05 - 15:55"
-        }
-      ]
-    },
-    {
-      dayName: "Quinta-Feira",
-      dayClasses: [
-        {
-          subject: "Lógica de Programação",
-          size: 2,
-          teachers: [
-            "Olavo José Luiz Junior",
-            "Eduardo Alberto Felippsen"
-          ],
-          classroom: "Sala 3",
-          students: [
-            "TPS2023-1"
-          ],
-          time: "13:10 - 14:00"
-        },
-        {
-          subject: "Lógica de Programação",
-          size: 2,
-          teachers: [
-            "Olavo José Luiz Junior",
-            "Eduardo Alberto Felippsen"
-          ],
-          classroom: "Sala 3",
-          students: [
-            "TPS2023-1"
-          ],
-          time: "15:05 - 15:55"
+          time: "07:30 - 08:20"
         }
       ]
     },
@@ -139,10 +97,6 @@ const data = {
       size: 50
     },
     {
-      time: "09:10 - 09:25",
-      size: 15
-    },
-    {
       time: "09:25 - 10:15",
       size: 50
     },
@@ -155,20 +109,12 @@ const data = {
       size: 50
     },
     {
-      time: "11:55 - 13:10",
-      size: 75
-    },
-    {
       time: "13:10 - 14:00",
       size: 50
     },
     {
       time: "14:00 - 14:50",
       size: 50
-    },
-    {
-      time: "14:50 - 15:05",
-      size: 15
     },
     {
       time: "15:05 - 15:55",
@@ -179,8 +125,8 @@ const data = {
       size: 50
     },
     {
-      time: "16:45 - 19:00",
-      size: 135
+      time: "16:45 - 17:35",
+      size: 50
     },
     {
       time: "19:00 - 19:50",
@@ -189,10 +135,6 @@ const data = {
     {
       time: "19:50 - 20:40",
       size: 50
-    },
-    {
-      time: "20:40 - 21:00",
-      size: 20
     },
     {
       time: "21:00 - 21:50",
