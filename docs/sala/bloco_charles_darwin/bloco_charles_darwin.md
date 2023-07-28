@@ -1,7 +1,5 @@
 # BLOCO CHARLES DARWIN
 
 
-- [Laboratório de Informatica BioPark](laboratorio_de_informatica_biopark)
-- [Laboratório de Robótica](laboratorio_de_robotica)
-- [Sala 100](sala_100)
-- [Sala 3](sala_3)
+- [Sala 103](sala_103)
+- [Sala 104](sala_104)
