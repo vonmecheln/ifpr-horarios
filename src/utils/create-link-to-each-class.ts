@@ -5,9 +5,10 @@ import { createURL } from './create-url-link'
 // Qual entidade pertence a string????
 
 function createLink(title: string, entity: string) {
+  const url = title.split(' - ', 1)[0]
   return {
     title,
-    url: `../${entity}/${createURL(title)}`,
+    url: `../${entity}/${createURL(url)}`,
   }
 }
 
