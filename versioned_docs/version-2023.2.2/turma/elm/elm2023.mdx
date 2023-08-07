@@ -1,0 +1,185 @@
+---
+slug: /turma/elm2023
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+const data = {
+  title: "ELM2023",
+  base: "ELM",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Tecnologia dos Materiais",
+          size: 4,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Análise de Circuitos",
+          size: 4,
+          teachers: [
+            "Débora Hungaro Micheletti"
+          ],
+          classroom: "",
+          students: [
+            "ELE2023",
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Desenho Assistido por computador",
+          size: 2,
+          teachers: [
+            "Darlan Roque Dapieve"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Processos de Fabricação II",
+          size: 2,
+          teachers: [
+            "Fábio Fernandes da Silva"
+          ],
+          classroom: "Laboratório de Usinagem B4",
+          students: [
+            "ELM2023"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Eletrônica Analógica",
+          size: 4,
+          teachers: [
+            "Tiago Henrique dos Santos"
+          ],
+          classroom: "",
+          students: [
+            "ELE2023",
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Sistemas Digitais",
+          size: 4,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "",
+          students: [
+            "ELE2023",
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# ELM2023
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
