@@ -1,0 +1,350 @@
+---
+slug: /sala/sala_15-2
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+const data = {
+  title: "Sala 15-2",
+  base: "Bloco 2",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Lingua Estrangeira Moderna 2 - Ingles",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Projetos e Instalações Elétricas",
+          size: 2,
+          teachers: [
+            "Grazielli Bueno"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Segurança do Trabalho",
+          size: 1,
+          teachers: [
+            "Grazielli Bueno"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Geografia 3",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Piscicultura e Apicultura",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Culturas I",
+          size: 2,
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Fertilidade, Manejo e Conservação dos Solos",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Lingua Portuguesa 3",
+          size: 2,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Topografia e Geoprocessamento",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Matemática 3",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Fertilidade, Manejo e Conservação dos Solos",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Sociologia 3",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia 3",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Metodologia Científica e Técnicas de Apresentação de Trabalhos",
+          size: 2,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Piscicultura e Apicultura",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Culturas I",
+          size: 2,
+          teachers: [
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia 3",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Forragicultura e Pastagens",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Forragicultura e Pastagens",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "História 3",
+          size: 1,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Sala 15-2
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
