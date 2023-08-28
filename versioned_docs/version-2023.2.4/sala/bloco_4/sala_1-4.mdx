@@ -1,0 +1,243 @@
+---
+slug: /sala/sala_1-4
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+const data = {
+  title: "Sala 1-4",
+  base: "Bloco 4",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Projeto Integrador",
+          size: 1,
+          teachers: [
+            "Grazielli Bueno"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Lingua Portuguesa 4",
+          size: 2,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia 4",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Filosofia 4",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Geografia 4",
+          size: 2,
+          teachers: [
+            "Josiane Oliveira Medeiros Fuhr"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Artes 3",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro",
+            "Renata Carolina Pereira"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Lingua Estrangeira Moderna 3 - Inglês",
+          size: 1,
+          teachers: [
+            "Celina de Oliveira Barbosa Gomes"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Matemática 4",
+          size: 2,
+          teachers: [
+            "Guilherme de Loreno"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "História 4",
+          size: 2,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática 4",
+          size: 1,
+          teachers: [
+            "Guilherme de Loreno"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Manutenção Industrial e Gestão da Produção",
+          size: 1,
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2020"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Sala 1-4
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
