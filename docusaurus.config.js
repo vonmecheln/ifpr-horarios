@@ -94,10 +94,11 @@ const config = {
               return ['current']
             } else if (!isVersioningDisabled) {
               let includeVersions = [...versions]
-              includeVersions = includeVersions.filter(isCurrentVersions)
+              // includeVersions = includeVersions.filter(isCurrentVersions)
               // includeVersions = includeVersions.slice(0, 5)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
+                includeVersions = includeVersions.slice(0, 1)
                 includeVersions.push('current')
               }
 
