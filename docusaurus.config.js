@@ -10,10 +10,16 @@ const isDev = false
 const isDeployPreview = false
 const isBranchDeploy = false
 
-const prefixCurrentVersions = '2023'
+const prefixCurrentVersions = ['2022', '2023']
 
 function isCurrentVersions(value) {
-  return value.toString().startsWith(prefixCurrentVersions)
+  // return true
+  let result = false
+  prefixCurrentVersions.forEach((item, index) => {
+    result = result || value.toString().startsWith(item)
+  })
+
+  return result
 }
 
 function renameVersion(value) {
@@ -94,8 +100,8 @@ const config = {
               return ['current']
             } else if (!isVersioningDisabled) {
               let includeVersions = [...versions]
-              // includeVersions = includeVersions.filter(isCurrentVersions)
-              // includeVersions = includeVersions.slice(0, 5)
+              includeVersions = includeVersions.filter(isCurrentVersions)
+              includeVersions = includeVersions.slice(0, 2)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
                 includeVersions = includeVersions.slice(0, 1)

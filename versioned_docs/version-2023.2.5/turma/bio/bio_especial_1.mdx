@@ -1,0 +1,195 @@
+---
+slug: /turma/bio_especial_1
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+const data = {
+  title: "BIO_ESPECIAL_1",
+  base: "BIO",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Didática geral",
+          size: 4,
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Genética de populações e evolução",
+          size: 4,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "PCCC 8 - Origem e evolução da vida",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira",
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Ecologia de ecossistemas",
+          size: 2,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Ética profissional, cidadania e direitos humanos",
+          size: 3,
+          teachers: [
+            "Amilcar Machado Profeta Filho"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:50 - 20:40"
+        },
+        {
+          subject: "Estágio curricular supervisionado em ciências I",
+          size: 1,
+          teachers: [
+            "Marcia Aparecida Barbosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Fisiologia animal comparada",
+          size: 4,
+          teachers: [
+            "Leandro Luiz Borges"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# BIO_ESPECIAL_1
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
