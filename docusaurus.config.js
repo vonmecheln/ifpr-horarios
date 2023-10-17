@@ -10,7 +10,7 @@ const isDev = false
 const isDeployPreview = false
 const isBranchDeploy = false
 
-const prefixCurrentVersions = ['2022', '2023']
+const prefixCurrentVersions = ['2023']
 
 function isCurrentVersions(value) {
   // return true
@@ -101,7 +101,7 @@ const config = {
             } else if (!isVersioningDisabled) {
               let includeVersions = [...versions]
               includeVersions = includeVersions.filter(isCurrentVersions)
-              includeVersions = includeVersions.slice(0, 2)
+              // includeVersions = includeVersions.slice(0, 2)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
                 includeVersions = includeVersions.slice(0, 1)
