@@ -1,0 +1,11 @@
+FROM node:20.5.1-alpine AS build
+
+WORKDIR /app
+COPY package.json .
+RUN npm i
+COPY . .
+RUN npm run build
+
+FROM nginx
+COPY --from=bulid /app/build /usr/share/html
+
