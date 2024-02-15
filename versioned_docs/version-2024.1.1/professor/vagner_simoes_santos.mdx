@@ -1,0 +1,228 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Vagner Simões Santos",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Serviços em nuvem",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Tecnologias WEB",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "TADS_ESP"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "IIW2022A"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Serviços em nuvem",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "IIW2022A"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Informática Básica",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos",
+            "Novo professor Informática"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "IIW2022A"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Sistemas Gerenciadores de Conteúdo WEB",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica B - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Informática Básica",
+          size: 1,
+          teachers: [
+            "Vagner Simões Santos",
+            "Novo professor Informática"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Vagner Simões Santos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

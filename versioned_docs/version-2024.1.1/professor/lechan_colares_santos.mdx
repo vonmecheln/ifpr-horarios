@@ -1,0 +1,191 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Lechan Colares Santos",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Contabilidade de Custos e Formação de Preços",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "TGC2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Contabilidade de custo e formação de preços",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "15:05 - 15:55"
+        },
+        {
+          subject: "Gestão de compras e estoque",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos da Contabilidade",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "COM2024"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão de Compras e Estoques",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "TGC2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Orçamento e compras públicas",
+          size: 4,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "",
+          students: [
+            "EGE2024 - Modulo 3"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Contabilidade de Custos e Formação de Preços",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "TGC2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Lechan Colares Santos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

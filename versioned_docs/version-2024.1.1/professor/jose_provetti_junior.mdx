@@ -1,0 +1,214 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "José Provetti Júnior",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia I",
+          size: 2,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia I",
+          size: 2,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Filosofia III",
+          size: 2,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "IIW2022A"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia 1",
+          size: 1,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia II",
+          size: 2,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Filosofia III",
+          size: 1,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGO2022"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia 3",
+          size: 1,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "EIN2022"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia 2",
+          size: 1,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 13-2",
+          students: [
+            "EIN2023"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Filosofia II",
+          size: 1,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "IIW2023A"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# José Provetti Júnior
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

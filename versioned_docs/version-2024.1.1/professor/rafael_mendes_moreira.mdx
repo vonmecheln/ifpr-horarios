@@ -1,0 +1,250 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Rafael Mendes Moreira",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Biogeografia",
+          size: 2,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "BIO_ESPECIAL_2"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Geografia I",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "IIW2023A"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Geografia II",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "IIW2022A"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Geografia II",
+          size: 2,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia I",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "IIW2023A"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Geografia I",
+          size: 2,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia 1",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Geografia 2",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 13-2",
+          students: [
+            "EIN2023"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Geografia 3",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "EIN2022"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Geografia I",
+          size: 2,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia 4",
+          size: 2,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Geografia II",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "IIW2022A"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Rafael Mendes Moreira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,218 @@
+---
+slug: /turma/agr2024
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "AGR2024",
+  base: "AGR",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Desenho técnico e instalações agropecuárias",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Suinocultura",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Nutrição e alimentação animal",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Nutrição e alimentação animal",
+          size: 2,
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gênese, Morfologia e Classificação dos Solos",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Horticultura",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Gênese, Morfologia e Classificação dos Solos",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Horticultura",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Agroecologia e desenvolvimento rural sustentavel",
+          size: 2,
+          teachers: [
+            "Tatiane Martinazzo Portz"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# AGR2024
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

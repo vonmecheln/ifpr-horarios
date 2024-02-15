@@ -1,0 +1,210 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Novo professor Informática",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos de informática",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri",
+            "Novo professor Informática"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "08:20 - 09:10"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos de informática",
+          size: 1,
+          teachers: [
+            "Samuel Stephan Milczuk",
+            "Novo professor Informática"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2024A"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Informática Básica",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos",
+            "Novo professor Informática"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Informática Instrumental",
+          size: 2,
+          teachers: [
+            "Samuel Stephan Milczuk",
+            "Novo professor Informática"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "EIN2024"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Informática instrumental e aplicada",
+          size: 2,
+          teachers: [
+            "Novo professor Informática",
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "AGO2024 - Grupo B"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Fundamentos de informática",
+          size: 1,
+          teachers: [
+            "Samuel Stephan Milczuk",
+            "Novo professor Informática"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2024A"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Informática instrumental e aplicada",
+          size: 2,
+          teachers: [
+            "Novo professor Informática",
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "AGO2024 - Grupo A"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Informática Básica",
+          size: 1,
+          teachers: [
+            "Vagner Simões Santos",
+            "Novo professor Informática"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Novo professor Informática
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
