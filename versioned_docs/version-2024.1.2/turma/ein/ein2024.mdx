@@ -1,0 +1,331 @@
+---
+slug: /turma/ein2024
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "EIN2024",
+  base: "EIN",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade e Medidas Elétricas",
+          size: 3,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "EIN2024 - Grupo B"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Física 1",
+          size: 2,
+          teachers: [
+            "Novo professor Física",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Física",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Desenho Técnico",
+          size: 3,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: [
+            "EIN2024 - Grupo A"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Educação Física 1",
+          size: 1,
+          teachers: [
+            "Bruna Valeriano da Silva Lisboa"
+          ],
+          classroom: "Educação Física / Sala 1 B2",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Filosofia 1",
+          size: 1,
+          teachers: [
+            "José Provetti Júnior"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas",
+          size: 3,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "EIN2024 - Grupo A"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Desenho Técnico",
+          size: 3,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: [
+            "EIN2024 - Grupo B"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Química 1",
+          size: 1,
+          teachers: [
+            "Felipe Augusto Gorla",
+            "novo professor química"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "EIN2024"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Tecnologia dos Materiais",
+          size: 2,
+          teachers: [
+            "Fábio Fernandes da Silva"
+          ],
+          classroom: "Laboratório de Metrologia B4",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Lingua Portuguesa 1",
+          size: 2,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia 1",
+          size: 1,
+          teachers: [
+            "Everaldo Lorensetti"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Artes 1",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Geografia 1",
+          size: 1,
+          teachers: [
+            "Rafael Mendes Moreira"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Informática Instrumental",
+          size: 2,
+          teachers: [
+            "Samuel Stephan Milczuk",
+            "Novo professor Informática"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "EIN2024"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia 1",
+          size: 1,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "EIN2024"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Lingua Estrangeira Moderna - Espanhol",
+          size: 1,
+          teachers: [
+            "Michelli Cristina Galli"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "História 1",
+          size: 1,
+          teachers: [
+            "Suzane Conceição Pantolfi Tostes"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Matemática 1",
+          size: 2,
+          teachers: [
+            "Sérgio Augusto Dias Castro"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# EIN2024
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

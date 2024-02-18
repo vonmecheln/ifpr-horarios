@@ -1,0 +1,227 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Eliana Peliçon Pereira Figueira",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia I",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Sala 01 - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Biologia II",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Sala 02 - CR Toledo",
+          students: [
+            "IIW2023B"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Embriologia animal e histologia",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Sistemática filogenética",
+          size: 1,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Embriologia animal e histologia",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Parasitologia, higiene e saúde",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia I",
+          size: 2,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "AGO2024"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia 1",
+          size: 1,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "EIN2024"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Biologia 2",
+          size: 1,
+          teachers: [
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "EIN2023"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Biologia II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa",
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "AGO2023"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Eliana Peliçon Pereira Figueira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

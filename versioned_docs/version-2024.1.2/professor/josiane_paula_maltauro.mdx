@@ -1,0 +1,239 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Josiane Paula Maltauro",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Arte I",
+          size: 2,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 02 - CR Toledo",
+          students: [
+            "IIW2023B"
+          ],
+          time: "08:20 - 09:10"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Arte I",
+          size: 2,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "IIW2023A"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Artes 2",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 13-2",
+          students: [
+            "EIN2023"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Artes II",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Artes 3",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Artes I",
+          size: 2,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Cultura e Cinema Nacional I",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Cultura e Cinema Nacional II",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Artes 1",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Artes II",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Cultura e Cinema Nacional III",
+          size: 1,
+          teachers: [
+            "Josiane Paula Maltauro"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGO2022"
+          ],
+          time: "15:05 - 15:55"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Josiane Paula Maltauro
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

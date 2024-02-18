@@ -1,0 +1,166 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Cesar Gomes de Freitas",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão de Produção",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "ELM2023"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão e Empreendedorismo Rural",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGO2022"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Orientação de estágio supervisionado",
+          size: 1,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "AGO2022"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão e Empreendedorismo Rural",
+          size: 2,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Green Supply Chain Management e Logística Reversa",
+          size: 4,
+          teachers: [
+            "Cesar Gomes de Freitas"
+          ],
+          classroom: "",
+          students: [
+            "GCS2023 - Modulo 1"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Cesar Gomes de Freitas
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

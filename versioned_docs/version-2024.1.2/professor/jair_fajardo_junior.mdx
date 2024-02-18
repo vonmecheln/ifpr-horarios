@@ -1,0 +1,166 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Jair Fajardo Junior",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Elementos de Automação",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Automação e Robótica Industrial",
+          students: [
+            "EIN2022"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Eletricidade Básica",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELE2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Elementos de Automação",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Automação e Robótica Industrial",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Sistemas Digitais",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Automação e Robótica Industrial",
+          students: [
+            "EIN2023"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade Básica",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Jair Fajardo Junior
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,214 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Fabio Antônio da Silva",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia I",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 01 - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia III",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 03 - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 01 - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "13:10 - 14:00"
+        },
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 01 - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "15:55 - 16:45"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia I",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 01 - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Filosofia III",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 03 - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "08:20 - 09:10"
+        },
+        {
+          subject: "Sociologia II",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 03 - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia II",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 02 - CR Toledo",
+          students: [
+            "IIW2023B"
+          ],
+          time: "09:25 - 10:15"
+        },
+        {
+          subject: "Sociologia II",
+          size: 1,
+          teachers: [
+            "Fabio Antônio da Silva"
+          ],
+          classroom: "Sala 03 - CR Toledo",
+          students: [
+            "IIW2022B"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Fabio Antônio da Silva
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

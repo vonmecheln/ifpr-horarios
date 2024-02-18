@@ -1,0 +1,210 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Novo professor Elétrica [vaga: Grazielli]",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade e Medidas Elétricas",
+          size: 3,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "EIN2024 - Grupo B"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Eletricidade Básica",
+          size: 2,
+          teachers: [
+            "Alex Miyamoto Mussi",
+            "Novo professor Elétrica [vaga: Grazielli]"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELM2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Eletricidade Básica",
+          size: 2,
+          teachers: [
+            "Alex Miyamoto Mussi",
+            "Novo professor Elétrica [vaga: Grazielli]"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELM2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletricidade e Medidas Elétricas",
+          size: 3,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "EIN2024 - Grupo A"
+          ],
+          time: "09:25 - 10:15"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Segurança do Trabalho",
+          size: 1,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "EIN2022"
+          ],
+          time: "07:30 - 08:20"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Equipamentos elétricos e Sistema elétricos de potência",
+          size: 2,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "ELE2023"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Equipamentos elétricos e Sistema elétricos de potência",
+          size: 2,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "ELE2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Projetos e Instalações Elétricas",
+          size: 2,
+          teachers: [
+            "Novo professor Elétrica [vaga: Grazielli]",
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "EIN2022"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Novo professor Elétrica [vaga: Grazielli]
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

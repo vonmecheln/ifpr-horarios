@@ -1,0 +1,230 @@
+---
+slug: /turma/ele2024
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "ELE2024",
+  base: "ELE",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos da Matemática",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Eletricidade Básica",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELE2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos da Matemática",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "ELE2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Comunicação e Expressão",
+          size: 2,
+          teachers: [
+            "Kátia Cristiane Kobus Novaes"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Desenho Técnico",
+          size: 2,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: [
+            "ELE2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Desenho Técnico",
+          size: 2,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Desenho Técnico / Sala 5-2",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Informática Instrumental",
+          size: 2,
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "ELE2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Eletricidade Básica",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Física Aplicada",
+          size: 2,
+          teachers: [
+            "Bruno Garcia Bonfim"
+          ],
+          classroom: "Laboratório de Física",
+          students: [
+            "ELE2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Instrumentos de Medidas Elétricas",
+          size: 2,
+          teachers: [
+            "Juliano da Rocha Queiroz"
+          ],
+          classroom: "Laboratório de Eletricidade e Eletrônica B4",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# ELE2024
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

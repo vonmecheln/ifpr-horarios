@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 const isBuildFast = false && !!process.env.BUILD_FAST
 const isVersioningDisabled = false
-const isDev = true
+const isDev = false
 const isDeployPreview = false
 const isBranchDeploy = false
 
