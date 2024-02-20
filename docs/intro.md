@@ -15,7 +15,6 @@ sidebar_position: 1
 | [2024.1.v1](2024.1.1/intro) | 15/02/2024 | 17/02/2024 |
 | 2024.1.v2 | 18/02/2024 | Atual |
 
-
 ## Novidades
 
 17/02/2024: Tabela de versões e mudanças.
