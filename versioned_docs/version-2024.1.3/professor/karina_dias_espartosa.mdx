@@ -1,0 +1,241 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Karina Dias Espartosa",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Zoologia dos invertebrados I",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1 - Modulo 2"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Zoologia dos invertebrados I",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1 - Modulo 2"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Zoologia dos invertebrados II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_2 - Modulo 2"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Zoologia dos invertebrados II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_2 - Modulo 2"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Biologia 3",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa",
+            "Leandro Luiz Borges"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "EIN2022"
+          ],
+          time: "10:15 - 11:05"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Zoologia dos invertebrados II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_2 - Modulo 2"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Zoologia dos invertebrados II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_2 - Modulo 2"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Biologia II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa",
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "IIW2023A"
+          ],
+          time: "08:20 - 09:10"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Zoologia dos invertebrados I",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1 - Modulo 2"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Zoologia dos invertebrados I",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "",
+          students: [
+            "BIO_ESPECIAL_1 - Modulo 2"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Biologia II",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa",
+            "Eliana Peliçon Pereira Figueira"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "AGO2023"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Karina Dias Espartosa
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

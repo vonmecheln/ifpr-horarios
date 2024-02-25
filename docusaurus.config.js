@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 const isBuildFast = false && !!process.env.BUILD_FAST
 const isVersioningDisabled = false
-const isDev = false
+const isDev = true
 const isDeployPreview = false
 const isBranchDeploy = false
 
@@ -58,7 +58,7 @@ const config = {
     '"Com organização e tempo, acha-se o segredo de fazer tudo e bem feito." - Pitágoras',
   url: 'https://vonmecheln.github.io/',
   baseUrl: '/ifpr-horarios/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.gif',
 
@@ -104,7 +104,7 @@ const config = {
               // includeVersions = includeVersions.slice(0, 2)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
-                includeVersions = includeVersions.slice(0, 1)
+                // includeVersions = includeVersions.slice(0, 1)
                 includeVersions.push('current')
               }
 
