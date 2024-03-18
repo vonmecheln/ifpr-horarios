@@ -1,0 +1,249 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Elias Franco",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Agricultura geral",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Construções e Instalações Rurais",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "07:30 - 08:20"
+        },
+        {
+          subject: "Bovinocultura de Corte",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito",
+            "Elias Franco",
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Bovinocultura de Corte",
+          size: 2,
+          teachers: [
+            "Roberto Haruyoshi Ito",
+            "Elias Franco",
+            "Sônia Maria Mandotti"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGR2023"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gênese, Morfologia e Classificação dos Solos",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Horticultura",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Gênese, Morfologia e Classificação dos Solos",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Horticultura",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Modulo 2 (Mulheres Mil 2024)",
+          size: 5,
+          teachers: [
+            "Tatiane Martinazzo Portz",
+            "Sônia Maria Mandotti",
+            "Daniele de Almeida Paula",
+            "Karen Cristina Guedes Silva",
+            "Yohana Diel Saheli",
+            "Elias Franco",
+            "Michelli Cristina Galli",
+            "Haroldo Yutaka Misunaga"
+          ],
+          classroom: "",
+          students: [
+            "FAO2024-1"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Sistemas Agroflorestais",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 6-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "10:15 - 11:05"
+        },
+        {
+          subject: "Sociologia e extensão rural",
+          size: 2,
+          teachers: [
+            "Elias Franco"
+          ],
+          classroom: "Sala 2-2",
+          students: [
+            "AGO2022"
+          ],
+          time: "13:10 - 14:00"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Elias Franco
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

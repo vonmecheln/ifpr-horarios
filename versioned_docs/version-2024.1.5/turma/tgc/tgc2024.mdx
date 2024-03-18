@@ -1,0 +1,230 @@
+---
+slug: /turma/tgc2024
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "TGC2024",
+  base: "TGC",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Marketing e Comportamento do Consumidor",
+          size: 2,
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Informática e Automação Comercial",
+          size: 2,
+          teachers: [
+            "Sergio Ricardo Ferrazoli"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Legislação Aplicada e Direito do Consumidor",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Gestão, Educação e Matemática Financeira",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão Empresarial",
+          size: 2,
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Marketing e Comportamento do Consumidor",
+          size: 2,
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Métodos de técnicas de pesquisa",
+          size: 2,
+          teachers: [
+            "Haroldo Yutaka Misunaga"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2024"
+          ],
+          time: "21:00 - 21:50"
+        },
+        {
+          subject: "Legislação Aplicada e Direito do Consumidor",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50"
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão Empresarial",
+          size: 2,
+          teachers: [
+            "Alexandre José Schumacher"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50"
+        },
+        {
+          subject: "Gestão, Educação e Matemática Financeira",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2024"
+          ],
+          time: "21:00 - 21:50"
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# TGC2024
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
