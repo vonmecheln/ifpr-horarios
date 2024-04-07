@@ -15,35 +15,36 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "^0.11.0",
-    "@docusaurus/core": "^2.4.3",
-    "@docusaurus/plugin-google-gtag": "^2.4.3",
-    "@docusaurus/preset-classic": "^2.4.3",
-    "@mdx-js/react": "^1.6.22",
-    "@radix-ui/react-checkbox": "^1.0.1",
-    "@radix-ui/react-dialog": "^1.0.2",
-    "@radix-ui/react-radio-group": "^1.1.0",
-    "@radix-ui/react-slider": "^1.1.0",
-    "clsx": "^1.2.1",
+    "@docusaurus/core": "3.2.1",
+    "@docusaurus/plugin-google-gtag": "^3.2.1",
+    "@docusaurus/preset-classic": "3.2.1",
+    "@mdx-js/react": "^3.0.0",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-radio-group": "^1.1.3",
+    "@radix-ui/react-slider": "^1.1.2",
+    "clsx": "^2.0.0",
     "color-hash": "^2.0.2",
     "html2canvas": "^1.4.1",
-    "keen-slider": "^6.8.5",
+    "keen-slider": "^6.8.6",
     "phosphor-react": "^1.4.1",
-    "prism-react-renderer": "^1.3.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.6",
-    "use-react-screenshot": "^3.0.0"
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "styled-components": "^6.1.8",
+    "use-react-screenshot": "^4.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.4.3",
-    "@rocketseat/eslint-config": "^1.2.0",
-    "@tsconfig/docusaurus": "^1.0.5",
-    "@types/color-hash": "^1.0.2",
-    "@types/react-dom": "^18.0.10",
-    "@types/styled-components": "^5.1.26",
-    "eslint": "^8.35.0",
-    "typescript": "^4.7.4"
+    "@docusaurus/module-type-aliases": "3.2.1",
+    "@docusaurus/tsconfig": "3.2.1",
+    "@docusaurus/types": "3.2.1",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@tsconfig/docusaurus": "^2.0.3",
+    "@types/color-hash": "^1.0.5",
+    "@types/react-dom": "^18.2.24",
+    "@types/styled-components": "^5.1.34",
+    "eslint": "^9.0.0",
+    "typescript": "~5.2.2"
   },
   "browserslist": {
     "production": [
@@ -52,12 +53,12 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
     ]
   },
   "engines": {
-    "node": ">=16.14"
+    "node": ">=18.0"
   }
 }

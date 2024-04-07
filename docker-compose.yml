@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  docusaurus:
+    build: .
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    working_dir: /app
+    # command: yarn start --host 0.0.0.0 --port 35729

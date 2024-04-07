@@ -14,7 +14,7 @@ export const Cell = styled.div<{ gridArea: string }>`
   padding: 0.4em;
 
   /* border: 1px solid var(--border-cell); */
-  border-radius: 5px;
+  border-radius: 0px;
 
   color: var(--text-cell);
   background-color: var(--background-cell);
