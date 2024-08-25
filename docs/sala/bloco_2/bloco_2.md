@@ -1,6 +1,7 @@
 # BLOCO 2
 
 
+- [Educação Física / Sala 1 B2](educacao_fisica___sala_1_b2)
 - [Laboratório de Automação e Robótica Industrial](laboratorio_de_automacao_e_robotica_industrial)
 - [Laboratório de Informatica C](laboratorio_de_informatica_c)
 - [Sala 11-2](sala_11-2)
