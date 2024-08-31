@@ -3,7 +3,6 @@
 
 - [Educação Física / Sala 1 B2](educacao_fisica___sala_1_b2)
 - [Laboratório de Automação e Robótica Industrial](laboratorio_de_automacao_e_robotica_industrial)
-- [Laboratório de Desenho Técnico / Sala 5-2](laboratorio_de_desenho_tecnico___sala_5-2)
 - [Laboratório de Informatica C](laboratorio_de_informatica_c)
 - [Sala 11-2](sala_11-2)
 - [Sala 12-2](sala_12-2)
