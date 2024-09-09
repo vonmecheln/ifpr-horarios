@@ -1,0 +1,202 @@
+---
+slug: /turma/elm2023
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "ELM2023",
+  base: "ELM",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Circuitos Hidráulicos e Pneumáticos",
+          size: 4,
+          teachers: [
+            "Fábio Fernandes da Silva"
+          ],
+          classroom: "Laboratório de Máquinas e Acionamentos Elétricos B4",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Programação de Equipamentos Industriais",
+          size: 4,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Automação e Robótica Industrial",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Manutenção Industrial",
+          size: 2,
+          teachers: [
+            "Luiz Inácio Chaves"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Segurança do Trabalho",
+          size: 2,
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "",
+          students: [
+            "ELE2024",
+            "ELM2023"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Elementos de Máquinas",
+          size: 2,
+          teachers: [
+            "Darlan Roque Dapieve"
+          ],
+          classroom: "Laboratório de Metrologia B4",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Robótica Aplicada",
+          size: 2,
+          teachers: [
+            "Jair Fajardo Junior"
+          ],
+          classroom: "Laboratório de Automação e Robótica Industrial",
+          students: [
+            "ELM2023"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Projetos Elétricos Industriais",
+          size: 4,
+          teachers: [
+            "Danilo Hungaro Micheletti"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# ELM2023
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
