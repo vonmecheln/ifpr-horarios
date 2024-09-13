@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^1.2.0",
-    "@docusaurus/core": "3.4.0",
-    "@docusaurus/plugin-google-gtag": "^3.4.0",
-    "@docusaurus/preset-classic": "3.4.0",
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/plugin-google-gtag": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
     "@mdx-js/react": "^3.0.0",
     "@radix-ui/react-checkbox": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.1",
@@ -36,9 +36,9 @@
     "use-react-screenshot": "^4.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.4.0",
-    "@docusaurus/tsconfig": "3.4.0",
-    "@docusaurus/types": "3.4.0",
+    "@docusaurus/module-type-aliases": "^3.5.2",
+    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/types": "^3.5.2",
     "@rocketseat/eslint-config": "^2.2.2",
     "@tsconfig/docusaurus": "^2.0.3",
     "@types/color-hash": "^2.0.0",
