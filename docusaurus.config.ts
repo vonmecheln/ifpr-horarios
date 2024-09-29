@@ -4,11 +4,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const isBuildFast = false && !!process.env.BUILD_FAST
 const isVersioningDisabled = false
-const isDev = false
+const isDev = true
 const isDeployPreview = false
 const isBranchDeploy = false
 
-const prefixCurrentVersions = ['2024']
+const prefixCurrentVersions = ['2024.2']
 
 function isCurrentVersions(value) {
   // return true

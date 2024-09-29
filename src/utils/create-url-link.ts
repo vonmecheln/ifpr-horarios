@@ -6,4 +6,6 @@ export function createURL(obj: string) {
     .toLowerCase()
     .replaceAll(' ', '_')
     .replaceAll('/', '_')
+    .replaceAll('(', '_')
+    .replaceAll(')', '_')
 }
