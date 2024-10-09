@@ -1,0 +1,235 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Fagner Guglielmi Pereira",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Sociologia 1",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "08:20 - 09:10",
+          color: ""
+        },
+        {
+          subject: "Sociologia 4",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "11:05 - 11:55",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "13:10 - 14:00",
+          color: ""
+        },
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "14:00 - 14:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Sociologia I",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Sociologia 3",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "EIN2022"
+          ],
+          time: "08:20 - 09:10",
+          color: ""
+        },
+        {
+          subject: "Sociologia 2",
+          size: 1,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 13-2",
+          students: [
+            "EIN2023"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Sociologia I",
+          size: 2,
+          teachers: [
+            "Fagner Guglielmi Pereira"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Fagner Guglielmi Pereira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
