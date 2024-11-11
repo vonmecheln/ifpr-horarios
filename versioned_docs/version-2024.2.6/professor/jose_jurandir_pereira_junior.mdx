@@ -1,0 +1,209 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "José Jurandir Pereira Junior",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia 4",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "EIN2021"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Filosofia I",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "COM2024"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Direito do Trabalho e do consumidor",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "COM2024"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia I",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "COM2024"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Filosofia II",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Direito do Trabalho",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Filosofia II",
+          size: 1,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "COM2023"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Direito do Trabalho",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "TGC2024"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# José Jurandir Pereira Junior
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
