@@ -1,0 +1,253 @@
+---
+slug: /sala/laboratorio_de_computacao_aplicada
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Computação Aplicada",
+  base: "Bloco 1",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Projeto Integrador II",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Serviços em nuvem",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2022A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Topografia e Geoprocessamento",
+          size: 2,
+          teachers: [
+            "Octavio Henrique Viana"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "AGR2024"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Desenho Técnico",
+          size: 3,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "EIN2024 - Grupo B"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Desenho Técnico",
+          size: 3,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "EIN2024 - Grupo A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Projeto Integrador III",
+          size: 2,
+          teachers: [
+            "Alexandre Rodrigues Monge"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2022A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Desenho Assistido por computador",
+          size: 2,
+          teachers: [
+            "Sérgio Takahashi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "ELM2024"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos",
+          size: 2,
+          teachers: [
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Projetos Elétricos Residenciais e Prediais",
+          size: 4,
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Projetos e Instalações Elétricas",
+          size: 2,
+          teachers: [
+            "Danilo Hungaro Micheletti"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "EIN2022"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Projetos Elétricos Industriais",
+          size: 4,
+          teachers: [
+            "Danilo Hungaro Micheletti"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "ELM2023"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Computação Aplicada
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
