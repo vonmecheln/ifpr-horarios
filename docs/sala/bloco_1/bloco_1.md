@@ -8,3 +8,4 @@
 - [Laboratório de Informatica B](laboratorio_de_informatica_b)
 - [Laboratório de Química](laboratorio_de_quimica)
 - [Sala 3-1](sala_3-1)
+- [Sala 5](sala_5)
