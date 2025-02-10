@@ -1,0 +1,213 @@
+---
+slug: /sala/laboratorio_de_informatica_a_-_cr_toledo
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Informatica A - CR Toledo",
+  base: "Bloco CR IFPR-Biopark",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador",
+          size: 2,
+          teachers: [
+            "Rafael Luis Bartz"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2023B"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Projeto integrador I",
+          size: 2,
+          teachers: [
+            "PSS informática"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2025B"
+          ],
+          time: "13:10 - 14:00",
+          color: ""
+        },
+        {
+          subject: "Laboratório de Banco de Dados",
+          size: 2,
+          teachers: [
+            "PSS informática"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "15:05 - 15:55",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Linguagens de apresentação e estruturação de conteúdos",
+          size: 4,
+          teachers: [
+            "Luis Henrique Manosso Von Mecheln"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2025B"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos",
+          size: 2,
+          teachers: [
+            "PSS informática"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2024B"
+          ],
+          time: "13:10 - 14:00",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Lógica de programação",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2025B - Grupo A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Lógica de programação",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2025B - Grupo B"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites",
+          size: 2,
+          teachers: [
+            "PSS informática"
+          ],
+          classroom: "Laboratório de Informatica A - CR Toledo",
+          students: [
+            "IIW2023B"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Informatica A - CR Toledo
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -8,7 +8,7 @@ const isDev = false
 const isDeployPreview = false
 const isBranchDeploy = false
 
-const prefixCurrentVersions = ['2024']
+const prefixCurrentVersions = ['2025']
 
 function isCurrentVersions(value) {
   // return true

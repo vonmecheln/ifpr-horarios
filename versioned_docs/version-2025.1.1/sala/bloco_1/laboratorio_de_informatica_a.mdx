@@ -1,0 +1,240 @@
+---
+slug: /sala/laboratorio_de_informatica_a
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Informatica A",
+  base: "Bloco 1",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Projeto integrador I",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2025A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Informática instrumental e aplicada",
+          size: 2,
+          teachers: [
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "AGO2025 - Grupo A"
+          ],
+          time: "15:05 - 15:55",
+          color: ""
+        },
+        {
+          subject: "Projetos Elétricos industriais",
+          size: 2,
+          teachers: [
+            "Danilo Hungaro Micheletti"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "ELE2024"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos de informática",
+          size: 1,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2025A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Gestão, Educação e Matemática Financeira",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "TGC2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos de informática",
+          size: 1,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2025A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Lógica de programação",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2025A - Grupo B"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Gestão, Educação e Matemática Financeira",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "TGC2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Lógica de programação",
+          size: 2,
+          teachers: [
+            "Caroline Domingues Porto do Nascimento Barbieri"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "IIW2025A - Grupo A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Orientação de estágio supervisionado",
+          size: 1,
+          teachers: [
+            "Leiliane Cristine de Souza"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "AGO2023"
+          ],
+          time: "13:10 - 14:00",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Informatica A
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

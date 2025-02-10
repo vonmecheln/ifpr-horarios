@@ -1,0 +1,227 @@
+---
+slug: /sala/laboratorio_de_computacao_aplicada
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Computação Aplicada",
+  base: "Bloco 1",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Sistemas Gerenciadores de Conteúdo WEB",
+          size: 2,
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Serviços em nuvem",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Projetos e Instalações Elétricas",
+          size: 2,
+          teachers: [
+            "Alex Miyamoto Mussi"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "EIN2023"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Prototipação de Interfaces e Interação Humano-Computador",
+          size: 2,
+          teachers: [
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Projeto Integrador III",
+          size: 1,
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Desenvolvimento WEB Orientado a Objetos",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2024A"
+          ],
+          time: "08:20 - 09:10",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Desenvolvimento Responsivo e Otimização de Sites",
+          size: 2,
+          teachers: [
+            "Vagner Simões Santos"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Projeto Integrador III",
+          size: 1,
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2023A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Laboratório de Banco de Dados",
+          size: 2,
+          teachers: [
+            "Douglas Barbosa Sousa"
+          ],
+          classroom: "Laboratório de Computação Aplicada",
+          students: [
+            "IIW2024A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Computação Aplicada
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

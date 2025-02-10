@@ -1,0 +1,249 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Yohana Diel Saheli",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Língua Estrangeira: Inglês",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "COM2025"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Língua estrangeira - Inglês",
+          size: 2,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "AGO2025"
+          ],
+          time: "08:20 - 09:10",
+          color: ""
+        },
+        {
+          subject: "Língua Portuguesa e Literatura II",
+          size: 2,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Lingua Estrangeira Moderna 1 - Inglês",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 15-2",
+          students: [
+            "EIN2024"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Língua Estrangeira: Inglês",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "COM2025"
+          ],
+          time: "13:10 - 14:00",
+          color: ""
+        },
+        {
+          subject: "Lingua estrangeira - Inglês",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "IIW2025A"
+          ],
+          time: "15:05 - 15:55",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Lingua Estrangeira Moderna 3 - Inglês",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2022"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Língua Portuguesa e Literatura III",
+          size: 2,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 5",
+          students: [
+            "IIW2023A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Língua Portuguesa e Literatura II",
+          size: 2,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Lingua estrangeira - Inglês",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 9-2",
+          students: [
+            "IIW2025A"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Lingua Estrangeira Moderna 2 - Ingles",
+          size: 1,
+          teachers: [
+            "Yohana Diel Saheli"
+          ],
+          classroom: "Sala 11-2",
+          students: [
+            "EIN2023"
+          ],
+          time: "11:05 - 11:55",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Yohana Diel Saheli
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
