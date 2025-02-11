@@ -8,11 +8,13 @@ sidebar_position: 1
   Seja bem-vindo ao novo sistema web para o quadro de horários do Instituto Federal do Paraná - Campus Assis Chateaubriand. 
 </p>
 
-<!-- ## Histórico
+## Histórico
 
 | Versão    |   Início   |     Fim    |
 |-----------|:----------:|:----------:|
-| [2024.1.v1](/docs/2024.1.1/intro) | 15/02/2024 | 17/02/2024 |
+| [2025.1.v1](/docs/2025.1.1/intro) | 09/02/2024 | Atual |
+
+<!--
 | [2024.1.v2](/docs/2024.1.2/intro) | 18/02/2024 | 24/02/2024 |
 | [2024.1.v3](/docs/2024.1.3/intro) | 25/02/2024 | 09/03/2024 |
 | [2024.1.v4](/docs/2024.1.4/intro) | 10/03/2024 | 17/03/2024 |
