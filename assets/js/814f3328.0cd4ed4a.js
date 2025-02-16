@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkifpr_horarios=self.webpackChunkifpr_horarios||[]).push([[7472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);
