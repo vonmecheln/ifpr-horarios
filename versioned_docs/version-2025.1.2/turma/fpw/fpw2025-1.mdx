@@ -1,0 +1,146 @@
+---
+slug: /turma/fpw2025-1
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "FPW2025-1",
+  base: "FPW",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Linguagens de Apresentação e Estruturação de conteúdos",
+          size: 4,
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
+          classroom: "",
+          students: [
+            "FPW2025-1"
+          ],
+          time: "14:00 - 14:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Linguagens de Apresentação e Estruturação de conteúdos",
+          size: 2,
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
+          classroom: "",
+          students: [
+            "FPW2025-1"
+          ],
+          time: "14:00 - 14:50",
+          color: ""
+        },
+        {
+          subject: "Algoritmos e Linguagens de programação Web",
+          size: 2,
+          teachers: [
+            "Humberto Fioravante Ferro"
+          ],
+          classroom: "",
+          students: [
+            "FPW2025-1"
+          ],
+          time: "15:55 - 16:45",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# FPW2025-1
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
