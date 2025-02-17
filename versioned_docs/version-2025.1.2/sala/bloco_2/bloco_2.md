@@ -11,7 +11,6 @@
 - [Sala 14-2](sala_14-2)
 - [Sala 15-2](sala_15-2)
 - [Sala 16-2](sala_16-2)
-- [Sala 2-2](sala_2-2)
 - [Sala 6-2](sala_6-2)
 - [Sala 7-2](sala_7-2)
 - [Sala 8-2](sala_8-2)
