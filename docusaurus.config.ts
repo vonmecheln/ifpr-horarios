@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const isBuildFast = false && !!process.env.BUILD_FAST
 const isVersioningDisabled = false
-const isDev = false
+const isDev = true
 const isDeployPreview = false
 const isBranchDeploy = false
 
