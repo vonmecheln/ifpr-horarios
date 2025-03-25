@@ -37,7 +37,7 @@ export interface GridContextType {
   timetableView: TimetableViewType
   isMenuFixed: boolean
   rowsSize: string
-  gridRef: React.MutableRefObject<undefined>
+  gridRef: React.RefObject<undefined>
   modifyMenu: (isMenuFixed: boolean) => void
   reduceGrid: (timetableView: TimetableViewType) => void
 }

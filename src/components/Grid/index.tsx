@@ -107,7 +107,7 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
     return (acc += ` ${elemento.size}fr`)
   }, '')
 
-  const gridRef = useRef()
+  const gridRef = useRef(null)
 
   useEffect(() => {
     const { settings } = settingsState

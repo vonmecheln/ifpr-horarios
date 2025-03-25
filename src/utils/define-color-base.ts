@@ -8,17 +8,19 @@ export function defineColorBase(props: { weekClasses: Days[]; title: String }) {
       dayClasses: week.dayClasses.map((el) => {
         // let colorBase = props.title == el.teacher ? el.students : el.teacher
         const labels = []
+        const useTitle = true;
+
         labels.push(el.subject)
         el.teachers.forEach((teacher) => {
-          if (props.title !== teacher) {
+          if (useTitle || props.title !== teacher) {
             labels.push(teacher)
           }
         })
-        if (props.title !== el.classroom) {
+        if (useTitle || props.title !== el.classroom) {
           labels.push(el.classroom)
         }
         el.students.forEach((student) => {
-          if (props.title !== student) {
+          if (useTitle || props.title !== student) {
             labels.push(student)
           }
         })
