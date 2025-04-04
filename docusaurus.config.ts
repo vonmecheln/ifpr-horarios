@@ -221,11 +221,17 @@ const config: Config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-F507QNJSFB',
+        trackingID: 'GTM-MQ8B67G4',
         anonymizeIP: false,
       },
     ],
-    
+    [require.resolve('docusaurus-lunr-search'),
+      {
+        languages: ['pt'],
+        disableVersioning : true
+      }
+    ],
+
     // [
     //   require.resolve('@cmfcmf/docusaurus-search-local'),
     //   {
