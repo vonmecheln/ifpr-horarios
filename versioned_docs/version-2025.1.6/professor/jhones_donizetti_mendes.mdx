@@ -1,0 +1,169 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Jhones Donizetti Mendes",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia I",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "AGO2025"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Geografia II",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 5",
+          students: [
+            "IIW2023A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Trabalho de conclusão de curso I",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "BIO_ESPECIAL_2"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Trabalho de conclusão de curso II",
+          size: 1,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "BIO_ESPECIAL_2"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Geografia II",
+          size: 2,
+          teachers: [
+            "Jhones Donizetti Mendes"
+          ],
+          classroom: "Sala 13-2",
+          students: [
+            "AGO2024"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Jhones Donizetti Mendes
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
