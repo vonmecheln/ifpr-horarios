@@ -1,0 +1,183 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Gabriele Antico Freiria",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia I",
+          size: 2,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 7-2",
+          students: [
+            "COM2025"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia 4",
+          size: 2,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 1-4",
+          students: [
+            "EIN2022"
+          ],
+          time: "08:20 - 09:10",
+          color: ""
+        },
+        {
+          subject: "Biologia III",
+          size: 2,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "AGO2023"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        },
+        {
+          subject: "Genética molecular",
+          size: 4,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 8-2",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Biologia 1",
+          size: 1,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Laboratório de Biologia",
+          students: [
+            "EIN2025"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Biologia III",
+          size: 2,
+          teachers: [
+            "Gabriele Antico Freiria"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "COM2023"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Gabriele Antico Freiria
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
