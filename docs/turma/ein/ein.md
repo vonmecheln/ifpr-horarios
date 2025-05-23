@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # EIN
 
 ## Técnico em Eletromecânica Integrado ao Ensino Médio

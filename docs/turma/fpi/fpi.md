@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # FPI
 
 ## FIC Programação de Sistemas Intermediário (120h)

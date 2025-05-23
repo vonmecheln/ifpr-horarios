@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # IIW
 
 ## Técnico em Informática para Internet Integrado ao Ensino Médio

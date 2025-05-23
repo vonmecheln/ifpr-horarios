@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # AGO
 
 ## Técnico em Agropecuária Integrado ao ensino Médio

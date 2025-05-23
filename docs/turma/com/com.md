@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # COM
 
 ## Técnico em Comércio Integrado ao Ensino Médio

@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # AGR
 
 ## Técnico em Agropecuária Subsequente

@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # BIO
 
 ## Superior de Licenciatura em Ciências Biológicas

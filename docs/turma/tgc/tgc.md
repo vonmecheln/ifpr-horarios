@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # TGC
 
 ## Curso Superior de Técnologia em Gestão Comercial
