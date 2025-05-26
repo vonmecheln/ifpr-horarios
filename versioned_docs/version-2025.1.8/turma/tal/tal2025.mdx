@@ -1,0 +1,227 @@
+---
+slug: /turma/tal2025
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "TAL2025",
+  base: "TAL",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos da Química",
+          size: 4,
+          teachers: [
+            "Antonio Cesar Godoy"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Comunicação Técnica",
+          size: 1,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Informática Básica",
+          size: 3,
+          teachers: [
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Laboratório de Informatica C",
+          students: [
+            "TAL2025"
+          ],
+          time: "19:50 - 20:40",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Comunicação Técnica",
+          size: 2,
+          teachers: [
+            "Pedro Leites Junior"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Máquinas, Equipamentos e Instalações Industriais",
+          size: 2,
+          teachers: [
+            "Beatriz de Souza Gonçalves Proença"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática Aplicada",
+          size: 2,
+          teachers: [
+            "Jonathan Prass Souza"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Gestão e Planejamento Aplicados à Agroindústria",
+          size: 2,
+          teachers: [
+            "Lechan Colares Santos"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão Ambiental na Indústria de Alimentos",
+          size: 2,
+          teachers: [
+            "Karina Dias Espartosa"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Ética e relações humanas no trabalho",
+          size: 2,
+          teachers: [
+            "Jael dos Santos"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "TAL2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# TAL2025
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
