@@ -1,0 +1,240 @@
+---
+slug: /turma/tgc2025
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "TGC2025",
+  base: "TGC",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão Empresarial",
+          size: 2,
+          teachers: [
+            "Keitilanger Grisa Hahn"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Marketing e Comportamento do Consumidor",
+          size: 2,
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "TGC2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão, Educação e Matemática Financeira",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Legislação Aplicada e Direito do Consumidor",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão Empresarial",
+          size: 2,
+          teachers: [
+            "Keitilanger Grisa Hahn"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Marketing e Comportamento do Consumidor",
+          size: 2,
+          teachers: [
+            "Keyla Christina Almeida Portela"
+          ],
+          classroom: "Laboratório de Informatica A",
+          students: [
+            "TGC2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Gestão, Educação e Matemática Financeira",
+          size: 2,
+          teachers: [
+            "Mauro César de Souza Siena"
+          ],
+          classroom: "Laboratório de Informatica B",
+          students: [
+            "TGC2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Informática e Automação Comercial",
+          size: 2,
+          teachers: [
+            "Samuel Stephan Milczuk"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Legislação Aplicada e Direito do Consumidor",
+          size: 2,
+          teachers: [
+            "José Jurandir Pereira Junior"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        },
+        {
+          subject: "Métodos e técnicas de pesquisa",
+          size: 2,
+          teachers: [
+            "Haroldo Yutaka Misunaga"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "TGC2025"
+          ],
+          time: "21:00 - 21:50",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# TGC2025
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

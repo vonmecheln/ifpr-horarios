@@ -1,0 +1,184 @@
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Elizangela Mendes Pereira",
+  base: "",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: []
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática II",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Matemática II",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "COM2024"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática III",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 3-1",
+          students: [
+            "COM2023"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Matemática II",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 16-2",
+          students: [
+            "IIW2024A"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Fundamentos da Matemática",
+          size: 4,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 12-2",
+          students: [
+            "ELE2025"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: [
+        {
+          subject: "Matemática II",
+          size: 2,
+          teachers: [
+            "Elizangela Mendes Pereira"
+          ],
+          classroom: "Sala 14-2",
+          students: [
+            "COM2024"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        }
+      ]
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Elizangela Mendes Pereira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,213 @@
+---
+slug: /sala/laboratorio_de_quimica
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Química",
+  base: "Bloco 1",
+  weekClasses: [
+    {
+      dayName: "Segunda-Feira",
+      dayClasses: [
+        {
+          subject: "Química 1",
+          size: 1,
+          teachers: [
+            "Antonio Cesar Godoy"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "EIN2025"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Terça-Feira",
+      dayClasses: [
+        {
+          subject: "Química III",
+          size: 2,
+          teachers: [
+            "Sabrina Kerkhoff"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "IIW2023A"
+          ],
+          time: "13:10 - 14:00",
+          color: ""
+        },
+        {
+          subject: "Química II",
+          size: 2,
+          teachers: [
+            "Sabrina Kerkhoff"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "IIW2024A"
+          ],
+          time: "15:05 - 15:55",
+          color: ""
+        },
+        {
+          subject: "Química geral",
+          size: 4,
+          teachers: [
+            "Antonio Cesar Godoy"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "BIO_ESPECIAL_1"
+          ],
+          time: "19:00 - 19:50",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quarta-Feira",
+      dayClasses: [
+        {
+          subject: "Química 3",
+          size: 1,
+          teachers: [
+            "Antonio Cesar Godoy"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "EIN2023"
+          ],
+          time: "09:25 - 10:15",
+          color: ""
+        },
+        {
+          subject: "Química 2",
+          size: 2,
+          teachers: [
+            "Antonio Cesar Godoy"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "EIN2024"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Quinta-Feira",
+      dayClasses: [
+        {
+          subject: "Química II",
+          size: 2,
+          teachers: [
+            "Sabrina Kerkhoff"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "COM2024"
+          ],
+          time: "07:30 - 08:20",
+          color: ""
+        },
+        {
+          subject: "Química I",
+          size: 2,
+          teachers: [
+            "Cosme Oliveira da Silva"
+          ],
+          classroom: "Laboratório de Química",
+          students: [
+            "AGO2025"
+          ],
+          time: "10:15 - 11:05",
+          color: ""
+        }
+      ]
+    },
+    {
+      dayName: "Sexta-Feira",
+      dayClasses: []
+    }
+  ],
+  time: [
+    {
+      time: "07:30 - 08:20",
+      size: 50
+    },
+    {
+      time: "08:20 - 09:10",
+      size: 50
+    },
+    {
+      time: "09:25 - 10:15",
+      size: 50
+    },
+    {
+      time: "10:15 - 11:05",
+      size: 50
+    },
+    {
+      time: "11:05 - 11:55",
+      size: 50
+    },
+    {
+      time: "13:10 - 14:00",
+      size: 50
+    },
+    {
+      time: "14:00 - 14:50",
+      size: 50
+    },
+    {
+      time: "15:05 - 15:55",
+      size: 50
+    },
+    {
+      time: "15:55 - 16:45",
+      size: 50
+    },
+    {
+      time: "16:45 - 17:35",
+      size: 50
+    },
+    {
+      time: "19:00 - 19:50",
+      size: 50
+    },
+    {
+      time: "19:50 - 20:40",
+      size: 50
+    },
+    {
+      time: "21:00 - 21:50",
+      size: 50
+    },
+    {
+      time: "21:50 - 22:40",
+      size: 50
+    }
+  ]
+}
+
+# Laboratório de Química
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+          time={data.time}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
