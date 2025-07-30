@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const isBuildFast = false && !!process.env.BUILD_FAST
 const isVersioningDisabled = false
-const isDev = false
+const isDev = true
 const isDeployPreview = false
 const isBranchDeploy = false
 
@@ -95,7 +95,7 @@ const config: Config = {
               // includeVersions = includeVersions.slice(0, 2)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
-                // includeVersions = includeVersions.slice(0, 1)
+                includeVersions = includeVersions.slice(0, 1)
                 includeVersions.push('current')
               }
 
