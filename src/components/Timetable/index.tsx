@@ -74,7 +74,7 @@ export function Timetable() {
   const { rowsSize } = useContext(GridContext)
 
   return (
-    <Container ref={sliderRef} isMenuFixed={isMenuFixed}>
+    <Container ref={sliderRef} $isMenuFixed={isMenuFixed}>
       {weekClassesChanged.map((week) => {
         const groupTimetable = createGroupItems(week.dayClasses)
         const index = weekClassesChanged.findIndex(
@@ -85,11 +85,11 @@ export function Timetable() {
             className={`keen-slider__slide number-slide${index + 1}`}
             key={index}
           >
-            <SlideCell rowsSize={rowsSize}>
+            <SlideCell $rowsSize={rowsSize}>
               <EmptyCell timeLength={timeChanged.length + 1} />
             </SlideCell>
-            <SlideCell rowsSize={rowsSize}>
-              <ItemGroup gridArea="1 / 1 / 2 / 2" className="day">
+            <SlideCell $rowsSize={rowsSize}>
+              <ItemGroup $gridArea="1 / 1 / 2 / 2" className="day">
                 <ItemContent>
                   <span>{week.dayName}</span>
                 </ItemContent>
@@ -99,7 +99,7 @@ export function Timetable() {
                 const size = groupTimetable[group][0].size
                 return (
                   <ItemGroup
-                    gridArea={createGridArea({ y, x: 1 }, size)}
+                    $gridArea={createGridArea({ y, x: 1 }, size)}
                     key={count++}
                   >
                     {groupTimetable[group].map((el) => (

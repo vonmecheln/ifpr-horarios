@@ -8,7 +8,7 @@ export const EmptyItem = styled.div`
   height: 100%;
 `
 
-export const Container = styled.div<{ gridArea: string }>`
+export const Container = styled.div<{ $gridArea: string }>`
   display: flex;
-  grid-area: ${(props) => props.gridArea};
+  grid-area: ${(props) => props.$gridArea};
 `

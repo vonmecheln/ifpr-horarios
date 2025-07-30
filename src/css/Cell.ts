@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const Cell = styled.div<{ gridArea: string }>`
-  grid-area: ${(props) => props.gridArea};
+export const Cell = styled.div<{ $gridArea: string }>`
+  grid-area: ${(props) => props.$gridArea};
 
   display: flex;
   justify-content: center;

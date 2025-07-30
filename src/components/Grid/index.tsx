@@ -132,7 +132,7 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
         timeInitial: time,
       }}
     >
-      <GridContainer gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
+      <GridContainer $gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
         <Header />
         <Sidebar />
         <Timetable />

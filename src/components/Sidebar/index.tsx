@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import { useScreenshot, createFileName } from 'use-react-screenshot'
+import html2canvas from 'html2canvas';
 import { GridContext } from '../Grid'
 import { ModalSettings, ModalSettingsProps } from '../ModalSettings'
 
@@ -25,33 +25,38 @@ export function Sidebar() {
 
   const { rowsSize, title, gridRef } = useContext(GridContext)
 
-  const [image, takeScreenShot] = useScreenshot({
-    type: 'image/png',
-    quality: 2.0,
-  })
-
-  const download = (
-    image: string,
-    { name = title, extension = 'png' } = {},
-  ) => {
-    const a = document.createElement('a')
-    a.href = image
-    a.download = createFileName(extension, name)
-    a.click()
+  function createFileName(extension: string, name: string) {
+    const date = new Date()
+    const formattedDate = date.toISOString().replace(/[:.]/g, '-')
+    return `${name}-${formattedDate}.${extension}`
   }
 
-  const downloadScreenshot = () =>
-    takeScreenShot(gridRef.current).then(download)
+  const downloadScreenshot = () => takeScreenShot(gridRef.current).then(download)
+
+  function takeScreenShot(canva: HTMLElement): Promise<HTMLCanvasElement> {
+    return html2canvas(canva, {
+      useCORS: true,
+      allowTaint: true,
+      scale: 4, // Increase scale for better quality
+    })
+  }
+
+  function download(image: HTMLCanvasElement) {
+    const link = document.createElement('a');
+    link.download = createFileName('png', title)
+    link.href = image.toDataURL('image/png');
+    link.click();
+  }
 
   return (
-    <Container rowsSize={`${rowsSize}`}>
-      <Cell gridArea="1 / 1 / 2 / 2" className="sidebar">
+    <Container $rowsSize={`${rowsSize}`}>
+      <Cell $gridArea="1 / 1 / 2 / 2" className="sidebar">
         <ModalSettings downloadScreenshot={downloadScreenshot} />
       </Cell>
       {timeChanged.map((timeEl) => (
         <Cell
           className="sidebar"
-          gridArea={`${timeOffSet} / 1 / ${timeOffSet++} / 2`}
+          $gridArea={`${timeOffSet} / 1 / ${timeOffSet++} / 2`}
           key={timeEl.time}
         >
           <span className="text-time">{timeEl.time}</span>
