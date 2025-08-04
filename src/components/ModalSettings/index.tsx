@@ -13,14 +13,14 @@ import {
 import { Gear, X, Check, Camera } from 'phosphor-react'
 import { RadioItem } from '../RadioItem'
 import { GridContext } from '../Grid'
-import { TimetableViewType } from '@site/src/reducers/settings/reducer'
+import { TimetableViewType, TimetableColorType} from '@site/src/reducers/settings/reducer'
 
 export interface ModalSettingsProps {
   downloadScreenshot: () => any
 }
 
 export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
-  const { isMenuFixed, modifyMenu, timetableView, reduceGrid } =
+  const { isMenuFixed, modifyMenu, timetableView, reduceGrid, timetableColor, colorizeGrid } =
     useContext(GridContext)
 
   function handleChangeMenu() {
@@ -29,6 +29,10 @@ export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
 
   function handleChangeTimetableView(newView: TimetableViewType) {
     reduceGrid(newView)
+  }
+
+  function handleChangeTimetableColor(newColor: TimetableColorType) {
+    colorizeGrid(newColor)
   }
 
   return (
@@ -82,6 +86,22 @@ export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
               />
             </RadioGroup.Root>
 
+            {/* <RadioGroup.Root
+              className="radioColor"
+              defaultValue={timetableColor}
+              onValueChange={(value: TimetableColorType) =>
+                handleChangeTimetableColor(value)
+              }
+            >
+              <RadioItem title="Sem cores" value="noColor" />
+              <RadioItem title="Cores por Professor" value="teacherColor" />
+              <RadioItem title="Cores por Componente" value="subjectColor" />
+              <RadioItem title="Cores por Turma" value="studentsColor" />
+              <RadioItem title="Cores por Sala" value="roomColor" />
+              <RadioItem title="Cores por Turma, Professor, Componente e Sala" value="allColor" />
+              
+            </RadioGroup.Root> */}
+
             {/* <div className="sliderContainer">
               <span>Tamanho da fonte</span>
               <Slider.Root 
@@ -98,6 +118,8 @@ export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
                 <Slider.Thumb className="sliderThumb" />
               </Slider.Root>
             </div> */}
+
+
           </SettingsContainer>
 
           <hr />

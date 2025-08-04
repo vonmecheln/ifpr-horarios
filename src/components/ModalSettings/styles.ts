@@ -20,6 +20,10 @@ export const DialogContent = styled(Dialog.Content)`
   left: 50%;
   z-index: 20;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: min(30rem, 80%);
   height: 25rem;
 
@@ -61,6 +65,7 @@ export const DialogContent = styled(Dialog.Content)`
 
   footer {
     height: 4rem;
+
   }
 `
 export const DialogClose = styled(Dialog.Close)`
@@ -82,7 +87,7 @@ export const DialogClose = styled(Dialog.Close)`
 `
 
 export const SettingsContainer = styled.main`
-  height: 200px;
+  min-height: 200px;
   padding: 1rem 2rem;
   margin-top: 0.25rem;
 
@@ -90,7 +95,8 @@ export const SettingsContainer = styled.main`
 
   display: grid;
   align-items: center;
-  grid-template: repeat(2, 1fr) / repeat(2, minmax(max-content, 100%));
+  grid-template: repeat(2, auto) / repeat(2, minmax(max-content, 100%));
+  gap: 1rem;
 
   .menuFixed {
     display: flex;
@@ -129,6 +135,10 @@ export const SettingsContainer = styled.main`
     align-items: center;
 
     grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .radioColor{
+    grid-area: 2/1/2/3;
   }
 
   @media (max-width: 550px) {

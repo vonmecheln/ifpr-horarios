@@ -1,7 +1,7 @@
 import { Days, Time } from '@site/src/interfaces/interfaces'
 import { findPositionY } from '@site/src/utils/find-position-y'
 import { findPositionsUsed } from '@site/src/utils/find-positions-used'
-import { reduceTimetable } from '@site/src/utils/reduce-timetable'
+import { reduceTimetable  } from '@site/src/utils/reduce-timetable'
 import { ActionTypes } from './actions'
 
 export const TimetableViewOptions = {
@@ -12,9 +12,22 @@ export const TimetableViewOptions = {
 
 export type TimetableViewType = keyof typeof TimetableViewOptions
 
+
+export const TimetableColorOptions = {
+  noColor: 'noColor',
+  teacherColor: 'teacherColor',
+  subjectColor: 'subjectColor',
+  studentsColor : 'studentsColor',
+  roomColor: 'roomColor',
+  allColor: 'allColor',
+}
+
+export type TimetableColorType = keyof typeof TimetableColorOptions
+
 interface Settings {
   isMenuFixed: boolean
   timetableView: TimetableViewType
+  timetableColor: TimetableColorType
 }
 
 interface SettingsState {
@@ -33,6 +46,25 @@ export function settingsReducer(state: SettingsState, action: any) {
           isMenuFixed: action.payload.isMenuFixed,
         },
       }
+
+    case ActionTypes.CHANGE_TIMETABLE_COLOR: {
+
+      const timetableColor = action.payload.timetableColor
+      const time = action.payload.timeInitial
+      const weekClasses = action.payload.weekClassesInitial
+
+      // const newWeekClasses = setWeekClassesSettings(weekClasses, "", time, timetableColor)
+
+      return {
+        ...state,
+        settings: {
+          ...state.settings,
+          timetableColor : action.payload.timetableColor
+        }
+      } 
+
+    }
+
     case ActionTypes.CHANGE_TIMETABLE_VIEW: {
       const timetableView = action.payload.timetableView
       const time = action.payload.timeInitial
@@ -51,37 +83,7 @@ export function settingsReducer(state: SettingsState, action: any) {
           ...state.settings,
           timetableView,
         },
-      }
-
-      // if (action.payload.timetableView === 'condensed') {
-      //   const time = state.timeChanged
-      //   const weekClasses = state.weekClassesChanged
-
-      //   const timeChanged = reduceTimetable({
-      //     time,
-      //     weekClasses,
-      //     timetableView,
-      //   })
-      //   return {
-      //     settings: {
-      //       ...state.settings,
-      //       timetableView: action.payload.timetableView,
-      //     },
-      //     timeChanged,
-      //   }
-      // } else if (action.payload.timetableView === 'superCondensed') {
-      //   const time = state.timeChanged
-      //   const weekClasses= state.weekClassesChanged
-
-      //   return {
-      //     settings: {
-      //       ...state.settings,
-      //       timetableView: action.payload.timetableView,
-      //     },
-      //     timeChanged: time,
-      //     weekClassesChanged,
-      //   }
-      // }
+      }      
     }
   }
   return {
@@ -92,3 +94,4 @@ export function settingsReducer(state: SettingsState, action: any) {
     },
   }
 }
+

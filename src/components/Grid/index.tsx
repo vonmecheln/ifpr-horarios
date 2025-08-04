@@ -3,6 +3,7 @@ import React, { createContext, useEffect, useReducer, useRef } from 'react'
 import {
   settingsReducer,
   TimetableViewType,
+  TimetableColorType,
 } from '@site/src/reducers/settings/reducer'
 
 import { Days, GridContextType, Time } from '@site/src/interfaces/interfaces'
@@ -17,6 +18,7 @@ import { Footer } from '../Footer'
 import {
   changeMenu,
   changeTimetableView,
+  changeTimetableColor,
 } from '@site/src/reducers/settings/actions'
 import { createLinkToEachClass } from '@site/src/utils/create-link-to-each-class'
 
@@ -36,6 +38,7 @@ function setWeekClassesSettings(
   weekClasses: Days[],
   title: string,
   time: Time[],
+  timetableColor: string,
 ) {
   let newWeekClasses = []
   // newWeekClasses = findPositionY({ weekClasses, time })
@@ -43,6 +46,8 @@ function setWeekClassesSettings(
     weekClasses,
     title,
   })
+
+  
   newWeekClasses = defineColorBase({
     weekClasses,
     title,
@@ -60,20 +65,31 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
     {
       settings: {
         isMenuFixed: false,
-        timetableView: 'completed',
+        timetableView: 'completed' as TimetableViewType,
+        timetableColor: 'allColor' as TimetableColorType,
       },
       timeChanged: [],
       weekClassesChanged: [],
     },
     (initialState) => {
       const storedStateAsJSON = localStorage.getItem('settings-of-time')
-      const newWeekClasses = setWeekClassesSettings(weekClasses, title, time)
+      
+      let settings = initialState.settings
 
       if (storedStateAsJSON) {
-        initialState.settings = JSON.parse(storedStateAsJSON)
+        const parsed = JSON.parse(storedStateAsJSON)
+        settings = {
+          ...settings,
+          ...parsed,
+          timetableView: parsed.timetableView as TimetableViewType,
+          timetableColor: parsed.timetableColor as TimetableColorType,
+        }
       }
 
-      const timetableViewInitial = initialState.settings.timetableView
+      const timetableColorInitial = settings.timetableColor
+      const newWeekClasses = setWeekClassesSettings(weekClasses, title, time, timetableColorInitial)
+      const timetableViewInitial = settings.timetableView
+
       const { timeChanged, weekClassesChanged } = reduceTimetable({
         weekClasses: newWeekClasses,
         time,
@@ -82,13 +98,14 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
 
       return {
         ...initialState,
+        settings,
         weekClassesChanged,
         timeChanged,
       }
     },
   )
   const { settings, timeChanged, weekClassesChanged } = settingsState
-  const { timetableView, isMenuFixed } = settings
+  const { timetableView, isMenuFixed, timetableColor } = settings
 
   function reduceGrid(newTimetableView: TimetableViewType) {
     const data = {
@@ -102,6 +119,10 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
   function modifyMenu(data: boolean) {
     dispatch(changeMenu(data))
   }
+
+  function colorizeGrid(newColor: TimetableColorType) {
+    dispatch(changeTimetableColor({ timetableColor: newColor }))
+  };
 
   const rowsSize = timeChanged.reduce((acc, elemento) => {
     return (acc += ` ${elemento.size}fr`)
@@ -123,11 +144,13 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
         timeChanged,
         weekClassesChanged,
         timetableView,
+        timetableColor,
         isMenuFixed,
         rowsSize,
         gridRef,
         modifyMenu,
         reduceGrid,
+        colorizeGrid,
         weekClassesInitial: weekClasses,
         timeInitial: time,
       }}

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { TimetableViewType } from '../reducers/settings/reducer'
+import { TimetableColorType, TimetableViewType } from '../reducers/settings/reducer'
 
 interface LinksType {
   title: string
@@ -35,11 +35,13 @@ export interface GridContextType {
   timeInitial: Time[]
   weekClassesInitial: Days[]
   timetableView: TimetableViewType
+  timetableColor: TimetableColorType
   isMenuFixed: boolean
   rowsSize: string
   gridRef: React.RefObject<undefined>
   modifyMenu: (isMenuFixed: boolean) => void
   reduceGrid: (timetableView: TimetableViewType) => void
+  colorizeGrid: (timetableView: TimetableColorType) => void
 }
 
 export interface GridContextProviderProps {
