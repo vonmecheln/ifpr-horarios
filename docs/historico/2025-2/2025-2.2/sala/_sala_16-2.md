@@ -1,0 +1,38 @@
+### Sala 16-2
+
+
+:::note
+A atividade **Língua Portuguesa e Literatura II** da turma **IIW2024A**, com professor(a) **Yohana Diel Saheli** para professor(a) **Andrey Felipe Martins**
+:::
+        
+
+
+:::note
+A atividade **Língua Portuguesa e Literatura II** da turma **IIW2024A**, com professor(a) **Yohana Diel Saheli** para professor(a) **Andrey Felipe Martins**
+:::
+        
+
+
+:::note
+A atividade **Língua Portuguesa e Literatura II** da turma **IIW2024A**, com professor(a) **Yohana Diel Saheli** para professor(a) **Andrey Felipe Martins**
+:::
+        
+
+
+:::note
+A atividade **Língua Portuguesa e Literatura II** da turma **IIW2024A**, com professor(a) **Yohana Diel Saheli** para professor(a) **Andrey Felipe Martins**
+:::
+        
+
+
+:::note
+A atividade **Química II** da turma **IIW2024A**, da sala **Laboratório de Química** para sala **Sala 16-2**
+:::
+        
+
+
+:::note
+A atividade **Química II** da turma **IIW2024A**, da sala **Laboratório de Química** para sala **Sala 16-2**
+:::
+        
+

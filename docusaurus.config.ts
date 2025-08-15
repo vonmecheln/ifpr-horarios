@@ -95,7 +95,7 @@ const config: Config = {
               // includeVersions = includeVersions.slice(0, 2)
 
               if (isDev || isDeployPreview || isBranchDeploy) {
-                // includeVersions = includeVersions.slice(0, 1)
+                includeVersions = includeVersions.slice(0, 1)
                 includeVersions.push('current')
               }
 

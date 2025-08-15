@@ -11,7 +11,7 @@ export const GridContainer = styled.div<{
   border: 1px solid var(--border-grid);
   border-radius: 5px;
 
-  margin: 1rem 0.3rem;
+  // margin: 1rem 0.3rem;
 
   position: relative;
 
