@@ -4,6 +4,7 @@ sidebar_position: 1
 
 # BLOCO 2
 
+## Salas
 
 - [Educação Física / Sala 1 B2](educacao_fisica___sala_1_b2)
 - [Laboratório de Automação e Robótica Industrial](laboratorio_de_automacao_e_robotica_industrial)

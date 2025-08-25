@@ -4,6 +4,7 @@ sidebar_position: 1
 
 # BLOCO 1
 
+## Salas
 
 - [Laboratório de Biologia](laboratorio_de_biologia)
 - [Laboratório de Computação Aplicada](laboratorio_de_computacao_aplicada)

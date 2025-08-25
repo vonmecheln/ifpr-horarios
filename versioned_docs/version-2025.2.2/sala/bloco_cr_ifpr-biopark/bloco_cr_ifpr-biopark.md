@@ -4,6 +4,7 @@ sidebar_position: 1
 
 # BLOCO CR IFPR-BIOPARK
 
+## Salas
 
 - [Laboratório de Informatica A - CR Toledo](laboratorio_de_informatica_a_-_cr_toledo)
 - [Laboratório de Informatica B - CR Toledo](laboratorio_de_informatica_b_-_cr_toledo)
