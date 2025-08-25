@@ -43,6 +43,7 @@ import TabItem from '@theme/TabItem';
     - [Olavo Henrique Vieira Veiga](docs/professor/olavo_henrique_vieira_veiga.mdx)
     - [Roberto Haruyoshi Ito](docs/professor/roberto_haruyoshi_ito.mdx)
     - [Samuel Stephan Milczuk](docs/professor/samuel_stephan_milczuk.mdx)
+    - [Simone de Miranda](docs/professor/simone_de_miranda.mdx)
     - [Suzane Conceição Pantolfi Tostes](docs/professor/suzane_conceicao_pantolfi_tostes.mdx)
     - [Tiago Amaral Silva](docs/professor/tiago_amaral_silva.mdx)
   </TabItem>
@@ -71,6 +72,7 @@ import TabItem from '@theme/TabItem';
     - [olavo.veiga@ifpr.edu.br](mailto:olavo.veiga@ifpr.edu.br)
     - [roberto.ito@ifpr.edu.br](mailto:roberto.ito@ifpr.edu.br)
     - [samuel.milczuk@ifpr.edu.br](mailto:samuel.milczuk@ifpr.edu.br)
+    - [](mailto:)
     - [suzane.tostes@ifpr.edu.br](mailto:suzane.tostes@ifpr.edu.br)
     - [tiago.amaral@ifpr.edu.br](mailto:tiago.amaral@ifpr.edu.br)
   </TabItem>
