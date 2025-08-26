@@ -1,0 +1,14 @@
+### Sala 8-2
+
+
+:::note
+A atividade **Artes I** da turma **AGO2025**, com professor(a) **Josiane Paula Maltauro** para professor(a) **Simone de Miranda**
+:::
+        
+
+
+:::note
+A atividade **Artes I** da turma **AGO2025**, com professor(a) **Josiane Paula Maltauro** para professor(a) **Simone de Miranda**
+:::
+        
+

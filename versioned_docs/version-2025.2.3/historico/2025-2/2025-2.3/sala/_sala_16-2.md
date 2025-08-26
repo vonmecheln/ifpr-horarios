@@ -1,0 +1,14 @@
+### Sala 16-2
+
+
+:::note
+A atividade **Arte I** da turma **IIW2024A**, com professor(a) **Josiane Paula Maltauro** para professor(a) **Simone de Miranda**
+:::
+        
+
+
+:::note
+A atividade **Arte I** da turma **IIW2024A**, com professor(a) **Josiane Paula Maltauro** para professor(a) **Simone de Miranda**
+:::
+        
+

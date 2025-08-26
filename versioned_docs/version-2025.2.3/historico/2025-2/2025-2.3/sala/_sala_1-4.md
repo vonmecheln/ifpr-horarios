@@ -1,0 +1,8 @@
+### Sala 1-4
+
+
+:::note
+A atividade **Artes 3** da turma **EIN2022**, com professor(a) **Josiane Paula Maltauro** para professor(a) **Simone de Miranda**
+:::
+        
+

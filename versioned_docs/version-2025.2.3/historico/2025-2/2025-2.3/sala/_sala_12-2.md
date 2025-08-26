@@ -1,0 +1,14 @@
+### Sala 12-2
+
+
+:::note
+A atividade **Sociologia e Extensão Rural** da turma **AGO2023**, foi alterada de Sexta-Feira às **15:05 - 15:55** para Sexta-Feira às **13:10 - 14:00**
+:::
+        
+
+
+:::note
+A atividade **Sociologia e Extensão Rural** da turma **AGO2023**, foi alterada de Sexta-Feira às **15:55 - 16:45** para Sexta-Feira às **14:00 - 14:50**
+:::
+        
+
