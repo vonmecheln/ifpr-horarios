@@ -18,12 +18,12 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [André Alexandre Valentini](docs/professor/andre_alexandre_valentini.mdx)
-    - [Eliana Peliçon Pereira Figueira](docs/professor/eliana_pelicon_pereira_figueira.mdx)
-    - [Jael dos Santos](docs/professor/jael_dos_santos.mdx)
-    - [Jhones Donizetti Mendes](docs/professor/jhones_donizetti_mendes.mdx)
-    - [Karina Dias Espartosa](docs/professor/karina_dias_espartosa.mdx)
-    - [Leandro Luiz Borges](docs/professor/leandro_luiz_borges.mdx)
+    - [André Alexandre Valentini](../../professor/andre_alexandre_valentini.mdx)
+    - [Eliana Peliçon Pereira Figueira](../../professor/eliana_pelicon_pereira_figueira.mdx)
+    - [Jael dos Santos](../../professor/jael_dos_santos.mdx)
+    - [Jhones Donizetti Mendes](../../professor/jhones_donizetti_mendes.mdx)
+    - [Karina Dias Espartosa](../../professor/karina_dias_espartosa.mdx)
+    - [Leandro Luiz Borges](../../professor/leandro_luiz_borges.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [andre.valentini@ifpr.edu.br](mailto:andre.valentini@ifpr.edu.br)

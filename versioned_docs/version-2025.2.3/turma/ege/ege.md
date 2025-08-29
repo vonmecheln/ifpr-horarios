@@ -17,10 +17,10 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Alex Miyamoto Mussi](docs/professor/alex_miyamoto_mussi.mdx)
-    - [José Jurandir Pereira Junior](docs/professor/jose_jurandir_pereira_junior.mdx)
-    - [Josiane Paula Maltauro](docs/professor/josiane_paula_maltauro.mdx)
-    - [Renato Lada Guerreiro](docs/professor/renato_lada_guerreiro.mdx)
+    - [Alex Miyamoto Mussi](../../professor/alex_miyamoto_mussi.mdx)
+    - [José Jurandir Pereira Junior](../../professor/jose_jurandir_pereira_junior.mdx)
+    - [Josiane Paula Maltauro](../../professor/josiane_paula_maltauro.mdx)
+    - [Renato Lada Guerreiro](../../professor/renato_lada_guerreiro.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [alex.mussi@ifpr.edu.br](mailto:alex.mussi@ifpr.edu.br)

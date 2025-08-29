@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Celina de Oliveira Barbosa Gomes](docs/professor/celina_de_oliveira_barbosa_gomes.mdx)
+    - [Celina de Oliveira Barbosa Gomes](../../professor/celina_de_oliveira_barbosa_gomes.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [celina.gomes@ifpr.edu.br](mailto:celina.gomes@ifpr.edu.br)

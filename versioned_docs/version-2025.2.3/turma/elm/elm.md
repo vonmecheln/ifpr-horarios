@@ -18,14 +18,14 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Alex Miyamoto Mussi](docs/professor/alex_miyamoto_mussi.mdx)
-    - [Danilo Hungaro Micheletti](docs/professor/danilo_hungaro_micheletti.mdx)
-    - [Darlan Roque Dapieve](docs/professor/darlan_roque_dapieve.mdx)
-    - [Fábio Fernandes da Silva](docs/professor/fabio_fernandes_da_silva.mdx)
-    - [Jair Fajardo Junior](docs/professor/jair_fajardo_junior.mdx)
-    - [Juliano da Rocha Queiroz](docs/professor/juliano_da_rocha_queiroz.mdx)
-    - [Mario Eduardo de Barros Gomes Nunes da Silva](docs/professor/mario_eduardo_de_barros_gomes_nunes_da_silva.mdx)
-    - [Sérgio Takahashi](docs/professor/sergio_takahashi.mdx)
+    - [Alex Miyamoto Mussi](../../professor/alex_miyamoto_mussi.mdx)
+    - [Danilo Hungaro Micheletti](../../professor/danilo_hungaro_micheletti.mdx)
+    - [Darlan Roque Dapieve](../../professor/darlan_roque_dapieve.mdx)
+    - [Fábio Fernandes da Silva](../../professor/fabio_fernandes_da_silva.mdx)
+    - [Jair Fajardo Junior](../../professor/jair_fajardo_junior.mdx)
+    - [Juliano da Rocha Queiroz](../../professor/juliano_da_rocha_queiroz.mdx)
+    - [Mario Eduardo de Barros Gomes Nunes da Silva](../../professor/mario_eduardo_de_barros_gomes_nunes_da_silva.mdx)
+    - [Sérgio Takahashi](../../professor/sergio_takahashi.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [alex.mussi@ifpr.edu.br](mailto:alex.mussi@ifpr.edu.br)

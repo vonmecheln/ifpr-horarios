@@ -18,14 +18,14 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Alex Miyamoto Mussi](docs/professor/alex_miyamoto_mussi.mdx)
-    - [Diego Armando Amaro da Silva](docs/professor/diego_armando_amaro_da_silva.mdx)
-    - [Elias Franco](docs/professor/elias_franco.mdx)
-    - [Fernanda da Silva Ferreira](docs/professor/fernanda_da_silva_ferreira.mdx)
-    - [Franciele Fernandes Baliero](docs/professor/franciele_fernandes_baliero.mdx)
-    - [Marcos Rogério Oliveira](docs/professor/marcos_rogerio_oliveira.mdx)
-    - [Octavio Henrique Viana](docs/professor/octavio_henrique_viana.mdx)
-    - [Roberto Haruyoshi Ito](docs/professor/roberto_haruyoshi_ito.mdx)
+    - [Alex Miyamoto Mussi](../../professor/alex_miyamoto_mussi.mdx)
+    - [Diego Armando Amaro da Silva](../../professor/diego_armando_amaro_da_silva.mdx)
+    - [Elias Franco](../../professor/elias_franco.mdx)
+    - [Fernanda da Silva Ferreira](../../professor/fernanda_da_silva_ferreira.mdx)
+    - [Franciele Fernandes Baliero](../../professor/franciele_fernandes_baliero.mdx)
+    - [Marcos Rogério Oliveira](../../professor/marcos_rogerio_oliveira.mdx)
+    - [Octavio Henrique Viana](../../professor/octavio_henrique_viana.mdx)
+    - [Roberto Haruyoshi Ito](../../professor/roberto_haruyoshi_ito.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [alex.mussi@ifpr.edu.br](mailto:alex.mussi@ifpr.edu.br)

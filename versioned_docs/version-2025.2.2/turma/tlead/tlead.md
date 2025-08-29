@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Fábio Fernandes da Silva](docs/professor/fabio_fernandes_da_silva.mdx)
+    - [Fábio Fernandes da Silva](../../professor/fabio_fernandes_da_silva.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [fabio.fernandes@ifpr.edu.br](mailto:fabio.fernandes@ifpr.edu.br)

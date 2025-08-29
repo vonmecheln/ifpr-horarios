@@ -18,12 +18,12 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Antonio Cesar Godoy](docs/professor/antonio_cesar_godoy.mdx)
-    - [Beatriz de Souza Gonçalves Proença](docs/professor/beatriz_de_souza_goncalves_proenca.mdx)
-    - [Darlan Roque Dapieve](docs/professor/darlan_roque_dapieve.mdx)
-    - [Haroldo Yutaka Misunaga](docs/professor/haroldo_yutaka_misunaga.mdx)
-    - [Leandro Luiz Borges](docs/professor/leandro_luiz_borges.mdx)
-    - [Marcos Rogério Oliveira](docs/professor/marcos_rogerio_oliveira.mdx)
+    - [Antonio Cesar Godoy](../../professor/antonio_cesar_godoy.mdx)
+    - [Beatriz de Souza Gonçalves Proença](../../professor/beatriz_de_souza_goncalves_proenca.mdx)
+    - [Darlan Roque Dapieve](../../professor/darlan_roque_dapieve.mdx)
+    - [Haroldo Yutaka Misunaga](../../professor/haroldo_yutaka_misunaga.mdx)
+    - [Leandro Luiz Borges](../../professor/leandro_luiz_borges.mdx)
+    - [Marcos Rogério Oliveira](../../professor/marcos_rogerio_oliveira.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [antonio.godoy@ifpr.edu.br](mailto:antonio.godoy@ifpr.edu.br)

@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Eliana Peliçon Pereira Figueira](docs/professor/eliana_pelicon_pereira_figueira.mdx)
+    - [Eliana Peliçon Pereira Figueira](../../professor/eliana_pelicon_pereira_figueira.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [eliana.figueira@ifpr.edu.br](mailto:eliana.figueira@ifpr.edu.br)

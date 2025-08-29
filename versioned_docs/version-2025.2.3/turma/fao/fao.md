@@ -17,10 +17,10 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="nome" label="Nome" default>
-    - [Elias Franco](docs/professor/elias_franco.mdx)
-    - [Fernanda da Silva Ferreira](docs/professor/fernanda_da_silva_ferreira.mdx)
-    - [José Jurandir Pereira Junior](docs/professor/jose_jurandir_pereira_junior.mdx)
-    - [Suzane Conceição Pantolfi Tostes](docs/professor/suzane_conceicao_pantolfi_tostes.mdx)
+    - [Elias Franco](../../professor/elias_franco.mdx)
+    - [Fernanda da Silva Ferreira](../../professor/fernanda_da_silva_ferreira.mdx)
+    - [José Jurandir Pereira Junior](../../professor/jose_jurandir_pereira_junior.mdx)
+    - [Suzane Conceição Pantolfi Tostes](../../professor/suzane_conceicao_pantolfi_tostes.mdx)
   </TabItem>
   <TabItem value="email" label="E-mail" default>
     - [elias.franco@ifpr.edu.br](mailto:elias.franco@ifpr.edu.br)
